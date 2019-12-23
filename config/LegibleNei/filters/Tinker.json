@@ -1,0 +1,43 @@
+	{
+
+	TConstruct:
+		[
+		{keep:[[*Plate,*inding,*Head,*Blade,*Part,*Rod,*Guard,crossbar,*head,
+			*Stained*,decoration.*,*Slab*,ToolForgeBlock,GravelOre,MetalBlock,SearedBrick,SpeedBlock],[10]]};
+		{keep-one:[[creativeModifier],[]]};
+	    {keep:[[Smeltery],[0-5]]};
+		{keep:[[SmelteryNether],[0-2]]};
+		{keep:[[ToolStationBlock],[0,1,5,10]]};
+		{hide:[fluid.molten.,[lead,signalum,iron,gold,copper,tin,aluminum,cobalt,ardite,bronze,alubrass,manyullyn,alumite,obsidian,steel,glass,stone,emerald,nickel,silver,shiny,invar,electrum,ender,lumium,mithril,enderium,blood,glue,pigiron],[]]};
+		{hide:[molten.,[stone,emerald],[]]};
+		{hide:[fluid.,[ender],[]]};
+		{hide:[liquid.,[blood,glue,slime],[]]};
+		{hide:[[MeatBlock,WoolSlab*,trap*,barricade*,explosive*,slime*,grass*,leaves,sapling,blood*,decoration*,ore.berries*,GravelOre,rail*,MetalBlock,FurnaceSlab,CraftedSoil*,SearedSlab,SpeedSlab,GlueBlock,SpeedBlock,GlassPaneClearStained,strangeFood*,oreBerries*,titleIcon*,potionLauncher,toolShard,diamondApple,*Wood],[]]};
+		{hide:[[materials],[0-1,3-36,38-42]]};
+		{show:[[CraftedSoil],[1]]};
+		{hide:[[pickaxe,Shuriken,ThrowingKnife,Javelin,ShortBow,Crossbow,ArrowAmmo,BoltAmmo,LongBow,shovel,hatchet,broadsword,longsword,rapier,dagger,cutlass,frypan,battlesign,mattock,chisel,lumberaxe,cleaver,scythe,excavator,hammer,battleaxe],[]]};
+		{hide:[[HeldItemBlock,BattleSignBlock,buckets,woodPattern,Pattern,Boneana],[]]};
+		];
+
+	IguanaTweaksTConstruct:
+		[
+		{hide:[[clayBucket*,saw*],[]]};
+		{show:[[clayBucketWater,clayBucketUnfired,clayBucketFired],[]]};
+		];
+
+	TGregworks:
+	[	
+
+		{hide:[[*tGregTool*],[]]};
+
+	];
+
+		TMechworks:
+	[	
+
+		{hide:[[Dynamo,MeshFilter,SpoolWire],[]]};
+
+	]
+
+}
+

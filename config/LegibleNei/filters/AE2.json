@@ -1,0 +1,10 @@
+{
+	appliedenergistics2:[
+		{hide:[tile.,[BlockQuartzGrowthAccelerator,BlockPaint,*Stair*,*Slab*,BlockInscriber,BlockCableBus,OreQuartz*,BlockSkyCompass,BlockGrinder,BlockCrank,BlockMatrix*,BlockQuartzPillar,BlockQuartzChiseled],[]]};
+		{hide:[tile.,[BlockSkyStone],[1-3]]};
+		{hide:[item.,[ItemPaintBall],[20-35]]};
+		{hide:[item.,[ItemMultiPart],[20-35,60-75,0-15,40-55]]};
+		{keep-one:[[item.ItemCrystalSeed],[0,600,1200]]};
+	]
+
+}

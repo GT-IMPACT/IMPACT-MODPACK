@@ -1,0 +1,39 @@
+{
+
+	gregtech:
+	[
+		{keep-one:[gt.,[Volumetric_Flask],[]]};
+		{keep-one:[gt.,[detrav.metatool.01],[]]};
+		{keep-one:[gt.,[metatool.01],[]]};
+		{show:[gt.,[metatool.01],[10,12,14,16,18,20,22,26,24,28,30,32,34,36,40,44,108,118,130,168]]};
+		{hide:[gt.,[metaitem.02],[25008-26976,27394-28890,24006-24018,24020-24027,24029-24031,24033-24034,24036-24056,24058-24067,24078-24080,24083-24085,24090-24128,24300-24304,24306-24309,24313-24315,24317-24323,24326-24328,24330-24356,24358-24371,24373-24379,24389,24392-24402,24417-24992]]};
+		//{hide:[gt.,[metaitem.01],[30001-31103]]};
+		{hide:[gt.,[metaitem.01],[25006-25992,32200-32258]]};
+		{hide:[gt.,[metaitem.01],[9006-9992]]};
+		{hide:[gt.,[metaitem.01],[13006-16992]]};
+		{hide:[gt.,[metaitem.01],[18006-21992]]};
+		{hide:[[gt.sensorcard],[]]};
+		{hide:[gt.,[blockmachines],[4102-5088, 13025-13027]]};
+		{show:[gt.,[blockmachines],[4466-4467,4569,4905,4985,4398,4420,4421,4425,4430,4445,4400-4402,4412-4413,4417,4179-4180,4185,4225,4396,4115,4124,4126,4128,4141]]};
+	
+	];
+
+	miscutils:
+	[
+		{hide:[[crushed*,AAA_Broken,item.empty,gtpp.debug.scanner,itemDebugClearing,itemAlkalusDisk,dummyResearch,blockMFEffect,*fluid*,blockWorkbench*,blockHeliumGenerator*,blockHellFire,blockTradeBench,blockModularity,blockXpConverter,blockMiningPipeFake,blockMiningHeadFake,blockGenericRedstone*,blockMobSpawnerEx,blockFirePit,blockMiningExplosives,blockFrameGt*,dustImpure*,dustPure*,DustSmall*,DustTuny*,itemDustTiny*,itemDustSmall*,itemCell*],[]]};
+		{show:[[blockFrameGtZirconiumCarbide,blockFrameGtTumbaga,blockFrameGtPotin,blockFrameGtStaballoy,blockFrameGtTantalloy61,blockFrameGtInconel625,blockFrameGtInconel690,blockFrameGtEglinSteel,blockFrameGtStellite,blockFrameGtTalonite,blockFrameGtHastelloyX,blockFrameGtHastelloyC276,blockFrameGtHastelloyN,blockFrameGtIncoloyMA956,blockFrameGtGrisium,blockFrameGtLafiumCompound],[]]};
+		{hide:[[miscutils.blockcasings],[10]]};
+		{hide:[[gtplusplus.blockcasings.4],[0-2,4-9,11-15]]};
+		{show:[[dummyResearch],[0]]};
+		{hide:[[Mu],[0]]};
+
+		{hide:[[gtplusplus.blockcasings.2,gtplusplus.blockcasings.2],[14]]};
+	];
+
+	bartworks:
+	[
+		{hide:[gt.,[bwMetaGeneratedGTEnhancementcapsule*,bwMetaGeneratedcapsule*,bwMetaGeneratedcell*],[]]};
+
+	]
+
+}

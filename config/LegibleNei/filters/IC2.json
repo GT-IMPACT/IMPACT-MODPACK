@@ -1,0 +1,19 @@
+{
+	IC2:[
+	
+		{hide:[[blockOre*,itemupgradekit,itemTritiumCell,itemSteamTurbine*,*BlockCuttingBlade,itemCoin,itemDebug,itemSolarHelmet,itemBatRE,itemToolWrench,itemToolbox,itemToolPainter*,itemCellEmpty,itemTFBP*,itemSlag,plasmaLauncher,itemScanner*,itemToolForgeHammer,itemLathingTool,itemcrystalmemory,reactorLithiumCell,itemShardIridium,itemToolBronze*,itemCasing,itemCrushedOre,itemPlates,itemDensePlates,itemTurning*,itemDust*,itemPurifiedCrushedOre,itemIngot,blockDynamite*,itemRubber,blockBarrel,fluid*,blockMiningTip,blockLuminator,blockKineticGenerator,blockHeatGenerator,blockHarz,blockBasalt,blockDoorAlloy,blockReinforcedFoam,blockFoam,blockWall,blockCable],[]]};
+		{show:[[blockKineticGenerator,itemToolPainter],[0]]};
+		{hide:[[blockGenerator],[0-4,7-8]]};
+		{keep-one:[[blockElectric],[0,7,1,2]]};
+		{keep-one:[[blockChargepad],[0-3]]};
+		{hide:[[blockMachine],[2-8,10-15]]};
+		{hide:[[blockMachine2],[0,3-9,11-13,15]]};
+		{hide:[[blockMachine3],[0-4,8]]};
+		{hide:[[blockPersonal],[1-2]]};
+		{hide:[[itemRecipePart],[4-6]]};
+		{show:[[itemDust2],[2]]};
+		{show:[[itemIngot],[4]]};
+		{hide:[[itemToolDrill,itemToolDDrill,itemCropnalyzer,itemToolIridiumDrill,itemTool*,itemTreetap*,itemArmor*,itemNight*,itemBat*,itemAdvBat*,obscurator,itemNanoSaber,windmeter],[26,27]]};
+		{show:[[itemCellEmpty],[0]]};
+	]
+}

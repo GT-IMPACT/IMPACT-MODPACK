@@ -1,0 +1,11 @@
+{
+	Railcraft:[
+		{hide:[[fluid*,worldlogic,*crowbar*,cart.anchor*,cart.redstone.flux,cart.pumpkin,cart.gift,cart.loco.creative,emblem,firestone*,firestone.recharge,tool.steel*,armor.steel*,armor.overalls,nugget,ingot,*plate,*bleached.clay,dust,*gear,ore,residual.heat,anvil,stair,slab,platform,post*,wall*,glass],[]]};
+		{hide:[[cube],[9-11,2,4,6-7]]};
+		{hide:[[machine.alpha],[2,4]]};
+		{hide:[[machine.epsilon],[1-2]]};
+		{hide:[[machine.gamma],[10-11]]};
+		{show:[[glass,cart.anchor],[0]]};
+	]
+
+}

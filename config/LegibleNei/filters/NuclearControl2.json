@@ -1,0 +1,9 @@
+{
+	IC2NuclearControl:[
+	
+		{hide:[[*Light],[1,3]]};
+		{hide:[[ItemUpgrade],[2]]};
+		{hide:[[*MultipleSensorLocationCard,ItemEnergyArrayLocationCard,ItemSensorLocationCard,ItemEnergySensorLocationCard,ItemArrayLocationCard,ItemLiquidArrayLocationCard,Item55ReactorCard,CardAppeng,ItemInventoryScannerCard,ItemVanillaMachineCard,RFSensorCard],[]]};
+		{hide:[[ItemToolDigital*],[101]]};
+	]
+}

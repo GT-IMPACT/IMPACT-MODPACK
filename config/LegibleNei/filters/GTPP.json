@@ -1,0 +1,18 @@
+{
+	Australia:[
+		{hide:[[*],[]]};
+	];
+
+	miscutils:[
+		{hide:[[CoalGas,Li2BeF4,itemGenericToken,itemBigEgg,Hydroxide,Ammonium*,BerylliumHydroxide,Bromine,Krypton,ZirconiumTetrafluoride,Fertiliser,Un32Fertiliser,UN18Fertiliser,RaisinJuice,mobessence,Ethylbenzene,Anthracene,Toluene,*CoalTar*,Naphthalene,PhthalicAcid,2Ethylan*,HydrogenPeroxide,LithiumPeroxide,Kerosene,RP1Fuel,NitrogenTetroxide,Hydrazine,Monomethylhydrazine,AmmoniumNitrateSlurry,LiquidOxygen,Formaldehyde,RocketFuel*,BurntLiF*,GeneticMutagen,RawWaste,*ManureSlurry,nitrobenzene,aniline,polyurethane,cyclohex*,cadaverine,putrescine,cryotheum,pyrotheum],[]]};
+		{hide:[[itemHotIngot*],[]]};
+		{hide:[MU-metaitem.,[02],[1000-1005]]};
+		{hide:[[particle*,itemPlateDouble*,itemRing*,itemPlate*,itemScrew*,itemRotor*,itemBolt*,itemNugget*,itemRod*,itemGear*,item.itemBufferCore*,item.itemRod*,itemHeavyPlate*,blockBlock*,itemGemShards*,itemBlueprint*,item.ToolBox,item.Eatotron*,item.MysticBag*,backpack*,blockNet,itemHatTinFoil,itemRope],[]]};
+		{hide:[MU-metaitem.,[01],[32120-32139,32106-32110,32066-32105]]};
+	];
+
+	ToxicEverglades:[
+		{hide:[[*],[]]};
+		{show:[[blockDarkWorldPortalFrame],[]]};
+	]
+}

@@ -1,0 +1,8 @@
+{
+	bartworks:[
+		{hide:[[BWExpReversePumpBlock,*ingotHot*,*plateDouble*,*plateTriple*,*plateQuadruple*,*plateQuintuple*,*ingotDouble*,*ingotTriple*,*ingotQuintuple*,*ingotQuadruple*,*toolHead*],[]]};
+		{keep:[[BioLabParts],[]]};
+	]	
+
+
+}

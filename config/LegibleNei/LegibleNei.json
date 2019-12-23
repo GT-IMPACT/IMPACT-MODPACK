@@ -1,0 +1,21 @@
+{
+Votes:{
+    NEUTRAL:[0,false],
+    MASK:[1,true],
+    SHOW:[2,false]
+},
+Modules:{
+	default:[NEUTRAL],
+	one:[default,MASK],
+	onedamage:[default,MASK],
+	oneid:[default,MASK]
+},
+Rules:{
+    keep:[default,MASK],
+    hide:[MASK],
+    keep-one:[one],
+    keep-oned:[onedamage],
+    keep-onei:[oneid],
+	show:[SHOW]
+}
+}

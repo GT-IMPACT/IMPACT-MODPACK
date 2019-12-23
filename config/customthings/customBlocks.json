@@ -1,0 +1,138 @@
+{"data":
+	[
+	{
+    "name": "blockCompressedCharcoal",
+	"type": "rock",
+	"hardness": 7.0,
+	"resistance": 3.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockDoubleCompressedCharcoal",
+	"type": "rock",
+	"hardness": 9.0,
+	"resistance": 4.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockTripleCompressedCharcoal",
+	"type": "rock",
+	"hardness": 11.0,
+	"resistance": 5.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuadrupleCompressedCharcoal",
+	"type": "rock",
+	"hardness": 13.0,
+	"resistance": 6.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuintupleCompressedCharcoal",
+	"type": "rock",
+	"hardness": 15.0,
+	"resistance": 7.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockCompressedCoal",
+	"type": "rock",
+	"hardness": 7.0,
+	"resistance": 3.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockDoubleCompressedCoal",
+	"type": "rock",
+	"hardness": 9.0,
+	"resistance": 4.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockTripleCompressedCoal",
+	"type": "rock",
+	"hardness": 11.0,
+	"resistance": 5.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuadrupleCompressedCoal",
+	"type": "rock",
+	"hardness": 13.0,
+	"resistance": 6.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuintupleCompressedCoal",
+	"type": "rock",
+	"hardness": 15.0,
+	"resistance": 7.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockCompressedCoalCoke",
+	"type": "rock",
+	"hardness": 7.0,
+	"resistance": 3.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockDoubleCompressedCoalCoke",
+	"type": "rock",
+	"hardness": 9.0,
+	"resistance": 4.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockTripleCompressedCoalCoke",
+	"type": "rock",
+	"hardness": 11.0,
+	"resistance": 5.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuadrupleCompressedCoalCoke",
+	"type": "rock",
+	"hardness": 13.0,
+	"resistance": 6.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	,
+	{
+    "name": "blockQuintupleCompressedCoalCoke",
+	"type": "rock",
+	"hardness": 15.0,
+	"resistance": 7.0,
+	"harvestLevel": 1,
+	"toolType": "pickaxe"
+    }
+	]
+}

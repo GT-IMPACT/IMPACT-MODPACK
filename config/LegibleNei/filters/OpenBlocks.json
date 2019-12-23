@@ -1,0 +1,10 @@
+{
+	MCFrames:[{hide:[[*],[]]};];
+	Mantle:[{hide:[[*],[]]};];
+
+	OpenBlocks:[
+		{hide:[[elevator*,grave,generic,genericUnstackable],[]]};
+		{show:[[elevator*,generic],[0]]};
+
+	]
+}

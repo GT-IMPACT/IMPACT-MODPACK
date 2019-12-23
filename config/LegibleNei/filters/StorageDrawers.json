@@ -1,0 +1,7 @@
+{
+	StorageDrawers:[
+		{hide:[[fullDrawers*,halfDrawers*,trim],[1-5]]};
+
+	]
+
+}

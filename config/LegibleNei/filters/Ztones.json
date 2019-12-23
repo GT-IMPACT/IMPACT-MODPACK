@@ -1,0 +1,9 @@
+{
+	Ztones:[
+		{hide:[[*Block*,*glax*],[]]};
+		{show:[[*Block*,*glax*],[0]]};
+		{hide:[[hunger,diamondZane,splatAxe,terrainEater,totemTool],[]]};
+
+	]
+
+}

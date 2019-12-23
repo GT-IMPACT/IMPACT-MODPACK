@@ -1,0 +1,9 @@
+{		
+	forestry:[
+		{hide:[[beeDroneGE*,beePrincessGE*],[]]};
+		{hide:[[can*,waxCapsule*,refractory*,bucket*,*Larvae*,*pollen*,serumGE*,caterpillar*,butterflyGE*,crated*,stamps*,letters*,catalogue,ambrosia,honneyPot,beverage*,slabs*,logs*,planks*,fences*,stairs*,saplingGE*,leaves*,resources*,fluid*,core,pods,mushroom*,mail,apatite,researchNote,ingot*,wrench,pipette,gear*,carton,woodPulp,*Pickaxe*,*Shovel*,*Capsule*,adventurerBag*,sapling*,crate,scoop,ash],[]]};
+		{keep-one:[[ffarm*],[]]};
+		{hide:[[factory],[0,2,5,6]]};
+		{hide:[[craftingMaterial],[0,4,5]]};
+	]
+}

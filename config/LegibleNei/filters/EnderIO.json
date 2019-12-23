@@ -1,0 +1,12 @@
+{
+	EnderIO:[
+		{hide:[[*Generator,*Solar*,itemTravelStaff,itemSoulVessel,itemMagnet*,itemEnderFood,itemGliderWing,blockReservoir,item.darkSteel*,bucket*,blockSagMill,blockAlloySmelter,blockCapBank*,blockVat,blockTank,blockReservior,blockBuffer,blockEnderIo,blockSliceAndSplice,blockSoulBinder,blockPoweredSpawner,blockKillerJoe,blockAttractor,blockSpawnGuard,blockWeatherObelisk,blockInhibitorObelisk,blockEnchanter,blockDarkSteelAnvil,blockLightNode,blockEnderRail,blockConduitBundle,blockEndermanSkull,blockNutrient*,blockHootch,blockRocket_fuel,blockFire_water,blockLiquid*,blockCloud*,itemCoordSelector,itemBrokenSpawner,itemFrankenSkull,itemPowerConduit,itemMachinePart],[ ]]};
+		{show:[[blockCapBank],[0,1]]};
+		{show:[[itemPowerConduit,itemMachinePart,itemTravelStaff,itemMagnet*],[0]]};
+		{hide:[[itemMaterial],[0,3,4,8-10]]};
+		{hide:[[itemAlloy],[0-5,7]]};
+		{hide:[[itemPowderIngot],[0-8]]};
+		//{show:[[],[]]};
+
+	]
+}

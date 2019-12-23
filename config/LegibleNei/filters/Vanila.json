@@ -1,0 +1,9 @@
+{
+	minecraft:[
+		{hide:[[*flower*,enchanting_table,end_portal_frame,ender_chest,anvil,command_block,*_ore,stonebrick,stone_slab,sandstone,web,tallgrass*,deadbush,farmland,lit_furnace,snow_layer,sponge,leaves*,*vine,*_egg,*mushroom_block,waterlily,*pressure_plate,*stairs,*glass_pane,*plant,*shovel,*pickaxe,*axe,*sword,*hoe,*_bucket,*fish*,brewing_stand,*potion*,record*,wooden_slab],[]]};
+		{keep-one:[[anvil],[0]]};
+		{hide:[[carpet,stained_hardened_clay],[1-15]]};
+		{hide:[[quartz_block],[1-2]]};
+		{show:[[wooden_slab,stonebrick,sandstone,stone_slab,anvil],[0]]};
+	]
+}

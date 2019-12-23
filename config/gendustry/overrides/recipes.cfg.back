@@ -1,0 +1,18 @@
+// recipes.addShaped(GeneticTemplate, [
+// [DiamondRod, plateEuropium, DiamondRod],
+// [plateEuropium, DataOrb, plateEuropium],
+// [DiamondRod, plateEuropium, DiamondRod]]);
+
+// val DiamondRod = <ore:stickDiamond>;
+// val plateEuropium = <ore:plateEuropium>;
+// val DataOrb = <gregtech:gt.metaitem.01:32707>;
+
+recipes { // TEMPLATES
+    E = OD:plateEuropium
+    D = OD:stickDiamond
+    C = OD:circuitUltimate
+    
+    DED
+    ECE => I:gendustry:GeneTemplate
+    DED
+}

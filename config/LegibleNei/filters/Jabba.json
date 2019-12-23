@@ -1,0 +1,10 @@
+{
+	JABBA:[
+	
+
+		{hide:[[upgradeCore],[1,10]]};
+		{hide:[[moverDiamond,tuningFork,hammer],[]]};
+		{show:[[hammer],[0]]};
+		
+	]
+}

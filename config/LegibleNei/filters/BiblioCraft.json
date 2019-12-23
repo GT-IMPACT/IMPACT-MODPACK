@@ -1,0 +1,5 @@
+{
+	BiblioCraft:[
+		{hide:[[Item.BiblioChase,*SlottedBook*,*RecipeBook*,*BigBook,*AtlasPlate*,BiblioPaneler,BiblioClock,*HandDrill*,*PrintPlate*,*EnchantedPlate*,BiblioGlasses,*BiblioDrill,*BiblioCreativeLock,*BiblioMapTool,*Paint*,BiblioClipboard,Biblio,BiblioTypewriter,BiblioWorkbench,BiblioMapFrames,item.Stockroom*,Printing*,BiblioStuffs,BiblioPotionShelf,BiblioDesk,BookcaseFilled,BiblioBell,Typesetting*,*Compass*,*Atlas*,*TesterItem*,*Saw*,*PlumbLine,*seatBack*,BiblioTable,BiblioSeats],[ ]]};
+	]
+}

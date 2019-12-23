@@ -1,0 +1,853 @@
+{"data":
+	[
+			{
+			"name": "itemAdvancedBoard"
+			}
+			,
+			{
+			"name": "itemAdvancedProcessorBoard"
+			}
+			,
+			{
+			"name": "itemDeshDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemExtraLargeFuelCanister"
+			}
+			,
+			{
+			"name": "itemHeavyDutyAlloyIngotT4"
+			}
+			,
+			{
+			"name": "itemHeavyDutyAlloyIngotT5"
+			}
+			,
+			{
+			"name": "itemHeavyDutyAlloyIngotT6"
+			}
+			,
+			{
+			"name": "itemHeavyDutyAlloyIngotT7"
+			}
+			,
+			{
+			"name": "itemHeavyDutyAlloyIngotT8"
+			}
+			,
+			{
+			"name": "itemWaferTier3"
+			}
+			,
+			{
+			"name": "itemIceCompressedPlate"
+			}
+			,
+			{
+			"name": "itemIceDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemLargeFuelCanister"
+			}
+			,
+			{
+			"name": "itemLeadNickelPlate"
+			}
+			,
+			{
+			"name": "itemLeadOriharukonPlate"
+			}
+			,
+			{
+			"name": "itemRawSDHCAlloy"
+			}
+			,
+			{
+			"name": "itemMediumFuelCanister"
+			}
+			,
+			{
+			"name": "itemMeteoricIronDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemNanoBoard"
+			}
+			,
+			{
+			"name": "itemNanoProcessorBoard"
+			}
+			,
+			{
+			"name": "itemQuantumBoard"
+			}
+			,
+			{
+			"name": "itemQuantumProcessorBoard"
+			}
+			,
+			{
+			"name": "itemSchematicsCargoRocket"
+			}
+			,
+			{
+			"name": "itemSchematicsTier1"
+			}
+			,
+			{
+			"name": "itemSchematicsTier2"
+			}
+			,
+			{
+			"name": "itemSchematicsTier3"
+			}
+			,
+			{
+			"name": "itemSchematicsTier4"
+			}
+			,
+			{
+			"name": "itemSchematicsTier5"
+			}
+			,
+			{
+			"name": "itemSchematicsTier6"
+			}
+			,
+			{
+			"name": "itemSchematicsTier7"
+			}
+			,
+			{
+			"name": "itemSchematicsTier8"
+			}
+			,
+			{
+			"name": "itemTitaniumDualCompressedPlates"
+			},
+			{
+			"name": "itemTCetiESeaweedExtract"
+			}
+			,
+			{
+			"name": "itemBarnardaEStoneDust"
+			}
+			,
+			{
+			"name": "itemBarnardaFStoneDust"
+			}
+			,
+			{
+			"name": "itemCallistoIceColdIngot"
+			}
+			,
+			{
+			"name": "itemCallistoIceCompressedPlate"
+			}
+			,
+			{
+			"name": "itemCallistoIceDust"
+			}
+			,
+			{
+			"name": "itemCallistoIceIngot"
+			}
+			,
+			{
+			"name": "itemCallistoIcePlate"
+			}
+			,
+			{
+			"name": "itemCentauriAStoneDust"
+			}
+			,
+			{
+			"name": "itemCentauriASurfaceDust"
+			}
+			,
+			{
+			"name": "itemCeresStoneDust"
+			}
+			,
+			{
+			"name": "itemDeimosStoneDust"
+			}
+			,
+			{
+			"name": "itemIapetusIceDust"
+			}
+			,
+			{
+			"name": "itemIapetusStoneDust"
+			}
+			,
+			{
+			"name": "itemEuropaIceDust"
+			}
+			,
+			{
+			"name": "itemEuropaStoneDust"
+			}
+			,
+			{
+			"name": "itemGanymedStoneDust"
+			}
+			,
+			{
+			"name": "itemHaumeaStoneDust"
+			}
+			,
+			{
+			"name": "itemIoStoneDust"
+			}
+			,
+			{
+			"name": "itemMakeMakeStoneDust"
+			}
+			,
+			{
+			"name": "itemMercuryStoneDust"
+			}
+			,
+			{
+			"name": "itemErisStoneDust"
+			}
+			,
+			{
+			"name": "itemOberonStoneDust"
+			}
+			,
+			{
+			"name": "itemPhobosStoneDust"
+			}
+			,
+			{
+			"name": "itemPlutoIceDust"
+			}
+			,
+			{
+			"name": "itemPlutoStoneDust"
+			}
+			,
+			{
+			"name": "itemRheaStoneDust"
+			}
+			,
+			{
+			"name": "itemTCetiEStoneDust"
+			}
+			,
+			{
+			"name": "itemTitaniaStoneDust"
+			}
+			,
+			{
+			"name": "itemTitanStoneDust"
+			}
+			,
+			{
+			"name": "itemTritonStoneDust"
+			}
+			,
+			{
+			"name": "itemVegaBStoneDust"
+			}
+			,
+			{
+			"name": "itemVenusStoneDust"
+			}
+			,
+			{
+			"name": "itemIridiumAlloyCompressedPlate"
+			}
+			,
+			{
+			"name": "itemIridiumAlloyDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemLedoxColdIngot"
+			}
+			,
+			{
+			"name": "itemLedoxColdPlate"
+			}
+			,
+			{
+			"name": "itemLedoxCompressedPlate"
+			}
+			,
+			{
+			"name": "itemMysteriousCrystalColdIngot"
+			}
+			,
+			{
+			"name": "itemMysteriousCrystalCompressedPlate"
+			}
+			,
+			{
+			"name": "itemMysteriousCrystalDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemMysteriousCrystalIngot"
+			}
+			,
+			{
+			"name": "itemMysteriousCrystalColdPlate"
+			}
+			,
+			{
+			"name": "itemQuantinumCompressedPlate"
+			}
+			,
+			{
+			"name": "itemQuantinumDualCompressedPlates"
+			}
+			,
+			{
+			"name": "itemHeavyDutyNoseConeTier4"
+			}
+			,
+			{
+			"name": "itemHeavyDutyRocketEngineTier4"
+			}
+			,
+			{
+			"name": "itemHeavyDutyRocketFinsTier4"
+			}
+			,
+			{
+			"name": "itemTier4Booster"
+			}
+			,
+			{
+			"name": "itemCallistoStoneDust"
+			}
+			,
+			{
+			"name": "tcompressed_palladium"
+			}
+			,
+			{
+			"name": "tier5_fin"
+			}
+			,
+			{
+			"name": "tier6_fin"
+			}
+			,
+			{
+			"name": "tier7_fin"
+			}
+			,
+			{
+			"name": "tier8_fin"
+			}
+			,
+			{
+			"name": "tier5booster"
+			}
+			,
+			{
+			"name": "tier6booster"
+			}
+			,
+			{
+			"name": "tier7booster"
+			}
+			,
+			{
+			"name": "tier8booster"
+			}
+			,
+			{
+			"name": "tier5engine"
+			}
+			,
+			{
+			"name": "tier6engine"
+			}
+			,
+			{
+			"name": "tier7engine"
+			}
+			,
+			{
+			"name": "tier8engine"
+			}
+			,
+			{
+			"name": "itemHeavyDutyNoseConeTier5"
+			}
+			,
+			{
+			"name": "itemHeavyDutyNoseConeTier6"
+			}
+			,
+			{
+			"name": "itemHeavyDutyNoseConeTier7"
+			}
+			,
+			{
+			"name": "itemHeavyDutyNoseConeTier8"
+			}
+			,
+			{
+			"name": "itemBlackPlutoniumCompressedPlate"
+			}
+			,
+			{
+			"name": "itemNaquadahCompressedPlate"
+			}
+			,
+			{
+			"name": "itemDraconiumCompressedPlate"
+			}
+			,
+			{
+			"name": "itemHeavyDutyPlateTier8"
+			}
+			,
+			{
+			"name": "CokeOvenBrick"
+			}
+			,
+			{
+			"name": "UnfiredClayBrick"
+			}
+			,
+			{
+			"name": "UnfiredCokeOvenBrick"
+			}
+			,
+			{
+			"name": "UnfiredSearedBrick"
+			}
+			,
+			{
+			"name": "WoodenBrickForm"
+			}
+			,
+			{
+			"name": "concretebucket"
+			}
+			,
+			{
+			"name": "itemStargateChevron"
+			}
+			,
+			{
+			"name": "itemStargateCrystalDust"
+			}
+			,
+			{
+			"name": "itemStargateFramePart"
+			}
+			,
+			{
+			"name": "itemStargateShieldingFoil"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedAluminiumPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedTitaniumPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedMeteoricSteelPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedDeshPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedDraconiumPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedQuantiumPlate"
+			}
+			,
+			{
+			"name": "itemIrradiantReinforcedPhoenixitePlate"
+			}
+			,
+			{
+			"name": "itemRawNeutronium"
+			}
+			,
+			{
+			"name": "itemMiningCrystal"
+			}
+			,
+			{
+			"name": "itemAdvancedCokeOvenBrick"
+			}
+			,
+			{
+			"name": "itemAdvancedCokeOvenBrickDust"
+			}
+			,
+			{
+			"name": "itemCokeOvenBrickDust"
+			}
+			,
+			{
+			"name": "itemHotNetherrackBrick"
+			}
+			,
+			{
+			"name": "itemInfernalBrick"
+			}
+			,
+			{
+			"name": "itemIndustryFrame"
+			}
+			,
+			{
+			"name": "itemCarbonPartBoots"
+			}
+			,
+			{
+			"name": "itemCarbonPartChestplate"
+			}
+			,
+			{
+			"name": "itemCarbonPartHelmet"
+			}
+			,
+			{
+			"name": "itemCarbonPartLeggings"
+			}
+			,
+			{
+			"name": "itemCarbonPartHelmetNightVision"
+			}
+			,
+			{
+			"name": "itemNanoCrystal"
+			}
+			,
+			{
+			"name": "itemQuantumCrystal"
+			}
+			,
+			{
+			"name": "itemQuantumPartBoots"
+			}
+			,
+			{
+			"name": "itemQuantumPartChestplate"
+			}
+			,
+			{
+			"name": "itemQuantumPartHelmet"
+			}
+			,
+			{
+			"name": "itemQuantumPartLeggings"
+			}
+			,
+			{
+			"name": "itemQuantumPartHelmetEmpty"
+			}
+			,
+			{
+			"name": "itemNanoChestJetPack"
+			}
+			,
+			{
+			"name": "itemBarnardaCBiomass"
+			}
+			,
+			{
+			"name": "itemCoolingCoreAdvanced"
+			}
+			,
+			{
+			"name": "itemDiamondCoreChip"
+			}
+			,
+			{
+			"name": "itemDiamondFluidCoreChip"
+			}
+			,
+			{
+			"name": "itemEmeraldAdvancedCoreChip"
+			}
+			,
+			{
+			"name": "itemEmeraldAdvancedFluidCoreChip"
+			}
+			,
+			{
+			"name": "itemEmeraldHighAdvancedCoreChip"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorFluidDiamondCore"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorFluidEmeraldCore"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorItemAdvEmeraldCore"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorItemDiamondCore"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorItemEmeraldCore"
+			}
+			,
+			{
+			"name": "itemEngravedDiamondCrystalChip"
+			}
+			,
+			{
+			"name": "itemEngravedEnergyChip"
+			}
+			,
+			{
+			"name": "itemEngravedGoldChip"
+			}
+			,
+			{
+			"name": "itemEngravedQuantumChip"
+			}
+			,
+			{
+			"name": "itemGoldCoreChip"
+			}
+			,
+			{
+			"name": "itemLogicProcessorItemGoldCore"
+			}
+			,
+			{
+			"name": "itemGoldFluidCoreChip"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorFluidGoldCore"
+			}
+			,
+			{
+			"name": "itemEngineeringProcessorSpatialPulsatingCore"
+			}
+			,
+			{
+			"name": "itemGeneticCircuit"
+			}
+			,
+			{
+			"name": "itemPulsatingSpatialCoreChip"
+			}
+			,
+			{
+			"name": "itemEnvironmentalCircuit"
+			}
+			,
+			{
+			"name": "itemClearGlassDust"
+			}
+			,
+			{
+			"name": "redstonediamondchipset"
+			}
+			,
+			{
+			"name": "redstoneemeraldchipset"
+			}
+			,
+			{
+			"name": "redstonegoldchipset"
+			}
+			,
+			{
+			"name": "redstoneironchipset"
+			}
+			,
+			{
+			"name": "redstonepulsatingchipset"
+			}
+			,
+			{
+			"name": "redstonequartzchipset"
+			}
+			,
+			{
+			"name": "redstoneredchipset"
+			}
+			,
+			{
+			"name": "itemChargedCertusQuartzDust"
+			}
+			,
+			{
+			"name": "itemChargedCertusQuartzRod"
+			}
+			,
+			{
+			"name": "itemNeutronReflectorParts"
+			}
+			,
+			{
+			"name": "itemNeutronReflectorSmallParts"
+			}
+			,
+			{
+			"name": "packEuropa"
+			}
+			,
+			{
+			"name": "packBarnardaE"
+			}
+			,
+			{
+			"name": "packBarnardaF"
+			}
+			,
+			{
+			"name": "packCallisto"
+			}
+			,
+			{
+			"name": "packCentauriA"
+			}
+			,
+			{
+			"name": "packCeres"
+			}
+			,
+			{
+			"name": "packDeimos"
+			}
+			,
+			{
+			"name": "packEarth"
+			}
+			,
+			{
+			"name": "packEris"
+			}
+			,
+			{
+			"name": "packGanymed"
+			}
+			,
+			{
+			"name": "packHaumea"
+			}
+			,
+			{
+			"name": "packIapetus"
+			}
+			,
+			{
+			"name": "packIo"
+			}
+			,
+			{
+			"name": "packMakeMake"
+			}
+			,
+			{
+			"name": "packMercury"
+			}
+			,
+			{
+			"name": "packMoon"
+			}
+			,
+			{
+			"name": "packOberon"
+			}
+			,
+			{
+			"name": "packPhobos"
+			}
+			,
+			{
+			"name": "packPluto"
+			}
+			,
+			{
+			"name": "packTCetiE"
+			}
+			,
+			{
+			"name": "packTitan"
+			}
+			,
+			{
+			"name": "packTriton"
+			}
+			,
+			{
+			"name": "packVegaB"
+			}
+			,
+			{
+			"name": "packVenus"
+			}
+			,
+			{
+			"name": "packMars"
+			}
+			,
+			{
+			"name": "packProteus"
+			}
+			,
+			{
+			"name": "packAsteroids"
+			}
+			,
+			{
+			"name": "spacebox1"
+			}
+			,
+			{
+			"name": "spacebox2"
+			}
+			,
+			{
+			"name": "spacebox3"
+			}
+			,
+			{
+			"name": "spacebox4"
+			}
+			,
+			{
+			"name": "spacebox5"
+			}
+			,
+			{
+			"name": "spacebox6"
+			}
+			,
+			{
+			"name": "spacebox7"
+			}
+			,
+			{
+			"name": "spacebox8"
+			}
+			
+			
+
+	]
+}

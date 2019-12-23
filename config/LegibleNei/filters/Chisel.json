@@ -1,0 +1,6 @@
+{
+chisel:[
+	{hide:[[pumpkin*,jackolantern*,*stairs*,*pane*],[]]};
+	{show:[[pumpkin1,jackolantern1],[0]]};
+]
+}

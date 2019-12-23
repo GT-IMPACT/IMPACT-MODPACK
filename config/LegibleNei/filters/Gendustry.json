@@ -1,0 +1,7 @@
+{
+	gendustry:[
+		{hide:[[fluid*,GeneSample,GeneTemplate,*Can*,*Bucket*],[]]};
+		{show:[[GeneTemplate],[0]]};
+
+	]
+}

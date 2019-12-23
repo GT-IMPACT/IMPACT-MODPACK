@@ -1,0 +1,46 @@
+{
+	GalacticraftCore:[
+		{hide:[tile.,[fuel,parachest,cheeseBlock,viewScreen,treasureChest,wallGC,slabGCHalf,bucket*,*Stairs*,fallenMeteor,moonBlock,solar,dish,machine,machine2,machineTiered,crudeOilStill,refinery,rocketWorkbench,gcBlockCore],[]]};
+		{hide:[tile.,[enclosed],[2-6]]};
+		{show:[tile.,[moonBlock],[3-5]]};
+		{show:[tile.,[machine2],[8]]};
+		{hide:[item.,[oilCanisterPartial],[1]]};
+		{hide:[item.,[spaceship],[1-4]]};	
+		{hide:[item.,[steel*,key,*bucket*,flag,buggymat,buggy,meteoricIronIngot,infinite*,cheeseCurd,meteoricIronRaw],[]]};
+		{show:[tile.,[spaceship],[0]]};
+		{show:[item.,[buggymat,meteoricIronIngot],[1]]};
+		{hide:[item.,[basicItem],[0-5,12,15-18]]};	
+		{hide:[item.,[battery],[100]]};
+		{hide:[[item.null],[0,1]]};
+		{hide:[item.,[parachute],[]]};
+		{show:[item.,[parachute],[0]]};	
+		{hide:[[*slab*],[]]};
+
+
+	];
+
+	GalacticraftMars:[
+		{hide:[tile.,[treasure*,key,asteroidsBlock,*Stairs*,*egg*,marsMachineT2,cavernVines,telepadShort,denseIce,sludge,mars],[]]};
+		{show:[tile.,[asteroidsBlock],[0-2]]};
+		{show:[tile.,[mars],[4-6,8]]};
+		{show:[tile.,[marsMachineT2],[0]]};
+		{hide:[item.,[itemTier3Rocket,spaceshipTier2],[1-14]]};
+		{hide:[item.,[itemAstroMiner,*Canister*,atmosphericValve,orionDrive,titanium*,bucket*,carbonFragments,desh*],[]]};
+		{hide:[item.,[itemBasicAsteroids],[3-5]]};
+		{hide:[[item.null],[0-2]]};
+
+	];
+
+	GalaxySpace:[
+		{hide:[[*generator*,liquid*,biofuel,*key*,vegabgrunt,barnardaCdandelion3,tcetiedandelions,tcetieblocks,barnardaCgrass,solar*,barnardaCcrystal,barnardaEgrunt,barnardaEore*,barnardaFgrunt,barnardaCdandelions,barnardaCreed,unknowwater,acentauribbsubgrunt,tritonblocks,oberonblocks,proteusblocks,mirandablocks,enceladuscrystal,titanblocks,enceladusblocks,ceresweb,callistoblocks,ganymedeblocks,*geyser*,europagrunt,ioweb,iodual*,ioblocks,deimosblocks,phobosblocks,makemakegrunt,haumeablocks,plutoblocks,assemblymachine,*Tchest*,leadore,ceresblocks,mercuryblocks,venusblocks,convertersurface,metalsblock,futureglas*],[]]};
+		{show:[[mercuryblocks,venusblocks,ceresblocks],[0-1]]};
+		{show:[[plutoblocks],[0,5]]};
+		{show:[[ioblocks],[0,2]]};
+		{show:[[callistoblocks,enceladusblocks,europagrunt],[0,1]]};
+		{show:[[futureglass,barnardaCdandelions,haumeablocks,makemakegrunt,phobosblocks,deimosblocks,ganymedeblocks,titanblocks,mirandablocks,oberonblocks,oberonblocks,oberonblocks,proteusblocks,tcetieblocks,tcetiedandelions,tritonblocks],[0]]};
+		{hide:[item.,[Ingots,*canister*,Sulfur,UnknowCrystal,CompressedCoal,JetPack,lead*,cobaltum*,plasma*,LeadBattery,RocketParts,QuantBow,SolarFlares,*Bucket*,BarnardaCStrawberry],[]]};
+		{hide:[item.,[CompressedPlates],[0,5]]};
+		{hide:[item.,[Tier4Rocket,Tier5Rocket,Tier6Rocket,Tier7Rocket,Tier8Rocket],[1-14]]};
+	]
+
+}

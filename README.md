@@ -1,6 +1,6 @@
-# Gregs World++
+# Gregs World Plus Plus
 
-## Что такое Gregs World++?
+## Что такое Gregs World Plus Plus?
 
 Это глобальный индустриальный модпак для Minecraft 1.7.10, основанный на GregTech и его аддонах.
 

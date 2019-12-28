@@ -662,5 +662,12 @@ LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:860>, [
 );
 
 #==================================================================#
+#Pyrotheum
+mods.gregtech.FluidExtractor.addRecipe(null, <ore:dustPyrotheum>  , <liquid:pyrotheum> * 144, 10000, 100, 48);
+
+#Cryotheum
+mods.gregtech.FluidExtractor.addRecipe(null, <ore:dustCryotheum> , <liquid:cryotheum> * 144, 10000, 100, 48);
+
+#==================================================================#
 
 print("Initialized 'GT++.zs'");

@@ -1,11 +1,18 @@
-// --- Importing Stuff ---
+#=============#
+# Extra-Cells #
+#=============#
 
+#==================================================================#
+#Imports
 import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Assembler;
+import mods.larger_workbenches.LargeCrafting;
 
-// --- Variables ---
+print("Initializing 'Extra-Cells.zs'...");
 
+#==================================================================#
+#Variables
 val StorageComponent1K = <appliedenergistics2:item.ItemMultiMaterial:35>;
 val StorageComponent4K = <appliedenergistics2:item.ItemMultiMaterial:36>;
 val StorageComponent16K = <appliedenergistics2:item.ItemMultiMaterial:37>;
@@ -59,7 +66,7 @@ val QuartziteScrew = <ore:screwQuartzite>;
 val CertusScrew = <ore:screwCertusQuartz>;
 val NQuartzScrew = <ore:screwNetherQuartz>;
 val CertusPlate = <gregtech:gt.metaitem.01:17516>;
-val AlPlate = <ore:plateAluminium>;
+val AlPlate = <ore:plateVanadiumSteel>;
 val TitaniumPlate = <ore:plateTitanium>;
 val StainlessPlate = <ore:plateStainlessSteel>;
 val ChromePlate = <ore:plateChrome>;
@@ -78,12 +85,19 @@ var mAmericium = <liquid:molten.americium>;
 var mNeutronium = <liquid:molten.neutronium>;
 var mPhoenixite = <liquid:molten.phoenixite>;
 
-// --- Removing Recipes ---
+var Illuminated = <appliedenergistics2:item.ItemMultiPart:180>;
+var FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
+var AnnihilationCore = <appliedenergistics2:item.ItemMultiMaterial:44>;
 
+var MEChest = <appliedenergistics2:tile.BlockChest>;
+var DEnergyCell = <appliedenergistics2:tile.BlockDenseEnergyCell>;
 
-// ||||| Cells |||||
+var FluidInt = <extracells:ecbaseblock:0>;
+var FluidIntPanel = <extracells:part.base:9>;
+var Int = <appliedenergistics2:tile.BlockInterface>;
 
-
+#==================================================================#
+#Removing Recipes
 // --- Storage Cell - 256K
 recipes.remove(Storage256K);
 
@@ -144,9 +158,6 @@ recipes.remove(<extracells:part.base:7>);
 //ME Energy Cell Fixture
 recipes.remove(<extracells:part.base:8>);
 
-// ||||| Fluid Cells |||||
-
-
 // --- Fluid Storage Cell - 1K
 recipes.remove(FluidStorage1K);
 
@@ -192,14 +203,9 @@ recipes.remove(FluidSComponent4096K);
 // --- Universal Advanced Storage Housing
 recipes.remove(UFluidStorageHousing);
 
-
-
-// --- Adding Back Recipes ---
-
-
-// ||||| Cells |||||
-
-
+#==================================================================#
+#Adding Back Recipes ---
+#Cells
 // --- Storage Cell - 256K
 recipes.addShapeless(<extracells:storage.physical:0>, [<extracells:storage.component:0>, <extracells:storage.casing:0>]);
 
@@ -242,19 +248,20 @@ Assembler.addRecipe(StorageComponent16384K, [StorageComponent4096K*2, <ore:circu
 
 // --- Universal Advanced Storage Housing
 recipes.addShapedMirrored(UAdvStorageHousing, [
-[HHammer, GlassPane, CertusScrew],
-[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
-[CertusScrew, <ore:plateHastelloyC276>, Screwdriver]]);
+		[HHammer, GlassPane, CertusScrew],
+		[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
+		[CertusScrew, <ore:plateHastelloyC276>, Screwdriver]
+	]
+);
 // - Alternative Recipe
 recipes.addShapedMirrored(UAdvStorageHousing, [
-[Screwdriver, GlassPane, CertusScrew],
-[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
-[CertusScrew, <ore:plateHastelloyC276>, HHammer]]);
+		[Screwdriver, GlassPane, CertusScrew],
+		[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
+		[CertusScrew, <ore:plateHastelloyC276>, HHammer]
+	]
+);
 
-
-// ||||| Fluid Cells |||||
-
-
+#Fluid Cells
 // --- Fluid Storage Cell - 1K
 recipes.addShapeless(<extracells:storage.fluid:0>, [<extracells:storage.component:4>, <extracells:storage.casing:1>]);
 
@@ -323,51 +330,58 @@ Assembler.addRecipe(FluidSComponent4096K, [FluidSComponent1024K*2, <ore:circuitS
 
 // --- Universal Fluid Storage Housing
 recipes.addShapedMirrored(UFluidStorageHousing, [
-[HHammer, CertusPlate, NQuartzScrew],
-[<ore:plateIncoloy020>, GlassPane, <ore:plateIncoloy020>],
-[NQuartzScrew, StainlessPlate, Screwdriver]]);
-
+		[HHammer, CertusPlate, NQuartzScrew],
+		[<ore:plateIncoloy020>, GlassPane, <ore:plateIncoloy020>],
+		[NQuartzScrew, StainlessPlate, Screwdriver]
+	]
+);
 // --- Quartz Tank
-AlloySmelter.addRecipe(<extracells:certustank>, <appliedenergistics2:tile.BlockQuartzGlass> * 8, <gregtech:gt.metaitem.01:32308> * 0, 800, 32);
+AlloySmelter.addRecipe(<extracells:certustank>, <appliedenergistics2:tile.BlockQuartzGlass> * 8, <gregtech:gt.metaitem.01:32308> * 0, 800, 30);
 
 // --- ME Fluid Pattern
 recipes.addShapeless(<extracells:pattern.fluid>, [<extracells:storage.casing:1>, <ore:bucketEmpty>]);
 
 // --- ME Fluid Export Bus
-recipes.addShaped(<extracells:part.base>, [
-[<appliedenergistics2:item.ItemMultiMaterial:43>, <ore:foilSilicon>, <ore:craftingToolWrench>],
-[<ore:plateLapis>, <gregtech:gt.metaitem.01:32611>, <appliedenergistics2:item.ItemMultiPart:140>],
-[<appliedenergistics2:item.ItemMultiMaterial:43>, <ore:foilSilicon>, <ore:craftingToolHardHammer>]]);
-
+LargeCrafting.addShaped(1, <extracells:part.base>, [
+		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null],
+		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
+		[AlPlate, FormationCore, <gregtech:gt.metaitem.01:32631>, FormationCore, AlPlate],
+		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate]
+	]
+);
 // --- ME Fluid Import Bus
-recipes.addShaped(<extracells:part.base:1>, [
-[<appliedenergistics2:item.ItemMultiMaterial:44>, <ore:foilSilicon>, <ore:craftingToolWrench>],
-[<ore:plateLapis>, <gregtech:gt.metaitem.01:32611>, <appliedenergistics2:item.ItemMultiPart:140>],
-[<appliedenergistics2:item.ItemMultiMaterial:44>, <ore:foilSilicon>, <ore:craftingToolHardHammer>]]);
-
+LargeCrafting.addShaped(1, <extracells:part.base:1>, [
+		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate],
+		[AlPlate, AnnihilationCore, <gregtech:gt.metaitem.01:32631>, AnnihilationCore, AlPlate],
+		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
+		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null]
+	]
+);
 // --- ME Fluid Storage Bus
-recipes.addShaped(<extracells:part.base:2>, [
-[<appliedenergistics2:item.ItemMultiMaterial:43>, <ore:foilSilicon>, <ore:craftingToolWrench>],
-[<extracells:part.base:9>, <gregtech:gt.metaitem.01:32611>, <appliedenergistics2:item.ItemMultiPart:140>],
-[<appliedenergistics2:item.ItemMultiMaterial:44>, <ore:foilSilicon>, <ore:craftingToolHardHammer>]]);
-recipes.addShaped(<extracells:part.base:2>, [
-[<appliedenergistics2:item.ItemMultiMaterial:44>, <ore:foilSilicon>, <ore:craftingToolWrench>],
-[<extracells:part.base:9>, <gregtech:gt.metaitem.01:32611>, <appliedenergistics2:item.ItemMultiPart:140>],
-[<appliedenergistics2:item.ItemMultiMaterial:43>, <ore:foilSilicon>, <ore:craftingToolHardHammer>]]);
-
+LargeCrafting.addShaped(1, <extracells:part.base:2>, [
+		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null],
+		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
+		[AlPlate, AnnihilationCore, <gregtech:gt.metaitem.01:32631>, FormationCore, AlPlate],
+		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate]
+	]
+);
 // --- ME Fluid Terminal
-recipes.addShaped(<extracells:part.base:3>, [
-[<ore:itemIlluminatedPanel>, <appliedenergistics2:item.ItemMultiMaterial:43>, <appliedenergistics2:item.ItemMultiMaterial:44>],
-[<ore:plateLapis>, <ore:plateLapis>, <ore:plateLapis>],
-[null, null, null]]);
-
+LargeCrafting.addShaped(1, <extracells:part.base:3>, [
+		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
+		[<ore:plateLapis>, CertusScrew, <gregtech:gt.metaitem.01:32732>, CertusScrew, <ore:plateLapis>],
+		[<ore:plateVanadiumSteel>, CertusCircuit, Illuminated, CertusCircuit, <ore:plateVanadiumSteel>],
+		[<ore:plateLapis>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateLapis>],
+		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
+	]
+);
 // --- Wireless Fluid Terminal
 recipes.remove(<extracells:terminal.fluid.wireless>);
 recipes.addShaped(<extracells:terminal.fluid.wireless>, [
-[<appliedenergistics2:item.ItemMultiMaterial:41>, <extracells:part.base:3>, <appliedenergistics2:item.ItemMultiMaterial:41>], 
-[<ore:plateHastelloyN>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateHastelloyN>], 
-[<ore:plateHastelloyN>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <ore:plateHastelloyN>]]);
-
+		[<appliedenergistics2:item.ItemMultiMaterial:41>, <extracells:part.base:3>, <appliedenergistics2:item.ItemMultiMaterial:41>], 
+		[<ore:plateHastelloyN>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateHastelloyN>], 
+		[<ore:plateHastelloyN>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <ore:plateHastelloyN>]
+	]
+);
 // --- ME Fluid Level Emitter
 recipes.addShapeless(<extracells:part.base:4>, [<appliedenergistics2:item.ItemMultiPart:280>, <ore:plateLapis>]);
 
@@ -388,11 +402,6 @@ NEI.addEntry(<extracells:pattern.fluid>.withTag({display: {Name: "ME Fluid Patte
 // --- Cyrillic Search Support
 NEI.addEntry(<extracells:pattern.fluid>.withTag({display: {Name: "МЭ жидкостный шаблон [WIP]"}}));
 
-//Me Fluid Interface
-var FluidInt = <extracells:ecbaseblock:0>;
-var FluidIntPanel = <extracells:part.base:9>;
-var Int = <appliedenergistics2:tile.BlockInterface>;
-
 recipes.remove(FluidInt);
 recipes.remove(FluidIntPanel);
 recipes.addShapeless(FluidInt, [Int, <ore:dyeBlue>]);
@@ -400,12 +409,13 @@ recipes.addShapeless(FluidInt, [FluidIntPanel]);
 recipes.addShapeless(FluidIntPanel, [FluidInt]);
 
 // ME Block Container
-var FormationCore = <appliedenergistics2:item.ItemMultiMaterial:43>;
 recipes.remove(BlockContainer);
 recipes.addShapeless(BlockContainer, [StorageComponent64K, UStorageHousing, FormationCore]);
 
 // Portable Fluid Storage
-var MEChest = <appliedenergistics2:tile.BlockChest>;
-var DEnergyCell = <appliedenergistics2:tile.BlockDenseEnergyCell>;
 recipes.remove(<extracells:storage.fluid.portable>);
 recipes.addShapeless(<extracells:storage.fluid.portable>, [MEChest, FluidStorage1K, DEnergyCell]);
+
+#==================================================================#
+
+print("Initialized 'Extra-Cells.zs'");

@@ -1,15 +1,15 @@
-//--- Created by DreamMasterXXL ---
+#==========#
+# Backpack #
+#==========#
 
-
-
-// --- Importing Stuff ---
+#==================================================================#
+#Imports
 import mods.nei.NEI;
 
+print("Initializing 'Backpack.zs'...");
 
-
-// --- Variables ---
-
-
+#==================================================================#
+#Variables
 val SmallB = <Backpack:backpack>;
 val BlackSmallB = <Backpack:backpack:1>;
 val RedSmallB = <Backpack:backpack:2>;
@@ -82,10 +82,8 @@ val CraftingSlab = <TConstruct:CraftingSlab>;
 
 val All = <Backpack:backpack:*>;
 
-
-// --- Removing Recipes ---
-
-
+#==================================================================#
+#Removing Recipes
 // --- All Backpacks
 recipes.remove(All);
 
@@ -98,23 +96,22 @@ recipes.remove(<Backpack:boundLeather>);
 // --- Tanned Leather
 furnace.remove(<Backpack:tannedLeather>);
 
-
-
-// --- Adding Back Recipes ---
-
-
+#==================================================================#
+#Adding Back Recipes
 // --- Bound Leather
 recipes.addShaped(BoundLeather, [
-[String, Leather, String],
-[Leather, String, Leather],
-[String, Leather, String]]);
-
+		[String, Leather, String],
+		[Leather, String, Leather],
+		[String, Leather, String]
+	]
+);
 // --- Small Backpack
 recipes.addShaped(SmallB, [
-[WovenCloth, SteelRing, WovenCloth],
-[<Backpack:boundLeather>, WovenCloth, <Backpack:boundLeather>],
-[<Backpack:boundLeather>, <Backpack:boundLeather>, <Backpack:boundLeather>]]);
-
+		[WovenCloth, SteelRing, WovenCloth],
+		[<Backpack:boundLeather>, WovenCloth, <Backpack:boundLeather>],
+		[<Backpack:boundLeather>, <Backpack:boundLeather>, <Backpack:boundLeather>]
+	]
+);
 // --- Small Black Backpack
 recipes.addShapeless(BlackSmallB,
 [SmallB, <ore:dyeBlack>, Paintbrush]);
@@ -181,322 +178,358 @@ recipes.addShapeless(WhiteSmallB,
 
 // --- Medium Backpack
 recipes.addShaped(MediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, SmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, SmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Black Backpack
 recipes.addShapeless(BlackMediumB,
 [MediumB, <ore:dyeBlack>, Paintbrush]);
 // -
 recipes.addShaped(BlackMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, BlackSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, BlackSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Red Backpack
 recipes.addShapeless(RedMediumB,
 [MediumB, <ore:dyeRed>, Paintbrush]);
 // -
 recipes.addShaped(RedMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, RedSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, RedSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Green Backpack
 recipes.addShapeless(GreenMediumB,
 [MediumB, <ore:dyeGreen>, Paintbrush]);
 // -
 recipes.addShaped(GreenMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, GreenSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, GreenSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Brown Backpack
 recipes.addShapeless(BrownMediumB,
 [MediumB, <ore:dyeBrown>, Paintbrush]);
 // -
 recipes.addShaped(BrownMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, BrownSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, BrownSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Blue Backpack
 recipes.addShapeless(BlueMediumB,
 [MediumB, <ore:dyeBlue>, Paintbrush]);
 // -
 recipes.addShaped(BlueMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, BlueSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, BlueSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Purple Backpack
 recipes.addShapeless(PurpleMediumB,
 [MediumB, <ore:dyePurple>, Paintbrush]);
 // -
 recipes.addShaped(PurpleMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, PurpleSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, PurpleSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Cyan Backpack
 recipes.addShapeless(CyanMediumB,
 [MediumB, <ore:dyeCyan>, Paintbrush]);
 // -
 recipes.addShaped(CyanMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, CyanSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, CyanSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Light Gray Backpack
 recipes.addShapeless(LightGrayMediumB,
 [MediumB, <ore:dyeLightBlue>, Paintbrush]);
 // -
 recipes.addShaped(LightGrayMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, LightGraySmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, LightGraySmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Gray Backpack
 recipes.addShapeless(GrayMediumB,
 [MediumB, <ore:dyeGray>, Paintbrush]);
 // -
 recipes.addShaped(GrayMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, GraySmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, GraySmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Pink Backpack
 recipes.addShapeless(PinkMediumB,
 [MediumB, <ore:dyePink>, Paintbrush]);
 // -
 recipes.addShaped(PinkMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, PinkSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, PinkSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Lime Backpack
 recipes.addShapeless(LimeMediumB,
 [MediumB, <ore:dyeLime>, Paintbrush]);
 // -
 recipes.addShaped(LimeMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, LimeSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, LimeSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Yellow Backpack
 recipes.addShapeless(YellowMediumB,
 [MediumB, <ore:dyeYellow>, Paintbrush]);
 // -
 recipes.addShaped(YellowMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, YellowSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, YellowSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Light Blue Backpack
 recipes.addShapeless(LightBlueMediumB,
 [MediumB, <ore:dyeLightBlue>, Paintbrush]);
 // -
 recipes.addShaped(LightBlueMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, LightBlueSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, LightBlueSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Magenta Backpack
 recipes.addShapeless(MagentaMediumB,
 [MediumB, <ore:dyeMagenta>, Paintbrush]);
 // -
 recipes.addShaped(MagentaMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, MagentaSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, MagentaSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium Orange Backpack
 recipes.addShapeless(OrangeMediumB,
 [MediumB, <ore:dyeOrange>, Paintbrush]);
 // -
 recipes.addShaped(OrangeMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, OrangeSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, OrangeSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Medium White Backpack
 recipes.addShapeless(WhiteMediumB,
 [MediumB, <ore:dyeWhite>, Paintbrush]);
 // -
 recipes.addShaped(WhiteMediumB, [
-[SSteelRing, TannedLeather, SSteelRing],
-[TannedLeather, WhiteSmallB, TannedLeather],
-[SSteelRing, TannedLeather, SSteelRing]]);
-
+		[SSteelRing, TannedLeather, SSteelRing],
+		[TannedLeather, WhiteSmallB, TannedLeather],
+		[SSteelRing, TannedLeather, SSteelRing]
+	]
+);
 // --- Big Backpack
 recipes.addShaped(BigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, MediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, MediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Black Backpack
 recipes.addShapeless(BlackBigB,
 [BigB, <ore:dyeBlack>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(BlackBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, BlackMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, BlackMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Red Backpack
 recipes.addShapeless(RedBigB,
 [BigB, <ore:dyeRed>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(RedBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, RedMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, RedMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Green Backpack
 recipes.addShapeless(GreenBigB,
 [BigB, <ore:dyeGreen>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(GreenBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, GreenMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, GreenMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Brown Backpack
 recipes.addShapeless(BrownBigB,
 [BigB, <ore:dyeBrown>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(BrownBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, BrownMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, BrownMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Blue Backpack
 recipes.addShapeless(BlueBigB,
 [BigB, <ore:dyeBlue>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(BlueBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, BlueMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, BlueMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Purple Backpack
 recipes.addShapeless(PurpleBigB,
 [BigB, <ore:dyePurple>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(PurpleBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, PurpleMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, PurpleMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Cyan Backpack
 recipes.addShapeless(CyanBigB,
 [BigB, <ore:dyeCyan>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(CyanBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, CyanMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, CyanMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Light Gray Backpack
 recipes.addShapeless(LightGrayBigB,
 [BigB, <ore:dyeLightGray>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(LightGrayBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, LightGrayMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, LightGrayMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Gray Backpack
 recipes.addShapeless(GrayBigB,
 [BigB, <ore:dyeGray>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(GrayBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, GrayMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, GrayMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Pink Backpack
 recipes.addShapeless(PinkBigB,
 [BigB, <ore:dyePink>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(PinkBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, PinkMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, PinkMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Lime Backpack
 recipes.addShapeless(LimeBigB,
 [BigB, <ore:dyeLime>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(LimeBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, LimeMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, LimeMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Yellow Backpack
 recipes.addShapeless(YellowBigB,
 [BigB, <ore:dyeYellow>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(YellowBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, YellowMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, YellowMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Light Blue Backpack
 recipes.addShapeless(LightBlueBigB,
 [BigB, <ore:dyeLightBlue>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(LightBlueBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, LightBlueMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, LightBlueMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Magenta Backpack
 recipes.addShapeless(MagentaBigB,
 [BigB, <ore:dyeMagenta>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(MagentaBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, MagentaMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, MagentaMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big Orange Backpack
 recipes.addShapeless(OrangeBigB,
 [BigB, <ore:dyeOrange>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(OrangeBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, OrangeMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, OrangeMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Big White Backpack
 recipes.addShapeless(WhiteBigB,
 [BigB, <ore:dyeWhite>, Paintbrush]);
 // - Alternate Recipe
 recipes.addShaped(WhiteBigB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, WhiteMediumB, HLeather],
-[TitaniumRing, HLeather, TitaniumRing]]);
-
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, WhiteMediumB, HLeather],
+		[TitaniumRing, HLeather, TitaniumRing]
+	]
+);
 // --- Workbench Backpack
 recipes.addShaped(WorkB,  [
-[WovenCloth, SteelRing, WovenCloth],
-[TannedLeather, WovenCloth, TannedLeather],
-[TannedLeather, CraftingSlab, TannedLeather]]);
-
+		[WovenCloth, SteelRing, WovenCloth],
+		[TannedLeather, WovenCloth, TannedLeather],
+		[TannedLeather, CraftingSlab, TannedLeather]
+	]
+);
 // --- Workbench Big Backpack
 recipes.addShaped(BigWorkB, [
-[TitaniumRing, HLeather, TitaniumRing],
-[HLeather, MediumB, HLeather],
-[TitaniumRing, CraftingSlab, TitaniumRing]]);
+		[TitaniumRing, HLeather, TitaniumRing],
+		[HLeather, MediumB, HLeather],
+		[TitaniumRing, CraftingSlab, TitaniumRing]
+	]
+);
 
-
-
-// --- Drying Reck Recipes ---
-
-
+#==================================================================#
+#Drying Reck Recipes ---
 // --- Tanned Leather
 mods.tconstruct.Drying.addRecipe(<Backpack:boundLeather>, <Backpack:tannedLeather>, 4000);
 
+#==================================================================#
 
+print("Initialized 'Backpack.zs'");

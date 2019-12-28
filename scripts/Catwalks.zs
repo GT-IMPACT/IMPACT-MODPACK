@@ -1,6 +1,17 @@
+#==========#
+# Catwalks #
+#==========#
+
+#==================================================================#
+#Imports
 import mods.gregtech.Assembler;
+import mods.gregtech.ChemicalBath;
 import mods.gregtech.PrecisionLaser;
 
+print("Initializing 'Catwalks.zs'...");
+
+#==================================================================#
+#Remove Recipes
 recipes.remove(<catwalks:scaffold>);
 recipes.remove(<catwalks:cagedLadder_north_unlit>);
 recipes.remove(<catwalks:scaffold:1>);
@@ -13,7 +24,8 @@ recipes.remove(<catwalks:sturdy_rail_activator>);
 recipes.remove(<catwalks:sturdy_rail_powered>);
 recipes.remove(<catwalks:blowtorch>);
 
-
+#==================================================================#
+#Assembler Recipes
 Assembler.addRecipe(<catwalks:scaffold>, <gregtech:gt.blockmachines:4401>, <catwalks:steelgrate>, null, 80, 24); 
 Assembler.addRecipe(<catwalks:cagedLadder_north_unlit>, <catwalks:steelgrate>*3, <minecraft:ladder>, null, 80, 24); 
 Assembler.addRecipe(<minecraft:ladder>*3, <minecraft:stick>*6, <gregtech:gt.integrated_circuit:1>*0, null, 60, 12); 
@@ -24,15 +36,18 @@ Assembler.addRecipe(<catwalks:sturdy_rail>, <minecraft:rail>, <catwalks:steelgra
 Assembler.addRecipe(<catwalks:sturdy_rail_activator>, <minecraft:activator_rail>, <catwalks:steelgrate>, null, 80, 24); 
 Assembler.addRecipe(<catwalks:sturdy_rail_powered>, <minecraft:golden_rail>, <catwalks:steelgrate>, null, 80, 24); 
 
+#==================================================================#
+#Chemical Bath
+ChemicalBath.addRecipe([<catwalks:scaffold:1>], <catwalks:scaffold>, <liquid:dye.watermixed.dyeorange> * 20, [10000], 60, 2);
 
-//Chemical Bath
-//OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
-mods.gregtech.ChemicalBath.addRecipe([<catwalks:scaffold:1>], <catwalks:scaffold>, <liquid:dye.watermixed.dyeorange> * 20, [10000], 60, 2);
-
-
-
-//Precision Laser
+#==================================================================#
+#Precision Laser
 PrecisionLaser.addRecipe(<catwalks:steelgrate>, <gregtech:gt.metaitem.01:17305>, <gregtech:gt.metaitem.01:24890> * 0, 80, 20);
 
-
+#==================================================================#
+#Adding Recipe
 recipes.addShapeless(<catwalks:blowtorch>, [<ore:craftingToolScrewdriver>.noReturn()]);
+
+#==================================================================#
+
+print("Initialized 'Catwalks.zs'");

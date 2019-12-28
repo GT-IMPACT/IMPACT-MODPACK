@@ -1,13 +1,18 @@
-// --- Advanced Solar Panels for GregsWorld++ ---
+#======================#
+# Advanced Solar Panel #
+#======================#
 
-// --- Mod Import ---
-	import mods.gregtech.Assembler;
-	import mods.nei.NEI;
-	import mods.ic2.Compressor;
-	import mods.gregtech.FluidSolidifier;
+#==================================================================#
+#Imports
+import mods.gregtech.Assembler;
+import mods.gregtech.FluidSolidifier;
+import mods.ic2.Compressor;
+import mods.nei.NEI;
 
-// --- Remove Recipes --- 
+print("Initializing 'Adv-Sol-Panel.zs'...");
 
+#==================================================================#
+#Remove Recipes
 	// --- Molecular Transformer
 		recipes.remove(<AdvancedSolarPanel:BlockMolecularTransformer>);
 
@@ -62,8 +67,8 @@
 	// --- Quantum Solar Panel
 		recipes.remove(<AdvancedSolarPanel:BlockAdvSolarPanel:3>);
 
-// --- Hand Recipes ---
-
+#==================================================================#
+#Hand Recipes
 	// --- MT Core fore Molecular Transformer
 		recipes.addShaped(<AdvancedSolarPanel:asp_crafting_items:12>, [
 		[<AdvancedSolarPanel:asp_crafting_items:5>, <IC2:reactorReflectorThick:1>, <AdvancedSolarPanel:asp_crafting_items:5>],
@@ -117,8 +122,8 @@
 		[<ore:craftingToolCrowbar>, <AdvancedSolarPanel:BlockAdvSolarPanel:3>, <ore:craftingToolScrewdriver>],
 		[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolFile>]]);
 
-// --- Machines Recipes ---
-
+#==================================================================#
+#Machines Recipes
 	// --- Irradiant Uranium
 		Assembler.addRecipe(<AdvancedSolarPanel:asp_crafting_items:2>, <gregtech:gt.metaitem.01:11098>, <minecraft:glowstone> * 4,  600, 64);
 
@@ -133,23 +138,35 @@
 
 	// --- Advanced Solar Panel
 		Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:0>, [<gregtech:gt.blockmachines:171>, <gregtech:gt.metaitem.01:32752>, <gregtech:gt.metaitem.01:32650>, <AdvancedSolarPanel:asp_crafting_items:8>, <gregtech:gt.metaitem.01:32518>, <gregtech:gt.integrated_circuit:2>*0], <liquid:molten.solderingalloy> * 288, 800, 120);
-
+		<AdvancedSolarPanel:BlockAdvSolarPanel:0>.addTooltip(format.yellow("Day: ") + format.green("32 EU/t ") + format.darkBlue("(LV-tier)"));
+		<AdvancedSolarPanel:BlockAdvSolarPanel:0>.addTooltip(format.gray("Night: ") + format.green("4 EU/t ") + format.darkBlue("(ULV-tier)"));
+		
 	// --- Hybrid Solar Panel
 		Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:1>, [<gregtech:gt.blockmachines:172>, <gregtech:gt.metaitem.01:32753>, <gregtech:gt.metaitem.01:32651>, <customthings:item:113>*2, <gregtech:gt.metaitem.01:32528>, <gregtech:gt.integrated_circuit:2>*0], <liquid:molten.solderingalloy> * 576, 1000, 480);
-
+		<AdvancedSolarPanel:BlockAdvSolarPanel:1>.addTooltip(format.yellow("Day: ") + format.green("128 EU/t ") + format.darkBlue("(MV-tier)"));
+		<AdvancedSolarPanel:BlockAdvSolarPanel:1>.addTooltip(format.gray("Night: ") + format.green("16 EU/t ") + format.darkBlue("(LV-tier)"));
+		
 	// --- Ultimate Hybrid Solar Panel
 		Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:2>, [<gregtech:gt.blockmachines:173>, <gregtech:gt.metaitem.01:32754>, <gregtech:gt.metaitem.01:32652>, <customthings:item:114>*3, <gregtech:gt.metaitem.01:32538>, <gregtech:gt.integrated_circuit:2>*0], <liquid:molten.solderingalloy> * 864, 1200, 1920);
-
+		<AdvancedSolarPanel:BlockAdvSolarPanel:2>.addTooltip(format.yellow("Day: ") + format.green("512 EU/t ") + format.darkBlue("(HV-tier)"));
+		<AdvancedSolarPanel:BlockAdvSolarPanel:2>.addTooltip(format.gray("Night: ") + format.green("64 EU/t ") + format.darkBlue("(MV-tier)"));
+		
 	// --- Quantum Solar Panel
 		Assembler.addRecipe(<AdvancedSolarPanel:BlockAdvSolarPanel:3>, [<gregtech:gt.blockmachines:174>, <AdvancedSolarPanel:asp_crafting_items:5>*4, <AdvancedSolarPanel:asp_crafting_items>, <gregtech:gt.metaitem.01:32755>, <gregtech:gt.metaitem.01:32653>, <customthings:item:115>*4, <gregtech:gt.metaitem.01:32540>, <gregtech:gt.integrated_circuit:2>*0], <liquid:molten.solderingalloy> * 1152, 1400, 7860);
-	
+		<AdvancedSolarPanel:BlockAdvSolarPanel:3>.addTooltip(format.yellow("Day: ") + format.green("2048 EU/t ") + format.darkBlue("(EV-tier)"));
+		<AdvancedSolarPanel:BlockAdvSolarPanel:3>.addTooltip(format.gray("Night: ") + format.green("512 EU/t ") + format.darkBlue("(HV-tier)"));
+		
 	// --- Sunnarium
 		Compressor.addRecipe(<AdvancedSolarPanel:asp_crafting_items>, <AdvancedSolarPanel:asp_crafting_items:9>*9);
 
 	// --- Solidifier
 		FluidSolidifier.addRecipe(<AdvancedSolarPanel:asp_crafting_items:9>, <gregtech:gt.metaitem.01:32307> * 0, <liquid:molten.sunnarium> * 144, 200, 480);
 
-// --- Nei
-
+#==================================================================#
+#Nei
 	// --- Irradiant Reinforced Iridium Plate
 		NEI.overrideName(<AdvancedSolarPanel:asp_crafting_items:8>, "Irradiant Reinforced Iridium Plate");
+
+#==================================================================#
+
+print("Initialized 'Adv-Sol-Panel.zs'");

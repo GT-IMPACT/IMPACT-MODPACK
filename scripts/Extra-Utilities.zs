@@ -1,6 +1,7 @@
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Assembler;
 import mods.gregtech.ChemicalBath;
+import mods.larger_workbenches.LargeCrafting;
 
 recipes.remove(<ExtraUtilities:endMarker>);
 recipes.remove(<ExtraUtilities:enderQuarry>);
@@ -8,13 +9,29 @@ recipes.remove(<ExtraUtilities:dark_portal>);
 recipes.remove(<ExtraUtilities:dark_portal:2>);
 
 // --- Ender Quarry
-Assembler.addRecipe(<ExtraUtilities:enderQuarry>, [<gregtech:gt.blockmachines:12102>, <ExtraUtilities:enderThermicPump>*2, <ExtraUtilities:enderQuarryUpgrade>*6, <gregtech:gt.metaitem.01:32675>, <ore:gearGtHastelloyC276>*4, <ore:stickLongHastelloyN>*16, <ore:screwHastelloyC276>*64, <ore:circuitMaster>*12], null, 1600, 30720);
+LargeCrafting.addShaped(3, <ExtraUtilities:enderQuarry>, [
+[<ExtraUtilities:enderQuarryUpgrade>, <ExtraUtilities:enderQuarryUpgrade>, <ore:gearGtHastelloyC276>, <ExtraUtilities:enderThermicPump>, <ore:gearGtHastelloyC276>, <ExtraUtilities:enderQuarryUpgrade>, <ExtraUtilities:enderQuarryUpgrade>],
+[<ExtraUtilities:enderQuarryUpgrade>, <ore:circuitMaster>, <ore:screwHastelloyC276>, <ore:stickLongHastelloyN>, <ore:screwHastelloyC276>, <ore:circuitMaster>, <ExtraUtilities:enderQuarryUpgrade>],
+[<ore:gearGtHastelloyC276>, <ore:screwHastelloyC276>, <ore:gearGtHastelloyC276>, <gregtech:gt.metaitem.01:32655>, <ore:gearGtHastelloyC276>, <ore:screwHastelloyC276>, <ore:gearGtHastelloyC276>],
+[<ExtraUtilities:enderThermicPump>, <ore:stickLongHastelloyN>, <gregtech:gt.metaitem.01:32655>, <gregtech:gt.blockmachines:12102>, <gregtech:gt.metaitem.01:32655>, <ore:stickLongHastelloyN>, <ExtraUtilities:enderThermicPump>],
+[<ore:gearGtHastelloyC276>, <ore:screwHastelloyC276>, <ore:gearGtHastelloyC276>, <gregtech:gt.metaitem.01:32675>, <ore:gearGtHastelloyC276>, <ore:screwHastelloyC276>, <ore:gearGtHastelloyC276>],
+[<ExtraUtilities:enderQuarryUpgrade>, <ore:circuitMaster>, <ore:screwHastelloyC276>, <ore:stickLongHastelloyN>, <ore:screwHastelloyC276>, <ore:circuitMaster>, <ExtraUtilities:enderQuarryUpgrade>],
+[<ExtraUtilities:enderQuarryUpgrade>, <ExtraUtilities:enderQuarryUpgrade>, <ore:gearGtHastelloyC276>, <ExtraUtilities:enderThermicPump>, <ore:gearGtHastelloyC276>, <ExtraUtilities:enderQuarryUpgrade>, <ExtraUtilities:enderQuarryUpgrade>]]);
+//Assembler.addRecipe(<ExtraUtilities:enderQuarry>, [<gregtech:gt.blockmachines:12102>, <ExtraUtilities:enderThermicPump>*2, <ExtraUtilities:enderQuarryUpgrade>*6, <gregtech:gt.metaitem.01:32675>, <ore:gearGtHastelloyC276>*4, <ore:stickLongHastelloyN>*16, <ore:screwHastelloyC276>*64, <ore:circuitMaster>*12], null, 1600, 30720);
 
 // --- Marker
-Assembler.addRecipe(<ExtraUtilities:endMarker>, [<gregtech:gt.metaitem.01:32685>, <ExtraUtilities:enderQuarryUpgrade>*2, <ore:stickLongHastelloyN>*4, <ore:screwHastelloyC276>*16, <ore:circuitData>*2], null, 200, 7680);
+LargeCrafting.addShaped(3, <ExtraUtilities:endMarker>, [
+[null, null, <ore:plateDoubleEnderium>, <ore:plateDoubleEnderium>, <ore:plateDoubleEnderium>, null, null],
+[null, null, <ore:plateDoubleEnderium>, <gregtech:gt.metaitem.01:32685>, <ore:plateDoubleEnderium>, null, null],
+[null, null, <ore:plateDoubleEnderium>, <ore:plateDoubleEnderium>, <ore:plateDoubleEnderium>, null, null],
+[null, null, <ExtraUtilities:enderQuarryUpgrade>, <ore:circuitMaster>, <ExtraUtilities:enderQuarryUpgrade>, null, null],
+[null, null, <ore:plateDoubleHastelloyC276>, <ore:stickLongHastelloyN>, <ore:plateDoubleHastelloyC276>, null, null],
+[null, null, <ore:plateDoubleHastelloyC276>, <ore:stickLongHastelloyN>, <ore:plateDoubleHastelloyC276>, null, null],
+[null, null, <ExtraUtilities:enderQuarryUpgrade>, <ore:circuitMaster>, <ExtraUtilities:enderQuarryUpgrade>, null, null]]);
+//Assembler.addRecipe(<ExtraUtilities:endMarker>, [<gregtech:gt.metaitem.01:32685>, <ExtraUtilities:enderQuarryUpgrade>*2, <ore:stickLongHastelloyN>*4, <ore:screwHastelloyC276>*16, <ore:circuitData>*2], null, 200, 7680);
 
 // --- Quarry Upgrade
-Assembler.addRecipe(<ExtraUtilities:enderQuarryUpgrade>, [<gregtech:gt.blockcasings7:1>, <ore:plateDoubleTalonite>*4, <ore:gearGtStellite>*2, <ore:stickLongTalonite>*8, <ore:screwStellite>*32], null, 600, 1920);
+Assembler.addRecipe(<ExtraUtilities:enderQuarryUpgrade>, [<gregtech:gt.blockcasings7:1>, <ore:plateDoubleTalonite>*4, <ore:gearGtStellite>*4, <ore:stickLongTalonite>*8, <ore:screwStellite>*32], null, 600, 1920);
 
 // --- Hole Upgrade
 Assembler.addRecipe(<ExtraUtilities:enderQuarryUpgrade:1>, [<ExtraUtilities:enderQuarryUpgrade>, <ore:toolHeadDrillTitanium>*2], null, 800, 7680);
@@ -90,6 +107,15 @@ recipes.addShaped(<ExtraUtilities:watering_can:1>, [
 [<ore:craftingToolScrewdriver>, <ore:ringSteel>, <ore:craftingToolHardHammer>],
 [<ore:plateIron>, <ore:plateIron>, <ore:stickIron>],
 [<ore:plateIron>, <ore:plateIron>, <ore:screwSteel>]]);
+
+// --- Last Millennium
+LargeCrafting.addShaped(1, <ExtraUtilities:dark_portal:2>, [
+[<appliedenergistics2:tile.BlockSpatialPylon>, <ore:plateQuadrupleVanadium>, <ore:plateQuadrupleVanadium>, <ore:plateQuadrupleVanadium>, <appliedenergistics2:tile.BlockSpatialPylon>],
+[<ore:plateQuadrupleVanadium>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <ore:plateQuadrupleVanadium>],
+[<ore:plateQuadrupleVanadium>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <ore:plateQuadrupleVanadium>],
+[<ore:plateQuadrupleVanadium>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <EnderIO:blockTelePad>, <ore:plateQuadrupleVanadium>],
+[<appliedenergistics2:tile.BlockSpatialPylon>, <ore:plateQuadrupleVanadium>, <appliedenergistics2:tile.BlockSpatialIOPort>, <ore:plateQuadrupleVanadium>, <appliedenergistics2:tile.BlockSpatialPylon>]]);
+
 
 // --- Block Update Detector
 Assembler.addRecipe(<ExtraUtilities:budoff>, <Railcraft:detector:2>, <minecraft:sticky_piston>, 200, 30);

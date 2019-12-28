@@ -1,19 +1,22 @@
-// --- Created By DreamMasterXXL --- 
+#==============#
+# Galaxy-Space #
+#==============#
 
-
-// --- Mod Import ---
-
-
+#==================================================================#
+#Imports
 import mods.gregtech.Assembler;
-
-import mods.ic2.Compressor;
+import mods.gregtech.AssemblyLine;
 import mods.gregtech.Centrifuge;
 import mods.gregtech.Electrolyzer;
 import mods.gregtech.ImplosionCompressor;
 import mods.gregtech.Pulverizer;
+import mods.gregtech.Sifter;
+import mods.ic2.Compressor;
 import mods.nei.NEI;
 
+print("Initializing 'Galaxy-Space.zs'...");
 
+#==================================================================#
 
 // --- Remove Recipes
 
@@ -457,7 +460,15 @@ Assembler.addRecipe(<GalaxySpace:item.spacesuit_gravityboots>, [<GalaxySpace:ite
 // --- Space Suit Sensor Glasses
 Assembler.addRecipe(<GalaxySpace:item.spacesuit_helmetglasses>, [<GalaxySpace:item.spacesuit_helmet>, <GalacticraftCore:item.sensorGlasses>, <GalaxySpace:item.CompressedPlates:2>*4], <liquid:molten.platinum> * 1440, 600, 1920);
 
+#==================================================================#
+#Rockets
+AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier4>, 144000, [<spartakcore:item.HeavyDutyNoseConeTier4>, <GalacticraftMars:item.itemBasicAsteroids> * 4, <spartakcore:item.HeavyDutyPlateTier4> * 14, <spartakcore:item.HeavyDutyRocketFinsTier4>*6, <spartakcore:item.Tier4Booster>*4, <customthings:item:16>*4, <spartakcore:item.HeavyDutyRocketEngineTier4>*2], [<liquid:molten.solderingalloy> * 576], <GalaxySpace:item.Tier4Rocket>, 3000, 16384);
+AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier5>, 288000, [<spartakcore:item.HeavyDutyNoseConeTier5>, <spartakcore:item.HeavyDutyPlateTier4> * 6, <spartakcore:item.HeavyDutyPlateTier5> * 16, <spartakcore:item.HeavyDutyRocketFinsTier5>*6, <spartakcore:item.Tier5Booster>*4, <customthings:item:16>*2, <customthings:item:12>*2, <spartakcore:item.HeavyDutyRocketEngineTier5>*4], [<liquid:molten.solderingalloy> * 1152], <GalaxySpace:item.Tier5Rocket>, 4000, 65536);
+AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier6>, 432000, [<spartakcore:item.HeavyDutyNoseConeTier6>, <spartakcore:item.HeavyDutyPlateTier5> * 8, <spartakcore:item.HeavyDutyPlateTier6> * 18, <spartakcore:item.HeavyDutyRocketFinsTier6>*8, <spartakcore:item.Tier6Booster>*6, <customthings:item:12>*4, <spartakcore:item.HeavyDutyRocketEngineTier6>*6], [<liquid:molten.solderingalloy> * 2304], <GalaxySpace:item.Tier6Rocket>, 5000, 262144);
+AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier7>, 576000, [<spartakcore:item.HeavyDutyNoseConeTier7>, <spartakcore:item.HeavyDutyPlateTier6> * 10, <spartakcore:item.HeavyDutyPlateTier7> * 20, <spartakcore:item.HeavyDutyRocketFinsTier7>*10, <spartakcore:item.Tier7Booster>*8, <customthings:item:12>*2, <customthings:item:3>*2, <spartakcore:item.HeavyDutyRocketEngineTier7>*8], [<liquid:molten.solderingalloy> * 4608], <GalaxySpace:item.Tier7Rocket>, 6000, 1000000);
+AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier8>, 1152000, [<spartakcore:item.HeavyDutyNoseConeTier8>, <spartakcore:item.HeavyDutyPlateTier7> * 12, <spartakcore:item.HeavyDutyPlateTier8> * 24, <spartakcore:item.HeavyDutyRocketFinsTier8>*12, <spartakcore:item.Tier8Booster>*10, <customthings:item:3>*4, <spartakcore:item.HeavyDutyRocketEngineTier8>*10], [<liquid:molten.solderingalloy> * 9216], <GalaxySpace:item.Tier8Rocket>, 7000, 4000000);
 
+#==================================================================#
 
 // --- Compressor Recipes ---
 
@@ -677,8 +688,8 @@ Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <customthings:item:141>*16, <g
 
 //Sifter
 //OutputArray, InputStack, OutputArrayChances, Time in Ticks, EnergyUsage
-mods.gregtech.Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCgrass>, [2500,2500,2500,2000,1500,900,250,250,5000], 80, 2000000);
-mods.gregtech.Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCdirt>, [2000,2000,2500,2000,1500,900,250,250,5000], 80, 2000000);
+Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCgrass>, [2500,2500,2500,2000,1500,900,250,250,5000], 80, 2000000);
+Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCdirt>, [2000,2000,2500,2000,1500,900,250,250,5000], 80, 2000000);
 
 Pulverizer.addRecipe([<customthings:item:141>, <GalaxySpace:barnardaCdandelion3>], <GalaxySpace:barnardaCleaves>*8, [10000, 5000], 400, 122880);
 
@@ -693,3 +704,6 @@ NEI.overrideName(<GalaxySpace:item.CompressedPlates:3>, "Compressed Lead Plate")
 // --- Compressed Nickel Plate
 NEI.overrideName(<GalaxySpace:item.CompressedPlates:6>, "Compressed Nickel Plate");
 
+#==================================================================#
+
+print("Initialized 'Galaxy-Space.zs'");

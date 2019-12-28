@@ -1,49 +1,43 @@
-// --- Created by DreamMasterXXL ---
+#===================#
+# Carpenters-Blocks #
+#===================#
 
-
-
-// --- Importing Stuff ---
-
-
+#==================================================================#
+#Imports
 import mods.gregtech.Assembler;
 import mods.gregtech.CuttingSaw;
 
+print("Initializing 'Carpenters-Blocks.zs'...");
 
+#==================================================================#
+#Variables
+val CarpentersBlock 		= <CarpentersBlocks:blockCarpentersBlock>;
+val CollapsibleBlock 		= <CarpentersBlocks:blockCarpentersCollapsibleBlock>;
+val Wrench 					= <ore:craftingToolWrench>;
+val Saw 					= <ore:craftingToolSaw>;
+val Screwdriver 			= <ore:craftingToolScrewdriver>;
+val Safe 					= <CarpentersBlocks:blockCarpentersSafe>;
+val IC2Safe 				= <IC2:blockPersonal>;
+val Flint 					= <minecraft:flint>;
+val Hammer 					= <ore:craftingToolHardHammer>;
+val WoodScrew 				= <gregtech:gt.metaitem.01:27809>;
+val IronScrew 				= <gregtech:gt.metaitem.01:27032>;
+val SteelScrew 				= <gregtech:gt.metaitem.01:27305>;
+val AluminiumScrew 			= <gregtech:gt.metaitem.01:27019>;
+val StainlessSteelScrew 	= <gregtech:gt.metaitem.01:27306>;
+val TitaniumScrew 			= <gregtech:gt.metaitem.01:27028>;
+val Frame 					= <ore:frameGtWood>;
+val Plank 					= <ore:plankWood>;
+val Log 					= <ore:logWood>;
+val Chisel 					= <CarpentersBlocks:itemCarpentersChisel>;
+val ChiselHammer 			= <CarpentersBlocks:itemCarpentersHammer>;
+val DaylightSensor 			= <CarpentersBlocks:blockCarpentersDaylightSensor>;
+val MCDaylightSensor 		= <minecraft:daylight_detector>;
+val Stick 					= <minecraft:stick>;
+val Redstone 				= <ore:dustRedstone>;
 
-// --- Variables ---
-
-
-val CarpentersBlock = <CarpentersBlocks:blockCarpentersBlock>;
-val CollapsibleBlock = <CarpentersBlocks:blockCarpentersCollapsibleBlock>;
-val Wrench = <ore:craftingToolWrench>;
-val Saw = <ore:craftingToolSaw>;
-val Screwdriver = <ore:craftingToolScrewdriver>;
-val Safe = <CarpentersBlocks:blockCarpentersSafe>;
-val IC2Safe = <IC2:blockPersonal>;
-val Flint = <minecraft:flint>;
-val Hammer = <ore:craftingToolHardHammer>;
-val WoodScrew = <gregtech:gt.metaitem.01:27809>;
-val IronScrew = <gregtech:gt.metaitem.01:27032>;
-val SteelScrew = <gregtech:gt.metaitem.01:27305>;
-val AluminiumScrew = <gregtech:gt.metaitem.01:27019>;
-val StainlessSteelScrew = <gregtech:gt.metaitem.01:27306>;
-val TitaniumScrew = <gregtech:gt.metaitem.01:27028>;
-val Frame = <ore:frameGtWood>;
-val Plank = <ore:plankWood>;
-val Log = <ore:logWood>;
-val Chisel = <CarpentersBlocks:itemCarpentersChisel>;
-val ChiselHammer = <CarpentersBlocks:itemCarpentersHammer>;
-val DaylightSensor = <CarpentersBlocks:blockCarpentersDaylightSensor>;
-val MCDaylightSensor = <minecraft:daylight_detector>;
-val Stick = <minecraft:stick>;
-val Redstone = <ore:dustRedstone>;
-
-
-
-
-// --- Removing Recipes ---
-
-
+#==================================================================#
+#Removing Recipes
 // --- Carpenters Block
 recipes.remove(CarpentersBlock);
 
@@ -107,128 +101,150 @@ recipes.remove(<CarpentersBlocks:itemCarpentersTile>);
 // ---  Carpenters Door
 recipes.remove(<CarpentersBlocks:itemCarpentersDoor>);
 
-
-
-// --- Adding Back Recipes ---
-
-
-
+#==================================================================#
+#Adding Back Recipes
 // --- Carpenters Block
 recipes.addShaped(CarpentersBlock * 2, [
-[Frame,WoodScrew, Frame],
-[WoodScrew, Screwdriver, WoodScrew],
-[Frame, WoodScrew, Frame]]);
+		[Frame,WoodScrew, Frame],
+		[WoodScrew, Screwdriver, WoodScrew],
+		[Frame, WoodScrew, Frame]
+	]
+);
 // -
 recipes.addShaped(CarpentersBlock * 8, [
-[Frame, IronScrew, Frame],
-[Frame, Screwdriver, Frame],
-[Frame, IronScrew, Frame]]);
+		[Frame, IronScrew, Frame],
+		[Frame, Screwdriver, Frame],
+		[Frame, IronScrew, Frame]
+	]
+);
 // -
 recipes.addShaped(CarpentersBlock * 12, [
-[Frame, SteelScrew, Frame],
-[Frame, Screwdriver, Frame],
-[Frame, SteelScrew, Frame]]);
+		[Frame, SteelScrew, Frame],
+		[Frame, Screwdriver, Frame],
+		[Frame, SteelScrew, Frame]
+	]
+);
 // -
 recipes.addShaped(CarpentersBlock * 16, [
-[Frame, AluminiumScrew, Frame],
-[Frame, Screwdriver, Frame],
-[Frame, AluminiumScrew, Frame]]);
+		[Frame, AluminiumScrew, Frame],
+		[Frame, Screwdriver, Frame],
+		[Frame, AluminiumScrew, Frame]
+	]
+);
 // -
 recipes.addShaped(CarpentersBlock * 20, [
-[Frame, StainlessSteelScrew, Frame],
-[Frame, Screwdriver, Frame],
-[Frame, StainlessSteelScrew, Frame]]);
+		[Frame, StainlessSteelScrew, Frame],
+		[Frame, Screwdriver, Frame],
+		[Frame, StainlessSteelScrew, Frame]
+	]
+);
 // -
 recipes.addShaped(CarpentersBlock * 24, [
-[Frame, TitaniumScrew, Frame],
-[Frame, Screwdriver, Frame],
-[Frame, TitaniumScrew, Frame]]);
-
+		[Frame, TitaniumScrew, Frame],
+		[Frame, Screwdriver, Frame],
+		[Frame, TitaniumScrew, Frame]
+	]
+);
 // --- Collapsible Block
 recipes.addShaped(CollapsibleBlock, [
-[WoodScrew,Screwdriver, WoodScrew],
-[<gregtech:gt.metaitem.02:32470>, <gregtech:gt.metaitem.02:32470>, <gregtech:gt.metaitem.02:32470>],
-[WoodScrew,CarpentersBlock, WoodScrew]]);
-
+		[WoodScrew,Screwdriver, WoodScrew],
+		[<gregtech:gt.metaitem.02:32470>, <gregtech:gt.metaitem.02:32470>, <gregtech:gt.metaitem.02:32470>],
+		[WoodScrew,CarpentersBlock, WoodScrew]
+	]
+);
 // --- Carpenters Chisel
 recipes.addShaped(Chisel, [
-[Screwdriver, <TConstruct:chiselHead:2>, Saw],
-[IronScrew, <ore:stickIron>, IronScrew],
-[CarpentersBlock, <ore:stickIron>, CarpentersBlock]]);
-
+		[Screwdriver, <TConstruct:chiselHead:2>, Saw],
+		[IronScrew, <ore:stickIron>, IronScrew],
+		[CarpentersBlock, <ore:stickIron>, CarpentersBlock]
+	]
+);
 // --- Carpenters Hammer
 recipes.addShaped(ChiselHammer, [
-[Screwdriver, <gregtech:gt.metaitem.02:5032>, Saw],
-[IronScrew, <ore:stickIron>, IronScrew],
-[CarpentersBlock, <ore:stickIron>, CarpentersBlock]]);
-
+		[Screwdriver, <gregtech:gt.metaitem.02:5032>, Saw],
+		[IronScrew, <ore:stickIron>, IronScrew],
+		[CarpentersBlock, <ore:stickIron>, CarpentersBlock]
+	]
+);
 // --- Carpenters Safe
 recipes.addShaped(Safe, [
-[IronScrew, CollapsibleBlock, IronScrew],
-[CollapsibleBlock, IC2Safe, CollapsibleBlock],
-[IronScrew, Screwdriver, IronScrew]]);
-
+		[IronScrew, CollapsibleBlock, IronScrew],
+		[CollapsibleBlock, IC2Safe, CollapsibleBlock],
+		[IronScrew, Screwdriver, IronScrew]
+	]
+);
 // --- Carpenters Daylight Sensor
 recipes.addShaped(DaylightSensor, [
-[IronScrew, Screwdriver, IronScrew],
-[CarpentersBlock, MCDaylightSensor, CarpentersBlock],
-[CarpentersBlock, Redstone, CarpentersBlock]]);
-
+		[IronScrew, Screwdriver, IronScrew],
+		[CarpentersBlock, MCDaylightSensor, CarpentersBlock],
+		[CarpentersBlock, Redstone, CarpentersBlock]
+	]
+);
 // --- Carpenters Bed
 recipes.addShaped(<CarpentersBlocks:itemCarpentersBed>, [
-[<minecraft:carpet:*>, <minecraft:carpet:*>, <minecraft:carpet:*>],
-[CarpentersBlock, CarpentersBlock, CarpentersBlock],
-[<CarpentersBlocks:blockCarpentersBarrier>, <ore:craftingToolSoftHammer>, <CarpentersBlocks:blockCarpentersBarrier>]]);
-
+		[<minecraft:carpet:*>, <minecraft:carpet:*>, <minecraft:carpet:*>],
+		[CarpentersBlock, CarpentersBlock, CarpentersBlock],
+		[<CarpentersBlocks:blockCarpentersBarrier>, <ore:craftingToolSoftHammer>, <CarpentersBlocks:blockCarpentersBarrier>]
+	]
+);
 // --- Carpenters Torch
 recipes.addShaped(<CarpentersBlocks:blockCarpentersTorch> * 2, [
-[<minecraft:torch>, CarpentersBlock, <minecraft:torch>]]);
-
+		[<minecraft:torch>, CarpentersBlock, <minecraft:torch>]
+	]
+);
 // --- Carpenters Garage Door
 recipes.addShaped(<CarpentersBlocks:blockCarpentersGarageDoor> * 5, [
-[CarpentersBlock, <ore:ringIron>, CarpentersBlock],
-[<ore:ringIron>, CarpentersBlock, <ore:ringIron>],
-[CarpentersBlock, <ore:ringIron>, CarpentersBlock]]);
-
+		[CarpentersBlock, <ore:ringIron>, CarpentersBlock],
+		[<ore:ringIron>, CarpentersBlock, <ore:ringIron>],
+		[CarpentersBlock, <ore:ringIron>, CarpentersBlock]
+	]
+);
 // --- Carpenters Ladder
 recipes.addShaped(<CarpentersBlocks:blockCarpentersLadder>, [
-[CarpentersBlock, <minecraft:ladder>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
-
+		[CarpentersBlock, <minecraft:ladder>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 // --- Carpenters Barrier
 recipes.addShaped(<CarpentersBlocks:blockCarpentersBarrier>, [
-[CarpentersBlock, <minecraft:fence>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
-
+		[CarpentersBlock, <minecraft:fence>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 // --- Carpenters Pressure Plate
 recipes.addShaped(<CarpentersBlocks:blockCarpentersPressurePlate> * 2, [
-[WoodScrew, Hammer, WoodScrew],
-[CarpentersBlock, <ore:springIron>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
-
+		[WoodScrew, Hammer, WoodScrew],
+		[CarpentersBlock, <ore:springIron>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 // --- Carpenters Button
 recipes.addShapeless(<CarpentersBlocks:blockCarpentersButton>, [Saw, <CarpentersBlocks:blockCarpentersPressurePlate>]);
 
 // ---  Carpenters Flower Pot
 recipes.addShaped(<CarpentersBlocks:blockCarpentersFlowerPot>, [
-[CarpentersBlock, <minecraft:flower_pot>, CarpentersBlock],
-[null, CarpentersBlock, null]]);
-
+		[CarpentersBlock, <minecraft:flower_pot>, CarpentersBlock],
+		[null, CarpentersBlock, null]
+	]
+);
 // --- Carpenters Gate
 recipes.addShaped(<CarpentersBlocks:blockCarpentersGate>, [
-[CarpentersBlock, <minecraft:fence_gate>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
-
+		[CarpentersBlock, <minecraft:fence_gate>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 // --- Carpenters Hatch
 recipes.addShaped(<CarpentersBlocks:blockCarpentersHatch>, [
-[CarpentersBlock, <minecraft:trapdoor>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
-
+		[CarpentersBlock, <minecraft:trapdoor>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 // ---  Carpenters Lever
 recipes.addShaped(<CarpentersBlocks:blockCarpentersLever>,  [
-[CarpentersBlock, <minecraft:lever>, WoodScrew],
-[null, Screwdriver, null]]);
-
+		[CarpentersBlock, <minecraft:lever>, WoodScrew],
+		[null, Screwdriver, null]
+	]
+);
 // --- CarpentersBlock Wedge Slope
 recipes.addShapeless(<CarpentersBlocks:blockCarpentersSlope> * 2, [<CarpentersBlocks:blockCarpentersBlock>, Saw]);
 
@@ -240,16 +256,13 @@ recipes.addShapeless(<CarpentersBlocks:itemCarpentersTile>, [<CarpentersBlocks:b
 
 // ---  Carpenters Door
 recipes.addShaped(<CarpentersBlocks:itemCarpentersDoor>, [
-[CarpentersBlock, <minecraft:wooden_door>, CarpentersBlock],
-[WoodScrew, Screwdriver, WoodScrew]]);
+		[CarpentersBlock, <minecraft:wooden_door>, CarpentersBlock],
+		[WoodScrew, Screwdriver, WoodScrew]
+	]
+);
 
-
-
-
-// --- Assembler Recipes ---
-
-
-
+#==================================================================#
+#Assembler Recipes
 // --- Carpenters Block
 Assembler.addRecipe(CarpentersBlock * 4, <gregtech:gt.blockmachines:4905> * 2, WoodScrew * 2, 100, 16);
 // -
@@ -312,15 +325,8 @@ Assembler.addRecipe(<CarpentersBlocks:blockCarpentersPressurePlate> * 2, Carpent
 // -
 Assembler.addRecipe(<CarpentersBlocks:blockCarpentersPressurePlate> * 2, CarpentersBlock * 2, <gregtech:gt.metaitem.02:24304>, 100, 8);
 
-
-
-
-
-
-// --- Cutting Saw Recipes ---
-
-
-
+#==================================================================#
+#Cutting Saw Recipes
 // --- Carpenters Button
 CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersButton> * 4, null, <CarpentersBlocks:blockCarpentersPressurePlate>, <liquid:water> * 20, 100, 30);
 CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersButton> * 4, null, <CarpentersBlocks:blockCarpentersPressurePlate>, <liquid:ic2distilledwater> * 10, 100, 30);
@@ -335,3 +341,7 @@ CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersStairs> * 4, null, <Carpen
 CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersSlope> * 4, null, <CarpentersBlocks:blockCarpentersBlock>, <liquid:water> * 20, 100, 16);
 CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersSlope> * 4, null, <CarpentersBlocks:blockCarpentersBlock>, <liquid:ic2distilledwater> * 10, 100, 16);
 CuttingSaw.addRecipe(<CarpentersBlocks:blockCarpentersSlope> * 4, null, <CarpentersBlocks:blockCarpentersBlock>, <liquid:lubricant> * 2, 50, 16);
+
+#==================================================================#
+
+print("Initialized 'Carpenters-Blocks.zs'");

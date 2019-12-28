@@ -1,11 +1,17 @@
+#=============#
+# AE2CableFix #
+#=============#
 
-
-# Import
+#==================================================================#
+#Imports
 	import mods.gregtech.ChemicalBath;
 	import minetweaker.data.IData;
 	import minetweaker.item.IItemStack;
 	
-# Variable
+print("Initializing 'AE2CableFix.zs'...");
+	
+#==================================================================#
+#Variable
 	var FluixGlassCable = <appliedenergistics2:item.ItemMultiPart:16>;
 	var FluixCoveredC = <appliedenergistics2:item.ItemMultiPart:36>;
 	var FluixSmartCable = <appliedenergistics2:item.ItemMultiPart:56>;
@@ -108,7 +114,8 @@
 	
 	var Chlorine = <liquid:chlorine>;
 	
-# Removing recipes
+#==================================================================#
+#Removing recipes
 	# Removing crafting coloured cables
 		for i, RecipeData in Data {
 			recipes.remove (FluixCovered[i]);
@@ -123,6 +130,7 @@
 			recipes.remove (FluixSmart[i]);
 		}
 
+#==================================================================#
 # Adding recipes
 	# Coloured cables
 		//ChemicalBath.addRecipe([OutputArray], InputStack, InputFluid, [OutputArrayChances], Time in Ticks, EnergyUsage);
@@ -212,3 +220,7 @@
 			for i, RecipeData in Data {
 				ChemicalBath.addRecipe ([FluixSmartCable], FluixSmart[i], Chlorine * 144, [10000], 2, 2);
 			}
+
+#==================================================================#
+
+print("Initialized 'AE2CableFix.zs'");

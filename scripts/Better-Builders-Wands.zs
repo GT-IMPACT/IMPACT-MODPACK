@@ -1,19 +1,15 @@
-// --- Created by DreamMasterXXL ---
+#=======================#
+# Better-Builders-Wands #
+#=======================#
 
-
-// --- Importing ---
-
-
+#==================================================================#
+#Imports
 import mods.gregtech.Assembler;
 
+print("Initializing 'Better-Builders-Wands.zs'...");
 
-
-
-// --- Remove Recipes ---
-
-
-
-
+#==================================================================#
+#Remove Recipes
 // --- Stone Wand
 recipes.remove(<betterbuilderswands:wandStone>);
 
@@ -26,33 +22,25 @@ recipes.remove(<betterbuilderswands:wandDiamond>);
 // --- Unbreakable Wands
 recipes.remove(<betterbuilderswands:wandUnbreakable:*>);
 
-
-
-
-// --- Adding Back Recipes ---
-
-
-
-
+#==================================================================#
+#Adding Back Recipes
 // --- Stone Wand
 recipes.addShaped(<betterbuilderswands:wandStone>, [
-[<ore:craftingToolSaw>, <ore:screwIron>, <ore:plateStone>],
-[null, <ore:stickWood>, <ore:screwIron>],
-[<ore:stickWood>, null, <ore:craftingToolScrewdriver>]]);
-
+		[<ore:craftingToolSaw>, <ore:screwIron>, <ore:plateStone>],
+		[null, <ore:stickWood>, <ore:screwIron>],
+		[<ore:stickWood>, null, <ore:craftingToolScrewdriver>]
+	]
+);
 // --- Iron Wand
 recipes.addShaped(<betterbuilderswands:wandIron>, [
-[<ore:craftingToolSaw>, <ore:screwSteel>, <TConstruct:heavyPlate:2>],
-[null, <TConstruct:toolRod:2>, <ore:screwSteel>],
-[<TConstruct:toolRod:2>, null, <ore:craftingToolScrewdriver>]]);
+		[<ore:craftingToolSaw>, <ore:screwSteel>, <TConstruct:heavyPlate:2>],
+		[null, <TConstruct:toolRod:2>, <ore:screwSteel>],
+		[<TConstruct:toolRod:2>, null, <ore:craftingToolScrewdriver>]
+	]
+);
 
-
-
-
-// --- Assembler Recipes ----
-
-
-
+#==================================================================#
+#Assembler Recipes
 // --- Iron Wand
 Assembler.addRecipe(<betterbuilderswands:wandIron>, <TConstruct:toolRod:2> * 2, <TConstruct:heavyPlate:2>, 600, 30);
 
@@ -67,3 +55,7 @@ Assembler.addRecipe(<betterbuilderswands:wandUnbreakable:13>, <betterbuilderswan
 
 // --- Unbreakable Wand V
 Assembler.addRecipe(<betterbuilderswands:wandUnbreakable:14>, <betterbuilderswands:wandUnbreakable:13>, <TGregworks:tGregToolPartLargePlate:1520>.withTag({material: "Titanium"}) * 8, 1000, 1920);
+
+#==================================================================#
+
+print("Initialized 'Better-Builders-Wands.zs'");

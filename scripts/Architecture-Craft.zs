@@ -1,12 +1,14 @@
-// --- Created by DreamMasterXXL ---
+#====================#
+# Architecture-Craft #
+#====================#
 
+#==================================================================#
+#Imports
 
-
-
-// --- Remove Recipes --- 
-
-
-
+print("Initializing 'Architecture-Craft.zs'...");
+	
+#==================================================================#
+#Remove Recipes
 // --- Architecs Saw Bench
 recipes.remove(<ArchitectureCraft:sawbench>);
 
@@ -22,20 +24,15 @@ recipes.remove(<ArchitectureCraft:hammer>);
 // --- Architecs Chisel
 recipes.remove(<ArchitectureCraft:chisel>);
 
-
-
-
-
-
-// --- Add Recipes ---
-
-
+#==================================================================#
+#Add Recipes
 // --- Architecs Saw Bench
 recipes.addShaped(<ArchitectureCraft:sawbench>, [
-[<ore:screwSteel>, <minecraft:heavy_weighted_pressure_plate>, <ore:screwSteel>],
-[<TConstruct:trap.barricade.oak>, <ArchitectureCraft:sawblade>, <TConstruct:trap.barricade.oak>],
-[<ore:craftingToolScrewdriver>, <ArchitectureCraft:largePulley>, <ore:craftingToolHardHammer>]]);
-
+		[<ore:screwSteel>, <minecraft:heavy_weighted_pressure_plate>, <ore:screwSteel>],
+		[<TConstruct:trap.barricade.oak>, <ArchitectureCraft:sawblade>, <TConstruct:trap.barricade.oak>],
+		[<ore:craftingToolScrewdriver>, <ArchitectureCraft:largePulley>, <ore:craftingToolHardHammer>]
+	]
+);
 // --- Circular Saw
 recipes.addShapeless(<ArchitectureCraft:sawblade>, [<ore:toolHeadBuzzSawIron>]);
 // -
@@ -43,18 +40,26 @@ recipes.addShapeless(<gregtech:gt.metaitem.02:15032>, [<ArchitectureCraft:sawbla
 
 // --- Large Pulley
 recipes.addShaped(<ArchitectureCraft:largePulley>, [
-[<ore:screwSteel>, <ore:craftingToolScrewdriver>, <ore:screwSteel>],
-[<ore:gearGtSmallIron>, <ore:gearWood>, <ore:gearGtSmallIron>],
-[<ore:screwSteel>, <ore:craftingToolHardHammer>, <ore:screwSteel>]]);
-
+		[<ore:screwSteel>, <ore:craftingToolScrewdriver>, <ore:screwSteel>],
+		[<ore:gearGtSmallIron>, <ore:gearWood>, <ore:gearGtSmallIron>],
+		[<ore:screwSteel>, <ore:craftingToolHardHammer>, <ore:screwSteel>]
+	]
+);
 // --- Architecs Hammer
 recipes.addShaped(<ArchitectureCraft:hammer>, [
-[<ore:plateSteel>, <ore:plateSteel>, <ore:ingotIron>],
-[<ore:craftingToolFile>, <ore:stickWood>, <ore:ingotIron>],
-[null, <ore:stickWood>, <ore:craftingToolHardHammer>]]);
-
+		[<ore:plateSteel>, <ore:plateSteel>, <ore:ingotIron>],
+		[<ore:craftingToolFile>, <ore:stickWood>, <ore:ingotIron>],
+		[null, <ore:stickWood>, <ore:craftingToolHardHammer>]
+	]
+);
 // --- Architecs Chisel
 recipes.addShaped(<ArchitectureCraft:chisel>, [
-[<ore:craftingToolHardHammer>, <ore:plateIron>, <ore:plateSteel>],
-[<ore:screwIron>, <ore:stickIron>, <ore:plateIron>],
-[<ore:stickWood>, <ore:screwIron>, <ore:craftingToolScrewdriver>]]);
+		[<ore:craftingToolHardHammer>, <ore:plateIron>, <ore:plateSteel>],
+		[<ore:screwIron>, <ore:stickIron>, <ore:plateIron>],
+		[<ore:stickWood>, <ore:screwIron>, <ore:craftingToolScrewdriver>]
+	]
+);
+
+#==================================================================#
+
+print("Initialized 'Architecture-Craft.zs'");

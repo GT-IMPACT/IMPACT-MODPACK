@@ -1,14 +1,30 @@
-# Aliases
+#===============#
+# chickenchunks #
+#===============#
+
+#==================================================================#
+#Imports
+
+print("Initializing 'chickenchunks.zs'...");
+
+#==================================================================#
+#Variables
 var chunkLoader = <ChickenChunks:chickenChunkLoader:0>;
-var plateObsidian = <ore:plateObsidian>;
+var frameIron = <ore:frameGtIron>;
 var plateGold = <ore:plateGold>;
-var IndustrialDiamond = <IC2:itemPartIndustrialDiamond>;
-var EnderPearl = <minecraft:ender_pearl>;
+var Diamond = <ore:gemDiamond>;
+var boltIron = <ore:boltIron>;
 
+#==================================================================#
+#Adding Recipe
 recipes.remove(chunkLoader);
-recipes.addShaped(chunkLoader, [[null, EnderPearl, null],
-				[plateGold, plateGold, plateGold],
-				[plateObsidian, IndustrialDiamond, plateObsidian]]);
+recipes.addShaped(chunkLoader, [
+		[null, <ore:craftingToolHardHammer>, null],
+		[boltIron, plateGold, boltIron],
+		[plateGold, frameIron, plateGold]
+	]
+);
 
+#==================================================================#
 
-
+print("Initialized 'chickenchunks.zs'");

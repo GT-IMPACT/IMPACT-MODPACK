@@ -700,11 +700,11 @@ Assembler.addRecipe(<IC2:itemArmorNanoBoots:27>, <customthings:item:128>, <custo
 #Nuclear Reactor
 LargeCrafting.addShaped(3, NucReactor, [
 		[<ore:plateDenseSteel>, <ore:plateDenseLead>, <ore:plateDenseLead>, <IC2:blockReactorChamber>, <ore:plateDenseLead>, <ore:plateDenseLead>, <ore:plateDenseSteel>],
-		[<ore:plateDenseLead>, <ore:circuitElite>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <ore:circuitElite>, <ore:plateDenseLead>],
-		[<ore:plateDenseLead>, <IC2:reactorReflectorThick:1>, <ore:plateDenseTitanium>, <gregtech:gt.metaitem.01:32654>, <ore:plateDenseTitanium>, <IC2:reactorReflectorThick:1>, <ore:plateDenseLead>],
-		[<IC2:blockReactorChamber>, <IC2:reactorReflectorThick:1>, <gregtech:gt.metaitem.01:32654>, <gregtech:gt.blockmachines:15>, <gregtech:gt.metaitem.01:32654>, <IC2:reactorReflectorThick:1>, <IC2:blockReactorChamber>],
-		[<ore:plateDenseLead>, <IC2:reactorReflectorThick:1>, <ore:plateDenseTitanium>, <ore:cableGt01Platinum>, <ore:plateDenseTitanium>, <IC2:reactorReflectorThick:1>, <ore:plateDenseLead>],
-		[<ore:plateDenseLead>, <ore:circuitElite>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <IC2:reactorReflectorThick:1>, <ore:circuitElite>, <ore:plateDenseLead>],
+		[<ore:plateDenseLead>, <ore:circuitElite>, <customthings:item:175>, <customthings:item:175>, <customthings:item:175>, <ore:circuitElite>, <ore:plateDenseLead>],
+		[<ore:plateDenseLead>, <customthings:item:175>, <ore:plateDenseTitanium>, <gregtech:gt.metaitem.01:32654>, <ore:plateDenseTitanium>, <customthings:item:175>, <ore:plateDenseLead>],
+		[<IC2:blockReactorChamber>, <customthings:item:175>, <gregtech:gt.metaitem.01:32654>, <gregtech:gt.blockmachines:15>, <gregtech:gt.metaitem.01:32654>, <customthings:item:175>, <IC2:blockReactorChamber>],
+		[<ore:plateDenseLead>, <customthings:item:175>, <ore:plateDenseTitanium>, <ore:cableGt01Platinum>, <ore:plateDenseTitanium>, <customthings:item:175>, <ore:plateDenseLead>],
+		[<ore:plateDenseLead>, <ore:circuitElite>, <customthings:item:175>, <customthings:item:175>, <customthings:item:175>, <ore:circuitElite>, <ore:plateDenseLead>],
 		[<ore:plateDenseSteel>, <ore:plateDenseLead>, <ore:plateDenseLead>, <IC2:blockReactorChamber>, <ore:plateDenseLead>, <ore:plateDenseLead>, <ore:plateDenseSteel>]
 	]
 );

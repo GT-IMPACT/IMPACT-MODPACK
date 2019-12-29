@@ -116,7 +116,7 @@ recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:8>, [
 //Advanced Information Panel
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:9>, [
 [<IC2NuclearControl:ItemUpgrade>, <IC2NuclearControl:blockNuclearControlMain:4>, <IC2NuclearControl:ItemUpgrade:1>],
-[<ore:plateAlloyCarbon>, <ore:circuitAdvanced>, <ore:plateAlloyCarbon>],
+[<ore:plateAlloyCarbon>, <ore:circuitGood>, <ore:plateAlloyCarbon>],
 [<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolScrewdriver>]]);
 
 //Advanced Panel Extender
@@ -146,7 +146,7 @@ recipes.addShaped(<IC2NuclearControl:ItemToolDigitalThermometer>, [
 //Color Upgrade
 recipes.addShaped(<IC2NuclearControl:ItemUpgrade:1>, [
 [<ore:dyeRed>, <ore:dyeYellow>, <ore:dyeGreen>],
-[<ore:dyeWhite>, <ore:circuitAdvanced>, <ore:dyeMagenta>],
+[<ore:dyeWhite>, <ore:circuitGood>, <ore:dyeMagenta>],
 [<ore:dyeBlack>, <ore:dyeCyan>, <ore:dyeBlue>]]);
 
 //Portable Information Panel

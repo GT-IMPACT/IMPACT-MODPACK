@@ -708,6 +708,7 @@ LargeCrafting.addShaped(3, NucReactor, [
 		[<ore:plateDenseSteel>, <ore:plateDenseLead>, <ore:plateDenseLead>, <IC2:blockReactorChamber>, <ore:plateDenseLead>, <ore:plateDenseLead>, <ore:plateDenseSteel>]
 	]
 );
+NucReactor.addTooltip(format.gray("Coefficient: x") + format.red("6"));
 
 #==================================================================#
 #Kinetic Generator
@@ -730,6 +731,7 @@ LargeCrafting.addShaped(1, <IC2:blockGenerator:9>, [
 		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>]
 	]
 );
+<IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
 
 #==================================================================#
 #Kinetic Water Generator
@@ -741,6 +743,7 @@ LargeCrafting.addShaped(1, <IC2:blockKineticGenerator:4>, [
 		[<ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>]
 	]
 );
+<IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
 
 #==================================================================#
 

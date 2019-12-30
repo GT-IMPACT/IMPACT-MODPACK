@@ -1,10 +1,15 @@
-// --- Created by DreamMasterXXL --- 
-// --- Few scripts added by Jason McRay ---
+#=================#
+# Nuclear Control #
+#=================#
 
+#==================================================================#
+#Imports
 import mods.gregtech.Assembler;
 
-//remove Recipes
+print("Initializing 'nuclearcontrol.zs'...");
 
+#==================================================================#
+#Remove Recipes
 //Thermal Monitor
 recipes.remove(<IC2NuclearControl:blockNuclearControlMain>);
 //Industrial Alarm
@@ -56,107 +61,119 @@ recipes.remove(<IC2NuclearControl:KitAppeng>);
 //Portable Information Panel
 recipes.remove(<IC2NuclearControl:remoteMonitor>);
 
-//add recipes
-
+#==================================================================#
+#Hand Recipes
 //Thermal Monitor
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain>, [
-[<ore:glassReinforced>, <ore:glassReinforced>, <ore:glassReinforced>],
-[<ore:plateDenseLead>, <gregtech:gt.metaitem.01:32740>, <ore:plateDenseLead>],
-[<ore:circuitAdvanced>, <gregtech:gt.metaitem.01:32731>, <ore:circuitAdvanced>]]);
-
+		[<ore:glassReinforced>, <ore:glassReinforced>, <ore:glassReinforced>],
+		[<ore:plateDenseLead>, <gregtech:gt.metaitem.01:32740>, <ore:plateDenseLead>],
+		[<ore:circuitAdvanced>, <gregtech:gt.metaitem.01:32731>, <ore:circuitAdvanced>]
+	]
+);
 //Industrial Alarm
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:1>, [
-[<ore:glassReinforced>, <IC2NuclearControl:blockNuclearControlLight>, <ore:glassReinforced>],
-[<minecraft:repeater>, <IC2NuclearControl:blockNuclearControlMain:2>, <minecraft:repeater>],
-[<ore:cableGt01Gold>, <gregtech:gt.blockmachines:1>, <ore:cableGt01Gold>]]);
-
+		[<ore:glassReinforced>, <IC2NuclearControl:blockNuclearControlLight>, <ore:glassReinforced>],
+		[<minecraft:repeater>, <IC2NuclearControl:blockNuclearControlMain:2>, <minecraft:repeater>],
+		[<ore:cableGt01Gold>, <gregtech:gt.blockmachines:1>, <ore:cableGt01Gold>]
+	]
+);
 //Howler Alarm
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:2>, [
-[<ore:plateIron>, <minecraft:noteblock>, <ore:plateIron>],
-[<ore:circuitBasic>, <IC2:itemRecipePart>, <ore:circuitBasic>],
-[<ore:cableGt01RedAlloy>, <IC2:blockMachine>, <ore:cableGt01RedAlloy>]]);
-
+		[<ore:plateIron>, <minecraft:noteblock>, <ore:plateIron>],
+		[<ore:circuitBasic>, <IC2:itemRecipePart>, <ore:circuitBasic>],
+		[<ore:cableGt01RedAlloy>, <IC2:blockMachine>, <ore:cableGt01RedAlloy>]
+	]
+);
 //Remote Thermal Monitor
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:3>, [
-[<gregtech:gt.metaitem.01:32690>, <ore:glassReinforced>, <gregtech:gt.metaitem.01:32680>],
-[<gregtech:gt.metaitem.01:32740>, <gregtech:gt.blockcasings2>, <gregtech:gt.metaitem.01:32740>],
-[<ore:circuitBasic>, <IC2NuclearControl:blockNuclearControlMain>, <ore:circuitBasic>]]);
-
+		[<gregtech:gt.metaitem.01:32690>, <ore:glassReinforced>, <gregtech:gt.metaitem.01:32680>],
+		[<gregtech:gt.metaitem.01:32740>, <gregtech:gt.blockcasings2>, <gregtech:gt.metaitem.01:32740>],
+		[<ore:circuitBasic>, <IC2NuclearControl:blockNuclearControlMain>, <ore:circuitBasic>]
+	]
+);
 //Industrial Information Panel
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:4>, [
-[<gregtech:gt.metaitem.01:32740>, <minecraft:stained_glass_pane:5>, <gregtech:gt.metaitem.01:32740>],
-[<ore:circuitBasic>, <IC2:blockMachine>, <ore:circuitBasic>],
-[<ore:plateIron>, <ore:cableGt01RedAlloy>, <ore:plateIron>]]);
-
+		[<gregtech:gt.metaitem.01:32740>, <minecraft:stained_glass_pane:5>, <gregtech:gt.metaitem.01:32740>],
+		[<ore:circuitBasic>, <IC2:blockMachine>, <ore:circuitBasic>],
+		[<ore:plateIron>, <ore:cableGt01RedAlloy>, <ore:plateIron>]
+	]
+);
 //Information Panel Extender
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:5>, [
-[<ore:paneGlassLime>, <gregtech:gt.metaitem.01:32740>, <ore:paneGlassLime>],
-[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
-[<ore:plateWood>, <ore:cableGt01RedAlloy>, <ore:plateWood>]]);
-
+		[<ore:paneGlassLime>, <gregtech:gt.metaitem.01:32740>, <ore:paneGlassLime>],
+		[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
+		[<ore:plateWood>, <ore:cableGt01RedAlloy>, <ore:plateWood>]
+	]
+);
 //Energy Counter
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:6>, [
-[<ore:plateIron>, <gregtech:gt.metaitem.01:32740>, <ore:plateIron>],
-[<ore:cableGt01Platinum>, <gregtech:gt.blockmachines:24>, <ore:cableGt01Platinum>],
-[<ore:plateIron>, <ore:circuitAdvanced>, <ore:plateIron>]]);
-
+		[<ore:plateIron>, <gregtech:gt.metaitem.01:32740>, <ore:plateIron>],
+		[<ore:cableGt01Platinum>, <gregtech:gt.blockmachines:24>, <ore:cableGt01Platinum>],
+		[<ore:plateIron>, <ore:circuitAdvanced>, <ore:plateIron>]
+	]
+);
 //Average Counter
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:7>, [
-[<ore:plateLead>, <gregtech:gt.metaitem.01:32740>, <ore:plateLead>],
-[<ore:cableGt01Platinum>, <gregtech:gt.blockmachines:24>, <ore:cableGt01Platinum>],
-[<ore:plateLead>, <ore:circuitAdvanced>, <ore:plateLead>]]);
-
+		[<ore:plateLead>, <gregtech:gt.metaitem.01:32740>, <ore:plateLead>],
+		[<ore:cableGt01Platinum>, <gregtech:gt.blockmachines:24>, <ore:cableGt01Platinum>],
+		[<ore:plateLead>, <ore:circuitAdvanced>, <ore:plateLead>]
+	]
+);
 var gtHullHV = <gregtech:gt.blockmachines:13>;
 //Range Trigger
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:8>, [
-[<ore:plateSteel>, <gregtech:gt.metaitem.01:32740>, <ore:plateSteel>],
-[<ore:cableGt01Platinum>, gtHullHV, <ore:cableGt01Platinum>],
-[<ore:circuitAdvanced>, <IC2:itemFreq>, <ore:circuitAdvanced>]]);
-
+		[<ore:plateSteel>, <gregtech:gt.metaitem.01:32740>, <ore:plateSteel>],
+		[<ore:cableGt01Platinum>, gtHullHV, <ore:cableGt01Platinum>],
+		[<ore:circuitAdvanced>, <IC2:itemFreq>, <ore:circuitAdvanced>]
+	]
+);
 //Advanced Information Panel
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:9>, [
-[<IC2NuclearControl:ItemUpgrade>, <IC2NuclearControl:blockNuclearControlMain:4>, <IC2NuclearControl:ItemUpgrade:1>],
-[<ore:plateAlloyCarbon>, <ore:circuitGood>, <ore:plateAlloyCarbon>],
-[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolScrewdriver>]]);
-
+		[<IC2NuclearControl:ItemUpgrade>, <IC2NuclearControl:blockNuclearControlMain:4>, <IC2NuclearControl:ItemUpgrade:1>],
+		[<ore:plateAlloyCarbon>, <ore:circuitGood>, <ore:plateAlloyCarbon>],
+		[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolScrewdriver>]
+	]
+);
 //Advanced Panel Extender
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlMain:10>, [
-[<ore:circuitBasic>, <IC2NuclearControl:blockNuclearControlMain:5>, <IC2NuclearControl:ItemUpgrade:1>],
-[<ore:plateAlloyCarbon>, <ore:plateSteel>, <ore:plateAlloyCarbon>],
-[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolScrewdriver>]]);
-
+		[<ore:circuitBasic>, <IC2NuclearControl:blockNuclearControlMain:5>, <IC2NuclearControl:ItemUpgrade:1>],
+		[<ore:plateAlloyCarbon>, <ore:plateSteel>, <ore:plateAlloyCarbon>],
+		[<ore:craftingToolWrench>, <ore:craftingToolHardHammer>, <ore:craftingToolScrewdriver>]
+	]
+);
 //White Lamp
 recipes.addShaped(<IC2NuclearControl:blockNuclearControlLight>, [
-[<ore:paneGlassWhite> , <ore:paneGlassWhite>, <ore:paneGlassWhite>],
-[<ore:paneGlassWhite>, <minecraft:redstone_lamp>, <ore:paneGlassWhite>],
-[<ore:paneGlassWhite>, <ore:wireGt01RedAlloy>, <ore:paneGlassWhite>]]);
-
+		[<ore:paneGlassWhite> , <ore:paneGlassWhite>, <ore:paneGlassWhite>],
+		[<ore:paneGlassWhite>, <minecraft:redstone_lamp>, <ore:paneGlassWhite>],
+		[<ore:paneGlassWhite>, <ore:wireGt01RedAlloy>, <ore:paneGlassWhite>]
+	]
+);
 //Thermometer
 recipes.addShaped(<IC2NuclearControl:ItemToolThermometer>, [
-[<ore:stickIron>, <ore:plateGlass>, null],
-[<ore:plateGlass>, <ore:cellMercury>, <ore:plateGlass>],
-[null, <ore:plateGlass>, <ore:plateGlass>]]);
-
+		[<ore:stickIron>, <ore:plateGlass>, null],
+		[<ore:plateGlass>, <ore:cellMercury>, <ore:plateGlass>],
+		[null, <ore:plateGlass>, <ore:plateGlass>]
+	]
+);
 //Digital Thermometer
 recipes.addShaped(<IC2NuclearControl:ItemToolDigitalThermometer>, [
-[<IC2NuclearControl:ItemToolThermometer>, <ore:plateGlass>, null],
-[<ore:circuitGood>, <gregtech:gt.metaitem.01:32740>, <ore:circuitGood>],
-[null, <ore:plateGlass>, <IC2:itemRecipePart:3>]]);
-
-//Color Upgrade
-recipes.addShaped(<IC2NuclearControl:ItemUpgrade:1>, [
-[<ore:dyeRed>, <ore:dyeYellow>, <ore:dyeGreen>],
-[<ore:dyeWhite>, <ore:circuitGood>, <ore:dyeMagenta>],
-[<ore:dyeBlack>, <ore:dyeCyan>, <ore:dyeBlue>]]);
-
+		[<IC2NuclearControl:ItemToolThermometer>, <ore:plateGlass>, null],
+		[<ore:circuitGood>, <gregtech:gt.metaitem.01:32740>, <ore:circuitGood>],
+		[null, <ore:plateGlass>, <IC2:itemRecipePart:3>]
+	]
+);
 //Portable Information Panel
 recipes.addShaped(<IC2NuclearControl:remoteMonitor>, [
-[<ore:cableGt01Tin>, null, null],
-[<IC2:itemFreq>, <IC2NuclearControl:blockNuclearControlMain:5>, <IC2:itemFreq>],
-[<IC2NuclearControl:ItemUpgrade>, <ore:plateAlloyCarbon>, <ore:plateAlloyCarbon>]]);
+		[<ore:cableGt01Tin>, null, null],
+		[<IC2:itemFreq>, <IC2NuclearControl:blockNuclearControlMain:5>, <IC2:itemFreq>],
+		[<IC2NuclearControl:ItemUpgrade>, <ore:plateAlloyCarbon>, <ore:plateAlloyCarbon>]
+	]
+);
 
-//Assembler Recripes
-
+#==================================================================#
+#Machines Recipes
+//Color Upgrade
+Assembler.addRecipe(<IC2NuclearControl:ItemUpgrade:1>*8, [<ore:craftingLensRed>, <ore:craftingLensGreen>, <ore:craftingLensBlue>, <gregtech:gt.metaitem.01:32681>, <gregtech:gt.integrated_circuit:1>*0], null, 1600, 2);
 //Remote Sensor Kit
 Assembler.addRecipe(<IC2NuclearControl:ItemRemoteSensorKit>, <IC2NuclearControl:ItemToolThermometer>, <IC2:itemFreq>, 1600, 2);
 //Energy Sensor Kit
@@ -179,3 +196,7 @@ Assembler.addRecipe(<IC2NuclearControl:KitAppeng>, <appliedenergistics2:item.Ite
 //Frequency Transmitter
 //Assembler.addRecipe(<IC2:itemFreq>, <ore:circuitBasic>, <ore:cableGt01Tin>, 800, 1);
 //Assembler.addRecipe(<IC2:itemFreq>, <ore:circuitBasic>, <ore:cableGt01Copper>, 800, 1);
+
+#==================================================================#
+
+print("Initialized 'nuclearcontrol.zs'");

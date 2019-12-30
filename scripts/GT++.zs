@@ -8,6 +8,7 @@ import mods.gregtech.Centrifuge;
 import mods.gregtech.CircuitAssembler;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.Extruder;
+import mods.gregtech.FluidExtractor;
 import mods.gregtech.ForgeHammer;
 import mods.gregtech.Mixer;
 import mods.gregtech.PyrolyseOven;
@@ -27,13 +28,22 @@ var pumpIV			= <gregtech:gt.metaitem.01:32614>;
 
 var conveyerEV 		= <gregtech:gt.metaitem.01:32633>;
 var conveyerIV 		= <gregtech:gt.metaitem.01:32634>;
+var conveyerLUV 	= <gregtech:gt.metaitem.01:32635>;
+var conveyerZPM 	= <gregtech:gt.metaitem.01:32636>;
 
 var pistonEV 		= <gregtech:gt.metaitem.01:32643>;
 var pistonIV 		= <gregtech:gt.metaitem.01:32644>;
 
 var robotArmIV 		= <gregtech:gt.metaitem.01:32654>;
+var robotArmLUV 	= <gregtech:gt.metaitem.01:32655>;
+var robotArmZPM 	= <gregtech:gt.metaitem.01:32656>;
+
+var emitterZPM		= <gregtech:gt.metaitem.01:32686>;
+
+var sensorZPM		= <gregtech:gt.metaitem.01:32696>;
 
 var fieldgenIV 		= <gregtech:gt.metaitem.01:32674>;
+var fieldgenLUV 	= <gregtech:gt.metaitem.01:32675>;
 
 var HullHV 			= <gregtech:gt.blockmachines:13>;
 var HullEV 			= <gregtech:gt.blockmachines:14>;
@@ -662,11 +672,38 @@ LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:860>, [
 );
 
 #==================================================================#
+#Amazon Warehousing Depot
+recipes.remove(<gregtech:gt.blockmachines:942>);
+LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:942>, [
+		[<ore:plateDoubleArceusAlloy2B>, <ore:plateDoubleArceusAlloy2B>, <ore:frameGtHSSG>, <ore:frameGtHSSG>, <ore:frameGtHSSG>, <ore:plateDoubleArceusAlloy2B>, <ore:plateDoubleArceusAlloy2B>],
+		[<ore:plateDoubleArceusAlloy2B>, robotArmLUV, conveyerLUV, <ore:pipeLargeOsmium>, conveyerLUV, robotArmLUV, <ore:plateDoubleArceusAlloy2B>],
+		[<ore:frameGtHSSG>, conveyerLUV, <ore:circuitMaster>, <ore:pipeLargeOsmium>, <ore:circuitMaster>, conveyerLUV, <ore:frameGtHSSG>],
+		[<ore:frameGtHSSG>, <ore:pipeLargeOsmium>, <ore:pipeLargeOsmium>, <gregtech:gt.blockmachines:406>, <ore:pipeLargeOsmium>, <ore:pipeLargeOsmium>, <ore:frameGtHSSG>],
+		[<ore:frameGtHSSG>, conveyerLUV, <ore:circuitMaster>, <miscutils:MU-metaitem.01:32055>, <ore:circuitMaster>, conveyerLUV, <ore:frameGtHSSG>],
+		[<ore:plateDoubleArceusAlloy2B>, robotArmLUV, conveyerLUV, fieldgenLUV, conveyerLUV, robotArmLUV, <ore:plateDoubleArceusAlloy2B>],
+		[<ore:plateDoubleArceusAlloy2B>, <ore:plateDoubleArceusAlloy2B>, <ore:frameGtHSSG>, <ore:frameGtHSSG>, <ore:frameGtHSSG>, <ore:plateDoubleArceusAlloy2B>, <ore:plateDoubleArceusAlloy2B>]
+	]
+);
+
+#==================================================================#
+#Large Scale Auto Aasembler
+LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:876>, [
+		[<ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>],
+		[<ore:plateDoublePikyonium64B>, robotArmZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, sensorZPM, <ore:plateDoublePikyonium64B>],
+		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, robotArmZPM, <miscutils:itemCircuitLFTR>, sensorZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
+		[<ore:plateDoubleOsmiridium>, <ore:frameGtArceusAlloy2B>, <miscutils:itemCircuitLFTR>, <gregtech:gt.blockmachines:217>, <miscutils:itemCircuitLFTR>, <ore:frameGtArceusAlloy2B>, <ore:plateDoubleOsmiridium>],
+		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, emitterZPM, <miscutils:MU-metaitem.01:32055>, conveyerZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
+		[<ore:plateDoublePikyonium64B>, emitterZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, conveyerZPM, <ore:plateDoublePikyonium64B>],
+		[<ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>]
+	]
+);
+
+#==================================================================#
 #Pyrotheum
-mods.gregtech.FluidExtractor.addRecipe(null, <ore:dustPyrotheum>  , <liquid:pyrotheum> * 144, 10000, 100, 48);
+FluidExtractor.addRecipe(null, <ore:dustPyrotheum>, <liquid:pyrotheum> * 144, 10000, 200, 48);
 
 #Cryotheum
-mods.gregtech.FluidExtractor.addRecipe(null, <ore:dustCryotheum> , <liquid:cryotheum> * 144, 10000, 100, 48);
+FluidExtractor.addRecipe(null, <ore:dustCryotheum>, <liquid:cryotheum> * 144, 10000, 200, 48);
 
 #==================================================================#
 

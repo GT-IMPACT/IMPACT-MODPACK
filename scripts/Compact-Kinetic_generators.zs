@@ -63,7 +63,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg>, [
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <IC2:blockKineticGenerator>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>]
 	]
 );
-<compactkineticgenerators:BlockCkg>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
+<compactkineticgenerators:BlockCkg>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 // --- Medium Kinetic Wind Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:1>, [
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <compactkineticgenerators:BlockCkg>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>],
@@ -73,7 +73,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:1>, [
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <compactkineticgenerators:BlockCkg>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>]
 	]
 );
-<compactkineticgenerators:BlockCkg:1>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
+<compactkineticgenerators:BlockCkg:1>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 // --- High Kinetic Wind Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:2>, [
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <compactkineticgenerators:BlockCkg:1>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>],
@@ -83,7 +83,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:2>, [
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <compactkineticgenerators:BlockCkg:1>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>]
 	]
 );
-<compactkineticgenerators:BlockCkg:2>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
+<compactkineticgenerators:BlockCkg:2>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 // --- Extreme Kinetic Wind Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:3>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <compactkineticgenerators:BlockCkg:2>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>],
@@ -93,7 +93,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:3>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <compactkineticgenerators:BlockCkg:2>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>]
 	]
 );
-<compactkineticgenerators:BlockCkg:3>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
+<compactkineticgenerators:BlockCkg:3>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 
 #==================================================================#
 #Water Generator
@@ -106,7 +106,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:4>, [
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <IC2:blockKineticGenerator:4>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>]
 	]
 );
-<compactkineticgenerators:BlockCkg:4>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
+<compactkineticgenerators:BlockCkg:4>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 // --- Medium Kinetic Water Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:5>, [
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <compactkineticgenerators:BlockCkg:4>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>],
@@ -116,7 +116,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:5>, [
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <compactkineticgenerators:BlockCkg:4>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>]
 	]
 );
-<compactkineticgenerators:BlockCkg:5>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
+<compactkineticgenerators:BlockCkg:5>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 // --- High Kinetic Water Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:6>, [
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <compactkineticgenerators:BlockCkg:5>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>],
@@ -126,7 +126,7 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:6>, [
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <compactkineticgenerators:BlockCkg:5>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>]
 	]
 );
-<compactkineticgenerators:BlockCkg:6>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
+<compactkineticgenerators:BlockCkg:6>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 // --- Extreme Kinetic Water Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:7>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <compactkineticgenerators:BlockCkg:6>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>],
@@ -136,43 +136,42 @@ LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:7>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <compactkineticgenerators:BlockCkg:6>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>]
 	]
 );
-<compactkineticgenerators:BlockCkg:7>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
+<compactkineticgenerators:BlockCkg:7>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 
-#==================================================================#
 #Kinetic Generator
 // --- Low Kinetic Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:8>, [
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <miscutils:itemTungstenSteelShaft>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>],
-		[<ore:rotorTungstenSteel>, <ore:gearGtSmallDesh>, <gregtech:gt.blockmachines:14>, <ore:gearGtSmallDesh>, <ore:rotorTungstenSteel>],
+		[<ore:rotorTungstenSteel>, <ore:gearGtSmallDesh>, <gregtech:gt.blockmachines:44>, <ore:gearGtSmallDesh>, <ore:rotorTungstenSteel>],
 		[<ore:cableGt02Tungsten>, <ore:circuitElite>, <IC2:blockGenerator:9>, <ore:circuitElite>, <ore:cableGt02Tungsten>],
-		[<ore:rotorTungstenSteel>, <gregtech:gt.metaitem.01:32603>, <gregtech:gt.metaitem.01:32540>, <gregtech:gt.metaitem.01:32603>, <ore:rotorTungstenSteel>],
+		[<ore:rotorTungstenSteel>, <gregtech:gt.metaitem.01:32603>, <ore:circuitElite>, <gregtech:gt.metaitem.01:32603>, <ore:rotorTungstenSteel>],
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <miscutils:itemTungstenSteelShaft>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>]
 	]
 );
 // --- Medium Kinetic Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:9>, [
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <miscutils:itemTungstenSteelShaft>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>],
-		[<ore:rotorIridium>, <ore:gearGtSmallMytryl>, <gregtech:gt.blockmachines:15>, <ore:gearGtSmallMytryl>, <ore:rotorIridium>],
+		[<ore:rotorIridium>, <ore:gearGtSmallMytryl>, <gregtech:gt.blockmachines:45>, <ore:gearGtSmallMytryl>, <ore:rotorIridium>],
 		[<ore:wireGt04HSSG>, <ore:circuitMaster>, <compactkineticgenerators:BlockCkg:8>, <ore:circuitMaster>, <ore:wireGt04HSSG>],
-		[<ore:rotorIridium>, <gregtech:gt.metaitem.01:32604>, <gregtech:gt.metaitem.01:32545>, <gregtech:gt.metaitem.01:32604>, <ore:rotorIridium>],
+		[<ore:rotorIridium>, <gregtech:gt.metaitem.01:32604>, <ore:circuitMaster>, <gregtech:gt.metaitem.01:32604>, <ore:rotorIridium>],
 		[<ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>, <miscutils:itemTungstenSteelShaft>, <ore:plateDoubleTriniumTitaniumAlloy>, <ore:plateDoubleTriniumTitaniumAlloy>]
 	]
 );
 // --- High Kinetic Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:10>, [
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <miscutils:itemIridiumShaft>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>],
-		[<ore:rotorOsmium>, <ore:gearGtSmallDraconium>, <gregtech:gt.blockmachines:16>, <ore:gearGtSmallDraconium>, <ore:rotorOsmium>],
+		[<ore:rotorOsmium>, <ore:gearGtSmallDraconium>, <gregtech:gt.blockmachines:46>, <ore:gearGtSmallDraconium>, <ore:rotorOsmium>],
 		[<ore:cableGt04VanadiumGallium>, <ore:circuitUltimate>, <compactkineticgenerators:BlockCkg:9>, <ore:circuitUltimate>, <ore:cableGt04VanadiumGallium>],
-		[<ore:rotorOsmium>, <gregtech:gt.metaitem.01:32606>, <gregtech:gt.metaitem.01:32550>, <gregtech:gt.metaitem.01:32606>, <ore:rotorOsmium>],
+		[<ore:rotorOsmium>, <gregtech:gt.metaitem.01:32606>, <ore:circuitUltimate>, <gregtech:gt.metaitem.01:32606>, <ore:rotorOsmium>],
 		[<ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>, <miscutils:itemIridiumShaft>, <ore:plateDoubleTriniumNaquadahCarbonite>, <ore:plateDoubleTriniumNaquadahCarbonite>]
 	]
 );
 // --- Extreme Kinetic Generator
 LargeCrafting.addShaped(1, <compactkineticgenerators:BlockCkg:11>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <miscutils:itemIridiumShaft>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>],
-		[<ore:rotorElectrumFlux>, <ore:gearGtSmallOriharukon>, <gregtech:gt.blockmachines:17>, <ore:gearGtSmallOriharukon>, <ore:rotorElectrumFlux>],
+		[<ore:rotorElectrumFlux>, <ore:gearGtSmallOriharukon>, <gregtech:gt.blockmachines:47>, <ore:gearGtSmallOriharukon>, <ore:rotorElectrumFlux>],
 		[<ore:cableGt08Duranium>, <ore:circuitSuperconductor>, <compactkineticgenerators:BlockCkg:10>, <ore:circuitSuperconductor>, <ore:cableGt08Duranium>],
-		[<ore:rotorElectrumFlux>, <gregtech:gt.metaitem.01:32607>, <gregtech:gt.metaitem.01:32555>, <gregtech:gt.metaitem.01:32607>, <ore:rotorElectrumFlux>],
+		[<ore:rotorElectrumFlux>, <gregtech:gt.metaitem.01:32607>, <ore:circuitSuperconductor>, <gregtech:gt.metaitem.01:32607>, <ore:rotorElectrumFlux>],
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <miscutils:itemIridiumShaft>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>]
 	]
 );

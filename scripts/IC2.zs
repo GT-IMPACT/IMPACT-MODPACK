@@ -708,7 +708,7 @@ LargeCrafting.addShaped(3, NucReactor, [
 		[<ore:plateDenseSteel>, <ore:plateDenseLead>, <ore:plateDenseLead>, <IC2:blockReactorChamber>, <ore:plateDenseLead>, <ore:plateDenseLead>, <ore:plateDenseSteel>]
 	]
 );
-NucReactor.addTooltip(format.gray("Coefficient: x") + format.red("6"));
+NucReactor.addTooltip(format.gray("Coefficient: ") + format.red("x6"));
 
 #==================================================================#
 #Kinetic Generator
@@ -725,13 +725,13 @@ LargeCrafting.addShaped(1, <IC2:blockKineticGenerator>, [
 #Kinetic Wind Generator
 LargeCrafting.addShaped(1, <IC2:blockGenerator:9>, [
 		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>],
-		[<ore:rotorStainlessSteel>, <ore:gearTitanium>, <gregtech:gt.blockmachines:13>, <ore:gearTitanium>, <ore:rotorStainlessSteel>],
+		[<ore:rotorStainlessSteel>, <ore:gearTitanium>, <gregtech:gt.blockmachines:43>, <ore:gearTitanium>, <ore:rotorStainlessSteel>],
 		[<ore:cableGt01Platinum>, <ore:circuitData>, <gregtech:gt.blockcasings2:11>, <ore:circuitData>, <ore:cableGt01Platinum>],
-		[<ore:rotorStainlessSteel>, <gregtech:gt.metaitem.01:32602>, <gregtech:gt.metaitem.01:32538>, <gregtech:gt.metaitem.01:32602>, <ore:rotorStainlessSteel>],
+		[<ore:rotorStainlessSteel>, <gregtech:gt.metaitem.01:32602>, <ore:circuitData>, <gregtech:gt.metaitem.01:32602>, <ore:rotorStainlessSteel>],
 		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>]
 	]
 );
-<IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: x") + format.red("5"));
+<IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 
 #==================================================================#
 #Kinetic Water Generator
@@ -743,7 +743,7 @@ LargeCrafting.addShaped(1, <IC2:blockKineticGenerator:4>, [
 		[<ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>]
 	]
 );
-<IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: x") + format.red("10"));
+<IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 
 #==================================================================#
 

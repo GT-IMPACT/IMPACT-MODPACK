@@ -368,9 +368,9 @@ LargeCrafting.addShaped(1, <extracells:part.base:2>, [
 // --- ME Fluid Terminal
 LargeCrafting.addShaped(1, <extracells:part.base:3>, [
 		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateLapis>, CertusScrew, <gregtech:gt.metaitem.01:32732>, CertusScrew, <ore:plateLapis>],
+		[<ore:plateLapis>, <customthings:item:174>, <gregtech:gt.metaitem.01:32732>, <customthings:item:174>, <ore:plateLapis>],
 		[<ore:plateVanadiumSteel>, CertusCircuit, Illuminated, CertusCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateLapis>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateLapis>],
+		[<ore:plateLapis>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateLapis>],
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );

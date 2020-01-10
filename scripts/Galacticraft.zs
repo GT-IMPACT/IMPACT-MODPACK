@@ -905,7 +905,7 @@ var GTplateDoubleTeflon = <gregtech:gt.metaitem.01:18473>;
 recipes.remove(GTingotHeavyDutyT1);
 recipes.remove(GTingotHeavyDutyT2);
 recipes.remove(GTingotHeavyDutyT3);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32462>, [<GalacticraftCore:item.basicItem:9>,<GalacticraftCore:item.basicItem:10>,<GalacticraftCore:item.basicItem:8>, CompressedAl], <liquid:molten.stainlesssteel> * 288, 600, 256);
+Assembler.addRecipe(<gregtech:gt.metaitem.01:32462>, [<GalacticraftCore:item.basicItem:9>,<GalacticraftCore:item.basicItem:10>,<GalacticraftCore:item.basicItem:8>], <liquid:molten.stainlesssteel> * 288, 600, 256);
 Assembler.addRecipe(<gregtech:gt.metaitem.01:32463>, [<GalacticraftCore:item.heavyPlating>,<ore:plateDoubleMeteoricSteel>,<GalaxySpace:item.CompressedSDHD120>, <ore:plateDoubleInconel792>], <liquid:molten.titanium> * 288, 800, 1024);
 Assembler.addRecipe(<gregtech:gt.metaitem.01:32464>, [<GalacticraftMars:item.null:3>,<customthings:item:2>,<customthings:item:31>, <ore:plateDoubleHastelloyN>], <liquid:molten.tungstensteel> * 288, 1000, 4096);
 

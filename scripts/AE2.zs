@@ -840,36 +840,36 @@ recipes.addShaped(WirelessReceiver, [
 // --- Terminal
 LargeCrafting.addShaped(1, Terminal, [
 		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, CertusScrew, <gregtech:gt.metaitem.01:32740>, CertusScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <gregtech:gt.metaitem.01:32740>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, GoldCircuit, Illuminated, GoldCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );
 // --- Crafting Terminal
 LargeCrafting.addShaped(1, CraftingTerminal, [
 		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, CertusScrew, <gregtech:gt.metaitem.01:32744>, CertusScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <gregtech:gt.metaitem.01:32744>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, CertusCircuit, Illuminated, CertusCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );
 // --- Interface Terminal
 LargeCrafting.addShaped(1, InterfaceTerminal, [
 		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, CertusScrew, Interface, CertusScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, Interface, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, DiamondCircuit, Illuminated, DiamondCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );
 // --- Pattern Terminal
 LargeCrafting.addShaped(1, PatternTerminal, [
 		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, CertusScrew, Pattern, CertusScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, Pattern, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, DiamondCircuit, Illuminated, DiamondCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateQuartzite>, NQuartzScrew, <ore:circuitAdvanced>, NQuartzScrew, <ore:plateQuartzite>],
+		[<ore:plateQuartzite>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateQuartzite>],
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );

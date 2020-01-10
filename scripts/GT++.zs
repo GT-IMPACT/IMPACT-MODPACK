@@ -25,14 +25,16 @@ var motorLUV 		= <gregtech:gt.metaitem.01:32606>;
 
 var pumpEV			= <gregtech:gt.metaitem.01:32613>;
 var pumpIV			= <gregtech:gt.metaitem.01:32614>;
+var pumpLuV			= <gregtech:gt.metaitem.01:32620>;
 
 var conveyerEV 		= <gregtech:gt.metaitem.01:32633>;
 var conveyerIV 		= <gregtech:gt.metaitem.01:32634>;
-var conveyerLUV 	= <gregtech:gt.metaitem.01:32635>;
-var conveyerZPM 	= <gregtech:gt.metaitem.01:32636>;
+var conveyerLUV 	= <gregtech:gt.metaitem.01:32636>;
+var conveyerZPM 	= <gregtech:gt.metaitem.01:32637>;
 
 var pistonEV 		= <gregtech:gt.metaitem.01:32643>;
 var pistonIV 		= <gregtech:gt.metaitem.01:32644>;
+var pistonLuV 		= <gregtech:gt.metaitem.01:32645>;
 
 var robotArmIV 		= <gregtech:gt.metaitem.01:32654>;
 var robotArmLUV 	= <gregtech:gt.metaitem.01:32655>;
@@ -48,12 +50,9 @@ var fieldgenLUV 	= <gregtech:gt.metaitem.01:32675>;
 var HullHV 			= <gregtech:gt.blockmachines:13>;
 var HullEV 			= <gregtech:gt.blockmachines:14>;
 var HullIV 			= <gregtech:gt.blockmachines:15>;
+var HullLuV 		= <gregtech:gt.blockmachines:16>;
 
 #===============================================#
-// --- Simple Generators
-recipes.remove(<gregtech:gt.blockmachines:960>);
-recipes.remove(<gregtech:gt.blockmachines:961>);
-recipes.remove(<gregtech:gt.blockmachines:962>);
 
 // --- Accelerated Frame
 recipes.remove(<miscutils:frameAccelerated>);
@@ -623,8 +622,8 @@ LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:963>, [
 		[<ore:plateDoubleHastelloyN>, <ore:frameGtHastelloyX>, robotArmIV, <ore:frameGtHastelloyX>, robotArmIV, <ore:frameGtHastelloyX>, <ore:plateDoubleHastelloyN>],
 		[<ore:plateDoubleHastelloyW>, robotArmIV, <ore:gearGtTungstenSteel>, fieldgenIV, <ore:gearGtTungstenSteel>, robotArmIV, <ore:plateDoubleHastelloyW>],
 		[<ore:plateDoubleHastelloyW>, <ore:frameGtHastelloyX>, <ore:circuitElite>, <gregtech:gt.blockmachines:1000>, <ore:circuitElite>, <ore:frameGtHastelloyX>, <ore:plateDoubleHastelloyW>],
-		[<ore:plateDoubleHastelloyW>, conveyerIV, <ore:gearGtTungstenSteel>, <miscutils:MU-metaitem.01:32055>, <ore:gearGtTungstenSteel>, conveyerIV, <ore:plateDoubleHastelloyW>],
-		[<ore:plateDoubleHastelloyN>, <ore:frameGtHastelloyX>, conveyerIV, <ore:frameGtHastelloyX>, conveyerIV, <ore:frameGtHastelloyX>, <ore:plateDoubleHastelloyN>],
+		[<ore:plateDoubleHastelloyW>, robotArmIV, <ore:gearGtTungstenSteel>, <miscutils:MU-metaitem.01:32055>, <ore:gearGtTungstenSteel>, robotArmIV, <ore:plateDoubleHastelloyW>],
+		[<ore:plateDoubleHastelloyN>, <ore:frameGtHastelloyX>, robotArmIV, <ore:frameGtHastelloyX>, robotArmIV, <ore:frameGtHastelloyX>, <ore:plateDoubleHastelloyN>],
 		[<ore:plateDoubleHastelloyN>, <ore:plateDoubleHastelloyN>, <ore:plateDoubleHastelloyW>, <ore:plateDoubleHastelloyW>, <ore:plateDoubleHastelloyW>, <ore:plateDoubleHastelloyN>, <ore:plateDoubleHastelloyN>]
 	]
 );
@@ -637,8 +636,8 @@ LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:964>, [
 		[<ore:plateDoubleCinobiteA243>, <ore:frameGtStellite>, pistonIV, <ore:frameGtStellite>, pistonIV, <ore:frameGtStellite>, <ore:plateDoubleCinobiteA243>],
 		[<IC2:itemPartIridium>, pistonIV, <ore:gearGtTungstenSteel>, fieldgenIV, <ore:gearGtTungstenSteel>, pistonIV, <IC2:itemPartIridium>],
 		[<IC2:itemPartIridium>, <ore:frameGtStellite>, <ore:circuitElite>, <gregtech:gt.blockmachines:1001>, <ore:circuitElite>, <ore:frameGtStellite>, <IC2:itemPartIridium>],
-		[<IC2:itemPartIridium>, conveyerIV, <ore:gearGtTungstenSteel>, <miscutils:MU-metaitem.01:32055>, <ore:gearGtTungstenSteel>, conveyerIV, <IC2:itemPartIridium>],
-		[<ore:plateDoubleCinobiteA243>, <ore:frameGtStellite>, conveyerIV, <ore:frameGtStellite>, conveyerIV, <ore:frameGtStellite>, <ore:plateDoubleCinobiteA243>],
+		[<IC2:itemPartIridium>, pistonIV, <ore:gearGtTungstenSteel>, <miscutils:MU-metaitem.01:32055>, <ore:gearGtTungstenSteel>, pistonIV, <IC2:itemPartIridium>],
+		[<ore:plateDoubleCinobiteA243>, <ore:frameGtStellite>, pistonIV, <ore:frameGtStellite>, pistonIV, <ore:frameGtStellite>, <ore:plateDoubleCinobiteA243>],
 		[<ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>, <IC2:itemPartIridium>, <IC2:itemPartIridium>, <IC2:itemPartIridium>, <ore:plateDoubleCinobiteA243>, <ore:plateDoubleCinobiteA243>]
 	]
 );
@@ -663,9 +662,9 @@ recipes.remove(<gregtech:gt.blockmachines:860>);
 LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:860>, [
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>],
 		[<ore:plateDoubleTungstenSteel>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:plateDoubleTungstenSteel>],
-		[<ore:plateDoubleStaballoy>, <gregtech:gt.blockmachines:245>, <ore:frameGtStellite>, <gregtech:gt.blockmachines:295>, <ore:frameGtStellite>, <gregtech:gt.blockmachines:555>, <ore:plateDoubleStaballoy>],
-		[<ore:frameGtStellite>, robotArmIV, <ore:gearGtHastelloyW>, HullIV, <ore:gearGtHastelloyW>, robotArmIV, <ore:frameGtStellite>],
-		[<ore:plateDoubleStaballoy>, <gregtech:gt.blockmachines:505>, <ore:frameGtStellite>, <gregtech:gt.blockmachines:535>, <ore:frameGtStellite>, <gregtech:gt.blockmachines:275>, <ore:plateDoubleStaballoy>],
+		[<ore:plateDoubleStaballoy>, pumpLuV, <ore:frameGtStellite>, <ore:circuitMaster>, <ore:frameGtStellite>, pistonLuV, <ore:plateDoubleStaballoy>],
+		[<ore:plateDoubleStaballoy>, robotArmIV, <ore:gearGtHastelloyW>, HullLuV, <ore:gearGtHastelloyW>, robotArmIV, <ore:plateDoubleStaballoy>],
+		[<ore:plateDoubleStaballoy>, conveyerLUV, <ore:frameGtStellite>, <ore:circuitMaster>, <ore:frameGtStellite>, conveyerLUV, <ore:plateDoubleStaballoy>],
 		[<ore:plateDoubleTungstenSteel>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:plateDoubleTungstenSteel>],
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>]
 	]
@@ -689,11 +688,11 @@ LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:942>, [
 #Large Scale Auto Aasembler
 LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:876>, [
 		[<ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>],
-		[<ore:plateDoublePikyonium64B>, robotArmZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, sensorZPM, <ore:plateDoublePikyonium64B>],
-		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, robotArmZPM, <miscutils:itemCircuitLFTR>, sensorZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
+		[<ore:plateDoublePikyonium64B>, robotArmZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, robotArmZPM, <ore:plateDoublePikyonium64B>],
+		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, robotArmZPM, <miscutils:itemCircuitLFTR>, robotArmZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
 		[<ore:plateDoubleOsmiridium>, <ore:frameGtArceusAlloy2B>, <miscutils:itemCircuitLFTR>, <gregtech:gt.blockmachines:217>, <miscutils:itemCircuitLFTR>, <ore:frameGtArceusAlloy2B>, <ore:plateDoubleOsmiridium>],
-		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, emitterZPM, <miscutils:MU-metaitem.01:32055>, conveyerZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
-		[<ore:plateDoublePikyonium64B>, emitterZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, conveyerZPM, <ore:plateDoublePikyonium64B>],
+		[<ore:plateDoubleOsmiridium>, <ore:circuitUltimate>, conveyerZPM, <miscutils:MU-metaitem.01:32055>, conveyerZPM, <ore:circuitUltimate>, <ore:plateDoubleOsmiridium>],
+		[<ore:plateDoublePikyonium64B>, conveyerZPM, <ore:circuitUltimate>, <ore:frameGtArceusAlloy2B>, <ore:circuitUltimate>, conveyerZPM, <ore:plateDoublePikyonium64B>],
 		[<ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoubleOsmiridium>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>]
 	]
 );

@@ -356,20 +356,22 @@ Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1032>, <gregtech:gt.metaitem.01:1
 Mixer.addRecipe(<gregtech:gt.metaitem.01:2325>*4, null, [<ore:dustNaquadah>*2, <ore:dustTrinium>, <ore:dustCarbon>, <gregtech:gt.integrated_circuit:2>*0], null, 200, 30720);
 #Orichalcum
 Centrifuge.addRecipe([<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<gregtech:gt.metaitem.01:1389>], null, <ore:dustOrichalcum>, null, null, [10000, 10000, 10000, 10000], 300, 122880);
-MultiblockCentrifuge.addRecipe([<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<gregtech:gt.metaitem.01:1389>], null, null, <ore:dustOrichalcum>, null, [10000, 10000, 10000, 10000], 300, 122880, 0);
+//MultiblockCentrifuge.addRecipe([<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<miscutils:itemDustSmallTrinium>,<gregtech:gt.metaitem.01:1389>], null, null, <ore:dustOrichalcum>, null, [10000, 10000, 10000, 10000], 300, 122880, 0);
 #Naqlatigon
 Electrolyzer.addRecipe([<gregtech:gt.metaitem.01:2327>, <gregtech:gt.metaitem.01:2326> * 3, <gregtech:gt.metaitem.01:2324> * 13,<gregtech:gt.metaitem.01:2085>*16,<gregtech:gt.metaitem.01:2028>*19], <liquid:radon>*4000,  <gregtech:gt.metaitem.01:2071>*56, null, null, [10000, 10000, 10000, 10000, 10000], 1000, 30720);
 #Osmirinigon
-Electrolyzer.addRecipe([<gregtech:gt.metaitem.01:2083>*4, <gregtech:gt.metaitem.01:2084> * 4, <gregtech:gt.metaitem.01:2047> * 7,<gregtech:gt.metaitem.01:2034>*13,<gregtech:gt.metaitem.01:2019>*17], <liquid:argon>*8000,  <gregtech:gt.metaitem.01:2066>*53, null, null, [10000, 10000, 10000, 10000, 10000], 600, 1024);
+Electrolyzer.addRecipe([<bartworks:gt.bwMetaGenerateddust:69>*4, <bartworks:gt.bwMetaGenerateddust:70> * 4, <gregtech:gt.metaitem.01:2047> * 7,<gregtech:gt.metaitem.01:2034>*13,<gregtech:gt.metaitem.01:2019>*17], <liquid:argon>*8000,  <gregtech:gt.metaitem.01:2066>*53, null, null, [10000, 10000, 10000, 10000, 10000], 600, 1024);
 #Mithril
 Electrolyzer.addRecipe([<gregtech:gt.metaitem.01:2516>*2, <gregtech:gt.metaitem.01:2085>*2, <gregtech:gt.metaitem.01:2340>], null,  <ore:dustMithril>*5, null, null, [10000, 10000, 10000], 600, 480);
 ChemicalBath.addRecipe([<gregtech:gt.metaitem.01:8516>, <gregtech:gt.metaitem.01:2387>, <gregtech:gt.metaitem.01:2414>], <ore:gemMithril>*2, <liquid:sulfuricacid> * 1000, [10000, 8000, 7500], 400, 120);
 #Mytryl
 Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2089>*3, <gregtech:gt.metaitem.01:2085>*2, <gregtech:gt.metaitem.01:2956>], null, <ore:dustMytryl>*6, null, null, [10000, 10000, 10000], 400, 1920);
-MultiblockCentrifuge.addRecipe([<gregtech:gt.metaitem.01:2089>*3, <gregtech:gt.metaitem.01:2085>*2, <gregtech:gt.metaitem.01:2956>], null, null, <ore:dustMytryl>*6, null, [10000, 10000, 10000], 400, 1920, 0);
+
+//MultiblockCentrifuge.addRecipe([<gregtech:gt.metaitem.01:2089>*3, <gregtech:gt.metaitem.01:2085>*2, <gregtech:gt.metaitem.01:2956>], null, null, <ore:dustMytryl>*6, null, [10000, 10000, 10000], 400, 1920, 0);
 #Tartarite
 Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2837>*3, <gregtech:gt.metaitem.01:2022>*2, <gregtech:gt.metaitem.01:2032>*2, <gregtech:gt.metaitem.01:2200>, <gregtech:gt.metaitem.01:2084>], <liquid:sulfuricacid>*2000, <ore:dustTartarite>*9, null, <liquid:water>*2000, [10000, 10000, 10000, 10000, 10000], 600, 7680);
-MultiblockCentrifuge.addRecipe([<gregtech:gt.metaitem.01:2837>*3, <gregtech:gt.metaitem.01:2022>*2, <gregtech:gt.metaitem.01:2032>*2, <gregtech:gt.metaitem.01:2200>, <gregtech:gt.metaitem.01:2084>], <liquid:water>*2000, <liquid:sulfuricacid>*2000, <ore:dustTartarite>*9, null, [10000, 10000, 10000, 10000, 10000], 600, 7680, 0);
+//MultiblockCentrifuge.addRecipe([<gregtech:gt.metaitem.01:2837>*3, <gregtech:gt.metaitem.01:2022>*2, <gregtech:gt.metaitem.01:2032>*2, <gregtech:gt.metaitem.01:2200>, <gregtech:gt.metaitem.01:2084>], <liquid:water>*2000, <liquid:sulfuricacid>*2000, <ore:dustTartarite>*9, null, [10000, 10000, 10000, 10000, 10000], 600, 7680, 0);
+
 ChemicalReactor.addRecipe(<gregtech:gt.metaitem.01:201>*6, null, <ore:dustTartariteSolution>, <gregtech:gt.neutronreflector> * 0, <liquid:radon> * 1000, 3000, 480);
 PlasmaArcFurnace.addRecipe([<gregtech:gt.metaitem.01:12324>, <gregtech:gt.metaitem.01:12975>, <gregtech:gt.metaitem.01:12084>], <liquid:helium> * 24, <ore:dustEnrichedTartarite>*3, <liquid:plasma.helium> * 24, [10000, 10000, 10000], 77, 32768);
 
@@ -403,6 +405,7 @@ recipes.addShaped(<gregtech:gt.blockmachines:962>, [
 <gregtech:gt.blockmachines:960>.displayName = "First Combustion Generator";
 <gregtech:gt.blockmachines:961>.displayName = "First Gas Generator";
 <gregtech:gt.blockmachines:962>.displayName = "First Steam Generator";
+
 
 #==================================================================#
 
@@ -879,7 +882,7 @@ LargeCrafting.addShaped(5, <gregtech:gt.metaitem.01:32757>, [
 		[null, null, null, <ore:wireGt02SuperconductorZPM>, <ore:circuitUltimate>, <ore:wireGt02SuperconductorZPM>, null, null, null],
 		[null, null, <ore:wireGt02SuperconductorZPM>, <gregtech:gt.metaitem.03:32151>, <ore:plateTripleOriharukon>, <gregtech:gt.metaitem.03:32151>, <ore:wireGt02SuperconductorZPM>, null, null],
 		[null, null, <ore:plateQuintupleSilicon>, <gregtech:gt.metaitem.03:32151>, <gregtech:gt.metaitem.01:32756>, <gregtech:gt.metaitem.03:32151>, <ore:plateQuintupleSilicon>, null, null],
-		[null, <supersolarpanel:solarsplitter>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:plateTriplePolybenzimidazole>, <ore:circuitUltimate>, <ore:circuitUltimate>, <supersolarpanel:solarsplitter>, null],
+		[null, <ore:wireGt02SuperconductorZPM>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:plateTriplePolybenzimidazole>, <ore:circuitUltimate>, <ore:circuitUltimate>, <ore:wireGt02SuperconductorZPM>, null],
 		[null, null, <ore:plateQuintupleSilicon>, <gregtech:gt.metaitem.03:32151>, <gregtech:gt.metaitem.01:32756>, <gregtech:gt.metaitem.03:32151>, <ore:plateQuintupleSilicon>, null, null],
 		[null, null, <ore:wireGt02SuperconductorZPM>, <gregtech:gt.metaitem.03:32151>, <ore:plateTripleOriharukon>, <gregtech:gt.metaitem.03:32151>, <ore:wireGt02SuperconductorZPM>, null, null],
 		[null, null, null, <ore:wireGt02SuperconductorZPM>, <ore:circuitUltimate>, <ore:wireGt02SuperconductorZPM>, null, null, null],

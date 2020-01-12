@@ -291,6 +291,9 @@ mods.tconstruct.Smeltery.removeMelting(<minecraft:sand>);
 // --- Alumite
 mods.tconstruct.Smeltery.removeAlloy(<liquid:alumite.molten>);
 
+// --- Aluminium ingot
+mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:11>);
+
 // --- Obsidian Dust
 mods.tconstruct.Smeltery.removeMelting(<ore:dustObsidian>);
 
@@ -309,8 +312,6 @@ nugget.remove(<TConstruct:oreBerries:4>);
 val aluminum = <ore:ingotAluminum>;
 aluminum.remove(<gregtech:gt.metaitem.01:11019>);
 val aluminiumBlock = <ore:blockAluminium>;
-aluminiumBlock.remove(<TConstruct:MetalBlock:6>);
-recipes.remove(<TConstruct:materials:19>);
 
 
 // --- Blocks & Items ---
@@ -2260,7 +2261,6 @@ Compressor.addRecipe(<TConstruct:materials:17>, <TConstruct:CraftedSoil:2> * 4);
 
 // --- Paper Stack
 Compressor.addRecipe(<TConstruct:materials>, <minecraft:paper> * 64);
-
 
 
 // --- Cutting Saw Recipes ---

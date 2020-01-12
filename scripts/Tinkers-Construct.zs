@@ -2261,9 +2261,6 @@ Compressor.addRecipe(<TConstruct:materials:17>, <TConstruct:CraftedSoil:2> * 4);
 // --- Paper Stack
 Compressor.addRecipe(<TConstruct:materials>, <minecraft:paper> * 64);
 
-// --- Block Of Aluminium
-Compressor.addRecipe(<gregtech:gt.blockmetal1:1>, <ore:ingotAluminium> * 9);
-
 
 
 // --- Cutting Saw Recipes ---

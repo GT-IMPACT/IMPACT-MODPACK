@@ -248,7 +248,7 @@ recipes.addShaped(<GraviSuite:itemSimpleItem:6>, [
 recipes.addShaped(<GraviSuite:epicLappack:27>, [
 		[<ore:itemCasingHSSG>, <ore:circuitSuperconductor>, <ore:itemCasingHSSG>],
 		[<ore:itemCasingHSSG>, <GraviSuite:ultimateLappack:*>, <ore:itemCasingHSSG>],
-		[<ore:wireGt08SuperconductorUV>, <gregtech:gt.metaitem.01:32599>, <ore:wireGt08SuperconductorUV>]
+		[<ore:wireGt12SuperconductorZPM>, <gregtech:gt.metaitem.01:32599>, <ore:wireGt12SuperconductorZPM>]
 	]
 );
 

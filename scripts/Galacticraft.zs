@@ -566,14 +566,14 @@ recipes.addShaped(<GalacticraftCore:item.oxygenConcentrator>, [
 //Tier 1 Rocket Engine
 var RocketEngine = <GalacticraftCore:item.engine>;
 recipes.addShaped(RocketEngine, [
-[<ore:plateStainlessSteel>, <GalacticraftCore:item.oilCanisterPartial:1001>, <ore:plateStainlessSteel>],
+[<ore:plateStainlessSteel>, <gregtech:gt.metaitem.01:32642>, <ore:pipeTinyStainlessSteel>],
 [HeavyPlating, <gregtech:gt.blockcasings3:14>, HeavyPlating],
-[HeavyPlating, <gregtech:gt.metaitem.01:32731>, HeavyPlating]]);
+[HeavyPlating, <ore:ringStainlessSteel>, HeavyPlating]]);
 
 //Tier 1 Booster
 recipes.addShaped(<GalacticraftCore:item.engine:1>, [
 [<GalacticraftCore:item.meteoricIronIngot:1>, <GalacticraftCore:item.meteoricIronIngot:1>, <GalacticraftCore:item.meteoricIronIngot:1>],
-[HeavyPlating, <GalacticraftCore:item.fuelCanisterPartial:1>, HeavyPlating],
+[HeavyPlating, <gregtech:gt.metaitem.01:32405>, HeavyPlating],
 [HeavyPlating, AirVent, HeavyPlating]]);
 
 //Nose Cone
@@ -650,11 +650,12 @@ recipes.addShapeless(<gregtech:gt.metaitem.01:23884>, [<GalacticraftMars:item.nu
 //Standard Wrenche
 recipes.addShapeless(<GalacticraftCore:item.standardWrench>, [<gregtech:gt.metatool.01:16>.withTag({"GT.ToolStats": {PrimaryMaterial: "Steel", MaxDamage: 51200 as long, SecondaryMaterial: "Steel"}})]);
 
-//Heavy Rocket Engine
+//Heavy Rocket Engine (Tier 2)
 recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:1> , [
-[<ore:plateDoubleRhenium>, <ore:pipeSmallUltimate>, <ore:plateDoubleRhenium>],
-[HeavyDutyPlate, <gregtech:gt.metaitem.01:32619>, HeavyDutyPlate],
-[RocketEngine, RocketEngine, RocketEngine]]);
+[<GalacticraftMars:item.itemBasicAsteroids>, <ore:pipeTinyTungstenSteel>, <GalacticraftMars:item.itemBasicAsteroids>],
+[<GalacticraftMars:item.itemBasicAsteroids>, <gregtech:gt.metaitem.01:32644> ,<GalacticraftMars:item.itemBasicAsteroids>],
+[<GalacticraftCore:item.engine:1>, RocketEngine, <GalacticraftCore:item.engine:1>]]);
+
 
 //Heavy Nose Cone
 recipes.addShaped(<GalacticraftMars:item.heavyNoseCone>, [

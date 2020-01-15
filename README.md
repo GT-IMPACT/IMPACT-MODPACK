@@ -12,7 +12,7 @@
 
 ## Официальные ссылки
 
-Discord: https://discord.gg/a6Yk46<BR>
+Discord: https://discord.gg/bMf2qvd<BR>
 Релизы и изменения: https://github.com/GWPlusPlus/GWPP/releases<BR>
 
 ## Список модов

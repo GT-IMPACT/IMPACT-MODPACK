@@ -41,6 +41,8 @@ recipes.removeShapeless(<ore:dustCoal>);
 recipes.removeShapeless(blazePowder * 2, [blazeRod]);
 //recipes.addShapeless(blazePowder, [blazeRod]);
 
+recipes.remove(<minecraft:iron_ingot>);
+
 recipes.remove(chest * 4);
 recipes.addShaped(chest * 2, [
     [logWood, logWood, logWood],

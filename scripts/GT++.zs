@@ -662,7 +662,7 @@ recipes.remove(<gregtech:gt.blockmachines:860>);
 LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:860>, [
 		[<ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleStaballoy>, <ore:plateDoubleTungstenSteel>, <ore:plateDoubleTungstenSteel>],
 		[<ore:plateDoubleTungstenSteel>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:plateDoubleTungstenSteel>],
-		[<ore:plateDoubleStaballoy>, pumpLuV, e<ore:frameGtStellite>, <ore:circuitMaster>, <ore:frameGtStellite>, pistonLuV, <ore:plateDoubleStaballoy>],
+		[<ore:plateDoubleStaballoy>, pumpLuV, <ore:frameGtStellite>, <ore:circuitMaster>, <ore:frameGtStellite>, pistonLuV, <ore:plateDoubleStaballoy>],
 		[<ore:plateDoubleStaballoy>, robotArmLUV, <ore:circuitMaster>, HullLuV, <ore:circuitMaster>, robotArmLUV, <ore:plateDoubleStaballoy>],
 		[<ore:plateDoubleStaballoy>, conveyerLUV, <ore:frameGtStellite>, <ore:circuitMaster>, <ore:frameGtStellite>, conveyerLUV, <ore:plateDoubleStaballoy>],
 		[<ore:plateDoubleTungstenSteel>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:circuitElite>, <ore:frameGtStellite>, <ore:plateDoubleTungstenSteel>],

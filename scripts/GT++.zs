@@ -88,7 +88,7 @@ recipes.addShapeless(<gregtech:gt.metaitem.01:32610>, [<miscutils:MU-metaitem.01
 // --- Potin Rotor
 recipes.addShaped(<miscutils:itemRotorPotin>, [
 [<ore:platePotin>,<ore:craftingToolHardHammer>,<ore:platePotin>],
-[<ore:screwPotin>,<ore:ringPotin>,<ore:craftingToolFile],
+[<ore:screwPotin>,<ore:ringPotin>,<ore:craftingToolFile>],
 [<ore:platePotin>,<ore:craftingToolScrewdriver>,<ore:platePotin>]]);
 
 // --- KGR Energetic Alloy

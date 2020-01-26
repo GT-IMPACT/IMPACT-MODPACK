@@ -508,13 +508,13 @@ LargeCrafting.addShaped(1, <gregtech:gt.blockmachines:792>, [
 #Industrial Maceration Stack
 recipes.remove(<gregtech:gt.blockmachines:797>);
 LargeCrafting.addShaped(3, <gregtech:gt.blockmachines:797>, [
-		[<ore:plateDoubleTungtenCarbide>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:frameGtPalladium>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:plateDoubleTungtenCarbide>],
+		[<ore:plateDoubleTungstenCarbide>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:frameGtPalladium>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:plateDoubleTungstenCarbide>],
 		[<ore:plateDoubleNitinol60>, pistonIV, <ore:circuitElite>, <ore:frameGtPalladium>, <ore:circuitElite>, pistonIV, <ore:plateDoubleNitinol60>],
 		[<ore:plateDoubleNitinol60>, <ore:circuitElite>, <gregtech:gt.metaitem.01:32723>, <gregtech:gt.blockcasings:5>, <gregtech:gt.metaitem.01:32723>, <ore:circuitElite>, <ore:plateDoubleNitinol60>],
 		[<ore:frameGtPalladium>, <ore:frameGtPalladium>, <gregtech:gt.blockcasings:5>, <gregtech:gt.blockmachines:305>, <gregtech:gt.blockcasings:5>, <ore:frameGtPalladium>, <ore:frameGtPalladium>],
 		[<ore:plateDoubleNitinol60>, <ore:circuitElite>, <gregtech:gt.metaitem.01:32723>, <gregtech:gt.blockcasings:5>, <gregtech:gt.metaitem.01:32723>, <ore:circuitElite>, <ore:plateDoubleNitinol60>],
 		[<ore:plateDoubleNitinol60>, motorIV, <ore:circuitElite>, <ore:frameGtPalladium>, <ore:circuitElite>, motorIV, <ore:plateDoubleNitinol60>],
-		[<ore:plateDoubleTungtenCarbide>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:frameGtPalladium>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:plateDoubleTungtenCarbide>]
+		[<ore:plateDoubleTungstenCarbide>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:frameGtPalladium>, <ore:plateDoubleNitinol60>, <ore:plateDoubleNitinol60>, <ore:plateDoubleTungstenCarbide>]
 	]
 );
 

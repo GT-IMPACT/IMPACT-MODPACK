@@ -10,6 +10,8 @@ var glass = <ore:blockGlass>;
 var logWood = <ore:logWood>;
 var potionHealing = <ore:potionHealing>;
 var slabWood = <ore:slabWood>;
+var Cobble = <ore:cobblestone>;
+var RedAlloyWire = <ore:wireGt01RedAlloy>;
 
 potionHealing.add(<minecraft:potion:8197>);
 potionHealing.add(<minecraft:potion:8261>);
@@ -21,7 +23,6 @@ recipes.remove(<minecraft:potion:*>);
 
 recipes.remove(<minecraft:brewing_stand>);
 
-
 recipes.remove(<minecraft:repeater>);
 recipes.remove(<minecraft:comparator>);
 recipes.remove(<minecraft:tnt_minecart>);
@@ -31,7 +32,7 @@ recipes.remove(<minecraft:golden_rail>);
 recipes.remove(<minecraft:dispenser>);
 recipes.remove(<minecraft:dropper>);
 recipes.remove(<minecraft:enchanting_table>);
-
+recipes.remove(<minecraft:iron_ingot>);
 
 recipes.removeShapeless(<ore:gemLapis>);
 recipes.removeShapeless(<ore:dustLapis>);
@@ -41,7 +42,15 @@ recipes.removeShapeless(<ore:dustCoal>);
 recipes.removeShapeless(blazePowder * 2, [blazeRod]);
 //recipes.addShapeless(blazePowder, [blazeRod]);
 
-recipes.remove(<minecraft:iron_ingot>);
+recipes.addShaped(<minecraft:dispenser>, [
+[Cobble, <ore:ringIron>, Cobble],
+[<ore:springIron>, <minecraft:string>, <ore:springIron>],
+[<ore:gearGtSmallIron>, RedAlloyWire,  <ore:gearGtSmallIron>]]);
+
+recipes.addShaped(<minecraft:dropper>, [
+[Cobble, <ore:ringIron>, Cobble],
+[<ore:springSmallIron>, <minecraft:string>, <ore:springSmallIron>],
+[<ore:gearGtSmallIron>, RedAlloyWire, <ore:gearGtSmallIron>]]);
 
 recipes.remove(chest * 4);
 recipes.addShaped(chest * 2, [

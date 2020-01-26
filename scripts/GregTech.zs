@@ -382,32 +382,6 @@ AssemblyLine.addRecipe(<gregtech:gt.metaitem.01:32606>, 160000, [<gregtech:gt.me
 AssemblyLine.addRecipe(<gregtech:gt.metaitem.01:32607>, 180000, [<gregtech:gt.metaitem.02:23393>, <gregtech:gt.metaitem.02:22329>*6, <gregtech:gt.metaitem.01:28389>*8, <gregtech:gt.metaitem.01:25389>*64, <gregtech:gt.metaitem.02:19103>*64, <gregtech:gt.metaitem.02:19103>*64, <gregtech:gt.metaitem.02:19103>*64, <gregtech:gt.metaitem.02:19103>*64, <gregtech:gt.blockmachines:1808>*2], [<liquid:molten.solderingalloy> * 1296, <liquid:lubricant> * 2000, <liquid:molten.naquadria> * 1296], <gregtech:gt.metaitem.01:32608>, 800, 100000);
 
 #==================================================================#
-#Simple Generators
-recipes.remove(<gregtech:gt.blockmachines:960>);
-recipes.remove(<gregtech:gt.blockmachines:961>);
-recipes.remove(<gregtech:gt.blockmachines:962>);
-
-recipes.addShaped(<gregtech:gt.blockmachines:960>, [
-[<spartakcore:item.ULVPiston>, <ore:circuitPrimitive>, <spartakcore:item.ULVPiston>], 
-[<spartakcore:item.ULVMotor>,<gregtech:gt.blockmachines:10>,<spartakcore:item.ULVMotor>], 
-[<ore:gearGtWroughtIron>,<ore:cableGt01Lead>,<ore:gearGtWroughtIron>]]);
-
-recipes.addShaped(<gregtech:gt.blockmachines:961>, [
-[<ore:circuitPrimitive>, <ore:rotorLead>, <ore:circuitPrimitive>], 
-[<ore:rotorLead>,<gregtech:gt.blockmachines:10>,<ore:rotorLead>], 
-[<spartakcore:item.ULVMotor>,<ore:cableGt01Lead>,<spartakcore:item.ULVMotor>]]);
-
-recipes.addShaped(<gregtech:gt.blockmachines:962>, [
-[<ore:pipeSmallLead>, <ore:circuitPrimitive>, <ore:pipeSmallLead>], 
-[<ore:rotorLead>,<gregtech:gt.blockmachines:10>,<ore:rotorLead>], 
-[<spartakcore:item.ULVMotor>,<ore:cableGt01Lead>,<spartakcore:item.ULVMotor>]]);
-
-<gregtech:gt.blockmachines:960>.displayName = "First Combustion Generator";
-<gregtech:gt.blockmachines:961>.displayName = "First Gas Generator";
-<gregtech:gt.blockmachines:962>.displayName = "First Steam Generator";
-
-
-#==================================================================#
 
 #Large Crafting Table
 

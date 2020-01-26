@@ -52,6 +52,7 @@ var HullEV 			= <gregtech:gt.blockmachines:14>;
 var HullIV 			= <gregtech:gt.blockmachines:15>;
 var HullLuV 		= <gregtech:gt.blockmachines:16>;
 
+
 #===============================================#
 
 // --- Accelerated Frame
@@ -74,6 +75,13 @@ recipes.remove(<miscutils:frameStabilizing>);
 
 // --- Arborists Frame
 recipes.remove(<miscutils:frameArborists>);
+
+#===============================================#
+
+#Simple Generators
+recipes.remove(<gregtech:gt.blockmachines:960>);
+recipes.remove(<gregtech:gt.blockmachines:961>);
+recipes.remove(<gregtech:gt.blockmachines:962>);
 
 // --- Tumbaga Dust
 //recipes.remove(<miscutils:itemDustTumbaga>);

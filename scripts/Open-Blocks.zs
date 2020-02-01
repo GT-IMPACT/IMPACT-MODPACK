@@ -8,7 +8,7 @@ Assembler.addRecipe(<OpenBlocks:builder_guide>, <OpenBlocks:guide>, <gregtech:gt
 
 // --- DevNull
 recipes.remove(<OpenBlocks:devnull>);
-Assembler.addRecipe(<OpenBlocks:devnull>, <ore:frameGtSteel>, <ExtraUtilities:chestMini>, <liquid:ender> * 500, 300, 16);
+Assembler.addRecipe(<OpenBlocks:devnull>, <ore:frameGtSteel>, <ExtraUtilities:chestMini>, <liquid:glue> * 1000, 300, 16);
 
 // --- Elevator
 recipes.remove(<OpenBlocks:elevator>);

@@ -1,11 +1,6 @@
-// IIS by Sapient
+// GWPP
 import mods.nei.NEI;
-import mods.gregtech.Mixer;
-import mods.forestry.Carpenter;
-import mods.gregtech.Assembler;
-import mods.gregtech.CuttingSaw;
-import mods.gregtech.ChemicalBath;
-import mods.ic2.Extractor;
+
 
 # Aliases
 var backpackApothecary = <Railcraft:backpack.apothecary.t1>;
@@ -141,6 +136,12 @@ recipes.remove(<Railcraft:part.rail:3>); // railHS
 recipes.remove(railReinforced);
 recipes.remove(railElectric);
 //recipes.remove(reinforcedTrack);
+railStandard.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+railAdvanced.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:part.rail:3>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+railReinforced.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+railElectric.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+
 
 mods.railcraft.RockCrusher.removeRecipe(<*>);
 mods.railcraft.Rolling.removeRecipe(<*>);
@@ -154,111 +155,58 @@ recipes.remove(SignalCircuit);
 recipes.remove(SwitchMotor);
 recipes.remove(SwitchLever);
 recipes.remove(<Railcraft:cube>);
+woodenRail.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+Rebar.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+ControllerCircuit.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+ReceiverCircuit.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+SignalCircuit.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+SwitchMotor.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+SwitchLever.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:cube>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
-Assembler.addRecipe(ControllerCircuit, <ore:circuitBasic>, PlateGold, WaterRedDye * 24, 120, 5);
-Assembler.addRecipe(ControllerCircuit, <ore:circuitBasic>, PlateGold, ChemicalRedDye * 24, 120, 5);
-Assembler.addRecipe(ReceiverCircuit, <ore:circuitBasic>, PlateGold, WaterGreenDye * 24, 120, 5);
-Assembler.addRecipe(ReceiverCircuit, <ore:circuitBasic>, PlateGold, ChemicalGreenDye * 24, 120, 5);
-Assembler.addRecipe(SignalCircuit, <ore:circuitBasic>, PlateGold, WaterYellowDye * 24, 120, 5);
-Assembler.addRecipe(SignalCircuit, <ore:circuitBasic>, PlateGold, ChemicalYellowDye * 24, 120, 5);
-
-var gtMeta = [1248, 1368, 1388, 1468, 1588, 1648] as int[];
-var wiresCount = [4, 8, 12, 16, 20, 24] as int[];
-for i, meta in gtMeta {
-	recipes.addShaped(ShuntingWire * wiresCount[i], [
-		[null, PlateLead, null],
-		[PlateLead, <gregtech:gt.blockmachines>.definition.makeStack(meta), PlateLead],
-		[null, PlateLead, null]]);
-}
-
-recipes.addShaped(SwitchMotor, [
-	[<ore:dyeRed>, <ore:dyeBlack> , <ore:dyeWhite>],
-	[PistonLV, ReceiverCircuit, <ore:plateIron>]]);
-
-recipes.addShaped(SwitchLever, [
-	[<ore:dyeRed>, <ore:dyeBlack> , <ore:dyeWhite>],
-	[PistonLV, <minecraft:lever>, <ore:plateIron>]]);
 
 // upgradeLapotronLoader
 recipes.remove(<Railcraft:upgrade.lapotron>);
-recipes.addShaped(<Railcraft:upgrade.lapotron>, [
-	[glass, glass, glass],
-	[cablePlatinum, <IC2:itemBatLamaCrystal:26>, cablePlatinum],
-	[glass, circuitAdvanced, glass]]);
-
+<Railcraft:upgrade.lapotron>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // firebox liquid
 recipes.remove(<Railcraft:machine.beta:6>);
-recipes.addShaped(<Railcraft:machine.beta:6>, [
-	[plateSteel, <ore:pipeLargeSteel>, plateSteel],
-	[ironBars, <ore:craftingToolWrench>, ironBars],
-	[plateSteel, <gregtech:gt.blockcasings3:13>, plateSteel]]);
-
+<Railcraft:machine.beta:6>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // --- High Pressure Boiler Tank
 recipes.remove(<Railcraft:machine.beta:4>);
-recipes.addShaped(<Railcraft:machine.beta:4>, [
-[<ore:itemCasingSteel>,<ore:screwSteel>,<ore:itemCasingSteel>],
-[<ore:itemCasingSteel>,<ore:craftingToolScrewdriver>,<ore:itemCasingSteel>],
-[<ore:itemCasingSteel>,<ore:screwSteel>,<ore:itemCasingSteel>]]);
-Assembler.addRecipe(<Railcraft:machine.beta:4>, <ore:itemCasingSteel> * 6, <gregtech:gt.integrated_circuit:1> * 0, null, 120, 30);
-
 recipes.remove(benchEngraving);
-recipes.addShapeless(benchEngraving, [gregEngraverBasic]);
-recipes.addShapeless(gregEngraverBasic, [benchEngraving]);
-
+<Railcraft:machine.beta:4>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+benchEngraving.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // detector energy
 recipes.remove(<Railcraft:detector:10>);
-recipes.addShaped(<Railcraft:detector:10>, [
-    [plateTinAlloy, plateTinAlloy, plateTinAlloy],
-    [plateTinAlloy, pressurePlateStone, plateTinAlloy],
-    [plateTinAlloy, plateTinAlloy, plateTinAlloy]]);
-
+<Railcraft:detector:10>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // forceTrackEmitter
 recipes.remove(<Railcraft:machine.epsilon:3>);
-recipes.addShaped(<Railcraft:machine.epsilon:3>, [
-	[plateTinAlloy, ingotCopper, plateTinAlloy],
-	[ingotCopper, <ore:blockDiamond>, ingotCopper],
-	[plateTinAlloy, ingotCopper, plateTinAlloy]]);
-
+<Railcraft:machine.epsilon:3>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // fluxTransformer
 recipes.remove(<Railcraft:machine.epsilon:4>);
-recipes.addShaped(<Railcraft:machine.epsilon:4> * 2, [
-	[plateCopper, ingotGold, plateCopper],
-	[ingotGold, <ore:blockRedstone>, ingotGold],
-	[plateCopper, ingotGold, plateCopper]]);
-
+<Railcraft:machine.epsilon:4>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // Remove vanille recipe. Save labels.
 recipes.removeShaped(Locomotive);
-recipes.addShaped(Locomotive, [
-	[BoilerHP, BoilerHP, BronzeFirebox],
-	[BoilerHP, BoilerHP, BronzeFirebox],
-	[ironBars, <minecraft:minecart>, <minecraft:minecart>]]);
+Locomotive.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // Remove vanille recipe. Save labels.
 recipes.removeShaped(ELocomotive);
-recipes.addShaped(ELocomotive, [
-	[MachineController, circuitAdvanced, wrench],
-	[circuitAdvanced, blockSteelGearCasing, circuitAdvanced],
-	[motorHV, <Railcraft:cart.energy.mfe>, motorHV]]);
-
 recipes.removeShaped(TunnelBore);	
-recipes.addShaped(TunnelBore, [
-	[blockSteelGearCasing, Locomotive, blockSteelGearCasing],
-	[BoilerHP, Locomotive, BoilerHP],
-	[hhammer, <Railcraft:cart.track.layer>, wrench]]);
-	
+ELocomotive.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+TunnelBore.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+
 // Coke Oven to LV age
 NEI.overrideName(wetCokeBrick, "Wet Coke Oven Brick");
 wetCokeBrick.displayName = "Wet Coke Oven Brick";
 
 recipes.remove(wetCokeBrick);
-mods.chisel.Groups.removeVariation(wetCokeBrick);
-Mixer.addRecipe(wetCokeBrick, null, [dustClay * 4, sand * 5], water * 100, 20, 16);
-
 recipes.remove(cokeOven);
-furnace.addRecipe(cokeOven, wetCokeBrick);
-
 recipes.remove(<Railcraft:stair>);
 recipes.remove(<Railcraft:wall.alpha:1>);
+wetCokeBrick.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+cokeOven.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:stair>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:wall.alpha:1>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // --- Backs ---
 	recipes.remove(backpackTrack);
@@ -267,97 +215,37 @@ recipes.remove(<Railcraft:wall.alpha:1>);
 	mods.forestry.Carpenter.removeRecipe(backpackIcemanT2);
 	recipes.remove(backpackApothecary);
 	mods.forestry.Carpenter.removeRecipe(backpackApothecaryT2);
+backpackTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+backpackIceman.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+backpackApothecary.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+backpackTrackT2.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+backpackIcemanT2.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+backpackApothecaryT2.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
-// --- Trackmans Backpach ---
-	recipes.addShaped(backpackTrack, [
-	[<harvestcraft:wovencottonItem>, <minecraft:rail>, <harvestcraft:wovencottonItem>],
-	[<ore:itemLeather>, <minecraft:rail>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Trackmans Backpach Woven ---
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	backpackTrack, backpackTrackT2);
-
-// --- Icemans Backpach ---
-	recipes.addShaped(backpackIceman, [
-	[<harvestcraft:wovencottonItem>, <minecraft:ice>, <harvestcraft:wovencottonItem>],
-	[<ore:itemLeather>, <minecraft:ice>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Icemans Backpach Woven ---
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	backpackIceman, backpackIcemanT2);
-
-// --- Aphothecarys Backpach ---
-	recipes.addShaped(backpackApothecary, [
-	[<harvestcraft:wovencottonItem>, <minecraft:potion:8229>, <harvestcraft:wovencottonItem>],
-	[<ore:itemLeather>, <minecraft:potion:8229>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Aphothecarys Backpach Woven ---
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	backpackApothecary, backpackApothecaryT2);
 
 //TrackLayer/Relayer
 recipes.remove(<Railcraft:cart.track.relayer>);
-recipes.addShaped(<Railcraft:cart.track.relayer>, [
-	[SignalCircuit, MachineController, SignalCircuit],
-	[conveyorLV, blockSteelGearCasing, conveyorLV],
-	[robotarmLV, <minecraft:minecart>, robotarmLV]]);
-	
+<Railcraft:cart.track.relayer>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 // cartTrackUndercutter
 recipes.remove(<Railcraft:cart.undercutter>);
-recipes.addShaped(<Railcraft:cart.undercutter>, [
-	[SignalCircuit, MachineController, SignalCircuit],
-	[conveyorLV, blockSteelGearCasing, conveyorLV],
-	[<gregtech:gt.metaitem.01:32640>, <minecraft:minecart>, robotarmLV]]);
+<Railcraft:cart.undercutter>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // cartTrackLayer
 recipes.remove(<Railcraft:cart.track.layer>);
-recipes.addShaped(<Railcraft:cart.track.layer>, [
-	[ReceiverCircuit, MachineController, ReceiverCircuit],
-	[conveyorLV, blockSteelGearCasing, conveyorLV],
-	[robotarmLV, <minecraft:minecart>, robotarmLV]]);
+<Railcraft:cart.track.layer>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // cartTrackRemover
 recipes.remove(<Railcraft:cart.track.remover>);
-recipes.addShaped(<Railcraft:cart.track.remover>, [
-	[ControllerCircuit, MachineController, ControllerCircuit],
-	[conveyorLV, blockSteelGearCasing, conveyorLV],
-	[robotarmLV, <minecraft:minecart>, robotarmLV]]);	
+<Railcraft:cart.track.remover>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // AdvItemLoader
 recipes.remove(<Railcraft:machine.gamma:2>);
-recipes.addShaped(<Railcraft:machine.gamma:2>, [
-	[plateSteel, <minecraft:redstone>, plateSteel],
-	[<minecraft:redstone>, <Railcraft:machine.gamma>, <minecraft:redstone>],
-	[plateSteel, conveyorLV, plateSteel]]);
+<Railcraft:machine.gamma:2>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // AdvItemUnloader
 recipes.remove(<Railcraft:machine.gamma:3>);
-recipes.addShaped(<Railcraft:machine.gamma:3>, [
-	[plateSteel, <minecraft:redstone>, plateSteel],
-	[<minecraft:redstone>, <Railcraft:machine.gamma:1>, <minecraft:redstone>],
-	[plateSteel, conveyorLV, plateSteel]]);
+<Railcraft:machine.gamma:3>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
-var gtIntCircuit01 = <gregtech:gt.integrated_circuit:1>;
-var gtIntCircuit02 = <gregtech:gt.integrated_circuit:2>;
-var gtIntCircuit03 = <gregtech:gt.integrated_circuit:3>;
-var gtIntCircuit04 = <gregtech:gt.integrated_circuit:4>;
-
-var goldFineWire = <gregtech:gt.metaitem.02:19086>;
-var moltenRedstone = <liquid:molten.redstone>;
-
-Assembler.addRecipe(railAdvanced, railStandard, goldFineWire * 2, moltenRedstone * 144, 100, 16);
 
 // Standart
 recipes.remove(standTrack);
@@ -365,11 +253,12 @@ recipes.remove(standJuncTrack);
 recipes.remove(standSwitchTrack);
 recipes.remove(standWyeTrack);
 recipes.remove(standBoostTrack);
+standTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+standJuncTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+standSwitchTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+standWyeTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+standBoostTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
-Assembler.addRecipe(standJuncTrack, standTrack * 2, gtIntCircuit01 * 0, 100, 16);
-Assembler.addRecipe(standSwitchTrack, standTrack * 2, gtIntCircuit02 * 0, 100, 16);
-Assembler.addRecipe(standWyeTrack, standTrack * 2, gtIntCircuit03 * 0, 100, 16);
-Assembler.addRecipe(standBoostTrack, standTrack * 2, goldFineWire * 2, moltenRedstone * 144, 100, 16);
 
 //Wooden
 recipes.remove(woodenTrack);
@@ -377,11 +266,11 @@ recipes.remove(woodenJuncTrack);
 recipes.remove(woodenSwitchTrack);
 recipes.remove(woodenWyeTrack);
 recipes.remove(woodenBoostTrack);
-
-Assembler.addRecipe(woodenJuncTrack, woodenTrack * 2, gtIntCircuit01 * 0, 100, 16);
-Assembler.addRecipe(woodenSwitchTrack, woodenTrack * 2, gtIntCircuit02 * 0, 100, 16);
-Assembler.addRecipe(woodenWyeTrack, woodenTrack * 2, gtIntCircuit03 * 0, 100, 16);
-Assembler.addRecipe(woodenBoostTrack, woodenTrack * 2, goldFineWire * 2, moltenRedstone * 144, 100, 16);
+woodenTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+woodenJuncTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+woodenSwitchTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+woodenWyeTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+woodenBoostTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 //Reinforced
 recipes.remove(reinforcedTrack);
@@ -389,12 +278,11 @@ recipes.remove(reinforcedJuncTrack);
 recipes.remove(reinforcedSwitchTrack);
 recipes.remove(reinforcedWyeTrack);
 recipes.remove(reinforcedBoostTrack);
-
-Assembler.addRecipe(reinforcedTrack * 16, railReinforced * 3, gtIntCircuit01 * 0, <liquid:molten.concrete> * 576, 400, 4);
-Assembler.addRecipe(reinforcedJuncTrack * 8, reinforcedTrack * 3, gtIntCircuit02 * 0, <liquid:molten.concrete> * 288, 100, 16);
-Assembler.addRecipe(reinforcedSwitchTrack * 8, reinforcedTrack * 3, gtIntCircuit03 * 0, <liquid:molten.concrete> * 288, 100, 16);
-Assembler.addRecipe(reinforcedWyeTrack * 8, reinforcedTrack * 3, gtIntCircuit04 * 0, <liquid:molten.concrete> * 288, 100, 16);
-Assembler.addRecipe(reinforcedBoostTrack * 4, railReinforced, railAdvanced, <liquid:molten.concrete> * 144, 50, 16);
+reinforcedTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+reinforcedJuncTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+reinforcedSwitchTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+reinforcedWyeTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+reinforcedBoostTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 //HS
 recipes.remove(hsTrack);
@@ -402,23 +290,21 @@ recipes.remove(hsTransTrack);
 recipes.remove(hsSwitchTrack);
 recipes.remove(hsWyeTrack);
 recipes.remove(hsBoostTrack);
-
-Assembler.addRecipe(hsTransTrack, hsTrack * 2, gtIntCircuit01 * 0, moltenRedstone * 144, 100, 16);
-Assembler.addRecipe(hsSwitchTrack, hsTrack * 2, gtIntCircuit02 * 0, 100, 16);
-Assembler.addRecipe(hsWyeTrack, hsTrack * 2, gtIntCircuit03 * 0, 100, 16);
-Assembler.addRecipe(hsBoostTrack, hsTrack * 2, goldFineWire * 2, moltenRedstone * 144, 100, 16);
+hsTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+hsTransTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+hsSwitchTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+hsWyeTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+hsBoostTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 //Electric
 recipes.remove(electricTrack);
 recipes.remove(electricJuncTrack);
 recipes.remove(electricSwitchTrack);
 recipes.remove(electricWyeTrack);
-
-Assembler.addRecipe(electricTrack * 16, railElectric * 3, gtIntCircuit01 * 0, <liquid:molten.concrete> * 576, 400, 4);
-Assembler.addRecipe(electricJuncTrack * 8, railElectric * 3, gtIntCircuit02 * 0, <liquid:molten.concrete> * 288, 100, 16);
-Assembler.addRecipe(electricSwitchTrack * 8, railElectric * 3, gtIntCircuit03 * 0, <liquid:molten.concrete> * 288, 100, 16);
-Assembler.addRecipe(electricWyeTrack * 8, railElectric * 3, gtIntCircuit04 * 0, <liquid:molten.concrete> * 288, 100, 16);
-
+electricTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+electricJuncTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+electricSwitchTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+electricWyeTrack.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 recipes.remove(trackActivator);
 recipes.remove(trackControl);
@@ -442,34 +328,33 @@ recipes.remove(trackStop);
 recipes.remove(trackSuspended);
 recipes.remove(trackWhistle);
 recipes.remove(<Railcraft:machine.alpha:14>);
+trackActivator.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackControl.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackCoupler.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackDetector.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackDetectorDir.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackDisembarking.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackDisposal.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackElevator.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackEmbarking.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackGated.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackGatedOneWay.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackLauncher.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackLimiter.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackLocking.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackLoco.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackOneWay.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackPriming.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackRouting.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackStop.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackSuspended.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+trackWhistle.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
-recipes.addShapeless(trackActivator, [standTrack, <minecraft:redstone_torch>]);
-recipes.addShapeless(trackControl, [standBoostTrack, <minecraft:redstone>]);
-recipes.addShapeless(trackCoupler, [standBoostTrack, <gregtech:gt.metatool.01:20>]);
-recipes.addShapeless(trackDetector, [standBoostTrack, pressurePlateStone]);
-//recipes.addShapedMirrored(trackDetectorDir, [[pressurePlateStone, standTrack, pressurePlateStone]]);
-recipes.addShapedMirrored(trackDetectorDir, [[pressurePlateStone, trackDetector, pressurePlateStone]]);
-
-recipes.addShapeless(trackDisembarking, [standBoostTrack, piston]);
-recipes.addShapeless(trackDisposal, [standTrack, plateSteel]);
-recipes.addShapeless(trackElevator, [standBoostTrack, railStandard]);
-recipes.addShapeless(trackEmbarking, [standBoostTrack, <minecraft:ender_pearl>]);
-recipes.addShapeless(trackGated, [standTrack, <minecraft:fence_gate>]);
-recipes.addShapeless(trackGatedOneWay, [standBoostTrack, <minecraft:fence_gate>]);
-//recipes.addShapedMirrored(trackLauncher, [[<gregtech:gt.metaitem.01:19305>, <minecraft:sticky_piston>, reinforcedTrack]]);
-recipes.addShapeless(trackLimiter, [standTrack, <minecraft:comparator>]);
-recipes.addShapedMirrored(trackLocking, [[pressurePlateStone, standBoostTrack, pressurePlateStone]]);
-recipes.addShapeless(trackLoco, [standTrack, <Railcraft:part.signal.lamp>]);
-recipes.addShapedMirrored(trackOneWay, [[piston, standTrack, pressurePlateStone]]);
-//recipes.addShapeless(trackPriming, [reinforcedTrack, <minecraft:flint_and_steel>]);
-recipes.addShapeless(trackRouting, [standTrack, <Railcraft:routing.ticket.gold>]);
-recipes.addShapeless(trackRouting, [standTrack, <Railcraft:routing.ticket>]);
-recipes.addShapeless(trackStop, [standTrack, <minecraft:iron_block>]);
-recipes.addShapeless(trackSuspended, [standTrack, <gregtech:gt.metatool.01:12> * 0]);
-recipes.addShapeless(trackWhistle, [standTrack, <ore:dyeYellow>, <ore:dyeBlack>]);
 
 recipes.remove(<Railcraft:firestone.cut>);
 recipes.remove(<Railcraft:firestone.refined:*>);
+<Railcraft:firestone.cut>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:firestone.refined:*>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 ///////////////////////////////////////////// 2016, Alex Main
 // Tanks
@@ -483,57 +368,27 @@ var plateIron = <ore:plateIron>;
 recipes.removeShaped(<Railcraft:machine.beta>, [[rc__iron_plate, rc__iron_plate], [rc__iron_plate, rc__iron_plate]]);
 // iron tank wall - remove gt recipe with anyIron (=wroughtIron)
 recipes.removeShaped(<Railcraft:machine.beta>, [[wrench, <ore:plateIron>, <ore:plateIron>], [hhammer, <ore:plateIron>, <ore:plateIron>]]);
-// iron tank wall - add recipe with plateIron oredict
-recipes.addShaped(<Railcraft:machine.beta> * 8,    [[wrench, plateIron, plateIron], [hhammer, plateIron, plateIron]]);
+<Railcraft:machine.beta>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // steel tank wall - remove rc recipe
 recipes.removeShaped(<Railcraft:machine.beta:13>, [[rc_steel_plate, rc_steel_plate], [rc_steel_plate, rc_steel_plate]]);
+<Railcraft:machine.beta:13>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // iron tank valve - delete recipe that has not ore dict support
 recipes.removeShaped(<Railcraft:machine.beta:2>, [[ironBars, rc__iron_plate, ironBars], [rc__iron_plate, <minecraft:lever>, rc__iron_plate], [ironBars, rc__iron_plate, ironBars]]);
-// iron tank valve - ore dict support
-recipes.addShaped(<Railcraft:machine.beta:2> * 8, [[ironBars, plateIron, ironBars], [plateIron, <minecraft:lever>, plateIron], [ironBars, plateIron, ironBars]]);
-
-//Water Tank
-recipes.addShaped(<Railcraft:machine.alpha:14>, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[plateIron, <ore:craftingToolHardHammer>, plateIron], 
-[<ore:plankWood>, <IC2:itemHarz>, <ore:plankWood>]]);
-recipes.addShaped(<Railcraft:machine.alpha:14>, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[<ore:plateBronze>, <ore:craftingToolHardHammer>, <ore:plateBronze>], 
-[<ore:plankWood>, <IC2:itemHarz>, <ore:plankWood>]]);
-recipes.addShaped(<Railcraft:machine.alpha:14>*2, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateSteel>], 
-[<ore:plankWood>, <IC2:itemHarz>, <ore:plankWood>]]);
-recipes.addShaped(<Railcraft:machine.alpha:14>*2, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[plateIron, <ore:craftingToolHardHammer>, plateIron], 
-[<ore:plankWood>, <TConstruct:materials:36>, <ore:plankWood>]]);
-recipes.addShaped(<Railcraft:machine.alpha:14>*2, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[<ore:plateBronze>, <ore:craftingToolHardHammer>, <ore:plateBronze>], 
-[<ore:plankWood>, <TConstruct:materials:36>, <ore:plankWood>]]);
-recipes.addShaped(<Railcraft:machine.alpha:14>*4, [
-[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-[<ore:plateSteel>, <ore:craftingToolHardHammer>, <ore:plateSteel>], 
-[<ore:plankWood>, <TConstruct:materials:36>, <ore:plankWood>]]);
+<Railcraft:machine.beta:2>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // steel tank valve - delete recipe that has not ore dict support
 recipes.removeShaped(<Railcraft:machine.beta:15>, [[ironBars, rc_steel_plate, ironBars], [rc_steel_plate, <minecraft:lever>, rc_steel_plate], [ironBars, rc_steel_plate, ironBars]]);
-// steel tank valve - ore dict support
-recipes.addShaped(<Railcraft:machine.beta:15> * 8, [[ironBars, plateSteel, ironBars], [plateSteel, <minecraft:lever>, plateSteel], [ironBars, plateSteel, ironBars]]);
+<Railcraft:machine.beta:15>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // iron tank glass - delete recipe that has not ore dict support
 recipes.removeShaped(<Railcraft:machine.beta:1>, [[mc_glass_pane, rc__iron_plate, mc_glass_pane], [rc__iron_plate, mc_glass_pane, rc__iron_plate], [mc_glass_pane, rc__iron_plate, mc_glass_pane]]);
-// iron tank glass - ore dict support
-recipes.addShaped(<Railcraft:machine.beta:1> * 8, [[ore_pane_glass, plateIron, ore_pane_glass], [plateIron, ore_pane_glass, plateIron], [ore_pane_glass, plateIron, ore_pane_glass]]);
+<Railcraft:machine.beta:1>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // steel tank glass - delete recipe that has not ore dict support
 recipes.removeShaped(<Railcraft:machine.beta:14>, [[mc_glass_pane, rc_steel_plate, mc_glass_pane], [rc_steel_plate, mc_glass_pane, rc_steel_plate], [mc_glass_pane, rc_steel_plate, mc_glass_pane]]);
-// steel tank glass - ore dict support
-recipes.addShaped(<Railcraft:machine.beta:14> * 8, [[ore_pane_glass, plateSteel, ore_pane_glass], [plateSteel, ore_pane_glass, plateSteel], [ore_pane_glass, plateSteel, ore_pane_glass]]);
+<Railcraft:machine.beta:14>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 // SLABS 0-43
 var slabIngredients = [
@@ -592,98 +447,35 @@ val toolSaw = <ore:craftingToolSaw>;
 for i, block in slabIngredients {
 	var slab = <Railcraft:slab>.definition.makeStack(i);
 	recipes.remove(slab);
-	recipes.addShaped(slab * 2, [[toolSaw, block]]);
 }
-///////////////////////////////////////////// rc's bug fixes
-// metal zabor must have recipe
-mods.gregtech.Lathe.addRecipe([<Railcraft:post:2> * 2], <gregtech:gt.blockmachines:4128>, 150, 16);
-// metal platform must have name
-game.setLocalization("tile.railcraft.post.metal.unpainted.platform.name", "Unpainted Metallic Platform");
 
 // Rebar
 recipes.remove(<Railcraft:post:1>);
-recipes.addShaped(<Railcraft:post:1> * 32, [	[<ore:stone>, <Railcraft:part.rebar>, <ore:stone>],
-						[<ore:stone>, <Railcraft:part.rebar>, <ore:stone>],
-						[<ore:stone>, <Railcraft:part.rebar>, <ore:stone>]]);
-
 // Concreate / Wooden platform 
 recipes.remove(<Railcraft:slab:2>);
-CuttingSaw.addRecipe([<Railcraft:slab:2> * 2], <Railcraft:cube:1>, null, 25, 8);
-CuttingSaw.addRecipe([<Railcraft:slab:38> * 2], <Railcraft:cube:8>, null, 25, 8);
 recipes.remove(<Railcraft:cube:1>);
-recipes.addShaped(<Railcraft:cube:1>, [[<Railcraft:slab:2>], [<Railcraft:slab:2>]]);
-
-ChemicalBath.addRecipe([<Railcraft:part.tie>], <Forestry:slabs:*>, <liquid:creosote> * 500, [10000], 160, 5);
-ChemicalBath.addRecipe([<Railcraft:part.tie>], <Forestry:slabsFireproof:*>, <liquid:creosote> * 500, [10000], 160, 5);
-ChemicalBath.addRecipe([<Railcraft:part.tie>], <minecraft:wooden_slab:*>, <liquid:creosote> * 500, [10000], 160, 5);
-
-ChemicalBath.addRecipe([<Railcraft:cube:8>], <Forestry:logs:*>, <liquid:creosote> * 500, [10000], 160, 5);
-ChemicalBath.addRecipe([<Railcraft:cube:8>], <Forestry:logsFireproof:*>, <liquid:creosote> * 500, [10000], 160, 5);
-ChemicalBath.addRecipe([<Railcraft:cube:8>], <minecraft:log:*>, <liquid:creosote> * 500, [10000], 160, 5);
+<Railcraft:post:1>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:slab:2>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:cube:1>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 recipes.removeShapeless(<Railcraft:post>);
-recipes.addShapeless(<Railcraft:post> * 16, [<Railcraft:part.tie>]);
 
-
-// Locomotive paint
-var colors_as_byte = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as byte[];
-var colors_as_ore = [
-	<ore:dyeBlack>, 	//  0
-	<ore:dyeRed>, 		//  1
-	<ore:dyeGreen>, 	//  2
-	<ore:dyeBrown>, 	//  3
-	<ore:dyeBlue>, 		//  4
-	<ore:dyePurple>, 	//  5
-	<ore:dyeCyan>, 		//  6
-	<ore:dyeLightGray>, 	//  7
-	<ore:dyeGray>, 		//  8
-	<ore:dyePink>, 		//  9
-	<ore:dyeLime>, 		// 10
-	<ore:dyeYellow>, 	// 11
-	<ore:dyeLightBlue>, 	// 12
-	<ore:dyeMagenta>, 	// 13
-	<ore:dyeOrange>, 	// 14
-	<ore:dyeWhite>, 	// 15
-] as minetweaker.item.IIngredient[];
-
-for c1, oreColor1 in colors_as_ore {
-	for c2, oreColor2 in colors_as_ore {
-		
-		recipes.addShaped(Locomotive.withTag({model: "railcraft:default", primaryColor: c1 as byte, secondaryColor: c2 as byte}), [
-			[null, oreColor1, null], 
-			[null, Locomotive, null], 
-			[null, oreColor2, null]]);
-
-		recipes.addShaped(ELocomotive.withTag({model: "railcraft:default", primaryColor: c1 as byte, secondaryColor: c2 as byte}), [
-			[null, oreColor1, null], 
-			[null, ELocomotive, null], 
-			[null, oreColor2, null]]);
-	}
-}
 
 // Wire Support Frame
 recipes.remove(<Railcraft:frame>);
-recipes.addShaped(<Railcraft:brick.sandy>, [[<customthings:item:103>,<customthings:item:103>], [<customthings:item:103>,<customthings:item:103>]]);
-Assembler.addRecipe(<Railcraft:frame> * 6, <Railcraft:part.rebar> * 5, <gregtech:gt.metaitem.01:17032> * 3, null, 64, 8);
-
 // --- Fuel
 furnace.setFuel(<Railcraft:fluid.creosote.bucket>, 6400);
+<Railcraft:frame>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:fluid.creosote.bucket>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 //---Advanced Coke Oven
 <Railcraft:machine.alpha:12>.displayName = "Advanced Coke Oven Bricks";
 recipes.remove(<Railcraft:machine.alpha:12>);
-mods.ic2.Compressor.addRecipe(<Railcraft:machine.alpha:12>, <customthings:item:122> * 4);
 // --- Steel Shears
 recipes.remove(<Railcraft:tool.steel.shears>);
-
-mods.ic2.Compressor.addRecipe(<Railcraft:cube>, <Railcraft:fuel.coke> * 9);
-mods.railcraft.BlastFurnace.addRecipe(<minecraft:coal_block>, false, false, 180, <Railcraft:cube>);
-// --- Charcoal
-mods.railcraft.BlastFurnace.addRecipe(<minecraft:log:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<minecraft:log2:*>, false, false, 20, <minecraft:coal:1>);
-// -
-mods.railcraft.BlastFurnace.addRecipe(<Forestry:logs:*>, false, false, 20, <minecraft:coal:1>);
+<Railcraft:machine.alpha:7>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:machine.alpha:12>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
+<Railcraft:tool.steel.shears>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 
 Extractor.addRecipe(<customthings:item:103>*4, <Railcraft:machine.alpha:7>);

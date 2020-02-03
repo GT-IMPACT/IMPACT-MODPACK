@@ -31,7 +31,7 @@ print("Initializing 'CustomThings.zs'...");
 
 #==================================================================#
 #Variables
-var CokeOvenBrick 			= <customthings:item:103>;
+var CokeOvenBrick 			= <gregtech:gt.metaitem.04:32001>;
 var UnfiredClayBrick 		= <customthings:item:104>;
 var UnfiredCokeOvenBrick 	= <customthings:item:105>;
 var UnfiredSearedBrick 		= <customthings:item:106>;
@@ -91,13 +91,13 @@ recipes.addShaped(<customthings:item:108>, [
 #==================================================================#
 #Advanced Coke Oven
 BlastFurnace.addRecipe([<customthings:item:125>], <liquid:oxygen> * 1000, [<minecraft:netherbrick>, <gregtech:gt.integrated_circuit:11>*0], 600, 120, 1200);
-BlastFurnace.addRecipe([<customthings:item:122>*2], <liquid:oxygen> * 1000, [<customthings:item:126>, <customthings:item:103>], 1200, 120, 1200);
+BlastFurnace.addRecipe([<customthings:item:122>*2], <liquid:oxygen> * 1000, [<customthings:item:126>, <gregtech:gt.metaitem.04:32001>], 1200, 120, 1200);
 ChemicalBath.addRecipe([<customthings:item:126>], <customthings:item:125>, <liquid:ic2coolant> * 1000, [10000], 200, 30);
 
 Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1805>, <gregtech:gt.metaitem.01:1805>, <gregtech:gt.metaitem.01:1837>, <gregtech:gt.metaitem.01:1625>], null, <customthings:item:124>, null, null, [10000, 9000, 7500, 6500], 400, 30);
 Centrifuge.addRecipe([<customthings:item:124>, <gregtech:gt.metaitem.01:1807>*2, <gregtech:gt.metaitem.01:1837>, <gregtech:gt.metaitem.01:625>], null, <customthings:item:123>, null, null, [10000, 9000, 7500, 6500], 400, 120);
 
-Pulverizer.addRecipe([<customthings:item:124>,<customthings:item:124>,<customthings:item:124>,<customthings:item:124>], <customthings:item:103>, [10000, 2500, 750, 500], 200, 30);
+Pulverizer.addRecipe([<customthings:item:124>,<customthings:item:124>,<customthings:item:124>,<customthings:item:124>], <gregtech:gt.metaitem.04:32001>, [10000, 2500, 750, 500], 200, 30);
 Pulverizer.addRecipe([<customthings:item:123>,<customthings:item:123>,<customthings:item:123>,<customthings:item:123>], <customthings:item:122>, [10000, 2500, 750, 500], 200, 120);
 
 #==================================================================#

@@ -313,6 +313,9 @@ val aluminum = <ore:ingotAluminum>;
 aluminum.remove(<gregtech:gt.metaitem.01:11019>);
 val aluminiumBlock = <ore:blockAluminium>;
 
+val dust1 = <ore:dustAluminum>;
+dust1.remove(<TConstruct:materials:40>);
+
 
 // --- Blocks & Items ---
 

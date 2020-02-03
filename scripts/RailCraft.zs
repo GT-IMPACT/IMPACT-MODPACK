@@ -1,6 +1,6 @@
 // GWPP
 import mods.nei.NEI;
-
+import mods.ic2.Extractor;
 
 # Aliases
 var backpackApothecary = <Railcraft:backpack.apothecary.t1>;
@@ -478,5 +478,9 @@ recipes.remove(<Railcraft:tool.steel.shears>);
 <Railcraft:tool.steel.shears>.addTooltip(format.red("RAILCRAFT WILL REMOVE"));
 
 
-Extractor.addRecipe(<customthings:item:103>*4, <Railcraft:machine.alpha:7>);
+Extractor.addRecipe(<gregtech:gt.metaitem.04:32001>*4, <Railcraft:machine.alpha:7>);
 Extractor.addRecipe(<customthings:item:122>*4, <Railcraft:machine.alpha:12>);
+
+recipes.addShapeless(<gregtech:gt.blockcasings8:5>, [<Railcraft:machine.alpha:7>]);
+
+recipes.addShapeless(<gregtech:gt.metaitem.04:32001>, [<customthings:item:103>]);

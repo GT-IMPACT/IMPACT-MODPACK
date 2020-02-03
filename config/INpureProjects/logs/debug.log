@@ -5,6 +5,11 @@ Setting up Java Library...
 Setting up FML Library...
 Setting up NEI Library...
 Setting up CreativeTab library...
+GW:PPWorkbenches:autoWorkbench has a bad registry name! Attempting to parse and reassemble correctly...
+Parsed bad name into: modid: GW, name: PPWorkbenches:autoWorkbench. If this is not correct please report it as a bug!
+The mod GW is registering items or blocks with bad registry names. Names should not contain multiple colons as it breaks the ability to do reverse-lookups through FML. Please tell whoever made this mod that this should be changed!
+GW:PPWorkbenches:workbench has a bad registry name! Attempting to parse and reassemble correctly...
+Parsed bad name into: modid: GW, name: PPWorkbenches:workbench. If this is not correct please report it as a bug!
 Found creative tab: IC2
 Found creative tab: tools
 Found creative tab: misc
@@ -24,6 +29,7 @@ Found creative tab: apiculture
 Found creative tab: arboriculture
 Found creative tab: lepidopterology
 Found creative tab: transportation
+Found creative tab: LargerWorkbenchesTab
 Found creative tab: GalacticraftItems
 Found creative tab: GalacticraftBlocks
 Found creative tab: AddonsBlocks
@@ -132,12 +138,12 @@ Found ItemStack minecraft:spawn_egg. 64xitem.monsterPlacer@0
 Loading: ThermalExpansion.js
 Loading: Mekanism.js
 Loading: ForgeMicroblock.js
-getRandomMaterial called. Returned: Railcraft:brick.abyssal_2
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, Railcraft:brick.abyssal_2
+getRandomMaterial called. Returned: Railcraft:brick.abyssal
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, Railcraft:brick.abyssal
 Loading: ExtraUtilities.js
 override called. Params: ExtraUtilities, drum, 0,1
-getRandomMaterial called. Returned: ExtraUtilities:enderThermicPump
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ExtraUtilities:enderThermicPump
+getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_23
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ProjRed|Illumination:projectred.illumination.lamp_23
 Loading: BuildCraft.js
 Loading: Bibliocraft.js
 override called. Params: BiblioCraft, *, 0
@@ -274,8 +280,8 @@ Found ItemStack BiblioCraft:tile.BiblioFramedChest. 64xtile.BiblioFramedChest@0
 Loading: AppliedEnergistics2.js
 getFacadeItem called. Returned: appliedenergistics2:item.ItemFacade
 getSubTypes called.
-getNumberOfTypes called. Returned: 2446
-override called. Params: appliedenergistics2, item.ItemFacade, 1393
+getNumberOfTypes called. Returned: 2
+override called. Params: appliedenergistics2, item.ItemFacade, 1
 Regex match found! appliedenergistics2:item.ItemFacade matches appliedenergistics2:item.ItemFacade.
 Found ItemStack appliedenergistics2:item.ItemFacade. 64xitem.appliedenergistics2.ItemFacade@0
 Loading: Tcon.js

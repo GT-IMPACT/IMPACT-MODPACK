@@ -138,12 +138,12 @@ Found ItemStack minecraft:spawn_egg. 64xitem.monsterPlacer@0
 Loading: ThermalExpansion.js
 Loading: Mekanism.js
 Loading: ForgeMicroblock.js
-getRandomMaterial called. Returned: Railcraft:brick.abyssal
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, Railcraft:brick.abyssal
+getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_17
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ForgeMicroblockObject). Params: 1,2,4,257,258,260,513,514,516,769,770,772, ProjRed|Illumination:projectred.illumination.lamp_17
 Loading: ExtraUtilities.js
 override called. Params: ExtraUtilities, drum, 0,1
-getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_23
-obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ProjRed|Illumination:projectred.illumination.lamp_23
+getRandomMaterial called. Returned: ProjRed|Illumination:projectred.illumination.lamp_31
+obliterate_microblocks called (version in info.inpureprojects.core.NEI.gtfoMicroblocks.ScriptObjects.ExtraUtilitiesObject). Params: 1,2,3, ProjRed|Illumination:projectred.illumination.lamp_31
 Loading: BuildCraft.js
 Loading: Bibliocraft.js
 override called. Params: BiblioCraft, *, 0
@@ -280,10 +280,7 @@ Found ItemStack BiblioCraft:tile.BiblioFramedChest. 64xtile.BiblioFramedChest@0
 Loading: AppliedEnergistics2.js
 getFacadeItem called. Returned: appliedenergistics2:item.ItemFacade
 getSubTypes called.
-getNumberOfTypes called. Returned: 2
-override called. Params: appliedenergistics2, item.ItemFacade, 1
-Regex match found! appliedenergistics2:item.ItemFacade matches appliedenergistics2:item.ItemFacade.
-Found ItemStack appliedenergistics2:item.ItemFacade. 64xitem.appliedenergistics2.ItemFacade@0
+getNumberOfTypes called. Returned: 0
 Loading: Tcon.js
 override called. Params: TConstruct, tool*, 0
 Regex match found! TConstruct:tool* matches TConstruct:toolRod.

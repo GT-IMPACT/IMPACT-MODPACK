@@ -83,15 +83,23 @@ recipes.remove(<gregtech:gt.blockmachines:960>);
 recipes.remove(<gregtech:gt.blockmachines:961>);
 recipes.remove(<gregtech:gt.blockmachines:962>);
 
+#Simple Washer
+recipes.remove(<gregtech:gt.blockmachines:767>);
+
+#ULV Components
+recipes.remove(<miscutils:MU-metaitem.01:32039>);
+recipes.remove(<miscutils:MU-metaitem.01:32032>);
+recipes.remove(<miscutils:MU-metaitem.01:32033>);
+recipes.remove(<miscutils:MU-metaitem.01:32034>);
+recipes.remove(<miscutils:MU-metaitem.01:32035>);
+recipes.remove(<miscutils:MU-metaitem.01:32036>);
+recipes.remove(<miscutils:MU-metaitem.01:32037>);
+recipes.remove(<miscutils:MU-metaitem.01:32038>);
+recipes.remove(<gregtech:gt.metaitem.01:32610>);
+
 // --- Tumbaga Dust
 //recipes.remove(<miscutils:itemDustTumbaga>);
 recipes.addShapeless(<miscutils:itemDustTumbaga>*9, [<ore:dustGold>, <ore:dustGold>, <ore:dustGold>, <ore:dustGold>, <ore:dustGold>, <ore:dustGold>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]);
-
-recipes.addShaped(<miscutils:MU-metaitem.01:32032>, [
-[<ore:cableGt01Lead>, <ore:rotorPotin>, <gregtech:gt.metaitem.01:28879>], 
-[<ore:craftingToolScrewdriver>, <ore:pipeSmallLead>, <ore:craftingToolWrench>], 
-[<gregtech:gt.metaitem.01:28879>, <miscutils:MU-metaitem.01:32033>, <ore:cableGt01Lead>]]);
-recipes.addShapeless(<gregtech:gt.metaitem.01:32610>, [<miscutils:MU-metaitem.01:32032>, <ore:cableGt01Tin>, <ore:foilSteel>, <gregtech:gt.metaitem.01:32600>]);
 
 // --- Potin Rotor
 recipes.addShaped(<miscutils:itemRotorPotin>, [

@@ -123,6 +123,10 @@ recipes.remove(<TConstruct:MetalBlock:6>);
 // -
 mods.tconstruct.Casting.removeBasinRecipe(<ore:blockAluminum>);
 
+// --- hand nuggets
+recipes.remove(<TConstruct:materials:19>);
+recipes.remove(<TConstruct:materials:33>);
+
 // --- Block of Aluminium Brass
 recipes.remove(<TConstruct:MetalBlock:7>);
 // -

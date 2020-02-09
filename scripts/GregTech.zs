@@ -1,4 +1,4 @@
-#==========#
+
 # GregTech #
 #==========#
 
@@ -179,6 +179,16 @@ AlloySmelter.addRecipe(uraniumEnriched, <ore:ingotUranium>.firstItem * 6, <ore:n
 recipes.remove(<gregtech:gt.metaitem.01:32300>);
 mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32300>, <liquid:steel.molten> * 576, null, false, 80);
 Assembler.addRecipe(<gregtech:gt.metaitem.01:32300>, <ore:plateSteel>*4, <gregtech:gt.integrated_circuit:4>*0, null, 40, 8);
+
+recipes.removeShaped(<ore:ingotLead>, [
+[<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],
+[<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],
+[<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>]]);
+
+recipes.removeShaped(<ore:ingotGold>, [
+[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>],
+[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>],
+[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]]);
 
 #==================================================================#
 #Firebrick

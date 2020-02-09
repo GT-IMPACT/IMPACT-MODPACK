@@ -327,10 +327,6 @@ recipes.addShaped(<gregtech:gt.metaitem.01:32499>*2, [
 );
 
 #==================================================================#
-#BBF
-recipes.remove(<gregtech:gt.blockmachines:108>);
-
-#==================================================================#
 #EBF
 recipes.remove(<gregtech:gt.blockmachines:1000>);
 recipes.addShaped(<gregtech:gt.blockmachines:1000>, [

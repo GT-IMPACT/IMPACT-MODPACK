@@ -146,10 +146,15 @@ var GTDyeMagenta       = <gregtech:gt.metaitem.02:32427>;
 var GTDyeOrange        = <gregtech:gt.metaitem.02:32428>;
 var GTDyeWhite         = <gregtech:gt.metaitem.02:32429>;
 
-#===============================================#
+#==================================================================#
 
 # Recipe Fixes
 
+
+#==================================================================#
+#Nuggets fix
+recipes.removeShapeless(<ore:nuggetIron>);
+recipes.removeShapeless(<ore:nuggetGold>);
 
 #==================================================================#
 #Diamond dust-gem fix

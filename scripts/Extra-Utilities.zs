@@ -96,6 +96,14 @@ recipes.addShaped(<ExtraUtilities:filing:1>, [
 [<ore:screwSteel>, <ExtraUtilities:filing>, <ore:screwSteel>],
 [<ore:plateDoubleGold>, <ExtraUtilities:filing>, <ore:plateDoubleGold>]]);
 
+// --- Trash Can
+recipes.addShaped(<ExtraUtilities:trashcan>, [
+[<ore:plateIron>, <ore:craftingToolHardHammer>, <ore:plateIron>],
+[<ore:plateIron>, <minecraft:lava_bucket>.noReturn(), <ore:plateIron>],
+[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
+<ExtraUtilities:trashcan>.addTooltip(format.gray("Bucket in crafting recipe ") + format.red("DOESN'T ") + format.gray("transfer"));
+Assembler.addRecipe(<ExtraUtilities:trashcan>, [<ore:plateIron>*7, <minecraft:bucket>], <liquid:lava> * 1000, 400, 30);
+
 // --- Watering Can
 recipes.remove(<ExtraUtilities:watering_can:1>);
 recipes.addShaped(<ExtraUtilities:watering_can:1>, [

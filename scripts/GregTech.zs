@@ -1,8 +1,8 @@
-
+#==========#
 # GregTech #
 #==========#
 
-#===============================================#
+#==================================================================#
 #Imports
 import minetweaker.item.IItemStack;
 import mods.gregtech.AlloySmelter;
@@ -28,7 +28,7 @@ import mods.larger_workbenches.LargeCrafting;
 
 print("Initializing 'GregTech.zs'...");
 
-#===============================================#
+#==================================================================#
 #Variables
 var DiamondDust 			= <gregtech:gt.metaitem.01:2500>;
 var nuggetIron 				= <gregtech:gt.metaitem.01:9032>;
@@ -43,31 +43,31 @@ var IVMotor 				= <gregtech:gt.metaitem.01:32604>;
 var LUVMotor 				= <gregtech:gt.metaitem.01:32606>;
 var ZPMMotor 				= <gregtech:gt.metaitem.01:32607>;
 var UVMotor 				= <gregtech:gt.metaitem.01:32608>;
-var pumpLV 					= <gregtech:gt.metaitem.01:32610>;
-var pumpMV 					= <gregtech:gt.metaitem.01:32611>;
-var pumpHV					= <gregtech:gt.metaitem.01:32612>;
-var pumpEV					= <gregtech:gt.metaitem.01:32613>;
-var pumpIV 					= <gregtech:gt.metaitem.01:32614>;
+var pumpLV 				= <gregtech:gt.metaitem.01:32610>;
+var pumpMV 				= <gregtech:gt.metaitem.01:32611>;
+var pumpHV				= <gregtech:gt.metaitem.01:32612>;
+var pumpEV				= <gregtech:gt.metaitem.01:32613>;
+var pumpIV 				= <gregtech:gt.metaitem.01:32614>;
 var pumpLUV 				= <gregtech:gt.metaitem.01:32620>;
 var pumpZPM 				= <gregtech:gt.metaitem.01:32621>;
-var moduleConveyorLV 		= <gregtech:gt.metaitem.01:32630>;
-var moduleConveyorMV 		= <gregtech:gt.metaitem.01:32631>;
-var moduleConveyorHV 		= <gregtech:gt.metaitem.01:32632>;
-var moduleConveyorEV 		= <gregtech:gt.metaitem.01:32633>;
-var moduleConveyorIV 		= <gregtech:gt.metaitem.01:32634>;
-var moduleConveyorLUV 		= <gregtech:gt.metaitem.01:32636>;
-var moduleConveyorZPM 		= <gregtech:gt.metaitem.01:32637>;
-var moduleConveyorUV 		= <gregtech:gt.metaitem.01:32638>;
-var pistonElectricLV 		= <gregtech:gt.metaitem.01:32640>;
-var pistonElectricHV 		= <gregtech:gt.metaitem.01:32642>;
-var pistonElectricEV 		= <gregtech:gt.metaitem.01:32643>;
-var pistonElectricIV 		= <gregtech:gt.metaitem.01:32644>;
+var moduleConveyorLV 			= <gregtech:gt.metaitem.01:32630>;
+var moduleConveyorMV 			= <gregtech:gt.metaitem.01:32631>;
+var moduleConveyorHV 			= <gregtech:gt.metaitem.01:32632>;
+var moduleConveyorEV 			= <gregtech:gt.metaitem.01:32633>;
+var moduleConveyorIV 			= <gregtech:gt.metaitem.01:32634>;
+var moduleConveyorLUV 			= <gregtech:gt.metaitem.01:32636>;
+var moduleConveyorZPM 			= <gregtech:gt.metaitem.01:32637>;
+var moduleConveyorUV 			= <gregtech:gt.metaitem.01:32638>;
+var pistonElectricLV 			= <gregtech:gt.metaitem.01:32640>;
+var pistonElectricHV 			= <gregtech:gt.metaitem.01:32642>;
+var pistonElectricEV 			= <gregtech:gt.metaitem.01:32643>;
+var pistonElectricIV 			= <gregtech:gt.metaitem.01:32644>;
 var robotArmLV 				= <gregtech:gt.metaitem.01:32650>;
 var robotArmHV 				= <gregtech:gt.metaitem.01:32652>;
 var robotArmEV 				= <gregtech:gt.metaitem.01:32653>;
 var robotArmIV 				= <gregtech:gt.metaitem.01:32654>;
-var FieldGeneratorHV 		= <gregtech:gt.metaitem.01:32672>;
-var FieldGeneratorEV 		= <gregtech:gt.metaitem.01:32673>;
+var FieldGeneratorHV 			= <gregtech:gt.metaitem.01:32672>;
+var FieldGeneratorEV 			= <gregtech:gt.metaitem.01:32673>;
 var fieldgenIV 				= <gregtech:gt.metaitem.01:32674>;
 var fieldgenLUV 			= <gregtech:gt.metaitem.01:32675>;
 var fieldgenZPM 			= <gregtech:gt.metaitem.01:32676>;
@@ -85,13 +85,13 @@ var sensorZPM 				= <gregtech:gt.metaitem.01:32696>;
 var fuelRodThorium 			= <gregtech:gt.Thoriumcell>;
 
 
-var HullLV 					= <gregtech:gt.blockmachines:11>;
-var HullMV 					= <gregtech:gt.blockmachines:12>;
-var HullHV 					= <gregtech:gt.blockmachines:13>;
-var HullEV 					= <gregtech:gt.blockmachines:14>;
-var HullIV 					= <gregtech:gt.blockmachines:15>;
-var HullUV 					= <gregtech:gt.blockmachines:18>;
-var uraniumEnriched 		= <IC2:itemUran>;
+var HullLV 				= <gregtech:gt.blockmachines:11>;
+var HullMV 				= <gregtech:gt.blockmachines:12>;
+var HullHV 				= <gregtech:gt.blockmachines:13>;
+var HullEV 				= <gregtech:gt.blockmachines:14>;
+var HullIV 				= <gregtech:gt.blockmachines:15>;
+var HullUV 				= <gregtech:gt.blockmachines:18>;
+var uraniumEnriched 			= <IC2:itemUran>;
 
 // radiation attention! - for tiny/small dusts, dusts, ingots, plates
 var radioativeMaterialsAsOre = [
@@ -951,6 +951,20 @@ LargeCrafting.addShaped(5, <gregtech:gt.blockcasings:9>, [
 		[<ore:plateDoublePikyonium64B>, <ore:screwNeutronium>, <ore:stickLongNeutronium>, <ore:screwNeutronium>, null, <ore:screwNeutronium>, <ore:stickLongNeutronium>, <ore:screwNeutronium>, <ore:plateDoublePikyonium64B>],
 		[<ore:plateTripleNeutronium>, <ore:stickLongNeutronium>, <ore:screwNeutronium>, null, null, null, <ore:screwNeutronium>, <ore:stickLongNeutronium>, <ore:plateTripleNeutronium>],
 		[<ore:plateTripleNeutronium>, <ore:plateTripleNeutronium>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateDoublePikyonium64B>, <ore:plateTripleNeutronium>, <ore:plateTripleNeutronium>]
+	]
+);
+#UEV
+recipes.remove(<gregtech:gt.blockcasings7:10>);
+LargeCrafting.addShaped(5, <gregtech:gt.blockcasings7:10>, [
+		[<ore:plateTriplePhoenixite>, <ore:plateTriplePhoenixite>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateTriplePhoenixite>, <ore:plateTriplePhoenixite>],
+		[<ore:plateTriplePhoenixite>, <ore:stickLongPhoenixite>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:stickLongPhoenixite>, <ore:plateTriplePhoenixite>],
+		[<ore:plateDoubleQuantum>, <ore:screwAdamantium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, null, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:screwAdamantium>, <ore:plateDoubleQuantum>],
+		[<ore:plateDoubleQuantum>, <ore:screwAdamantium>, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, <ore:screwAdamantium>, <ore:plateDoubleQuantum>],
+		[<ore:plateDoubleQuantum>, <ore:screwAdamantium>, null, <ore:itemCasingBlackPlutonium>, <ore:frameGtBlackPlutonium>, <ore:itemCasingBlackPlutonium>, null, <ore:screwAdamantium>, <ore:plateDoubleQuantum>],
+		[<ore:plateDoubleQuantum>, <ore:screwAdamantium>, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, <ore:screwAdamantium>, <ore:plateDoubleQuantum>],
+		[<ore:plateDoubleQuantum>, <ore:screwAdamantium>, <ore:stickLongPhoenixite>, <ore:itemCasingBlackPlutonium>, null, <ore:itemCasingBlackPlutonium>, <ore:stickLongPhoenixite>, <ore:screwAdamantium>, <ore:plateDoubleQuantum>],
+		[<ore:plateTriplePhoenixite>, <ore:stickLongPhoenixite>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:screwAdamantium>, <ore:stickLongPhoenixite>, <ore:plateTriplePhoenixite>],
+		[<ore:plateTriplePhoenixite>, <ore:plateTriplePhoenixite>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateDoubleQuantum>, <ore:plateTriplePhoenixite>, <ore:plateTriplePhoenixite>]
 	]
 );
 

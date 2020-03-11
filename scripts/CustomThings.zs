@@ -507,6 +507,7 @@ ImplosionCompressor.addRecipe([<GalaxySpace:item.CompressedPlates:7>, <gregtech:
 ImplosionCompressor.addRecipe([<spartakcore:item.HeavyDutyPlateTier6>, <gregtech:gt.metaitem.01:1103>*2], <spartakcore:item.HeavyDutyAlloyIngotT6>, 32);
 ImplosionCompressor.addRecipe([<GalaxySpace:item.CompressedPlates:8>, <gregtech:gt.metaitem.01:816>*2], <ore:plateTriplePlatinum>, 4);
 ImplosionCompressor.addRecipe([<spartakcore:item.HeavyDutyPlateTier7>, <gregtech:gt.metaitem.01:1103>*2], <spartakcore:item.HeavyDutyAlloyIngotT7>, 48);
+ImplosionCompressor.addRecipe([<customthings:item:75>, <gregtech:gt.metaitem.01:816>*2], <ore:plateTripleQuantum>, 4);
 ImplosionCompressor.addRecipe([<customthings:item:76>, <gregtech:gt.metaitem.01:816>*2], <customthings:item:75>*2, 8);
 ImplosionCompressor.addRecipe([<spartakcore:item.HeavyDutyPlateTier8>, <gregtech:gt.metaitem.01:1420>*2], <spartakcore:item.HeavyDutyAlloyIngotT8>, 64);
 ImplosionCompressor.addRecipe([<customthings:item:99>, <gregtech:gt.metaitem.01:816>*2], <ore:plateTripleBlackPlutonium>, 4);

@@ -377,6 +377,9 @@ recipes.remove(InterfaceTerminal);
 // --- Pattern Terminal
 recipes.remove(PatternTerminal);
 
+// --- Storage Monitor
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:400>);
+
 // --- Wireless Terminal
 recipes.remove(WirelessTerminal);
 
@@ -397,6 +400,9 @@ recipes.remove(TinyTNT);
 
 // --- Advanced Card
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:28>);
+
+// --- Card Upgrade
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:54>);
 
 // --- Blank Pattern
 recipes.remove(Pattern);
@@ -464,9 +470,20 @@ recipes.remove(<appliedenergistics2:item.ToolMemoryCard>);
 // --- Charged Stuff
 recipes.remove(<appliedenergistics2:item.ToolChargedStaff>);
 
+// --- ME Conversion Monitor
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:420>);
+
+// --- Dark Illuminated Panel
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:200>);
 
 // --- Entropy Manipulator
 recipes.remove(<appliedenergistics2:item.ToolEntropyManipulator>);
+
+// --- Level Emitter
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:280>);
+
+// --- Bright Illuminated Panel
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:160>);
 
 
 // --- Color Applicator
@@ -663,12 +680,20 @@ LargeCrafting.addShaped(3, <appliedenergistics2:tile.BlockSpatialIOPort>, [
 );
 // --- ME Interface
 recipes.addShapeless(<appliedenergistics2:tile.BlockInterface>, [Interface]);
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:440>, [<appliedenergistics2:tile.BlockInterface>]);
 LargeCrafting.addShaped(1, <appliedenergistics2:tile.BlockInterface>, [
-		[<ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>],
-		[<ore:foilVanadiumSteel>, CertusCircuit, FormationCore, CertusCircuit, <ore:foilVanadiumSteel>],
-		[<ore:boltVanadium>, <gregtech:gt.metaitem.01:32631>, <ore:frameGtVanadiumSteel>, <gregtech:gt.metaitem.01:32631>, <ore:boltVanadium>],
-		[<ore:foilVanadiumSteel>, GoldCircuit, AnnihilationCore, GoldCircuit, <ore:foilVanadiumSteel>],
-		[<ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>]
+        [<ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>],
+        [<ore:foilVanadiumSteel>, CertusCircuit, FormationCore, CertusCircuit, <ore:foilVanadiumSteel>],
+        [<ore:boltVanadium>, <gregtech:gt.metaitem.01:32631>, <ore:frameGtVanadiumSteel>, <gregtech:gt.metaitem.01:32631>, <ore:boltVanadium>],
+        [<ore:foilVanadiumSteel>, GoldCircuit, AnnihilationCore, GoldCircuit, <ore:foilVanadiumSteel>],
+        [<ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>, <ore:foilVanadiumSteel>, <ore:boltVanadium>]
+    ]
+);
+// --- ME Conversion Monitor
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:420>, [
+		[Screwdriver, <appliedenergistics2:item.ItemMultiPart:400>, HHammer],
+		[CertusScrew, <appliedenergistics2:item.ItemMultiMaterial:43>, CertusScrew],
+		[NQuartzPlate, <appliedenergistics2:item.ItemMultiMaterial:44>, NQuartzPlate]
 	]
 );
 // --- Cell Workbench
@@ -873,6 +898,22 @@ LargeCrafting.addShaped(1, PatternTerminal, [
 		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
 	]
 );
+// --- New Pattern Terminal
+LargeCrafting.addShaped(1, <appliedenergistics2:item.ItemMultiPart:500>, [
+        [<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
+        [<ore:plateQuartzite>, <customthings:item:174>, Pattern, <customthings:item:174>, <ore:plateQuartzite>],
+        [<ore:plateVanadiumSteel>, DiamondCircuit, PatternTerminal, DiamondCircuit, <ore:plateVanadiumSteel>],
+        [<ore:plateQuartzite>, <customthings:item:174>, <ore:circuitData>, <customthings:item:174>, <ore:plateQuartzite>],
+        [<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
+    ]
+);
+// --- Storage Monitor
+recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:400>, [
+		[Screwdriver, <ore:itemIlluminatedPanel>, HHammer],
+		[CertusScrew, <appliedenergistics2:item.ItemMultiPart:280>, CertusScrew],
+		[NQuartzPlate, NQuartzPlate, NQuartzPlate]
+	]
+);
 // --- Wireless Terminal
 recipes.addShaped(WirelessTerminal, [
 		[WirelessReceiver, Terminal, WirelessReceiver],
@@ -917,6 +958,11 @@ recipes.addShaped(Pattern, [
 // --- Capacity Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>,
 	[CardBasic, ProcCalc,
+	 ProcCalc, CCertusQuartz]);
+
+// --- Card Upgrade
+recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:54>,
+	[CardAdvanced, ProcCalc,
 	 ProcCalc, CCertusQuartz]);
 
 // --- Crafting Card
@@ -1088,6 +1134,15 @@ Assembler.addRecipe(CraftingStorage_1k, CraftingUnit, StorageComponent1K, <liqui
 Assembler.addRecipe(CraftingStorage_4k, CraftingUnit, StorageComponent4K, <liquid:molten.solderingalloy> * 576, 1200, 256);
 Assembler.addRecipe(CraftingStorage_16k, CraftingUnit, StorageComponent16K, <liquid:molten.solderingalloy> * 2304, 1200, 1024);
 Assembler.addRecipe(CraftingStorage_64k, CraftingUnit, StorageComponent64K, <liquid:molten.solderingalloy> * 9216, 1200, 4096);
+
+// --- Dark Illuminated Panel
+Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:200>, <appliedenergistics2:item.ItemMultiPart:180>, <gregtech:gt.integrated_circuit:2> * 0, 100, 4);
+
+// --- Level Emitter
+Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:280>, <minecraft:redstone_torch>, <appliedenergistics2:item.ItemMultiMaterial:23>, 200, 30);
+
+// --- Bright Illuminated Panel
+Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:160>, <appliedenergistics2:item.ItemMultiPart:180>, <gregtech:gt.integrated_circuit:3> * 0, 100, 4);
 
 #==================================================================#
 #Cells

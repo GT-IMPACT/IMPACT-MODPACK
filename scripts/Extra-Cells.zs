@@ -203,6 +203,12 @@ recipes.remove(FluidSComponent4096K);
 // --- Universal Advanced Storage Housing
 recipes.remove(UFluidStorageHousing);
 
+// --- CraftingStorages
+recipes.remove(<extracells:craftingstorage>);
+recipes.remove(<extracells:craftingstorage:1>);
+recipes.remove(<extracells:craftingstorage:2>);
+recipes.remove(<extracells:craftingstorage:3>);
+
 #==================================================================#
 #Adding Back Recipes ---
 #Cells
@@ -327,6 +333,12 @@ Assembler.addRecipe(FluidSComponent4096K, [EFlow*3, FluidSComponent1024K*4, <cus
 
 Assembler.addRecipe(FluidSComponent4096K, [EFlow*3, FluidSComponent1024K*3, <gregtech:gt.metaitem.03:32061>, <customthings:item:146>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
 Assembler.addRecipe(FluidSComponent4096K, [FluidSComponent1024K*2, <ore:circuitSuperconductor>, <gregtech:gt.metaitem.03:32063>, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mPhoenixite * 36, 30, 2000000);
+
+// --- CraftingStorages
+Assembler.addRecipe(<extracells:craftingstorage>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent256K, <liquid:molten.solderingalloy> * 9216, 1200, 16384);
+Assembler.addRecipe(<extracells:craftingstorage:1>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent1024K, <liquid:molten.solderingalloy> * 18432, 1200, 65536);
+Assembler.addRecipe(<extracells:craftingstorage:2>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent4096K, <liquid:molten.solderingalloy> * 36864, 1200, 262144);
+Assembler.addRecipe(<extracells:craftingstorage:3>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent16384K, <liquid:molten.solderingalloy> * 36864, 1200, 1048576);
 
 // --- Universal Fluid Storage Housing
 recipes.addShapedMirrored(UFluidStorageHousing, [

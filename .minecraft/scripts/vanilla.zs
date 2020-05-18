@@ -33,6 +33,7 @@ recipes.remove(<minecraft:dispenser>);
 recipes.remove(<minecraft:dropper>);
 recipes.remove(<minecraft:enchanting_table>);
 recipes.remove(<minecraft:iron_ingot>);
+recipes.remove(<minecraft:stone_button>);
 
 recipes.removeShapeless(<ore:gemLapis>);
 recipes.removeShapeless(<ore:dustLapis>);

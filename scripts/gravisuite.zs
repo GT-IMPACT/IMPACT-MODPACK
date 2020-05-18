@@ -6,7 +6,6 @@
 #Imports
 import minetweaker.game.IGame;
 import mods.gregtech.Assembler;
-import mods.larger_workbenches.LargeCrafting;
 
 print("Initializing 'gravisuite.zs'...");
 
@@ -179,7 +178,7 @@ recipes.remove(<GraviSuite:relocator>);
 recipes.addShaped(<GraviSuite:relocator>, [
 		[<gregtech:gt.metaitem.01:32689>, <ore:platePhoenixite>, <gregtech:gt.metaitem.01:32699>],
 		[<ore:circuitPiko>, <SGCraft:stargateBase>, <ore:circuitPiko>],
-		[<ore:platePhoenixite>, <spartakcore:item.QuantumCrystal>, <ore:platePhoenixite>]
+		[<ore:platePhoenixite>, <impact:impact_item2:46>, <ore:platePhoenixite>]
 	]
 );
 // --- GraviTool
@@ -209,9 +208,9 @@ recipes.addShaped(<GraviSuite:itemSimpleItem:5>, [
 // --- Vajra
 recipes.remove(<GraviSuite:vajra:*>);
 recipes.addShaped(<GraviSuite:vajra:27>, [
-		[<customthings:item:154>, <GraviSuite:itemSimpleItem:4>, <ore:lensReinforcedGlass>], 
+		[<gregtech:gt.metaitem.04:32480>, <GraviSuite:itemSimpleItem:4>, <ore:lensReinforcedGlass>], 
 		[<ore:circuitElite>, <GraviSuite:itemSimpleItem:5>, <ore:circuitElite>], 
-		[<ore:stickLongTriniumNaquadahCarbonite>, <spartakcore:item.QuantumCrystal>, <ore:stickLongTriniumNaquadahCarbonite>]
+		[<ore:stickTrinium>, <impact:impact_item2:46>, <ore:stickTrinium>]
 	]
 );
 // --- Gravitational Engine 2
@@ -227,11 +226,11 @@ recipes.remove(coolingCore);
 recipes.addShaped(coolingCore, [
 		[<IC2:itemPartIridium>, <IC2:reactorHeatSwitchDiamond:1>, <IC2:itemPartIridium>],
 		[<IC2:reactorPlatingHeat>, <gregtech:gt.360k_Helium_Coolantcell>, <IC2:reactorPlatingHeat>],
-		[<ore:plateDoubleIncoloyMA956>, <IC2:reactorHeatSwitchDiamond:1>, <ore:plateDoubleIncoloyMA956>]
+		[<ore:plateDoubleInconel-792>, <IC2:reactorHeatSwitchDiamond:1>, <ore:plateDoubleInconel-792>]
 	]
 );
 recipes.addShaped(coolingCore, [
-		[<ore:plateDoubleIncoloyMA956>, <IC2:reactorHeatSwitchDiamond:1>, <ore:plateDoubleIncoloyMA956>],
+		[<ore:plateDoubleInconel-792>, <IC2:reactorHeatSwitchDiamond:1>, <ore:plateDoubleInconel-792>],
 		[<IC2:reactorPlatingHeat>, <gregtech:gt.360k_Helium_Coolantcell>, <IC2:reactorPlatingHeat>],
 		[<IC2:itemPartIridium>, <IC2:reactorHeatSwitchDiamond:1>, <IC2:itemPartIridium>]
 	]
@@ -249,39 +248,6 @@ recipes.addShaped(<GraviSuite:epicLappack:27>, [
 		[<ore:itemCasingHSSG>, <ore:circuitSuperconductor>, <ore:itemCasingHSSG>],
 		[<ore:itemCasingHSSG>, <GraviSuite:ultimateLappack:*>, <ore:itemCasingHSSG>],
 		[<ore:wireGt12SuperconductorZPM>, <gregtech:gt.metaitem.01:32599>, <ore:wireGt12SuperconductorZPM>]
-	]
-);
-
-#==================================================================#
-
-#Large Crafting Table
-
-#==================================================================#
-// --- K2P4 ChestPlate
-recipes.remove(<GraviSuite:kpChestPlate:*>);
-//mods.gregtech.AssemblyLine.addRecipe(<GraviSuite:graviChestPlate:*>, 356000, [<GraviSuite:graviChestPlate:*>,<gregtech:gt.blockmachines:12157>, <GraviSuite:epicLappack:*>, <customthings:item:142>*2, <GraviSuite:itemSimpleItem:7>*2,<gregtech:gt.metaitem.03:32091>*4,<gregtech:gt.metaitem.01:22490>*2,<gregtech:gt.metaitem.01:32599>,<gregtech:gt.metaitem.01:32676>*2,<gregtech:gt.metaitem.01:32657>*2,<gregtech:gt.blockmachines:2442>*16,<miscutils:itemScrewArceusAlloy2B>*16], [<liquid:molten.solderingalloy> * 4608, <liquid:molten.americium>*1440,<liquid:molten.blacktitanium>*1440], <GraviSuite:kpChestPlate:27>, 2300, 122880);
-LargeCrafting.addShaped(5, <GraviSuite:kpChestPlate:27>, [
-		[null, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, null, null, null, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, null],
-		[<ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null, null, null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>],
-		[<ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>],
-		[null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateTritanium>, <GraviSuite:graviChestPlate:*>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null],
-		[null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <GraviSuite:itemSimpleItem:1>, <GraviSuite:epicLappack:*>, <GraviSuite:itemSimpleItem:1>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null],
-		[null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <customthings:item:142>, <gregtech:gt.metaitem.01:32676>, <customthings:item:142>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null],
-		[null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <GraviSuite:itemSimpleItem:7>, <gregtech:gt.blockmachines:12157>, <GraviSuite:itemSimpleItem:7>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null],
-		[null, <ore:plateBlackTitanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateTritanium>, <ore:plateBlackTitanium>, null],
-		[null, null, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, <ore:plateBlackTitanium>, null, null]
-	]
-);
-// --- GraviSuite
-//mods.gregtech.AssemblyLine.addRecipe(<IC2:itemArmorQuantumChestplate:*>, 296000, [<IC2:itemArmorQuantumChestplate:*>,<GraviSuite:advNanoChestPlate:*>,<gregtech:gt.blockmachines:12156>,<GraviSuite:ultimateLappack:*>,<GraviSuite:itemSimpleItem:1>*6,<GraviSuite:itemSimpleItem:2>*2,<GraviSuite:itemSimpleItem:3>*2,<gregtech:gt.metaitem.03:32088>*2,<gregtech:gt.metaitem.01:22328>*2,<AFSU:ALC:*>,<gregtech:gt.metaitem.01:32674>*2,<gregtech:gt.metaitem.01:32656>*2,<gregtech:gt.blockmachines:2422>*8,<miscutils:itemScrewZeron100>*16], [<liquid:molten.solderingalloy> * 2304, <liquid:molten.tritanium>*1440, <liquid:molten.lafiumcompound>*1440], <GraviSuite:graviChestPlate:27>, 2000, 30720);
-LargeCrafting.addShaped(3, <GraviSuite:graviChestPlate:27>, [
-		[<miscutils:itemScrewZeron100>, <ore:plateDuranium>, <ore:plateDuranium>, null, <ore:plateDuranium>, <ore:plateDuranium>, <miscutils:itemScrewZeron100>],
-		[<ore:plateDuranium>, <ore:plateDuranium>, <GraviSuite:itemSimpleItem:1>, <GraviSuite:advNanoChestPlate:*>, <GraviSuite:itemSimpleItem:1>, <ore:plateDuranium>, <ore:plateDuranium>],
-		[<ore:plateDuranium>, <ore:plateDuranium>, coolingCore, <IC2:itemArmorQuantumChestplate:*>, coolingCore, <ore:plateDuranium>, <ore:plateDuranium>],
-		[<miscutils:itemScrewZeron100>, <ore:plateDuranium>, GravitationEngine, <GraviSuite:ultimateLappack:*>, GravitationEngine, <ore:plateDuranium>, <miscutils:itemScrewZeron100>],
-		[null, <ore:plateDuranium>, <ore:plateDuranium>, <gregtech:gt.metaitem.01:32675>, <ore:plateDuranium>, <ore:plateDuranium>, null],
-		[null, <ore:plateDuranium>, <ore:plateDuranium>, <ore:plateDuranium>, <ore:plateDuranium>, <ore:plateDuranium>, null],
-		[null, <miscutils:itemScrewZeron100>, <ore:plateDuranium>, <ore:plateDuranium>, <ore:plateDuranium>, <miscutils:itemScrewZeron100>, null]
 	]
 );
 

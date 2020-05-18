@@ -185,14 +185,14 @@ recipes.addShaped(<BiblioCraft:BiblioPaintPress>, [
 // --- Fancy Gold Latern
 recipes.addShaped(<BiblioCraft:BiblioLantern>, [
 		[<ore:plateGold>, <ore:dustGlowstone>, <ore:plateGold>],
-		[<ore:paneGlassColorless>, <harvestcraft:pamcandleDeco1>, <ore:paneGlassColorless>],
+		[<ore:paneGlassColorless>, <minecraft:torch>, <ore:paneGlassColorless>],
 		[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]
 	]
 );
 // --- Fancy Iron Latern
 recipes.addShaped(<BiblioCraft:BiblioIronLantern>, [
 		[<ore:plateIron>, <ore:dustGlowstone>, <ore:plateIron>],
-		[<ore:paneGlassColorless>, <harvestcraft:pamcandleDeco1>, <ore:paneGlassColorless>],
+		[<ore:paneGlassColorless>, <minecraft:torch>, <ore:paneGlassColorless>],
 		[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]
 	]
 );

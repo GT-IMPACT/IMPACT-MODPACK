@@ -7,7 +7,6 @@
 import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.Assembler;
-import mods.larger_workbenches.LargeCrafting;
 
 print("Initializing 'Extra-Cells.zs'...");
 
@@ -98,29 +97,6 @@ var Int = <appliedenergistics2:tile.BlockInterface>;
 
 #==================================================================#
 #Removing Recipes
-// --- Storage Cell - 256K
-recipes.remove(Storage256K);
-
-// --- Storage Cell - 1024K
-recipes.remove(Storage1024K);
-
-// --- Storage Cell - 4096K
-recipes.remove(Storage4096K);
-
-// --- Storage Cell - 16384K
-recipes.remove(Storage16384K);
-
-// --- Storage Cell Component - 256K
-recipes.remove(StorageComponent256K);
-
-// --- Storage Cell Component - 1024K
-recipes.remove(StorageComponent1024K);
-
-// --- Storage Cell Component - 4096K
-recipes.remove(StorageComponent4096K);
-
-// --- Storage Cell Component - 16384K
-recipes.remove(StorageComponent16384K);
 
 // --- Universal Advanced Storage Housing
 recipes.remove(UAdvStorageHousing);
@@ -157,27 +133,6 @@ recipes.remove(<extracells:part.base:7>);
 
 //ME Energy Cell Fixture
 recipes.remove(<extracells:part.base:8>);
-
-// --- Fluid Storage Cell - 1K
-recipes.remove(FluidStorage1K);
-
-// --- Fluid Storage Cell - 4K
-recipes.remove(FluidStorage4K);
-
-// --- Fluid Storage Cell - 16K
-recipes.remove(FluidStorage16K);
-
-// --- Fluid Storage Cell - 64K
-recipes.remove(FluidStorage64K);
-
-// --- Fluid Storage Cell - 256K
-recipes.remove(FluidStorage256K);
-
-// --- Fluid Storage Cell - 1024K
-recipes.remove(FluidStorage1024K);
-
-// --- Fluid Storage Cell - 4096K
-recipes.remove(FluidStorage4096K);
 
 // --- Fluid Storage Cell Component - 1K
 recipes.remove(FluidSComponent1K);
@@ -224,46 +179,18 @@ recipes.addShapeless(<extracells:storage.physical:2>, [<extracells:storage.compo
 // --- Storage Cell - 16384K
 recipes.addShapeless(<extracells:storage.physical:3>, [<extracells:storage.component:3>, <extracells:storage.casing:0>]);
 
-// --- Storage Cell Component - 256K
-Assembler.addRecipe(StorageComponent256K, [DataCircuit*4, StorageComponent64K*4, <customthings:item:152>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 200, 7680);
-Assembler.addRecipe(StorageComponent256K, [DataCircuit*3, StorageComponent64K*4, <customthings:item:145>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 280, 30720);
-
-Assembler.addRecipe(StorageComponent256K, [DataCircuit*3, StorageComponent64K*3, ASoCchip, <customthings:item:145>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-Assembler.addRecipe(StorageComponent256K, [StorageComponent64K*2, DataControlCircuit, <gregtech:gt.metaitem.03:32061>, <customthings:item:154>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-
-// --- Storage Cell Component - 1024K
-Assembler.addRecipe(StorageComponent1024K, [DataControlCircuit*4, StorageComponent256K*4, <customthings:item:152>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 220, 7680);
-Assembler.addRecipe(StorageComponent1024K, [DataControlCircuit*3, StorageComponent256K*4, <customthings:item:145>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 300, 30720);
-
-Assembler.addRecipe(StorageComponent1024K, [DataControlCircuit*3, StorageComponent256K*3, ASoCchip, <customthings:item:145>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-Assembler.addRecipe(StorageComponent1024K, [StorageComponent256K*2, EFlow, <gregtech:gt.metaitem.03:32061>, <customthings:item:154>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-
-// --- Storage Cell Component - 4096K
-Assembler.addRecipe(StorageComponent4096K, [EFlow*4, StorageComponent1024K*4, <customthings:item:150>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 240, 30720);
-Assembler.addRecipe(StorageComponent4096K, [EFlow*3, StorageComponent1024K*4, <customthings:item:147>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 320, 122880);
-
-Assembler.addRecipe(StorageComponent4096K, [EFlow*3, StorageComponent1024K*3, <gregtech:gt.metaitem.03:32061>, <customthings:item:147>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-Assembler.addRecipe(StorageComponent4096K, [StorageComponent1024K*2, DataOrb, <gregtech:gt.metaitem.03:32063>, <customthings:item:156>,<gregtech:gt.integrated_circuit:2>*0], mPhoenixite * 36, 30, 2000000);
-
-// --- Storage Cell Component - 16384K
-Assembler.addRecipe(StorageComponent16384K, [DataOrb*4, StorageComponent4096K*4, <customthings:item:150>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 260, 30720);
-Assembler.addRecipe(StorageComponent16384K, [DataOrb*3, StorageComponent4096K*4, <customthings:item:147>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 340, 122880);
-
-Assembler.addRecipe(StorageComponent16384K, [DataOrb*3, StorageComponent4096K*3, <gregtech:gt.metaitem.03:32061>, <customthings:item:147>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-Assembler.addRecipe(StorageComponent16384K, [StorageComponent4096K*2, <ore:circuitSuperconductor>, <gregtech:gt.metaitem.03:32063>, <customthings:item:156>,<gregtech:gt.integrated_circuit:2>*0], mPhoenixite * 36, 30, 2000000);
-
 // --- Universal Advanced Storage Housing
 recipes.addShapedMirrored(UAdvStorageHousing, [
 		[HHammer, GlassPane, CertusScrew],
-		[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
-		[CertusScrew, <ore:plateHastelloyC276>, Screwdriver]
+		[<ore:plateTrinium>, UStorageHousing, <ore:plateTrinium>],
+		[CertusScrew, <ore:plateHastelloyC-276>, Screwdriver]
 	]
 );
 // - Alternative Recipe
 recipes.addShapedMirrored(UAdvStorageHousing, [
 		[Screwdriver, GlassPane, CertusScrew],
-		[<ore:plateTriniumTitaniumAlloy>, UStorageHousing, <ore:plateTriniumTitaniumAlloy>],
-		[CertusScrew, <ore:plateHastelloyC276>, HHammer]
+		[<ore:plateTrinium>, UStorageHousing, <ore:plateTrinium>],
+		[CertusScrew, <ore:plateHastelloyC-276>, HHammer]
 	]
 );
 
@@ -289,51 +216,6 @@ recipes.addShapeless(<extracells:storage.fluid:5>, [<extracells:storage.componen
 // --- Fluid Storage Cell - 4096K
 recipes.addShapeless(<extracells:storage.fluid:6>, [<extracells:storage.component:10>, <extracells:storage.casing:1>]);
 
-// --- Fluid Storage Cell Component - 1K
-var RAMchip = <gregtech:gt.metaitem.03:32039>;
-
-Assembler.addRecipe(FluidSComponent1K, [RAMchip*4, <ore:dyeBlue>*4, <customthings:item:160>,<gregtech:gt.integrated_circuit:1>*0], null, 180, 480);
-Assembler.addRecipe(FluidSComponent1K, [<gregtech:gt.metaitem.03:32041>*3, <ore:dyeBlue>*4, <customthings:item:159>,<gregtech:gt.integrated_circuit:1>*0], null, 240, 1920);
-
-// --- Fluid Storage Cell Component - 4K
-Assembler.addRecipe(FluidSComponent4K, [BasicCircuit*4, FluidSComponent1K*4, <customthings:item:160>,<gregtech:gt.metaitem.03:32039>,<gregtech:gt.integrated_circuit:1>*0], null, 200, 480);
-Assembler.addRecipe(FluidSComponent4K, [BasicCircuit*3, FluidSComponent1K*4, <customthings:item:159>,<gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 260, 1920);
-
-// --- Fluid Storage Cell Component - 16K
-Assembler.addRecipe(FluidSComponent16K, [GoodCircuit*4, FluidSComponent4K*4, <customthings:item:148>, <gregtech:gt.metaitem.03:32039>,<gregtech:gt.integrated_circuit:1>*0], null, 220, 1920);
-Assembler.addRecipe(FluidSComponent16K, [GoodCircuit*3, FluidSComponent4K*4, <customthings:item:144>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 280, 7680);
-
-Assembler.addRecipe(FluidSComponent16K, [RAMchip*32, <ore:dyeBlue>*32, SoCchip, <customthings:item:144>,<gregtech:gt.integrated_circuit:2>*0], mEuropuim * 36, 30, 30720);
-Assembler.addRecipe(FluidSComponent16K, [<gregtech:gt.metaitem.03:32041>*16, <ore:dyeBlue>*16, <gregtech:gt.metaitem.03:32049>, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-
-// --- Fluid Storage Cell Component - 64K
-Assembler.addRecipe(FluidSComponent64K, [AdvCircuit*4, FluidSComponent16K*4, <customthings:item:148>, <gregtech:gt.metaitem.03:32039>,<gregtech:gt.integrated_circuit:1>*0], null, 240, 1920);
-Assembler.addRecipe(FluidSComponent64K, [AdvCircuit*3, FluidSComponent16K*4, <customthings:item:144>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 300, 7680);
-
-Assembler.addRecipe(FluidSComponent64K, [AdvCircuit*3, FluidSComponent16K*3, SoCchip, <customthings:item:144>,<gregtech:gt.integrated_circuit:2>*0], mEuropuim * 36, 30, 30720);
-Assembler.addRecipe(FluidSComponent64K, [FluidSComponent16K*2, DataCircuit, ASoCchip, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-
-// --- Fluid Storage Cell Component - 256K
-Assembler.addRecipe(FluidSComponent256K, [DataCircuit*4, FluidSComponent64K*4, <customthings:item:149>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 260, 7680);
-Assembler.addRecipe(FluidSComponent256K, [DataCircuit*3, FluidSComponent64K*4, <customthings:item:146>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 320, 30720);
-
-Assembler.addRecipe(FluidSComponent256K, [DataCircuit*3, FluidSComponent64K*3, ASoCchip, <customthings:item:146>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-Assembler.addRecipe(FluidSComponent256K, [FluidSComponent64K*2, DataControlCircuit, <gregtech:gt.metaitem.03:32061>, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-
-// --- Fluid Storage Cell Component - 1024K
-Assembler.addRecipe(FluidSComponent1024K, [DataControlCircuit*4, FluidSComponent256K*4, <customthings:item:149>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 280, 7680);
-Assembler.addRecipe(FluidSComponent1024K, [DataControlCircuit*3, FluidSComponent256K*4, <customthings:item:146>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 340, 30720);
-
-Assembler.addRecipe(FluidSComponent1024K, [DataControlCircuit*3, FluidSComponent256K*3, ASoCchip, <customthings:item:146>,<gregtech:gt.integrated_circuit:2>*0], mAmericium * 36, 30, 122880);
-Assembler.addRecipe(FluidSComponent1024K, [FluidSComponent256K*2, EFlow, <gregtech:gt.metaitem.03:32061>, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-
-// --- Fluid Storage Cell Component - 4096K
-Assembler.addRecipe(FluidSComponent4096K, [EFlow*4, FluidSComponent1024K*4, <customthings:item:149>, <gregtech:gt.metaitem.03:32041>,<gregtech:gt.integrated_circuit:1>*0], null, 300, 30720);
-Assembler.addRecipe(FluidSComponent4096K, [EFlow*3, FluidSComponent1024K*4, <customthings:item:146>, <gregtech:gt.metaitem.03:32043>,<gregtech:gt.integrated_circuit:1>*0], null, 360, 122880);
-
-Assembler.addRecipe(FluidSComponent4096K, [EFlow*3, FluidSComponent1024K*3, <gregtech:gt.metaitem.03:32061>, <customthings:item:146>,<gregtech:gt.integrated_circuit:2>*0], mNeutronium * 36, 30, 500000);
-Assembler.addRecipe(FluidSComponent4096K, [FluidSComponent1024K*2, <ore:circuitSuperconductor>, <gregtech:gt.metaitem.03:32063>, <gregtech:gt.metaitem.01:32714>,<gregtech:gt.integrated_circuit:2>*0], mPhoenixite * 36, 30, 2000000);
-
 // --- CraftingStorages
 Assembler.addRecipe(<extracells:craftingstorage>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent256K, <liquid:molten.solderingalloy> * 9216, 1200, 16384);
 Assembler.addRecipe(<extracells:craftingstorage:1>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent1024K, <liquid:molten.solderingalloy> * 18432, 1200, 65536);
@@ -343,7 +225,7 @@ Assembler.addRecipe(<extracells:craftingstorage:3>, <appliedenergistics2:tile.Bl
 // --- Universal Fluid Storage Housing
 recipes.addShapedMirrored(UFluidStorageHousing, [
 		[HHammer, CertusPlate, NQuartzScrew],
-		[<ore:plateIncoloy020>, GlassPane, <ore:plateIncoloy020>],
+		[<ore:plateInconel-792>, GlassPane, <ore:plateInconel-792>],
 		[NQuartzScrew, StainlessPlate, Screwdriver]
 	]
 );
@@ -353,39 +235,12 @@ AlloySmelter.addRecipe(<extracells:certustank>, <appliedenergistics2:tile.BlockQ
 // --- ME Fluid Pattern
 recipes.addShapeless(<extracells:pattern.fluid>, [<extracells:storage.casing:1>, <ore:bucketEmpty>]);
 
-// --- ME Fluid Export Bus
-LargeCrafting.addShaped(1, <extracells:part.base>, [
-		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null],
-		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
-		[AlPlate, FormationCore, <gregtech:gt.metaitem.01:32631>, FormationCore, AlPlate],
-		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate]
-	]
-);
-// --- ME Fluid Import Bus
-LargeCrafting.addShaped(1, <extracells:part.base:1>, [
-		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate],
-		[AlPlate, AnnihilationCore, <gregtech:gt.metaitem.01:32631>, AnnihilationCore, AlPlate],
-		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
-		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null]
-	]
-);
-// --- ME Fluid Storage Bus
-LargeCrafting.addShaped(1, <extracells:part.base:2>, [
-		[null, <ore:foilSilicon>, <appliedenergistics2:item.ItemMultiPart:80>, <ore:foilSilicon>, null],
-		[<ore:foilSilicon>, <ore:stickLapis>, <gregtech:gt.metaitem.01:32611>, <ore:stickLapis>, <ore:foilSilicon>],
-		[AlPlate, AnnihilationCore, <gregtech:gt.metaitem.01:32631>, FormationCore, AlPlate],
-		[AlPlate, AlPlate, <extracells:part.base:9>, AlPlate, AlPlate]
-	]
-);
 // --- ME Fluid Terminal
-LargeCrafting.addShaped(1, <extracells:part.base:3>, [
-		[<ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>, <ore:plateCertusQuartz>, <ore:plateVanadiumSteel>],
-		[<ore:plateLapis>, <customthings:item:174>, <gregtech:gt.metaitem.01:32732>, <customthings:item:174>, <ore:plateLapis>],
-		[<ore:plateVanadiumSteel>, CertusCircuit, Illuminated, CertusCircuit, <ore:plateVanadiumSteel>],
-		[<ore:plateLapis>, <customthings:item:174>, <ore:circuitAdvanced>, <customthings:item:174>, <ore:plateLapis>],
-		[<ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>, <ore:plateNetherQuartz>, <ore:plateVanadiumSteel>]
-	]
-);
+recipes.addShaped(<extracells:part.base:3>, [
+[<ore:plateLapis>, <appliedenergistics2:item.ItemMultiPart:16>, <ore:plateLapis>],
+[<appliedenergistics2:item.ItemMultiMaterial:43>, <appliedenergistics2:item.ItemMultiPart:380>, <appliedenergistics2:item.ItemMultiMaterial:44>],
+[<ore:plateLapis>, <appliedenergistics2:item.ItemMultiPart:16>, <ore:plateLapis>]]);
+
 // --- Wireless Fluid Terminal
 recipes.remove(<extracells:terminal.fluid.wireless>);
 recipes.addShaped(<extracells:terminal.fluid.wireless>, [

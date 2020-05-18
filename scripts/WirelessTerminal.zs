@@ -6,7 +6,7 @@ recipes.addShaped(<ae2wct:wirelessCraftingTerminal>, [
 [<ore:plateHastelloyN>, <gregtech:gt.metaitem.01:32545>, <ore:plateHastelloyN>]]);
 
 //Magnet
-Assembler.addRecipe(<ae2wct:magnetCard>, [<gregtech:gt.blockmetal5:1>*2, <appliedenergistics2:item.ItemMultiMaterial:28>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:stickLongHastelloyX>*8, <ore:screwInconel792>*24], null, 1000, 1920);
+Assembler.addRecipe(<ae2wct:magnetCard>, [<gregtech:gt.blockmetal5:1>*2, <appliedenergistics2:item.ItemMultiMaterial:28>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:stickLongHastelloyN>*8, <ore:screwInconel-792>*24], null, 1000, 1920);
 
 //Infinity Booster
-Assembler.addRecipe(<ae2wct:infinityBoosterCard>, [<appliedenergistics2:item.ItemMultiMaterial:42>*64, <gregtech:gt.metaitem.01:32677>, <ore:plateBlackTitanium>*16, <ore:stickLongTriniumNaquadahCarbonite>*24, <ore:screwPikyonium64B>*64], null, 4000, 122880);
+Assembler.addRecipe(<ae2wct:infinityBoosterCard>, [<appliedenergistics2:item.ItemMultiMaterial:42>*64, <gregtech:gt.metaitem.01:32677>, <ore:plateCinobiteA243>*16, <ore:stickLongQuantium>*24, <ore:screwOsmium>*64], null, 4000, 122880);

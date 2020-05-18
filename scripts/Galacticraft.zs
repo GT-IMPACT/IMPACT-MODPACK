@@ -495,9 +495,9 @@ Assembler.addRecipe(<GalacticraftCore:item.oxygenMask>, <IC2:itemArmorHazmatHelm
 
 // --- Canvas
 recipes.addShaped(<GalacticraftCore:item.canvas>,  [
-[null, <harvestcraft:wovencottonItem>, <ore:stickPlastic>],
-[<harvestcraft:wovencottonItem>, <ore:stickPlastic>, <harvestcraft:wovencottonItem>],
-[<ore:stickPlastic>, <harvestcraft:wovencottonItem>, null]]);
+[null, <ore:blockWool>, <ore:stickPlastic>],
+[<ore:blockWool>, <ore:stickPlastic>, <ore:blockWool>],
+[<ore:stickPlastic>, <ore:blockWool>, null]]);
 
 //Oxygen Gear
 recipes.addShaped(<GalacticraftCore:item.oxygenGear>, [
@@ -547,9 +547,9 @@ recipes.addShaped(<GalacticraftCore:item.sensorGlasses>, [
 
 //Oxygen Vent
 recipes.addShaped(AirVent, [
-[IronBars, CompressedTin, IronBars],
+[<impact:impact_item2:51>, CompressedTin, <impact:impact_item2:51>],
 [CompressedTin, CompressedSteel, CompressedTin],
-[IronBars, CompressedTin, IronBars]]);
+[<impact:impact_item2:51>, CompressedTin, <impact:impact_item2:51>]]);
 
 //Oxygen Fan
 recipes.addShaped(<GalacticraftCore:item.airFan>, [
@@ -603,7 +603,7 @@ recipes.addShaped(<GalacticraftCore:item.buggymat:1>, [
 //Buggy Storage Box
 recipes.addShaped(<GalacticraftCore:item.buggymat:2>, [
 [CompressedSteel, RubberBlock, CompressedSteel],
-[CompressedSteel, <IronChest:BlockIronChest>, CompressedSteel],
+[CompressedSteel, <chestup:Blockchestup:1>, CompressedSteel],
 [CompressedSteel, CompressedSteel, CompressedSteel]]);
 
 //Frequencey Module
@@ -881,42 +881,3 @@ for i in meta {
 	mods.gregtech.CuttingSaw.addRecipe([slab * 2], block, <liquid:lubricant> * 1, 25, 8);
 	recipes.addShaped(slab * 2, [[<ore:craftingToolSaw>, block]]);
 }
-
-// Compressed Plate
-var GCcompressedSteel = <GalacticraftCore:item.basicItem:9>;
-var GCcompressedBronze = <GalacticraftCore:item.basicItem:10>;
-var GTdustTinyDarkAsh = <gregtech:gt.metaitem.01:816>;
-var GTplateBlueSteel = <gregtech:gt.metaitem.01:17349>;
-var GTplateBlackBronze = <gregtech:gt.metaitem.01:17352>;
-//OutputArray, InputStack, TNTAmount
-//ImplosionCompressor.addRecipe([<minecraft:bedrock>, <gregtech:gt.metaitem.01:2816> * 16], <gregtech:gt.metaitem.01:21327> * 32, 64);
-ImplosionCompressor.addRecipe([GCcompressedSteel, GTdustTinyDarkAsh], GTplateBlueSteel * 2, 2);
-ImplosionCompressor.addRecipe([GCcompressedBronze, GTdustTinyDarkAsh], GTplateBlackBronze * 2, 2);
-
-// Heavy Duty Alloy Ingots
-var GTingotHeavyDutyT1 = <gregtech:gt.metaitem.01:32462>;
-var GTingotHeavyDutyT2 = <gregtech:gt.metaitem.01:32463>;
-var GTingotHeavyDutyT3 = <gregtech:gt.metaitem.01:32464>;
-var GCplateHeavyDutyT1 = <GalacticraftCore:item.heavyPlating>;
-var GCplateHeavyDutyT2 = <GalacticraftMars:item.null:3>;
-//var GCplateHeavyDutyT3 = <GalacticraftMars:item.itemBasicAsteroids>;
-var GTplateDoubleTitanium = <gregtech:gt.metaitem.01:18028>;
-var GTplateDoubleTeflon = <gregtech:gt.metaitem.01:18473>;
-
-recipes.remove(GTingotHeavyDutyT1);
-recipes.remove(GTingotHeavyDutyT2);
-recipes.remove(GTingotHeavyDutyT3);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32462>, [<GalacticraftCore:item.basicItem:9>,<GalacticraftCore:item.basicItem:10>,<GalacticraftCore:item.basicItem:8>], <liquid:molten.stainlesssteel> * 288, 600, 256);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32463>, [<GalacticraftCore:item.heavyPlating>,<ore:plateDoubleMeteoricSteel>,<GalaxySpace:item.CompressedSDHD120>, <ore:plateDoubleInconel792>], <liquid:molten.titanium> * 288, 800, 1024);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32464>, [<GalacticraftMars:item.null:3>,<customthings:item:2>,<customthings:item:31>, <ore:plateDoubleHastelloyN>], <liquid:molten.tungstensteel> * 288, 1000, 4096);
-
-// --- Rocket T1
-Assembler.addRecipe(<GalacticraftCore:item.spaceship>, [<spartakcore:item.SchematicsTier1>*0, <GalacticraftCore:item.noseCone>, <GalaxySpace:item.CompressedSDHD120>*3, <GalacticraftCore:item.heavyPlating>*8, <GalacticraftCore:item.rocketFins>*4, <gregtech:gt.metaitem.01:32408>, <GalacticraftCore:item.engine>], null, 2000, 480);
-// --- Rocket T2
-Assembler.addRecipe(<GalacticraftMars:item.spaceshipTier2>, [<spartakcore:item.SchematicsTier2>*0, <GalacticraftCore:item.noseCone>, <GalacticraftCore:item.heavyPlating>*3, <GalacticraftMars:item.null:3>*10, <GalacticraftCore:item.rocketFins>*4, <GalacticraftCore:item.engine:1>*2, <gregtech:gt.metaitem.01:32409>, <GalacticraftCore:item.engine>*2], null, 2400, 1920);
-// --- Rocket T3
-Assembler.addRecipe(<GalacticraftMars:item.itemTier3Rocket>, [<spartakcore:item.SchematicsTier3>*0, <GalacticraftMars:item.heavyNoseCone>, <GalacticraftMars:item.null:3>*4, <GalacticraftMars:item.itemBasicAsteroids>*12, <GalacticraftMars:item.itemBasicAsteroids:2>*4, <GalacticraftCore:item.engine:1>*4, <customthings:item:16>*2, <GalacticraftMars:item.itemBasicAsteroids:1>], null, 2800, 4096);
-
-
-
-//Assembler.addRecipe(<gregtech:gt.blockmachines:15230>, [<gregtech:gt.blockmachines:15>,<ore:lensDiamond>,<gregtech:gt.metaitem.01:32684>,<gregtech:gt.metaitem.01:32619>,<ore:wireGt01SuperconductorIV>*2,<gregtech:gt.integrated_circuit:1>*0], null, 1000, 7680);

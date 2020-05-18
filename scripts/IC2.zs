@@ -25,7 +25,6 @@ import mods.ic2.Compressor;
 import mods.ic2.SemiFluidGenerator;
 import mods.nei.NEI;
 import mods.ic2.Macerator;
-import mods.larger_workbenches.LargeCrafting;
 
 print("Initializing 'IC2.zs'...");
 
@@ -685,64 +684,11 @@ recipes.addShaped(<IC2:itemNightvisionGoggles:26>, [
 [<GalacticraftCore:item.sensorLens>, <ore:craftingToolScrewdriver>, <GalacticraftCore:item.sensorLens>]]);
 
 #==================================================================#
-#NanoSet
-recipes.remove(<IC2:itemArmorNanoHelmet:*>);
-recipes.remove(<IC2:itemArmorNanoChestplate:*>);
-recipes.remove(<IC2:itemArmorNanoLegs:*>);
-recipes.remove(<IC2:itemArmorNanoBoots:*>);
-
-Assembler.addRecipe(<IC2:itemArmorNanoHelmet:27>, <customthings:item:132>, <customthings:item:133>, 400, 120);
-Assembler.addRecipe(<IC2:itemArmorNanoChestplate:27>, <customthings:item:129>, <customthings:item:133>, 400, 120);
-Assembler.addRecipe(<IC2:itemArmorNanoLegs:27>, <customthings:item:131>, <customthings:item:133>, 400, 120);
-Assembler.addRecipe(<IC2:itemArmorNanoBoots:27>, <customthings:item:128>, <customthings:item:133>, 400, 120);
-
-#==================================================================#
 #Nuclear Reactor
-LargeCrafting.addShaped(3, NucReactor, [
-		[<ore:plateDenseSteel>, <ore:plateTripleLead>, <ore:plateTripleLead>, <IC2:blockReactorChamber>, <ore:plateTripleLead>, <ore:plateTripleLead>, <ore:plateDenseSteel>],
-		[<ore:plateTripleLead>, <ore:circuitElite>, <customthings:item:175>, <customthings:item:175>, <customthings:item:175>, <ore:circuitElite>, <ore:plateTripleLead>],
-		[<ore:plateTripleLead>, <customthings:item:175>, <ore:plateDenseTitanium>, <gregtech:gt.metaitem.01:32654>, <ore:plateDenseTitanium>, <customthings:item:175>, <ore:plateTripleLead>],
-		[<IC2:blockReactorChamber>, <customthings:item:175>, <gregtech:gt.metaitem.01:32654>, <gregtech:gt.blockmachines:15>, <gregtech:gt.metaitem.01:32654>, <customthings:item:175>, <IC2:blockReactorChamber>],
-		[<ore:plateTripleLead>, <customthings:item:175>, <ore:plateDenseTitanium>, <ore:cableGt01Platinum>, <ore:plateDenseTitanium>, <customthings:item:175>, <ore:plateTripleLead>],
-		[<ore:plateTripleLead>, <ore:circuitElite>, <customthings:item:175>, <customthings:item:175>, <customthings:item:175>, <ore:circuitElite>, <ore:plateTripleLead>],
-		[<ore:plateDenseSteel>, <ore:plateTripleLead>, <ore:plateTripleLead>, <IC2:blockReactorChamber>, <ore:plateTripleLead>, <ore:plateTripleLead>, <ore:plateDenseSteel>]
-	]
-);
 NucReactor.addTooltip(format.gray("Coefficient: ") + format.red("x6"));
 
-#==================================================================#
-#Kinetic Generator
-LargeCrafting.addShaped(1, <IC2:blockKineticGenerator>, [
-		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>],
-		[<ore:itemCasingStainlessSteel>, <ore:gearGtSmallTitanium>, <ore:cableGt01Platinum>, <ore:gearGtSmallTitanium>, <ore:itemCasingStainlessSteel>],
-		[<IC2:itemRecipePart:12>, <ore:circuitData>, <gregtech:gt.blockcasings2:3>, <ore:circuitData>, <IC2:itemRecipePart:12>],
-		[<ore:itemCasingStainlessSteel>, <gregtech:gt.metaitem.01:32602>, <ore:cableGt01Platinum>, <gregtech:gt.metaitem.01:32602>, <ore:itemCasingStainlessSteel>],
-		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>]
-	]
-);
-
-#==================================================================#
-#Kinetic Wind Generator
-LargeCrafting.addShaped(1, <IC2:blockGenerator:9>, [
-		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>],
-		[<ore:rotorStainlessSteel>, <ore:gearTitanium>, <gregtech:gt.blockmachines:43>, <ore:gearTitanium>, <ore:rotorStainlessSteel>],
-		[<ore:cableGt01Platinum>, <ore:circuitData>, <gregtech:gt.blockcasings2:11>, <ore:circuitData>, <ore:cableGt01Platinum>],
-		[<ore:rotorStainlessSteel>, <gregtech:gt.metaitem.01:32602>, <ore:circuitData>, <gregtech:gt.metaitem.01:32602>, <ore:rotorStainlessSteel>],
-		[<ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>, <IC2:itemRecipePart:12>, <ore:plateDoubleMaragingSteel300>, <ore:plateDoubleMaragingSteel300>]
-	]
-);
 <IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 
-#==================================================================#
-#Kinetic Water Generator
-LargeCrafting.addShaped(1, <IC2:blockKineticGenerator:4>, [
-		[<ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>],
-		[<ore:itemCasingStainlessSteel>, <gregtech:gt.metaitem.01:32612>, <ore:cableGt01Platinum>, <gregtech:gt.metaitem.01:32612>, <ore:itemCasingStainlessSteel>],
-		[<IC2:itemRecipePart:12>, <ore:circuitData>, <gregtech:gt.blockcasings2:3>, <ore:circuitData>, <IC2:itemRecipePart:12>],
-		[<ore:itemCasingStainlessSteel>, <ore:gearGtSmallTitanium>, <ore:cableGt01Platinum>, <ore:gearGtSmallTitanium>, <ore:itemCasingStainlessSteel>],
-		[<ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>, <IC2:itemRecipePart:12>, <ore:plateDoubleStainlessSteel>, <ore:plateDoubleStainlessSteel>]
-	]
-);
 <IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 
 #==================================================================#

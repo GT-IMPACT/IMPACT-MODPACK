@@ -13,7 +13,6 @@ import mods.gregtech.BlastFurnace;
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.FluidSolidifier;
 import mods.gregtech.FluidExtractor;
-import mods.larger_workbenches.LargeCrafting;
 
 print("Initializing 'enderio.zs'...");
 
@@ -54,7 +53,6 @@ var resonatorEnder = <EnderIO:itemFrankenSkull:3>;
 var tankFluid = <EnderIO:blockTank>;
 var tankFluidPressurized = <EnderIO:blockTank:1>;
 var craftingCover = <gregtech:gt.metaitem.01:32744>;
-var chestIron = <IronChest:BlockIronChest:0>;
 
 val LvMotor = <gregtech:gt.metaitem.01:32600>;
 val MvMotor = <gregtech:gt.metaitem.01:32601>;
@@ -173,7 +171,6 @@ recipes.remove(<EnderIO:blockEnderIo>);
 recipes.remove(<EnderIO:blockAlloySmelter>);
 recipes.remove(<EnderIO:blockSagMill>);
 recipes.remove(<EnderIO:itemPowderIngot:*>); // Powder
-recipes.remove(<EnderIO:blockTransceiver>);
 recipes.remove(<EnderIO:blockPowerMonitor>);
 recipes.remove(<EnderIO:itemMaterial:2>); // binderComposite
 recipes.remove(<EnderIO:blockVat>);
@@ -184,7 +181,6 @@ recipes.remove(<EnderIO:blockSolarPanel:1>);
 recipes.remove(<EnderIO:itemEnderFood>);
 recipes.remove(<EnderIO:blockSpawnGuard>);
 recipes.remove(<EnderIO:blockWeatherObelisk>);
-recipes.remove(<EnderIO:blockTelePad>);
 recipes.remove(<EnderIO:itemCoordSelector>);
 recipes.remove(<EnderIO:blockBuffer>);
 recipes.remove(<EnderIO:blockBuffer:1>);
@@ -422,34 +418,6 @@ recipes.addShaped(<EnderIO:itemMagnet:16> , [
 		[ESteelPlate, CIPlate, CIPlate],
 		[Wrench, MSScrew, VCrystal],
 		[ESteelPlate, CIPlate, CIPlate]
-	]
-);
-// --- Telepad Block
-LargeCrafting.addShaped(1, <EnderIO:blockTelePad>*9, [
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, <gregtech:gt.metaitem.01:32683>, PCrystal, <gregtech:gt.metaitem.01:32693>, <ore:plateDoubleDarkSteel>],
-		[FQuartz, PCrystal, <ore:frameGtEnderium>, PCrystal, FQuartz],
-		[<ore:plateDoubleDarkSteel>, <gregtech:gt.metaitem.01:32693>, Capacitor3, <gregtech:gt.metaitem.01:32683>, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>]
-	]
-);
-LargeCrafting.addShaped(1, <EnderIO:blockTelePad>*9, [
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, <gregtech:gt.metaitem.01:32693>, PCrystal, <gregtech:gt.metaitem.01:32683>, <ore:plateDoubleDarkSteel>],
-		[FQuartz, PCrystal, <ore:frameGtEnderium>, PCrystal, FQuartz],
-		[<ore:plateDoubleDarkSteel>, <gregtech:gt.metaitem.01:32683>, Capacitor3, <gregtech:gt.metaitem.01:32693>, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>]
-	]
-);
-// --- Dimensional Tranceiver
-LargeCrafting.addShaped(3, <EnderIO:blockTransceiver>, [
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, FQuartz, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, EnergyFlowCircuit, PCrystal, Capacitor3, PCrystal, EnergyFlowCircuit, <ore:plateDoubleDarkSteel>],
-		[FQuartz, PCrystal, <appliedenergistics2:tile.BlockQuantumRing>, <ore:plateDoubleEnderium>, <appliedenergistics2:tile.BlockQuantumRing>, PCrystal, FQuartz],
-		[FQuartz, Capacitor3, <ore:plateDoubleEnderium>, <gregtech:gt.metaitem.01:32675>, <ore:plateDoubleEnderium>, Capacitor3, FQuartz],
-		[FQuartz, PCrystal, <appliedenergistics2:tile.BlockQuantumRing>, <ore:plateDoubleEnderium>, <appliedenergistics2:tile.BlockQuantumRing>, PCrystal, FQuartz],
-		[<ore:plateDoubleDarkSteel>, EnergyFlowCircuit, PCrystal, Capacitor3, PCrystal, EnergyFlowCircuit, <ore:plateDoubleDarkSteel>],
-		[<ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>, FQuartz, FQuartz, FQuartz, <ore:plateDoubleDarkSteel>, <ore:plateDoubleDarkSteel>]
 	]
 );
 recipes.addShaped(<EnderIO:blockElectricLight>, [

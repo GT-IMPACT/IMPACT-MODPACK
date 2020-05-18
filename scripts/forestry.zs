@@ -398,21 +398,21 @@ Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72,
 
 // --- Apiarists Backpack
 	recipes.addShaped(<Forestry:apiaristBag>, [
-	[<harvestcraft:wovencottonItem>, <Forestry:apicultureChest>, <harvestcraft:wovencottonItem>],
-	[<ore:itemLeather>, <harvestcraft:wovencottonItem>, <ore:itemLeather>],
+	[<ore:blockWool>, <Forestry:apicultureChest>, <ore:blockWool>],
+	[<ore:itemLeather>, <ore:blockWool>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
 // --- Lepidopterists Backpack
 	recipes.addShaped(<Forestry:lepidopteristBag>, [
-	[<harvestcraft:wovencottonItem>, <Forestry:lepidopterology>, <harvestcraft:wovencottonItem>],
-	[<ore:itemLeather>, <harvestcraft:wovencottonItem>, <ore:itemLeather>],
+	[<ore:blockWool>, <Forestry:lepidopterology>, <ore:blockWool>],
+	[<ore:itemLeather>, <ore:blockWool>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
 
 
 // --- Miners Backpack
 	recipes.addShaped(<Forestry:minerBag>, [
-	[<harvestcraft:wovencottonItem>, <ore:ingotIron>, <harvestcraft:wovencottonItem>],
+	[<ore:blockWool>, <ore:ingotIron>, <ore:blockWool>],
 	[<ore:itemLeather>, <ore:ingotIron>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
@@ -426,7 +426,7 @@ Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72,
 
 // --- Diggers Backpack
 	recipes.addShaped(<Forestry:diggerBag>, [
-	[<harvestcraft:wovencottonItem>, <ore:stone>, <harvestcraft:wovencottonItem>],
+	[<ore:blockWool>, <ore:stone>, <ore:blockWool>],
 	[<ore:itemLeather>, <ore:stone>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
@@ -440,7 +440,7 @@ Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72,
 
 // --- Foresters Backpach
 	recipes.addShaped(<Forestry:foresterBag>, [
-	[<harvestcraft:wovencottonItem>, <ore:logWood>, <harvestcraft:wovencottonItem>],
+	[<ore:blockWool>, <ore:logWood>, <ore:blockWool>],
 	[<ore:itemLeather>, <ore:logWood>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
@@ -453,7 +453,7 @@ Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72,
 
 // --- Hunters Backpack
 	recipes.addShaped(<Forestry:hunterBag>, [
-	[<harvestcraft:wovencottonItem>, <minecraft:feather>, <harvestcraft:wovencottonItem>],
+	[<ore:blockWool>, <minecraft:feather>, <ore:blockWool>],
 	[<ore:itemLeather>, <minecraft:feather>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 
@@ -466,7 +466,7 @@ Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72,
 
 // --- Builders Backpach
 	recipes.addShaped(<Forestry:builderBag>, [
-	[<harvestcraft:wovencottonItem>, <minecraft:fence>, <harvestcraft:wovencottonItem>],
+	[<ore:blockWool>, <minecraft:fence>, <ore:blockWool>],
 	[<ore:itemLeather>, <minecraft:fence>, <ore:itemLeather>],
 	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
 

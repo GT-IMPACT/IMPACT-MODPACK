@@ -426,6 +426,18 @@ recipes.addShaped(<GalaxySpace:item.spacesuit_boots>, [
 [<GalaxySpace:item.CompressedSDHD120>, <GalacticraftMars:item.null:5>, <GalaxySpace:item.CompressedSDHD120>],
 [<GalaxySpace:item.CompressedPlates:2>, <GalacticraftMars:item.null:5>, <GalaxySpace:item.CompressedPlates:2>]]);
 
+// --- Small Fuel Canister
+recipes.addShaped(<GalaxySpace:item.ModuleSmallFuelCanister>, [
+[<ore:screwHSLA>, <ore:craftingToolScrewdriver>, <ore:screwHSLA>],
+[<GalaxySpace:item.CompressedSDHD120>, <GalaxySpace:item.ModuleSmallCanister>, <GalaxySpace:item.CompressedSDHD120>],
+[<ore:screwHSLA>, <ore:craftingToolHardHammer>, <ore:screwHSLA>]]);
+
+// --- Blank Fuel Tank
+recipes.addShaped(<GalaxySpace:item.ModuleSmallCanister>, [
+[<GalacticraftCore:item.basicItem:9>, <ore:ringSteel>, <GalacticraftCore:item.basicItem:9>],
+[<GalacticraftCore:item.basicItem:9>, <ore:craftingToolWrench>, <GalacticraftCore:item.basicItem:9>],
+[<GalacticraftCore:item.basicItem:9>, <ore:ringSteel>, <GalacticraftCore:item.basicItem:9>]]);
+
 
 
 // --- Assembler Recipes
@@ -459,14 +471,6 @@ Assembler.addRecipe(<GalaxySpace:item.spacesuit_gravityboots>, [<GalaxySpace:ite
 
 // --- Space Suit Sensor Glasses
 Assembler.addRecipe(<GalaxySpace:item.spacesuit_helmetglasses>, [<GalaxySpace:item.spacesuit_helmet>, <GalacticraftCore:item.sensorGlasses>, <GalaxySpace:item.CompressedPlates:2>*4], <liquid:molten.platinum> * 1440, 600, 1920);
-
-#==================================================================#
-#Rockets
-AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier4>, 144000, [<spartakcore:item.HeavyDutyNoseConeTier4>, <GalacticraftMars:item.itemBasicAsteroids> * 4, <spartakcore:item.HeavyDutyPlateTier4> * 14, <spartakcore:item.HeavyDutyRocketFinsTier4>*6, <spartakcore:item.Tier4Booster>*4, <customthings:item:16>*4, <spartakcore:item.HeavyDutyRocketEngineTier4>*2], [<liquid:molten.solderingalloy> * 576], <GalaxySpace:item.Tier4Rocket>, 3000, 16384);
-AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier5>, 288000, [<spartakcore:item.HeavyDutyNoseConeTier5>, <spartakcore:item.HeavyDutyPlateTier4> * 6, <spartakcore:item.HeavyDutyPlateTier5> * 16, <spartakcore:item.HeavyDutyRocketFinsTier5>*6, <spartakcore:item.Tier5Booster>*4, <customthings:item:16>*2, <customthings:item:12>*2, <spartakcore:item.HeavyDutyRocketEngineTier5>*4], [<liquid:molten.solderingalloy> * 1152], <GalaxySpace:item.Tier5Rocket>, 4000, 65536);
-AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier6>, 432000, [<spartakcore:item.HeavyDutyNoseConeTier6>, <spartakcore:item.HeavyDutyPlateTier5> * 8, <spartakcore:item.HeavyDutyPlateTier6> * 18, <spartakcore:item.HeavyDutyRocketFinsTier6>*8, <spartakcore:item.Tier6Booster>*6, <customthings:item:12>*4, <spartakcore:item.HeavyDutyRocketEngineTier6>*6], [<liquid:molten.solderingalloy> * 2304], <GalaxySpace:item.Tier6Rocket>, 5000, 262144);
-AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier7>, 576000, [<spartakcore:item.HeavyDutyNoseConeTier7>, <spartakcore:item.HeavyDutyPlateTier6> * 10, <spartakcore:item.HeavyDutyPlateTier7> * 20, <spartakcore:item.HeavyDutyRocketFinsTier7>*10, <spartakcore:item.Tier7Booster>*8, <customthings:item:12>*2, <customthings:item:3>*2, <spartakcore:item.HeavyDutyRocketEngineTier7>*8], [<liquid:molten.solderingalloy> * 4608], <GalaxySpace:item.Tier7Rocket>, 6000, 1000000);
-AssemblyLine.addRecipe(<spartakcore:item.SchematicsTier8>, 1152000, [<spartakcore:item.HeavyDutyNoseConeTier8>, <spartakcore:item.HeavyDutyPlateTier7> * 12, <spartakcore:item.HeavyDutyPlateTier8> * 24, <spartakcore:item.HeavyDutyRocketFinsTier8>*12, <spartakcore:item.Tier8Booster>*10, <customthings:item:3>*4, <spartakcore:item.HeavyDutyRocketEngineTier8>*10], [<liquid:molten.solderingalloy> * 9216], <GalaxySpace:item.Tier8Rocket>, 7000, 4000000);
 
 #==================================================================#
 
@@ -514,155 +518,6 @@ Pulverizer.addRecipe([<GalaxySpace:item.GlowstoneDusts:3> * 4], <GalaxySpace:pro
 // --- Pluto Glowstone Dust
 Pulverizer.addRecipe([<GalaxySpace:item.GlowstoneDusts:4> * 4], <GalaxySpace:plutoglowstone:4>, [10000], 300, 2);
 
-
-// --- Rocks
-Pulverizer.addRecipe([<customthings:item:52>, <gregtech:gt.metaitem.01:1918>, <gregtech:gt.metaitem.01:1081>, <gregtech:gt.metaitem.01:1975>], <GalaxySpace:mercuryblocks>, [10000, 3000, 2000, 1200], 400, 256);
-Pulverizer.addRecipe([<customthings:item:52>, <gregtech:gt.metaitem.01:1918>, <gregtech:gt.metaitem.01:1081>, <gregtech:gt.metaitem.01:1975>], <GalaxySpace:mercuryblocks:1>, [10000, 3000, 2000, 1200], 400, 256);
-Pulverizer.addRecipe([<customthings:item:52>, <gregtech:gt.metaitem.01:1918>, <gregtech:gt.metaitem.01:1081>, <gregtech:gt.metaitem.01:1975>], <GalaxySpace:mercuryblocks:2>, [10000, 3000, 2000, 1200], 400, 256);
-
-Pulverizer.addRecipe([<customthings:item:42>, <gregtech:gt.metaitem.01:1340>, <gregtech:gt.metaitem.01:1008>, <gregtech:gt.metaitem.01:1913>], <GalaxySpace:ceresblocks>, [10000, 5000, 2500, 2000], 400, 120);
-Pulverizer.addRecipe([<customthings:item:42>, <gregtech:gt.metaitem.01:1340>, <gregtech:gt.metaitem.01:1008>, <gregtech:gt.metaitem.01:1913>], <GalaxySpace:ceresblocks:1>, [10000, 5000, 2500, 2000], 400, 120);
-
-Pulverizer.addRecipe([<customthings:item:64>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1910>, <gregtech:gt.metaitem.01:1359>], <GalaxySpace:venusblocks>, [10000, 4500, 2500, 1500], 400, 256);
-Pulverizer.addRecipe([<customthings:item:64>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1910>, <gregtech:gt.metaitem.01:1359>], <GalaxySpace:venusblocks:1>, [10000, 4500, 2500, 1500], 400, 256);
-
-Pulverizer.addRecipe([<customthings:item:43>, <gregtech:gt.metaitem.01:1908>, <gregtech:gt.metaitem.01:1923>], <GalaxySpace:deimosblocks>, [10000, 5000, 2500], 400, 64);
-Pulverizer.addRecipe([<customthings:item:43>, <gregtech:gt.metaitem.01:1908>, <gregtech:gt.metaitem.01:1923>], <GalaxySpace:deimosblocks:1>, [10000, 5000, 2500], 400, 64);
-
-Pulverizer.addRecipe([<customthings:item:55>, <gregtech:gt.metaitem.01:1917>, <gregtech:gt.metaitem.01:1871>], <GalaxySpace:phobosblocks>, [10000, 5000, 2500], 400, 64);
-Pulverizer.addRecipe([<customthings:item:55>, <gregtech:gt.metaitem.01:1917>, <gregtech:gt.metaitem.01:1871>], <GalaxySpace:phobosblocks:1>, [10000, 5000, 2500], 400, 64);
-Pulverizer.addRecipe([<customthings:item:55>, <gregtech:gt.metaitem.01:1917>, <gregtech:gt.metaitem.01:1871>], <GalaxySpace:phobosblocks:2>, [10000, 5000, 2500], 400, 64);
-
-Pulverizer.addRecipe([<customthings:item:48>, <gregtech:gt.metaitem.01:1028>, <gregtech:gt.metaitem.01:1825>], <GalaxySpace:ganymedeblocks>, [10000, 3500, 1000], 400, 120);
-Pulverizer.addRecipe([<customthings:item:48>, <gregtech:gt.metaitem.01:1028>, <gregtech:gt.metaitem.01:1825>], <GalaxySpace:ganymedeblocks:1>, [10000, 3500, 1000], 400, 120);
-
-Pulverizer.addRecipe([<customthings:item:46>, <gregtech:gt.metaitem.01:1702>, <gregtech:gt.metaitem.01:1526>], <GalaxySpace:europagrunt:1>, [10000, 5000, 2500], 400, 120);
-Pulverizer.addRecipe([<customthings:item:47>, <gregtech:gt.metaitem.01:1837>, <gregtech:gt.metaitem.01:1032>], <GalaxySpace:europagrunt>, [10000, 5000, 2500], 400, 120);
-Pulverizer.addRecipe([<customthings:item:47>, <gregtech:gt.metaitem.01:1837>, <gregtech:gt.metaitem.01:1032>], <GalaxySpace:europageyser>, [10000, 9000, 7500], 400, 120);
-Pulverizer.addRecipe([<customthings:item:46>, <gregtech:gt.metaitem.01:1702>, <gregtech:gt.metaitem.01:1526>], <GalaxySpace:europaunderwatergeyser>, [10000, 9000, 7500], 400, 120);
-
-Pulverizer.addRecipe([<customthings:item:50>, <gregtech:gt.metaitem.01:1022>, <gregtech:gt.metaitem.01:1921>, <gregtech:gt.metaitem.01:1081>], <GalaxySpace:ioblocks>, [10000, 5000, 2500, 1500], 400, 256);
-Pulverizer.addRecipe([<customthings:item:50>, <gregtech:gt.metaitem.01:1815>, <gregtech:gt.metaitem.01:1022>, <gregtech:gt.metaitem.01:1921>], <GalaxySpace:ioblocks:2>, [10000, 5000, 3500, 2000], 400, 256);
-
-Pulverizer.addRecipe([<customthings:item:37>, <customthings:item:81>, <gregtech:gt.metaitem.01:1830>], <GalaxySpace:callistoblocks:1>, [10000, 1500, 2500], 400, 120);
-Pulverizer.addRecipe([<customthings:item:81>, <customthings:item:37>, <gregtech:gt.metaitem.01:1830>], <GalaxySpace:callistoblocks>, [10000, 1500, 2500], 400, 120);
-
-Pulverizer.addRecipe([<customthings:item:44>, <gregtech:gt.metaitem.01:1417>, <gregtech:gt.metaitem.01:1030>, <gregtech:gt.metaitem.01:1084>], <GalaxySpace:enceladusblocks>, [10000, 4000, 2000, 1000], 400, 480);
-Pulverizer.addRecipe([<customthings:item:45>, <gregtech:gt.metaitem.01:1030>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>], <GalaxySpace:enceladusblocks:1>, [10000, 3000, 2000, 1000], 400, 480);
-
-Pulverizer.addRecipe([<customthings:item:61>, <gregtech:gt.metaitem.01:1034>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>], <GalaxySpace:titanblocks>, [10000, 4500, 3000, 2000], 400, 480);
-Pulverizer.addRecipe([<customthings:item:61>, <gregtech:gt.metaitem.01:1034>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>], <GalaxySpace:titanblocks:1>, [10000, 4500, 3000, 2000], 400, 480);
-Pulverizer.addRecipe([<customthings:item:61>, <gregtech:gt.metaitem.01:1034>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>], <GalaxySpace:titanblocks:2>, [10000, 4500, 3000, 2000], 400, 480);
-
-Pulverizer.addRecipe([<customthings:item:54>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1324>], <GalaxySpace:oberonblocks>, [10000, 2000, 1000, 850], 400, 480);
-Pulverizer.addRecipe([<customthings:item:54>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1324>], <GalaxySpace:oberonblocks:1>, [10000, 2000, 1000, 850], 400, 480);
-Pulverizer.addRecipe([<customthings:item:54>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1324>], <GalaxySpace:oberonblocks:2>, [10000, 2000, 1000, 850], 400, 480);
-
-Pulverizer.addRecipe([<customthings:item:53>, <gregtech:gt.metaitem.01:1057>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1084>], <GalaxySpace:mirandablocks>, [10000, 2500, 1500, 1000], 400, 480);
-Pulverizer.addRecipe([<customthings:item:53>, <gregtech:gt.metaitem.01:1057>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1084>], <GalaxySpace:mirandablocks:1>, [10000, 2500, 1500, 1000], 400, 480);
-Pulverizer.addRecipe([<customthings:item:53>, <gregtech:gt.metaitem.01:1057>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1084>], <GalaxySpace:mirandablocks:2>, [10000, 2500, 1500, 1000], 400, 480);
-
-Pulverizer.addRecipe([<customthings:item:62>, <gregtech:gt.metaitem.01:1086>, <gregtech:gt.metaitem.01:1067>, <gregtech:gt.metaitem.01:1891>], <GalaxySpace:tritonblocks>, [10000, 5000, 2500, 1000], 400, 1024);
-Pulverizer.addRecipe([<customthings:item:62>, <gregtech:gt.metaitem.01:1086>, <gregtech:gt.metaitem.01:1067>, <gregtech:gt.metaitem.01:1891>], <GalaxySpace:tritonblocks:1>, [10000, 5000, 2500, 1000], 400, 1024);
-Pulverizer.addRecipe([<customthings:item:62>, <gregtech:gt.metaitem.01:1086>, <gregtech:gt.metaitem.01:1067>, <gregtech:gt.metaitem.01:1891>], <GalaxySpace:tritonblocks:2>, [10000, 5000, 2500, 1000], 400, 1024);
-
-Pulverizer.addRecipe([<customthings:item:58>, <gregtech:gt.metaitem.01:1035>, <gregtech:gt.metaitem.01:1922>, <gregtech:gt.metaitem.01:1391>], <GalaxySpace:proteusblocks>, [10000, 5000, 2500, 1000], 400, 1024);
-Pulverizer.addRecipe([<customthings:item:58>, <gregtech:gt.metaitem.01:1035>, <gregtech:gt.metaitem.01:1922>, <gregtech:gt.metaitem.01:1391>], <GalaxySpace:proteusblocks:1>, [10000, 5000, 2500, 1000], 400, 1024);
-Pulverizer.addRecipe([<customthings:item:58>, <gregtech:gt.metaitem.01:1035>, <gregtech:gt.metaitem.01:1922>, <gregtech:gt.metaitem.01:1391>], <GalaxySpace:proteusblocks:2>, [10000, 5000, 2500, 1000], 400, 1024);
-
-Pulverizer.addRecipe([<customthings:item:56>, <gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>], <GalaxySpace:plutoblocks>, [10000, 5000, 2500, 1250], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:56>, <gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>], <GalaxySpace:plutoblocks:1>, [10000, 5000, 2500, 1250], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:56>, <gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>], <GalaxySpace:plutoblocks:2>, [10000, 5000, 2500, 1250], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:56>, <gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>], <GalaxySpace:plutoblocks:3>, [10000, 5000, 2500, 1250], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:56>, <gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>], <GalaxySpace:plutoblocks:4>, [10000, 5000, 2500, 1250], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:57>, <gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>, <gregtech:gt.metaitem.01:1416>], <GalaxySpace:plutoblocks:5>, [10000, 5000, 2500, 850], 400, 1920);
-
-Pulverizer.addRecipe([<customthings:item:49>, <gregtech:gt.metaitem.01:1351>, <gregtech:gt.metaitem.01:1324>, <gregtech:gt.metaitem.01:1506>], <GalaxySpace:haumeablocks>, [10000, 5000, 2500, 850], 400, 1920);
-
-Pulverizer.addRecipe([<customthings:item:51>, <gregtech:gt.metaitem.01:1527>, <gregtech:gt.metaitem.01:1528>, <gregtech:gt.metaitem.01:1416>], <GalaxySpace:makemakegrunt>, [10000, 2500, 2500, 1000], 400, 1920);
-Pulverizer.addRecipe([<customthings:item:51>, <gregtech:gt.metaitem.01:1527>, <gregtech:gt.metaitem.01:1528>, <gregtech:gt.metaitem.01:1416>], <GalaxySpace:makemakegrunt:1>, [10000, 2500, 2500, 1000], 400, 1920);
-
-Pulverizer.addRecipe([<customthings:item:34>, <gregtech:gt.metaitem.01:1047>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1037>], <GalaxySpace:barnardaFgrunt>, [10000, 2500, 2000, 1500], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:34>, <gregtech:gt.metaitem.01:1047>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1037>], <GalaxySpace:barnardaFsubgrunt>, [10000, 2500, 2000, 1500], 400, 4096);
-
-Pulverizer.addRecipe([<customthings:item:33>, <gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>], <GalaxySpace:barnardaEsubgrunt>, [10000, 2500, 2000, 1500], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:33>, <gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>], <GalaxySpace:barnardaEsubgrunt>, [10000, 2500, 2000, 1500], 400, 4096);
-
-Pulverizer.addRecipe([<customthings:item:41>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1326>, <gregtech:gt.metaitem.01:1975>], <GalaxySpace:acentauribbgrunt>, [10000, 5000, 3000, 1000], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:40>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1326>, <gregtech:gt.metaitem.01:1129>], <GalaxySpace:acentauribbgrunt>, [10000, 5000, 3000, 500], 400, 4096);
-
-Pulverizer.addRecipe([<customthings:item:59>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1530>, <gregtech:gt.metaitem.01:1506>], <GalaxySpace:tcetieblocks>, [10000, 2500, 2000, 1500], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:59>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1530>, <gregtech:gt.metaitem.01:1506>], <GalaxySpace:tcetieblocks:1>, [10000, 2500, 2000, 1500], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:59>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1530>, <gregtech:gt.metaitem.01:1506>], <GalaxySpace:tcetieblocks:2>, [10000, 2500, 2000, 1500], 400, 4096);
-
-Pulverizer.addRecipe([<customthings:item:63>, <gregtech:gt.metaitem.01:1097>, <gregtech:gt.metaitem.01:1101>, <gregtech:gt.metaitem.01:1070>], <GalaxySpace:vegabgrunt>, [10000, 5000, 3000, 1500], 400, 4096);
-Pulverizer.addRecipe([<customthings:item:63>, <gregtech:gt.metaitem.01:1097>, <gregtech:gt.metaitem.01:1101>, <gregtech:gt.metaitem.01:1070>], <GalaxySpace:vegabsubgrunt>, [10000, 5000, 3000, 1500], 400, 4096);
-
-Pulverizer.addRecipe([<gregtech:gt.metaitem.01:2394>], <GalaxySpace:item.UnknowCrystal>, [10000], 200, 480);
-
-
-// --- Dusts
-//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1029>, <gregtech:gt.metaitem.01:1841>, <gregtech:gt.metaitem.01:1975>, <gregtech:gt.metaitem.01:28>, <gregtech:gt.metaitem.01:516>, <gregtech:gt.metaitem.01:500>], null, <customthings:item:52>, null, <liquid:helium-3> * 50, [5000, 3000, 1000, 750, 500, 250], 1000, 256);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1340>, <gregtech:gt.metaitem.01:1008>, <gregtech:gt.metaitem.01:1085>, <gregtech:gt.metaitem.01:28>, <gregtech:gt.metaitem.01:81>, <gregtech:gt.metaitem.01:324>], null, <customthings:item:42>, null, null, [5000, 2500, 1000, 750, 500, 150], 800, 120);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1010>, <gregtech:gt.metaitem.01:1910>, <gregtech:gt.metaitem.01:1359>, <gregtech:gt.metaitem.01:509>, <gregtech:gt.metaitem.01:47>, <gregtech:gt.metaitem.01:975>], null, <customthings:item:64>, null, <liquid:carbondioxide> * 50, [10000, 3000, 1000, 750, 500, 250], 1000, 256);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1908>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1873>, <gregtech:gt.metaitem.01:822>, <gregtech:gt.metaitem.01:67>, <gregtech:gt.metaitem.01:841>], null, <customthings:item:43>, null, <liquid:sulfuricacid> * 50, [5000, 3000, 1000, 750, 650, 350], 600, 60);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1917>, <gregtech:gt.metaitem.01:1822>, <gregtech:gt.metaitem.01:1942>, <gregtech:gt.metaitem.01:884>, <gregtech:gt.metaitem.01:98>, <gregtech:gt.metaitem.01:100>], null, <customthings:item:55>, null, null, [5000, 2500, 1000, 750, 500, 150], 600, 60);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1028>, <gregtech:gt.metaitem.01:1825>, <gregtech:gt.metaitem.01:1830>, <gregtech:gt.metaitem.01:500>, <gregtech:gt.metaitem.01:98>, <gregtech:gt.metaitem.01:52>], null, <customthings:item:48>, null, null, [5000, 3000, 1000, 750, 600, 250], 800, 120);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1702>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1524>, <gregtech:gt.metaitem.01:417>, <gregtech:gt.metaitem.01:63>, <gregtech:gt.metaitem.01:324>], null, <customthings:item:46>, null, <liquid:oxygen> * 50, [5000, 2500, 1250, 750, 500, 150], 800, 120);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1837>, <gregtech:gt.metaitem.01:1032>, <gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:525>, <gregtech:gt.metaitem.01:63>, <gregtech:gt.metaitem.01:98>], null, <customthings:item:47>, null, <liquid:nitrogen> * 50, [5000, 3000, 1000, 750, 500, 300], 800, 120);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1022>, <gregtech:gt.metaitem.01:1921>, <gregtech:gt.metaitem.01:1081>, <gregtech:gt.metaitem.01:502>, <gregtech:gt.metaitem.01:351>, <gregtech:gt.metaitem.01:84>], null, <customthings:item:50>, null, <liquid:gas_sulfuricgas> * 50, [5000, 3000, 1000, 750, 500, 250], 1000, 256);
-
-Centrifuge.addRecipe([<customthings:item:37>, <gregtech:gt.metaitem.01:1830>, <gregtech:gt.metaitem.01:1507>, <gregtech:gt.metaitem.01:513>, <gregtech:gt.metaitem.01:6>, <gregtech:gt.metaitem.01:81>], null, <customthings:item:81>, null, null, [1500, 3000, 1000, 900, 750, 250], 800, 120);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1417>, <gregtech:gt.metaitem.01:1030>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:417>, <gregtech:gt.metaitem.01:101>, <gregtech:gt.metaitem.01:324>], null, <customthings:item:44>, null, <liquid:oxygen> * 50, [5000, 3000, 1000, 750, 400, 200], 1200, 480);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1030>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:417>, <gregtech:gt.metaitem.01:101>, <gregtech:gt.metaitem.01:324>], null, <customthings:item:45>, null, <liquid:oxygen> * 50, [5000, 3000, 1000, 750, 400, 100], 1200, 480);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1034>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:501>, <gregtech:gt.metaitem.01:37>, <gregtech:gt.metaitem.01:101>], null, <customthings:item:61>, null, null, [5000, 2500, 1000, 900, 500, 200], 1200, 480);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1324>, <gregtech:gt.metaitem.01:97>, <gregtech:gt.metaitem.01:101>, <miscutils:itemDustTinyTrinium>], null, <customthings:item:54>, null, <liquid:argon> * 50, [4000, 2000, 800, 300, 150, 150], 1200, 480);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1057>, <gregtech:gt.metaitem.01:1840>, <gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:884>, <gregtech:gt.metaitem.01:30>, <gregtech:gt.metaitem.01:84>], null, <customthings:item:53>, null, <liquid:argon> * 50, [4000, 2000, 1000, 750, 500, 350], 1200, 480);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1086>, <gregtech:gt.metaitem.01:1067>, <gregtech:gt.metaitem.01:1891>, <gregtech:gt.metaitem.01:47>, <gregtech:gt.metaitem.01:45>, <gregtech:gt.metaitem.01:37>], null, <customthings:item:62>, null, null, [5000, 3000, 1000, 750, 500, 350], 1400, 1024);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1035>, <gregtech:gt.metaitem.01:1922>, <gregtech:gt.metaitem.01:1391>, <gregtech:gt.metaitem.01:500>, <gregtech:gt.metaitem.01:98>, <miscutils:itemDustTinyTrinium>], null, <customthings:item:58>, null, <liquid:radon> * 50, [5000, 2500, 1000, 750, 500, 350], 1400, 1024);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1096>, <gregtech:gt.metaitem.01:1098>, <miscutils:itemDustSmallTrinium>, <gregtech:gt.metaitem.01:416>, <gregtech:gt.metaitem.01:417>, <gregtech:gt.metaitem.01:324>], null, <customthings:item:56>, null, null, [5000, 2500, 1250, 750, 500, 400], 1600, 1920);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1098>, <gregtech:gt.metaitem.01:1100>, <gregtech:gt.metaitem.01:1416>, <gregtech:gt.metaitem.01:527>, <gregtech:gt.metaitem.01:528>, <gregtech:gt.metaitem.01:327>], null, <customthings:item:57>, null, null, [5000, 2500, 850, 500, 500, 300], 1600, 1920);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1351>, <gregtech:gt.metaitem.01:1324>, <gregtech:gt.metaitem.01:1506>, <gregtech:gt.metaitem.01:78>, <gregtech:gt.metaitem.01:62>, <gregtech:gt.metaitem.01:65>], null, <customthings:item:49>, null, null, [5000, 2500, 850, 750, 500, 450], 1600, 1920);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1527>, <gregtech:gt.metaitem.01:1528>, <gregtech:gt.metaitem.01:1416>, <gregtech:gt.metaitem.01:37>, <gregtech:gt.metaitem.01:45>, <gregtech:gt.metaitem.01:47>], null, <customthings:item:51>, null, null, [2500, 2500, 1000, 750, 500, 350], 1600, 1920);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1047>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:129>, <gregtech:gt.metaitem.01:401>, <gregtech:gt.metaitem.01:976>], null, <customthings:item:34>, null, null, [2500, 2000, 1500, 750, 250, 250], 1800, 4096);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>, <gregtech:gt.metaitem.01:129>, <gregtech:gt.metaitem.01:401>, <gregtech:gt.metaitem.01:976>], null, <customthings:item:33>, null, null, [2500, 2000, 1500, 750, 250, 250], 1800, 4096);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1084>, <gregtech:gt.metaitem.01:1326>, <gregtech:gt.metaitem.01:1975>, <gregtech:gt.metaitem.01:84>, <gregtech:gt.metaitem.01:418>, <gregtech:gt.metaitem.01:401>], null, <customthings:item:41>, null, <liquid:mercury> * 100, [5000, 3000, 1000, 1000, 100, 50], 1800, 4096);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1083>, <gregtech:gt.metaitem.01:1326>, <gregtech:gt.metaitem.01:1129>, <gregtech:gt.metaitem.01:416>, <gregtech:gt.metaitem.01:418>, <gregtech:gt.metaitem.01:401>], null, <customthings:item:40>, null, <liquid:mercury> * 200, [5000, 2000, 500, 2500, 150, 80], 1800, 4096);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1526>, <gregtech:gt.metaitem.01:1530>, <gregtech:gt.metaitem.01:1506>, <gregtech:gt.metaitem.01:975>, <gregtech:gt.metaitem.01:401>, <miscutils:itemDustTinyTrinium>], null, <customthings:item:59>, null, null, [5000, 2500, 1000, 750, 150, 50], 1800, 4096);
-
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1097>, <gregtech:gt.metaitem.01:1101>, <gregtech:gt.metaitem.01:1070>, <gregtech:gt.metaitem.01:129>, <gregtech:gt.metaitem.01:327>, <gregtech:gt.metaitem.01:976>], null, <customthings:item:63>, null, null, [5000, 3000, 1500, 800, 500, 50], 1800, 4096);
-
-
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <gregtech:gt.metaitem.01:2415>*16, <customthings:item:32>], null, <GalaxySpace:tcetiedandelions>*64, null, <liquid:alienbiomass> * 4000, [10000, 10000, 10000], 1800, 262144);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <gregtech:gt.metaitem.01:2415>*16, <customthings:item:32>], null, <GalaxySpace:tcetiedandelions:3>*64, null, <liquid:alienbiomass> * 4000, [10000, 10000, 10000], 1800, 262144);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <gregtech:gt.metaitem.01:2415>*16, <customthings:item:32>], null, <GalaxySpace:tcetiedandelions:4>*64, null, <liquid:alienbiomass> * 4000, [10000, 10000, 10000], 1800, 262144);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <gregtech:gt.metaitem.01:2415>*16, <customthings:item:32>], null, <GalaxySpace:tcetiedandelions:5>*64, null, <liquid:alienbiomass> * 4000, [10000, 10000, 10000], 1800, 262144);
-
 //Glowstones
 Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:340>, <gregtech:gt.metaitem.01:913>, <gregtech:gt.metaitem.01:8>], null, <GalaxySpace:item.GlowstoneDusts>, null, null, [10000, 7500, 6000, 5000], 400, 120);
 Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:22>, <gregtech:gt.metaitem.01:81>, <gregtech:gt.metaitem.01:921>], null, <GalaxySpace:item.GlowstoneDusts:1>, null, null, [10000, 7500, 6000, 5000], 500, 256);
@@ -672,26 +527,6 @@ Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:96>, 
 
 //OutputArray, OutputFluid, InputStack, InputCell, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
 Electrolyzer.addRecipe([<gregtech:gt.metaitem.01:2415>*9, <gregtech:gt.metaitem.02:32585>*3], <liquid:liquid_heavy_oil>*1000,  <customthings:item:32>*13, null, null, [10000, 10000], 400, 16380);
-
-// --- Barnarda C
-Centrifuge.addRecipe([<customthings:item:141>, <gregtech:gt.metaitem.01:129>, <minecraft:sand>], null, <GalaxySpace:barnardaCgrass>, null, null, [5000, 1000, 5000], 1600, 2000000);
-Centrifuge.addRecipe([<customthings:item:141>, <gregtech:gt.metaitem.01:129>, <minecraft:sand>], null, <GalaxySpace:barnardaCdirt>, null, null, [2500, 1000, 5000], 1600, 2000000);
-
-Centrifuge.addRecipe([<customthings:item:141>, <gregtech:gt.metaitem.01:2010>, <gregtech:gt.metaitem.01:2809>], null, <GalaxySpace:barnardaClog>, null, <liquid:methane> * 60,  [3750, 2500, 2500], 800, 2000000);
-
-Compressor.addRecipe(<customthings:item:141>, <GalaxySpace:barnardaCsapling> * 8);
-
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <customthings:item:141>*16, <gregtech:gt.metaitem.01:2415>*4], null, <GalaxySpace:barnardaCdandelion3>*64, null, <liquid:alienbiomass> * 1000, [10000, 10000, 10000], 1200, 2000000);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <customthings:item:141>*16, <gregtech:gt.metaitem.01:2415>*4], null, <GalaxySpace:barnardaCreed>*64, null, <liquid:alienbiomass> * 1000, [10000, 10000, 10000], 1200, 2000000);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <customthings:item:141>*16, <gregtech:gt.metaitem.01:2415>*4], null, <GalaxySpace:barnardaCdandelions>*64, null, <liquid:alienbiomass> * 1000, [10000, 10000, 10000], 1200, 2000000);
-Centrifuge.addRecipe([<IC2:itemFuelPlantBall>*64, <customthings:item:141>*16, <gregtech:gt.metaitem.01:2415>*4], null, <GalaxySpace:barnardaCdandelions:1>*64, null, <liquid:alienbiomass> * 1000, [10000, 10000, 10000], 1200, 2000000);
-
-//Sifter
-//OutputArray, InputStack, OutputArrayChances, Time in Ticks, EnergyUsage
-Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCgrass>, [2500,2500,2500,2000,1500,900,250,250,5000], 80, 2000000);
-Sifter.addRecipe([<GalaxySpace:barnardaCdandelions>,<GalaxySpace:barnardaCdandelions:1>,<gregtech:gt.metaitem.01:1037>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1047>,<gregtech:gt.metaitem.01:129>,<gregtech:gt.metaitem.01:401>,<gregtech:gt.metaitem.01:976>,<minecraft:sand>], <GalaxySpace:barnardaCdirt>, [2000,2000,2500,2000,1500,900,250,250,5000], 80, 2000000);
-
-Pulverizer.addRecipe([<customthings:item:141>, <GalaxySpace:barnardaCdandelion3>], <GalaxySpace:barnardaCleaves>*8, [10000, 5000], 400, 122880);
 
 // --- Nei overriding Stuff ---
 

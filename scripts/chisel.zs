@@ -55,7 +55,6 @@ for i, slab in slabs {
 	recipes.remove(slab);
 	recipes.addShaped(slab * 2, [[<ore:craftingToolSaw>, blocks[i]]]);
 }
-var stoneQuarried_railcraft = <Railcraft:cube:7>;
 var stoneMarble_UBC = <UndergroundBiomes:metamorphicStone:2>;
 
 #==================================================================#
@@ -130,7 +129,7 @@ recipes.addShaped(DiamondChisel, [
 recipes.addShaped(<chisel:autoChisel>, [
 [SteelScrew, <ore:ringWoodSealed>, SteelScrew],
 [<gregtech:gt.metaitem.01:32630>, <gregtech:gt.metaitem.01:32744>, <gregtech:gt.metaitem.01:32650>],
-[Screwdriver, <IronChest:BlockIronChest>, HHammer]]);
+[Screwdriver, <chestup:Blockchestup:1>, HHammer]]);
 
 // --- Speed Upgrade
 recipes.addShaped(<chisel:upgrade>, [
@@ -174,19 +173,6 @@ recipes.addShaped(<chisel:tyrian> * 8, [
 recipes.remove(<chisel:road_line>);
 CuttingSaw.addRecipe([<chisel:road_line> * 4], <minecraft:carpet>, null, 25, 4);
 
-// railcraft quarried stone
-recipes.addShaped(stoneQuarried_railcraft * 4, [
-		[null, stoneMarble_UBC, null],
-		[stoneMarble_UBC, null, stoneMarble_UBC],
-		[null, stoneMarble_UBC, null]
-	]
-);
-recipes.addShaped(stoneMarble_UBC * 4, [
-		[null, stoneQuarried_railcraft, null],
-		[stoneQuarried_railcraft, null, stoneQuarried_railcraft],
-		[null, stoneQuarried_railcraft, null]
-	]
-);
 
 #==================================================================#
 #Assembler Recipes
@@ -294,16 +280,15 @@ Groups.addVariation("andesite", <UndergroundBiomes:igneousStone:3>);
 // add GT & RC concrete
 furnace.remove(<chisel:concrete>);
 Groups.addVariation("concrete", <gregtech:gt.blockconcretes>);
-Groups.addVariation("concrete", <Railcraft:cube:1>);
 
 // add UB limestone
 Groups.addVariation("limestone", <UndergroundBiomes:sedimentaryStone>);
 
 // add UB & GT black granite
-<ore:stoneGraniteBlack>.remove(<chisel:granite>);
+/*<ore:stoneGraniteBlack>.remove(<chisel:granite>);
 <ore:blockGraniteBlack>.remove(<chisel:granite>);
 Groups.addVariation("RCAbyssalBlock", <UndergroundBiomes:igneousStone:1>);
-Groups.addVariation("RCAbyssalBlock", <gregtech:gt.blockgranites:0>);
+Groups.addVariation("RCAbyssalBlock", <gregtech:gt.blockgranites:0>);*/
 
 // add UB & GT red granite
 recipes.remove(<chisel:granite>);

@@ -24,7 +24,7 @@ Assembler.addRecipe(ErrorCover, MaintainanceCover, ScentedPaneling * 2, <liquid:
 Assembler.addRecipe(<gendustry:UpgradeFrame>, <impact:impact_item2:146>, <ore:circuitElite>, <liquid:mutagen> * 100, 400, 7680);
 
 // Ind Apiary
-Assembler.addRecipe(<gendustry:IndustrialApiary>, [<Forestry:alveary>*4, <gregtech:gt.metaitem.01:32603>*3, <Forestry:alveary:3>*2, <Forestry:alveary:4>*2, <Forestry:alveary:5>*2, <Forestry:alveary:6>*2, <Forestry:alveary:7>*2, <ore:gearGtHastelloyC276>*4, <gendustry:PowerModule>], null, 400, 1920);
+Assembler.addRecipe(<gendustry:IndustrialApiary>, [<Forestry:alveary>*4, <gregtech:gt.metaitem.01:32603>*3, <Forestry:alveary:3>*2, <Forestry:alveary:4>*2, <Forestry:alveary:5>*2, <Forestry:alveary:6>*2, <Forestry:alveary:7>*2, <ore:gearGtHastelloyC-276>*4, <gendustry:PowerModule>], null, 400, 1920);
 
 // --- Genetics Processor
 Assembler.addRecipe(<gendustry:GeneticsProcessor>, <gregtech:gt.metaitem.04:32483>, <ore:circuitElite>, <liquid:mutagen> * 500, 400, 7680);

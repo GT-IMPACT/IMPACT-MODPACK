@@ -23,11 +23,7 @@ recipes.addShaped(<compactkineticgenerators:IridiumBlade>, [
 [<ore:plateAlloyIridium>, <ore:ringLafium>, <ore:plateAlloyIridium>],
 [<ore:plateAlloyIridium>, <ore:plateAlloyIridium>, <ore:plateAlloyIridium>]]);
 
-// --- Kinetic Gearbox Rotor (Iridium)
-recipes.addShaped(<compactkineticgenerators:IridiumRotor>, [
-[<miscutils:itemIridiumShaft>, <compactkineticgenerators:IridiumBlade>, <ore:craftingToolHardHammer>],
-[<compactkineticgenerators:IridiumBlade>, <ore:ringTrinium>, <compactkineticgenerators:IridiumBlade>],
-[<ore:craftingToolWrench>, <compactkineticgenerators:IridiumBlade>, <miscutils:itemIridiumShaft>]]);
+
 
 #==================================================================#
 

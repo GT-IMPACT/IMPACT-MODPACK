@@ -1,24 +1,23 @@
-# Greg World Plus Plus
+# IMPACT
 
-## Что такое Greg World Plus Plus?
+## Что такое IMPACT?
 
 Это глобальный индустриальный модпак для Minecraft 1.7.10, основанный на GregTech и его аддонах.
 
-Главное преимущество этой сборки - модификация каждого мода под реалии грега и GT++. Именно тут данный аддон интегрируется в каждую эпоху, начиная с базовых машин, заканчивая межпространственными путешествиями.
+Главное преимущество этой сборки - модификация каждого мода под реалии грега (без GT++). Именно тут данный GregTech интегрируется в каждую эпоху, начиная с базовых машин, заканчивая межпространственными путешествиями.
 
-Для достижения этой цели Greg World Plus Plus предоставляет обширный спектр различных модов, которые облегчают, а иногда и усложняют процесс развития. Наверное самым необычным будет появление ULV тира в постпаровой эпохе и UHV-... этапов после покорения ближайших галактик.
+Для достижения этой цели IMPACT предоставляет обширный спектр различных модов, которые облегчают, а иногда и усложняют процесс развития. Наверное самым необычным будет появление ULV тира в постпаровой эпохе и UHV-... этапов после покорения ближайших галактик.
 
 Самой интересной частью данной сборки можно выделить покорение космоса. Благодаря GalaxySpace Вам предоставлен огромный список планет и их спутников, которые доступны для покорения. Также довольно необычной составляющей космических путешествий можно отметить само создание ракет. Как вы знаете, стандартные схематики можно было находить в данжах, однако теперь Вам придется изучать породы планет каждого тира для создания нужных микросхем.
 
 ## Официальные ссылки
 
 Discord: https://discord.gg/bMf2qvd<BR>
-Релизы и изменения: https://github.com/GWPlusPlus/GWPP/releases<BR>
+Релизы и изменения: https://github.com/PERSON-IMPACT/PATCHES-IMPACT/releases<BR>
 
 ## Список модов
 
 - Forge-10.13.4.1614<BR>
-- AdvancedSolarPanel-1.7.10-3.5.1a <BR>
 - ae2stuff-rv3-0.5.1.9-mc1.7.10<BR>
 - AFSU-1.2.3a-Freeza<BR>
 - AppleCore-mc1.7.10-1.3.9<BR>
@@ -68,7 +67,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - gregtech-5.09.34.50.[0.05]<BR>
 - GT_Scanner_Mod-1.5.3<BR>
 - gtneioreplugin-1.7.10-1.0.7<BR>
-- GT-PlusPlus-1.7.02.99-pre<BR>
 - GTScanner-1.0<BR>
 - GTTweaker-1.7.10-1.7.4<BR>
 - IC2NuclearControl-2.4.4a<BR>
@@ -82,7 +80,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - journeymap-1.7.10-5.1.4-unlimited<BR>
 - kekztech-0.2.2<BR>
 - legiblenei_1.7.10-1.6.7.6<BR>
-- legiblenei_1.7.10-1.6.7.6-sources<BR>
 - LunatriusCore-1.7.10-1.1.2.21-universal<BR>
 - malisiscore-1.7.10-0.14.3<BR>
 - malisisdoors-1.7.10-1.13.2<BR>
@@ -98,7 +95,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - OpenGlasses-1.0.46<BR>
 - OpenModsLib-1.7.10-0.10<BR>
 - p455w0rdslib-1.7.10-1.0.4<BR>
-- Pam's HarvestCraft 1.7.10m<BR>
 - PlayerAPI-1.7.10-1.4<BR>
 - ProjectRed-1.7.10-4.7.0pre12.95-Base<BR>
 - ProjectRed-1.7.10-4.7.0pre12.95-Compat<BR>
@@ -109,7 +105,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - RTG-1.7.10-0.4.0<BR>
 - Schematica-1.7.10-1.7.6.124-universal<BR>
 - SGCraft-1.9.5-mc1.7.10 +fix<BR>
-- SpartakCore-1.7.10-0.0.2[0.05]<BR>
 - SSP-1.1.2-GT-NH-Mod<BR>
 - Stackie-1.7.10-1.6.0.36-universal<BR>
 - StorageDrawers-1.7.10-1.10.9<BR>
@@ -138,3 +133,5 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - ForgeRelocationFMP-0.0.1.2-universal<BR>
 - MrTJPCore-1.7.10-1.1.0.33-universal<BR>
 - OptiFine_1.7.10_HD_U_E7<BR>
+- ChestUp 0.1a
+- IMPACT 0.0.1

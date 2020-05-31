@@ -301,6 +301,9 @@ mods.tconstruct.Casting.removeTableRecipe(<TConstruct:materials:11>);
 // --- Obsidian Dust
 mods.tconstruct.Smeltery.removeMelting(<ore:dustObsidian>);
 
+// --- Manyullyn
+mods.tconstruct.Smeltery.removeAlloy(<liquid:manyullyn.molten>);
+
 // --- Obsidian Dust
 furnace.remove(<ore:ingotObsidian>);
 furnace.remove(<ore:ingotManyullyn>);
@@ -3311,8 +3314,8 @@ mods.gregtech.Canner.addRecipe([<TConstruct:heartCanister:4>], <TConstruct:heart
 mods.gregtech.Canner.addRecipe([<TConstruct:heartCanister:6>], <TConstruct:heartCanister:4>, <TConstruct:heartCanister:5>, 1920, 7680);
 
 // --- Alloys
-mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:5>], null, [<ore:dustManyullyn>], 1800, 120, 1900);
-mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:4>], null, [<ore:dustArdite>], 1200, 120, 1200);
+mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:5>], null, [<ore:dustManyullyn>, <gregtech:gt.integrated_circuit:1> * 0], 1800, 120, 1900);
+mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:4>], null, [<ore:dustArdite>, <gregtech:gt.integrated_circuit:1> * 0], 1200, 120, 1200);
 
 
 

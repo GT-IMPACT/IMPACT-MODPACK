@@ -1,0 +1,8 @@
+{
+	LogisticsPipes:
+		[
+		{hide:[[logisticsPipeBlock,logisticsSubMultiBlock,item.PipeItemsFluidSupplier,item.PipeFluidBasic,item.PipeFluidInsertion,item.PipeFluidProvider,
+		item.PipeFluidRequestLogistics,item.PipeFluidExtractor,item.PipeFluidSatellite,item.PipeFluidSupplierMk2, item.HSTubeCurve, item.logisticsFluidContainer],[]]};
+		{hide:[[item.logisticsParts, item.itemUpgrade],[3,44]]};
+		]
+}

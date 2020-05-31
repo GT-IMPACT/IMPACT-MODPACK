@@ -3,7 +3,7 @@
 	TConstruct:
 		[
 		{keep:[[*Plate,*inding,*Head,*Blade,*Part,*Rod,*Guard,crossbar,*head,
-			*Stained*,decoration.*,*Slab*,ToolForgeBlock,GravelOre,MetalBlock,SearedBrick,SpeedBlock],[10]]};
+			*Stained*,decoration.*,*Slab*,GravelOre,MetalBlock,SearedBrick,SpeedBlock],[10]]};
 		{keep-one:[[creativeModifier],[]]};
 	    {keep:[[Smeltery],[0-5]]};
 		{keep:[[SmelteryNether],[0-2]]};
@@ -17,6 +17,7 @@
 		{show:[[CraftedSoil],[1]]};
 		{hide:[[pickaxe,Shuriken,ThrowingKnife,Javelin,ShortBow,Crossbow,ArrowAmmo,BoltAmmo,LongBow,shovel,hatchet,broadsword,longsword,rapier,dagger,cutlass,frypan,battlesign,mattock,chisel,lumberaxe,cleaver,scythe,excavator,hammer,battleaxe],[]]};
 		{hide:[[HeldItemBlock,BattleSignBlock,buckets,woodPattern,Pattern,Boneana],[]]};
+		{keep:[[ToolForgeBlock],[0]]};
 		];
 
 	IguanaTweaksTConstruct:

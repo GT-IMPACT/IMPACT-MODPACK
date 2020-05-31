@@ -337,18 +337,6 @@ recipes.addShaped(<EnderIO:itemXpTransfer>, [
 		[SoulariumRod, EAScrew, Wrench]
 	]
 );
-recipes.addShaped(RAUpgrade, [
-		[SiliconPlate, <ore:craftingLensLime>, SiliconPlate],
-		[AdvCircuit, <gregtech:gt.metaitem.01:32690>, AdvCircuit],
-		[SiliconPlate, <ore:gearGtSmallElectricalSteel>, SiliconPlate]
-	]
-);
-recipes.addShaped(RAUpgrade, [
-		[SiliconPlate, <ore:craftingLensCyan>, SiliconPlate],
-		[AdvCircuit, <gregtech:gt.metaitem.01:32690>, AdvCircuit],
-		[SiliconPlate, <ore:gearGtSmallElectricalSteel>, SiliconPlate]
-	]
-);
 recipes.addShaped(<EnderIO:itemMaterial:7> * 4, [
 		[DarkSteelScrew, DarkSteelPlate, DarkSteelScrew],
 		[DarkSteelPlate, DarkSteelRing, DarkSteelPlate],

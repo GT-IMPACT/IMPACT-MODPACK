@@ -231,12 +231,6 @@ recipes.addShaped(<GalaxySpace:item.SolarFlares>, [
 [<GalacticraftCore:item.steelPole>, <GalacticraftCore:item.basicItem:1>, <GalacticraftCore:item.steelPole>],
 [<GalacticraftCore:item.steelPole>, <ore:compressedSteel>, <GalacticraftCore:item.steelPole>]]);
 
-// --- Solar Wind Panel
-recipes.addShaped(<GalaxySpace:solarwindpanel>, [
-[<ore:compressedTitanium>, <GalaxySpace:item.SolarFlares>, <ore:compressedTitanium>],
-[<GalacticraftCore:tile.aluminumWire:1>, <GalacticraftCore:item.steelPole>, <GalacticraftCore:tile.aluminumWire:1>],
-[<gregtech:gt.metaitem.01:32600>, <customthings:item:9>, <gregtech:gt.metaitem.01:32690>]]);
-
 // --- Cobaltum Boots
 recipes.addShaped(<GalaxySpace:item.cobaltum_boots>, [
 [<ore:plateDesh>, null, <ore:plateDesh>],
@@ -290,18 +284,6 @@ recipes.addShaped(<GalaxySpace:item.plasmashovel>.withTag({electricity: 0.0 as f
 [<ore:craftingToolFile>, <ore:CompressedCobaltum>, <ore:craftingToolHardHammer>],
 [<ore:plateDesh>, <GalacticraftCore:item.steelPole>, <ore:plateDesh>],
 [<GalacticraftCore:tile.aluminumWire:1>, <GalaxySpace:item.LeadBattery:100>.withTag({electricity: 0.0 as float}), <GalacticraftCore:tile.aluminumWire:1>]]);
-
-// --- Quant Bow
-//recipes.addShaped(<GalaxySpace:item.QuantBow>, [
-//[<ore:stickLongLead>, <dreamcraft:item.MytrylCrystal>, <TConstruct:bowstring:2>],
-//[<dreamcraft:item.MysteriousCrystal>, null, <TConstruct:bowstring:2>],
-//[<ore:stickLongLead>, <dreamcraft:item.MytrylCrystal>, <TConstruct:bowstring:2>]]);
-
-// --- Compressed Raw Alloy SDHC-120
-recipes.addShaped(<customthings:item:15>, [
-[<ore:screwStainlessSteel>, <ore:craftingToolScrewdriver>, <ore:screwStainlessSteel>],
-[<GalaxySpace:item.CompressedDualBronze>, <GalacticraftCore:item.basicItem:9>, <GalaxySpace:item.CompressedDualAluminium>],
-[<ore:screwStainlessSteel>, <ore:craftingToolHardHammer>, <ore:screwStainlessSteel>]]);
 
 // --- Thermal Cloth Tier 2
 Assembler.addRecipe(<GalaxySpace:item.ThermalClothT2>, [<ore:foilMeteoricSteel> * 4, <ore:foilTitanium> * 4, <ore:wireFineTungsten> * 4, <GalacticraftMars:item.itemBasicAsteroids:7>], <liquid:molten.polycaprolactam> * 576, 200, 7680);
@@ -365,30 +347,6 @@ recipes.addShaped(<GalaxySpace:metalsblock:9>, [
 [<ore:craftingToolHardHammer>, <ore:compressedCopper>, null],
 [<ore:compressedCopper>, <ore:stone>, <ore:compressedCopper>],
 [null, <ore:compressedCopper>, <ore:craftingToolWrench>]]);
-
-// --- Advanced Machine Frame
-recipes.addShaped(<GalaxySpace:machineframes>, [
-[<GalaxySpace:item.CompressedPlates:4>, <customthings:item:9>, <GalaxySpace:item.CompressedPlates:4>],
-[<GalacticraftCore:tile.aluminumWire:1>, <gregtech:gt.blockcasings4>, <GalacticraftCore:tile.aluminumWire:1>],
-[<GalaxySpace:item.CompressedPlates:4>, <customthings:item:9>, <GalaxySpace:item.CompressedPlates:4>]]);
-
-// --- Hybride Solar Panel
-recipes.addShaped(<GalaxySpace:solarPanel>, [
-[<GalaxySpace:item.CompressedPlates:2>, <GalacticraftCore:item.basicItem:1>, <GalaxySpace:item.CompressedPlates:2>],
-[<GalacticraftCore:tile.aluminumWire:1>, <GalaxySpace:machineframes>, <GalacticraftCore:tile.aluminumWire:1>],
-[<gregtech:gt.metaitem.01:32601>, <customthings:item:9>, <gregtech:gt.metaitem.01:32691>]]);
-
-// --- Advanced Energy Cluster
-recipes.addShaped(<GalaxySpace:storagemoduleT3>, [
-[<GalaxySpace:item.CompressedPlates:9>, <GalacticraftCore:tile.machineTiered:8>, <GalaxySpace:item.CompressedPlates:9>],
-[<customthings:item:9>, <GalaxySpace:machineframes>, <customthings:item:9>],
-[<GalaxySpace:item.CompressedPlates:9>, <GalacticraftCore:tile.machineTiered:8>, <GalaxySpace:item.CompressedPlates:9>]]);
-
-// --- Advanced Oxygen Module
-recipes.addShaped(<GalaxySpace:oxstoragemoduleT2>, [
-[<GalacticraftCore:tile.machine2:8>, <GalacticraftCore:item.oxygenConcentrator>, <GalacticraftCore:tile.machine2:8>],
-[<GalacticraftCore:tile.oxygenPipe>, <GalaxySpace:machineframes>, <GalacticraftCore:tile.oxygenPipe>],
-[<GalacticraftCore:tile.machine2:8>, <customthings:item:9>, <GalacticraftCore:tile.machine2:8>]]);
 
 // --- Lander 2
 recipes.addShaped(<GalaxySpace:item.ModuleLander2>, [
@@ -524,9 +482,6 @@ Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:22>, 
 Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:417>, <gregtech:gt.metaitem.01:84>, <gregtech:gt.metaitem.01:30>], null, <GalaxySpace:item.GlowstoneDusts:2>, null, null, [10000, 7500, 6000, 5000], 600, 480);
 Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:35>, <gregtech:gt.metaitem.01:922>, <gregtech:gt.metaitem.01:391>], null, <GalaxySpace:item.GlowstoneDusts:3>, null, null, [10000, 7500, 6000, 5000], 700, 1024);
 Centrifuge.addRecipe([<minecraft:glowstone_dust>, <gregtech:gt.metaitem.01:96>, <gregtech:gt.metaitem.01:98>, <gregtech:gt.metaitem.01:100>], null, <GalaxySpace:item.GlowstoneDusts:4>, null, null, [10000, 7500, 6000, 5000], 800, 1920);
-
-//OutputArray, OutputFluid, InputStack, InputCell, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
-Electrolyzer.addRecipe([<gregtech:gt.metaitem.01:2415>*9, <gregtech:gt.metaitem.02:32585>*3], <liquid:liquid_heavy_oil>*1000,  <customthings:item:32>*13, null, null, [10000, 10000], 400, 16380);
 
 // --- Nei overriding Stuff ---
 

@@ -149,7 +149,7 @@ recipes.addShaped(diamondDrillTip, [
 recipes.addShaped(advDDrill, [
 		[<ore:screwHSSG>, diamondDrillTip, <ore:craftingToolScrewdriver>],
 		[<ore:gearGtSmallHSSG>, <gregtech:gt.metaitem.01:32603>, <ore:gearGtSmallHSSG>],
-		[<ore:plateHSSG>, <customthings:item:133>, <ore:plateHSSG>]
+		[<ore:plateHSSG>, <impact:impact_item2:100>, <ore:plateHSSG>]
 	]
 );
 

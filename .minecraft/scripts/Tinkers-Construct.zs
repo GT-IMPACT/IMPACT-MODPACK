@@ -1345,6 +1345,7 @@ recipes.addShaped(<TConstruct:LavaTank>, [
 [<TConstruct:Smeltery:2>, <TConstruct:materials:2>, <TConstruct:Smeltery:2>],
 [<TConstruct:materials:2>, null, <TConstruct:materials:2>],
 [<TConstruct:Smeltery:2>, <TConstruct:materials:2>, <TConstruct:Smeltery:2>]]);
+<TConstruct:LavaTank>.addTooltip(format.gray("It can use ") + format.yellow("Creosote"));
 // -
 recipes.addShaped(<TConstruct:LavaTankNether>, [
 [<TConstruct:SmelteryNether:2>, <TConstruct:materials:37>, <TConstruct:SmelteryNether:2>],

@@ -132,3 +132,22 @@
 // --- UXV Tier
 //<gregtech:gt.metaitem.01:32590>.addTooltip(format.green("UXV-tier"));
 
+// --- Solar Panels
+<impact:BlockAdvSolarPanel:0>.addTooltip(format.yellow("Day: ") + format.green("8 EU/t ") + format.darkBlue("(ULV-tier)"));
+<impact:BlockAdvSolarPanel:0>.addTooltip(format.gray("Night: ") + format.green("1 EU/t ") + format.darkBlue("(ULV-tier)"));
+<impact:BlockAdvSolarPanel:1>.addTooltip(format.yellow("Day: ") + format.green("32 EU/t ") + format.darkBlue("(LV-tier)"));
+<impact:BlockAdvSolarPanel:1>.addTooltip(format.gray("Night: ") + format.green("4 EU/t ") + format.darkBlue("(ULV-tier)"));
+<impact:BlockAdvSolarPanel:2>.addTooltip(format.yellow("Day: ") + format.green("128 EU/t ") + format.darkBlue("(MV-tier)"));
+<impact:BlockAdvSolarPanel:2>.addTooltip(format.gray("Night: ") + format.green("16 EU/t ") + format.darkBlue("(LV-tier)"));
+<impact:BlockAdvSolarPanel:3>.addTooltip(format.yellow("Day: ") + format.green("512 EU/t ") + format.darkBlue("(HV-tier)"));
+<impact:BlockAdvSolarPanel:3>.addTooltip(format.gray("Night: ") + format.green("64 EU/t ") + format.darkBlue("(MV-tier)"));
+<impact:BlockAdvSolarPanel:4>.addTooltip(format.yellow("Day: ") + format.green("2048 EU/t ") + format.darkBlue("(EV-tier)"));
+<impact:BlockAdvSolarPanel:4>.addTooltip(format.gray("Night: ") + format.green("256 EU/t ") + format.darkBlue("(HV-tier)"));
+<impact:BlockAdvSolarPanel:5>.addTooltip(format.yellow("Day: ") + format.green("8192 EU/t ") + format.darkBlue("(IV-tier)"));
+<impact:BlockAdvSolarPanel:5>.addTooltip(format.gray("Night: ") + format.green("1024 EU/t ") + format.darkBlue("(EV-tier)"));
+<impact:BlockAdvSolarPanel:6>.addTooltip(format.yellow("Day: ") + format.green("32768 EU/t ") + format.darkBlue("(LuV-tier)"));
+<impact:BlockAdvSolarPanel:6>.addTooltip(format.gray("Night: ") + format.green("4096 EU/t ") + format.darkBlue("(IV-tier)"));
+<impact:BlockAdvSolarPanel:7>.addTooltip(format.yellow("Day: ") + format.green("131072 EU/t ") + format.darkBlue("(ZPM-tier)"));
+<impact:BlockAdvSolarPanel:7>.addTooltip(format.gray("Night: ") + format.green("16384 EU/t ") + format.darkBlue("(LuV-tier)"));
+<impact:BlockAdvSolarPanel:8>.addTooltip(format.yellow("Day: ") + format.green("524288 EU/t ") + format.darkBlue("(UV-tier)"));
+<impact:BlockAdvSolarPanel:8>.addTooltip(format.gray("Night: ") + format.green("65536 EU/t ") + format.darkBlue("(ZPM-tier)"));

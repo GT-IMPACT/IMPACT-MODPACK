@@ -104,7 +104,6 @@ val SEnder = <EnderIO:itemFrankenSkull:4>;
 val ECrystal = <EnderIO:itemMaterial:8>;
 val Chest = <ore:chestWood>;
 val LvConveyor =  <gregtech:gt.metaitem.01:32630>;
-val RAUpgrade = <EnderIO:itemFunctionUpgrade>;
 val DarkSteelRing = <ore:ringDarkSteel>;
 val DarkSteelScrew = <ore:screwDarkSteel>;
 val WCrystal = <EnderIO:itemMaterial:10>;
@@ -211,8 +210,6 @@ recipes.remove(<EnderIO:blockAttractor>);
 recipes.remove(<EnderIO:blockExperienceObelisk>);
 recipes.remove(<EnderIO:itemXpTransfer>);
 recipes.remove(<EnderIO:itemSoulVessel>);
-recipes.remove(<EnderIO:blockInventoryPanel>);
-recipes.remove(RAUpgrade);
 recipes.remove(<EnderIO:itemBasicFilterUpgrade>);
 recipes.remove(<EnderIO:itemBasicFilterUpgrade:1>);
 recipes.remove(<EnderIO:itemModItemFilter>);
@@ -222,8 +219,6 @@ recipes.remove(<EnderIO:itemRedstoneConduit:2>);
 recipes.remove(<EnderIO:itemPowerConduit>);
 recipes.remove(<EnderIO:itemPowerConduit:1>);
 recipes.remove(<EnderIO:itemPowerConduit:2>);
-recipes.remove(<EnderIO:itemItemConduit>);
-recipes.remove(<EnderIO:itemLiquidConduit>);
 recipes.remove(<EnderIO:itemLiquidConduit:1>);
 recipes.remove(<EnderIO:itemLiquidConduit:2>);
 recipes.remove(<EnderIO:itemMEConduit>);
@@ -342,32 +337,6 @@ recipes.addShaped(<EnderIO:itemXpTransfer>, [
 		[SoulariumRod, EAScrew, Wrench]
 	]
 );
-// --- Inventory Panel
-recipes.addShaped(<EnderIO:blockInventoryPanel>, [
-		[DarkSteelPlate, RAUpgrade, DarkSteelPlate],
-		[PCrystal, Display, PCrystal],
-		[DarkSteelPlate, <ore:circuitAdvanced>, DarkSteelPlate]
-	]
-);
-// --- Remote Awareness Upgrade
-recipes.addShaped(RAUpgrade, [
-		[SiliconPlate, <ore:craftingLensGreen>, SiliconPlate],
-		[AdvCircuit, <gregtech:gt.metaitem.01:32690>, AdvCircuit],
-		[SiliconPlate, <ore:gearGtSmallElectricalSteel>, SiliconPlate]
-	]
-);
-recipes.addShaped(RAUpgrade, [
-		[SiliconPlate, <ore:craftingLensLime>, SiliconPlate],
-		[AdvCircuit, <gregtech:gt.metaitem.01:32690>, AdvCircuit],
-		[SiliconPlate, <ore:gearGtSmallElectricalSteel>, SiliconPlate]
-	]
-);
-recipes.addShaped(RAUpgrade, [
-		[SiliconPlate, <ore:craftingLensCyan>, SiliconPlate],
-		[AdvCircuit, <gregtech:gt.metaitem.01:32690>, AdvCircuit],
-		[SiliconPlate, <ore:gearGtSmallElectricalSteel>, SiliconPlate]
-	]
-);
 recipes.addShaped(<EnderIO:itemMaterial:7> * 4, [
 		[DarkSteelScrew, DarkSteelPlate, DarkSteelScrew],
 		[DarkSteelPlate, DarkSteelRing, DarkSteelPlate],
@@ -443,8 +412,6 @@ Assembler.addRecipe(<EnderIO:itemRedstoneConduit:1>, <EnderIO:itemRedstoneCondui
 Assembler.addRecipe(<EnderIO:itemRedstoneConduit:2>, <EnderIO:itemRedstoneConduit>, <EnderIO:itemMaterial:1> * 4, 100, 120); 
 Assembler.addRecipe(<EnderIO:itemPowerConduit>, <gregtech:gt.blockmachines:1380>, <EnderIO:itemMaterial:1> * 4, <liquid:molten.conductiveiron> * 144, 50, 30);
 Assembler.addRecipe(<EnderIO:itemRedstoneConduit>, <gregtech:gt.blockmachines:2000>, <EnderIO:itemMaterial:1> * 2, 100, 64);
-Assembler.addRecipe(<EnderIO:itemItemConduit>, [<gregtech:gt.blockmachines:5664>, <ore:foilPulsatingIron>*2, <EnderIO:itemMaterial:1> * 4], <liquid:molten.plastic> * 144, 100, 120);
-Assembler.addRecipe(<EnderIO:itemLiquidConduit>, [<gregtech:gt.blockmachines:5132>, <ore:foilRedstoneAlloy>*2, <EnderIO:itemMaterial:1> * 4], <liquid:molten.plastic> * 144, 100, 120);
 Assembler.addRecipe(<EnderIO:itemLiquidConduit:1>, [<gregtech:gt.blockmachines:5142>, <ore:foilElectricalSteel>*2, <EnderIO:itemMaterial:1> * 4], <liquid:molten.plastic> * 144, 100, 256);
 Assembler.addRecipe(<EnderIO:itemLiquidConduit:2>, [<gregtech:gt.blockmachines:5152>, <ore:foilDarkSteel>*2, <EnderIO:itemMaterial:1> * 4], <liquid:molten.plastic> * 144, 100, 480);
 Assembler.addRecipe(<EnderIO:itemMEConduit>, <appliedenergistics2:item.ItemMultiPart:16>, <EnderIO:itemMaterial:1> * 4, 50, 120);

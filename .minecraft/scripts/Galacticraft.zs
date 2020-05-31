@@ -660,8 +660,8 @@ recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:1> , [
 //Heavy Nose Cone
 recipes.addShaped(<GalacticraftMars:item.heavyNoseCone>, [
 [<ore:craftingToolScrewdriver>, <GalacticraftCore:item.noseCone>, <ore:craftingToolHardHammer>],
-[<ore:screwTitanium>, HeavyDutyPlate, <ore:screwTitanium>],
-[HeavyDutyPlate, <ore:plateDoubleRhenium>, HeavyDutyPlate]]);
+[<ore:screwTitanium>, <GalacticraftMars:item.null:5>, <ore:screwTitanium>],
+[<GalacticraftMars:item.null:5>, <GalacticraftMars:item.itemBasicAsteroids>, <GalacticraftMars:item.null:5>]]);
 
 //Red Core
 recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:8>, [

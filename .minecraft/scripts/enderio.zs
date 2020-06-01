@@ -199,7 +199,6 @@ recipes.remove(<EnderIO:itemConduitProbe>);
 recipes.remove(<EnderIO:blockPainter>);
 recipes.remove(<EnderIO:blockCrafter>);
 recipes.remove(<EnderIO:blockFarmStation>);
-recipes.remove(<EnderIO:itemYetaWrench>);
 recipes.remove(<EnderIO:blockTravelAnchor>);
 recipes.remove(<EnderIO:blockCombustionGenerator>);
 recipes.remove(<EnderIO:blockStirlingGenerator>);
@@ -375,12 +374,6 @@ recipes.addShaped(<EnderIO:blockBuffer>, [
 		[<ore:plateIron>, <ore:plateSteel>, <ore:plateIron>],
 		[<ore:plateSteel>, <minecraft:chest>, <ore:plateSteel>],
 		[<ore:plateIron>, <ore:plateSteel>, <ore:plateIron>]
-	]
-);
-recipes.addShaped(<EnderIO:itemYetaWrench>, [
-		[ESteelIngot, Hammer, ESteelIngot],
-		[ESteelIngot, ESteelGear, ESteelIngot],
-		[null, ESteelIngot, null]
 	]
 );
 recipes.addShaped(<EnderIO:itemMagnet:16> , [

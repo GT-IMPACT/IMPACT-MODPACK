@@ -93,9 +93,6 @@ recipes.remove(<StorageDrawers:upgrade:*>);
 // --- Compact Drawers
 recipes.remove(<StorageDrawers:compDrawers>);
 
-// --- Contoller
-recipes.remove(<StorageDrawers:controller>);
-
 // --- Controller Slave
 recipes.remove(<StorageDrawers:controllerSlave>);
 
@@ -224,12 +221,6 @@ recipes.addShaped(<StorageDrawers:upgrade:6>, [
 //[<ore:plateStone>, <ore:plateStone>, <ore:plateStone>], 
 //[<minecraft:piston>, <ore:drawerBasic>, <minecraft:piston>], 
 //[<ore:plateObsidian>, <ore:plateIron>, <ore:plateObsidian>]]);
-
-// --- Controler
-recipes.addShaped(<StorageDrawers:controller>, [
-[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>], 
-[<gregtech:gt.metaitem.01:32631>, <ore:drawerBasic>, <gregtech:gt.metaitem.01:32651>], 
-[<ore:plateObsidian>, <ore:plateDiamond>, <ore:plateObsidian>]]);
 
 // --- Controler Slave
 recipes.addShaped(<StorageDrawers:controllerSlave>, [

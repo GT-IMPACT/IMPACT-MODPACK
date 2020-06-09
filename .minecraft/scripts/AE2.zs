@@ -220,7 +220,6 @@ var StorageComponent64K = <appliedenergistics2:item.ItemMultiMaterial:38>;
 var Terminal = <appliedenergistics2:item.ItemMultiPart:380>;
 var TinyTNT = <appliedenergistics2:tile.BlockTinyTNT>;
 var TitaniumPlate = <ore:plateDoubleVanadium>;
-var UStorageHousing = <appliedenergistics2:item.ItemMultiMaterial:39>;
 var VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 var WirelessReceiver = <appliedenergistics2:item.ItemMultiMaterial:41>;
 var WirelessTerminal = <appliedenergistics2:item.ToolWirelessTerminal>;
@@ -327,9 +326,6 @@ recipes.remove(FormationCore);
 // --- Wireless Receiver
 recipes.remove(WirelessReceiver);
 
-// --- Illuminated Panel
-recipes.remove(Illuminated);
-
 // --- Terminal
 recipes.remove(Terminal);
 
@@ -408,9 +404,6 @@ recipes.remove(<appliedenergistics2:item.ItemMultiPart:120>);
 // --- ME Formation Plane
 recipes.remove(<appliedenergistics2:item.ItemMultiPart:320>);
 
-// --- Illuminated Panel
-recipes.remove(<appliedenergistics2:item.ItemMultiPart:180>);
-
 // --- ME Toggle Bus
 recipes.remove(<appliedenergistics2:item.ItemMultiPart:80>);
 
@@ -464,18 +457,6 @@ recipes.remove(CraftingStorage_4k);
 recipes.remove(CraftingStorage_16k);
 
 recipes.remove(CraftingStorage_64k);
-
-// --- View Cell
-recipes.remove(<appliedenergistics2:item.ItemViewCell>);
-
-// --- 2 Spatial Component
-recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:32>);
-
-// --- 16 Spatial Component
-recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:33>);
-
-// --- 128 Spatial Component
-recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:34>);
 
 #==================================================================#
 # Adding Recipes
@@ -832,10 +813,6 @@ recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:320>, [
 // --- Illuminated Panel
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:180>, 
 		[<appliedenergistics2:item.ItemMultiPart:200>]);
-recipes.addShaped(Illuminated, [
-[Screwdriver, TitaniumPlate, HHammer],
-[CertusScrew, <gregtech:gt.metaitem.01:32740>, CertusScrew],
-[GlowstonePlate, <ore:plateRedAlloy>, GlowstonePlate]]);
 
 // --- ME Toggle Bus
 recipes.addShaped(<appliedenergistics2:item.ItemMultiPart:80>, [
@@ -900,41 +877,6 @@ Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:160>, <appliedenergi
 
 #==================================================================#
 #Cells
-// --- View Cell
-recipes.addShapeless(<appliedenergistics2:item.ItemViewCell>, [<appliedenergistics2:item.ItemMultiMaterial:39>, <ore:gemCertusQuartz>]);
-
-// --- ME Storage Cells
-recipes.addShapeless(Storage1K,  [UStorageHousing, StorageComponent1K]);
-recipes.addShapeless(Storage4K,  [UStorageHousing, StorageComponent4K]);
-recipes.addShapeless(Storage16K, [UStorageHousing, StorageComponent16K]);
-recipes.addShapeless(Storage64K, [UStorageHousing, StorageComponent64K]);
-
-// --- 2 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.2Cubed>, 
-[<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:32>]);
-
-// --- 16 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.16Cubed>, 
-[<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:33>]);
-
-// --- 128 Spatial Storage Cell
-recipes.addShapeless(<appliedenergistics2:item.ItemSpatialStorageCell.128Cubed>, 
-[<appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:34>]);
-
-// --- Universal Storage Housing
-recipes.addShaped(UStorageHousing, [
-		[HHammer, CertusPlate, QuartziteScrew],
-		[StainlessPlate, ClearPane, StainlessPlate],
-		[QuartziteScrew, AlPlate, Screwdriver]
-	]
-);
-// -
-recipes.addShaped(UStorageHousing, [
-		[Screwdriver, CertusPlate, QuartziteScrew],
-		[StainlessPlate, ClearPane, StainlessPlate],
-		[QuartziteScrew, AlPlate, HHammer]
-	]
-);
 
 // --- Portable Cell
 recipes.remove(PortableCell);

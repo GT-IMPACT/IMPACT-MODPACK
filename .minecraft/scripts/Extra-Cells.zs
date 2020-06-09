@@ -98,9 +98,6 @@ var Int = <appliedenergistics2:tile.BlockInterface>;
 #==================================================================#
 #Removing Recipes
 
-// --- Universal Advanced Storage Housing
-recipes.remove(UAdvStorageHousing);
-
 //Certus Quartz Tank
 recipes.remove(<extracells:certustank>);
 
@@ -134,30 +131,6 @@ recipes.remove(<extracells:part.base:7>);
 //ME Energy Cell Fixture
 recipes.remove(<extracells:part.base:8>);
 
-// --- Fluid Storage Cell Component - 1K
-recipes.remove(FluidSComponent1K);
-
-// --- Fluid Storage Cell Component - 4K
-recipes.remove(FluidSComponent4K);
-
-// --- Fluid Storage Cell Component - 16K
-recipes.remove(FluidSComponent16K);
-
-// --- Fluid Storage Cell Component - 64K
-recipes.remove(FluidSComponent64K);
-
-// --- Fluid Storage Cell Component - 256K
-recipes.remove(FluidSComponent256K);
-
-// --- Fluid Storage Cell Component - 1024K
-recipes.remove(FluidSComponent1024K);
-
-// --- Fluid Storage Cell Component - 4096K
-recipes.remove(FluidSComponent4096K);
-
-// --- Universal Advanced Storage Housing
-recipes.remove(UFluidStorageHousing);
-
 // --- CraftingStorages
 recipes.remove(<extracells:craftingstorage>);
 recipes.remove(<extracells:craftingstorage:1>);
@@ -165,70 +138,12 @@ recipes.remove(<extracells:craftingstorage:2>);
 recipes.remove(<extracells:craftingstorage:3>);
 
 #==================================================================#
-#Adding Back Recipes ---
-#Cells
-// --- Storage Cell - 256K
-recipes.addShapeless(<extracells:storage.physical:0>, [<extracells:storage.component:0>, <extracells:storage.casing:0>]);
-
-// --- Storage Cell - 1024K
-recipes.addShapeless(<extracells:storage.physical:1>, [<extracells:storage.component:1>, <extracells:storage.casing:0>]);
-
-// --- Storage Cell - 4096K
-recipes.addShapeless(<extracells:storage.physical:2>, [<extracells:storage.component:2>, <extracells:storage.casing:0>]);
-
-// --- Storage Cell - 16384K
-recipes.addShapeless(<extracells:storage.physical:3>, [<extracells:storage.component:3>, <extracells:storage.casing:0>]);
-
-// --- Universal Advanced Storage Housing
-recipes.addShapedMirrored(UAdvStorageHousing, [
-		[HHammer, GlassPane, CertusScrew],
-		[<ore:plateTrinium>, UStorageHousing, <ore:plateTrinium>],
-		[CertusScrew, <ore:plateHastelloyC-276>, Screwdriver]
-	]
-);
-// - Alternative Recipe
-recipes.addShapedMirrored(UAdvStorageHousing, [
-		[Screwdriver, GlassPane, CertusScrew],
-		[<ore:plateTrinium>, UStorageHousing, <ore:plateTrinium>],
-		[CertusScrew, <ore:plateHastelloyC-276>, HHammer]
-	]
-);
-
-#Fluid Cells
-// --- Fluid Storage Cell - 1K
-recipes.addShapeless(<extracells:storage.fluid:0>, [<extracells:storage.component:4>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 4K
-recipes.addShapeless(<extracells:storage.fluid:1>, [<extracells:storage.component:5>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 16K
-recipes.addShapeless(<extracells:storage.fluid:2>, [<extracells:storage.component:6>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 64K
-recipes.addShapeless(<extracells:storage.fluid:3>, [<extracells:storage.component:7>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 256K
-recipes.addShapeless(<extracells:storage.fluid:4>, [<extracells:storage.component:8>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 1024K
-recipes.addShapeless(<extracells:storage.fluid:5>, [<extracells:storage.component:9>, <extracells:storage.casing:1>]);
-
-// --- Fluid Storage Cell - 4096K
-recipes.addShapeless(<extracells:storage.fluid:6>, [<extracells:storage.component:10>, <extracells:storage.casing:1>]);
-
 // --- CraftingStorages
 Assembler.addRecipe(<extracells:craftingstorage>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent256K, <liquid:molten.solderingalloy> * 9216, 1200, 16384);
 Assembler.addRecipe(<extracells:craftingstorage:1>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent1024K, <liquid:molten.solderingalloy> * 18432, 1200, 65536);
 Assembler.addRecipe(<extracells:craftingstorage:2>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent4096K, <liquid:molten.solderingalloy> * 36864, 1200, 262144);
 Assembler.addRecipe(<extracells:craftingstorage:3>, <appliedenergistics2:tile.BlockCraftingUnit>, StorageComponent16384K, <liquid:molten.solderingalloy> * 36864, 1200, 1048576);
 
-// --- Universal Fluid Storage Housing
-recipes.addShapedMirrored(UFluidStorageHousing, [
-		[HHammer, CertusPlate, NQuartzScrew],
-		[<ore:plateInconel-792>, GlassPane, <ore:plateInconel-792>],
-		[NQuartzScrew, StainlessPlate, Screwdriver]
-	]
-);
 // --- Quartz Tank
 AlloySmelter.addRecipe(<extracells:certustank>, <appliedenergistics2:tile.BlockQuartzGlass> * 8, <gregtech:gt.metaitem.01:32308> * 0, 800, 30);
 

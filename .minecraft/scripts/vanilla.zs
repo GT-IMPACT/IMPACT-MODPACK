@@ -54,14 +54,6 @@ recipes.addShaped(<minecraft:dropper>, [
 [<ore:gearGtSmallIron>, RedAlloyWire, <ore:gearGtSmallIron>]]);
 
 recipes.remove(chest * 4);
-recipes.addShaped(chest * 2, [
-    [logWood, logWood, logWood],
-    [logWood, null, logWood],
-    [logWood, logWood, logWood]]);
-recipes.addShaped(chest * 4, [
-    [logWood, logWood, logWood],
-    [logWood, <ore:craftingToolSaw>, logWood],
-    [logWood, logWood, logWood]]);
 
 recipes.remove(<minecraft:daylight_detector>);
 recipes.addShaped(<minecraft:daylight_detector>, [

@@ -194,41 +194,6 @@ recipes.removeShaped(<ore:ingotGold>, [
 [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]]);
 
 #==================================================================#
-#Stick Fix
-recipes.removeShaped(<minecraft:stick>);
-recipes.addShaped(<minecraft:stick>, [
-		[<ore:craftingToolSaw>], 
-		[<minecraft:tallgrass>]
-	]
-);
-recipes.addShaped(<minecraft:stick>, [
-		[<ore:craftingToolSaw>], 
-		[<minecraft:deadbush>]
-	]
-);
-recipes.addShaped(<minecraft:stick>, [
-		[<ore:craftingToolSaw>], 
-		[<ore:treeSapling>]
-	]
-);
-recipes.addShaped(<minecraft:stick> * 2, [
-		[<ore:craftingToolSaw>], 
-		[<ore:stickLongWood>]
-	]
-);
-recipes.addShaped(<minecraft:stick> * 2, [
-		[<ore:plankWood>], 
-		[<ore:plankWood>]
-	]
-);
-recipes.addShaped(<minecraft:stick> * 4, [
-		[<ore:craftingToolSaw>], 
-		[<ore:plankWood>], 
-		[<ore:plankWood>]
-	]
-);
-
-#==================================================================#
 #Clay ball
 Autoclave.addRecipe(<minecraft:clay_ball>, <gregtech:gt.metaitem.01:2805>, <liquid:water> * 250, 10000, 20, 2);
 
@@ -250,10 +215,6 @@ recipes.addShapeless(GTDyeLBlue,     [<ore:dyeLightBlue>     ]);
 recipes.addShapeless(GTDyeMagenta,   [<ore:dyeMagenta>       ]);
 recipes.addShapeless(GTDyeOrange,    [<ore:dyeOrange>        ]);
 recipes.addShapeless(GTDyeWhite,     [<ore:dyeWhite>         ]);
-
-#==================================================================#
-#Wood Pulp
-recipes.addShapeless(<gregtech:gt.metaitem.01:2809> * 2, [<ore:craftingToolMortar>, <ore:logWood>]);
 
 #==================================================================#
 #Brick Dust

@@ -59,16 +59,16 @@ var OCUpgrade = <IC2:upgradeModule>;
 recipes.remove(<GraviSuite:itemSimpleItem:1>);
 recipes.addShaped(<GraviSuite:itemSimpleItem:1>, [
 		[<GraviSuite:itemSimpleItem>, <GraviSuite:itemSimpleItem>, <GraviSuite:itemSimpleItem>],
-		[<ore:wireGt02SuperconductorLuV>, <ore:plateRhodium-PlatedPalladium>, <ore:wireGt02SuperconductorLuV>],
+		[<ore:wireGt02SuperconductorLuV>, <ore:plateTriplePlatinum>, <ore:wireGt02SuperconductorLuV>],
 		[<GraviSuite:itemSimpleItem>, <GraviSuite:itemSimpleItem>, <GraviSuite:itemSimpleItem>]
 	]
 );
 // --- Super Conductor Cover
 recipes.remove(<GraviSuite:itemSimpleItem>);
 recipes.addShaped(<GraviSuite:itemSimpleItem>*2, [
-		[<IC2:itemPartAlloy>, <IC2:itemPartIridium>, <IC2:itemPartAlloy>],
-		[<ore:wireGt01SuperconductorIV>, <ore:wireGt01SuperconductorIV>, <ore:wireGt01SuperconductorIV>],
-		[<IC2:itemPartAlloy>, <IC2:itemPartIridium>, <IC2:itemPartAlloy>]
+		[<ore:plateNiobiumTitanium>,<ore:plateNiobiumTitanium>,<ore:plateNiobiumTitanium>],
+		[<IC2:itemPartIridium>, <IC2:itemPartIridium>, <IC2:itemPartIridium>],
+		[<ore:plateNiobiumTitanium>,<ore:plateNiobiumTitanium>,<ore:plateNiobiumTitanium>]
 	]
 );
 // --- Advanced Lappack

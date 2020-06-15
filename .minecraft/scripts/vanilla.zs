@@ -21,17 +21,12 @@ recipes.remove(<minecraft:ender_chest>);
 
 recipes.remove(<minecraft:potion:*>);
 
-recipes.remove(<minecraft:brewing_stand>);
 
 recipes.remove(<minecraft:repeater>);
 recipes.remove(<minecraft:comparator>);
 recipes.remove(<minecraft:tnt_minecart>);
 recipes.remove(<minecraft:hopper_minecart>);
-recipes.remove(<minecraft:rail>);
 recipes.remove(<minecraft:golden_rail>);
-recipes.remove(<minecraft:dispenser>);
-recipes.remove(<minecraft:dropper>);
-recipes.remove(<minecraft:enchanting_table>);
 recipes.remove(<minecraft:iron_ingot>);
 recipes.remove(<minecraft:stone_button>);
 
@@ -42,18 +37,6 @@ recipes.removeShapeless(<ore:dustCoal>);
 
 recipes.removeShapeless(blazePowder * 2, [blazeRod]);
 //recipes.addShapeless(blazePowder, [blazeRod]);
-
-recipes.addShaped(<minecraft:dispenser>, [
-[Cobble, <ore:ringIron>, Cobble],
-[<ore:springIron>, <minecraft:string>, <ore:springIron>],
-[<ore:gearGtSmallIron>, RedAlloyWire,  <ore:gearGtSmallIron>]]);
-
-recipes.addShaped(<minecraft:dropper>, [
-[Cobble, <ore:ringIron>, Cobble],
-[<ore:springSmallIron>, <minecraft:string>, <ore:springSmallIron>],
-[<ore:gearGtSmallIron>, RedAlloyWire, <ore:gearGtSmallIron>]]);
-
-recipes.remove(chest * 4);
 
 recipes.remove(<minecraft:daylight_detector>);
 recipes.addShaped(<minecraft:daylight_detector>, [
@@ -100,10 +83,6 @@ for i, slab in slabs {
 	recipes.removeShaped(slab * 6);
 	recipes.addShaped(slab * 2, [[<ore:craftingToolSaw>, blocks[i]]]);
 }
-
-recipes.remove(<minecraft:tripwire_hook>);
-recipes.addShaped(<minecraft:tripwire_hook>, [[<ore:ringIron>, null, <ore:ringIron>], 
-						[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
 // Mineral paints
 <ore:dyeBlack>.add(<gregtech:gt.metaitem.01:2535>);

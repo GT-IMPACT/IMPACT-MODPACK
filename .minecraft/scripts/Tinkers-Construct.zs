@@ -3318,7 +3318,5 @@ mods.gregtech.Canner.addRecipe([<TConstruct:heartCanister:6>], <TConstruct:heart
 mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:5>], null, [<ore:dustManyullyn>, <gregtech:gt.integrated_circuit:1> * 0], 1800, 120, 1900);
 mods.gregtech.BlastFurnace.addRecipe([<TConstruct:materials:4>], null, [<ore:dustArdite>, <gregtech:gt.integrated_circuit:1> * 0], 1200, 120, 1200);
 
-recipes.remove(<gregtech:gt.metaitem.01:32300>);
 mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32300>, <liquid:steel.molten> * 576, null, false, 80);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32300>, <ore:plateSteel>*4, <gregtech:gt.integrated_circuit:4>*0, null, 40, 8);
 

@@ -177,12 +177,6 @@ AlloySmelter.addRecipe(<minecraft:iron_ingot>, nuggetIron * 9, MoldIngot * 0, 20
 AlloySmelter.addRecipe(<IC2:itemMOX>, <ore:ingotUranium>.firstItem * 6, <ore:ingotPlutonium>.firstItem * 3, 100, 48);
 AlloySmelter.addRecipe(uraniumEnriched, <ore:ingotUranium>.firstItem * 6, <ore:nuggetUranium235>.firstItem * 3, 100, 48);
 
-#==================================================================#
-#Mold
-recipes.remove(<gregtech:gt.metaitem.01:32300>);
-mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32300>, <liquid:steel.molten> * 576, null, false, 80);
-Assembler.addRecipe(<gregtech:gt.metaitem.01:32300>, <ore:plateSteel>*4, <gregtech:gt.integrated_circuit:4>*0, null, 40, 8);
-
 recipes.removeShaped(<ore:ingotLead>, [
 [<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],
 [<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],

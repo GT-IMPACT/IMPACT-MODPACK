@@ -289,9 +289,6 @@ mods.tconstruct.Smeltery.removeMelting(<gregtech:gt.blockmetal2:5>);
 // -
 mods.tconstruct.Casting.removeBasinRecipe(<ore:blockCobalt>);
 
-// --- Sand to Glass
-mods.tconstruct.Smeltery.removeMelting(<minecraft:sand>);
-
 // --- Alumite
 mods.tconstruct.Smeltery.removeAlloy(<liquid:alumite.molten>);
 

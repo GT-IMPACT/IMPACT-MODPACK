@@ -13,20 +13,12 @@ var slabWood = <ore:slabWood>;
 var Cobble = <ore:cobblestone>;
 var RedAlloyWire = <ore:wireGt01RedAlloy>;
 
-potionHealing.add(<minecraft:potion:8197>);
-potionHealing.add(<minecraft:potion:8261>);
-potionHealing.add(<minecraft:potion:8229>);
-
 recipes.remove(<minecraft:ender_chest>);
-
-recipes.remove(<minecraft:potion:*>);
-
 
 recipes.remove(<minecraft:repeater>);
 recipes.remove(<minecraft:comparator>);
 recipes.remove(<minecraft:tnt_minecart>);
 recipes.remove(<minecraft:hopper_minecart>);
-recipes.remove(<minecraft:golden_rail>);
 recipes.remove(<minecraft:iron_ingot>);
 recipes.remove(<minecraft:stone_button>);
 

@@ -2271,27 +2271,6 @@ Compressor.addRecipe(<TConstruct:materials:17>, <TConstruct:CraftedSoil:2> * 4);
 Compressor.addRecipe(<TConstruct:materials>, <minecraft:paper> * 64);
 
 
-// --- Cutting Saw Recipes ---
-
-
-// --- Ardite Plate
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17416> * 9, null, <TConstruct:MetalBlock:1>, <liquid:water> * 1000, 4800, 30);
-// -
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17416> * 9, null, <TConstruct:MetalBlock:1>, <liquid:ic2distilledwater> * 750, 4800, 30);
-// -
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17416> * 9, null, <TConstruct:MetalBlock:1>, <liquid:lubricant> * 250, 2400, 30);
-
-// --- Manyullyn Plate
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17417> * 9, null, <TConstruct:MetalBlock:2>, <liquid:water> * 1000, 9600, 30);
-// -
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17417> * 9, null, <TConstruct:MetalBlock:2>, <liquid:ic2distilledwater> * 750, 9600, 30);
-// -
-CuttingSaw.addRecipe(<gregtech:gt.metaitem.01:17417> * 9, null, <TConstruct:MetalBlock:2>, <liquid:lubricant> * 250, 4800, 30);
-
-
-
-
-
 // --- Extractor Recipes ---
 
 

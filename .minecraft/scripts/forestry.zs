@@ -378,104 +378,14 @@ recipes.remove(<Forestry:canEmpty>);
 Assembler.addRecipe(<Forestry:canEmpty>, <gregtech:gt.metaitem.01:17057> * 2, <minecraft:glass_pane>, 120, 8);
 Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72, 64, 32);
 
-
 // --- Bags ---
-	recipes.remove(<Forestry:apiaristBag>);
-	recipes.remove(<Forestry:lepidopteristBag>);
-	recipes.remove(<Forestry:minerBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:minerBagT2>);
-	recipes.remove(<Forestry:diggerBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:diggerBagT2>);
-	recipes.remove(<Forestry:foresterBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:foresterBagT2>);
-	recipes.remove(<Forestry:hunterBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:hunterBagT2>);
-	recipes.remove(<Forestry:adventurerBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:adventurerBagT2>);
-	recipes.remove(<Forestry:builderBag>);
 	mods.forestry.Carpenter.removeRecipe(<Forestry:builderBagT2>);
-	
 
-// --- Apiarists Backpack
-	recipes.addShaped(<Forestry:apiaristBag>, [
-	[<ore:blockWool>, <Forestry:apicultureChest>, <ore:blockWool>],
-	[<ore:itemLeather>, <ore:blockWool>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Lepidopterists Backpack
-	recipes.addShaped(<Forestry:lepidopteristBag>, [
-	[<ore:blockWool>, <Forestry:lepidopterology>, <ore:blockWool>],
-	[<ore:itemLeather>, <ore:blockWool>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-
-
-// --- Miners Backpack
-	recipes.addShaped(<Forestry:minerBag>, [
-	[<ore:blockWool>, <ore:ingotIron>, <ore:blockWool>],
-	[<ore:itemLeather>, <ore:ingotIron>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-
-// --- Miners Backpack Woven
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	<Forestry:minerBag>, <Forestry:minerBagT2>);
-
-// --- Diggers Backpack
-	recipes.addShaped(<Forestry:diggerBag>, [
-	[<ore:blockWool>, <ore:stone>, <ore:blockWool>],
-	[<ore:itemLeather>, <ore:stone>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-
-// --- Diggers Backpack Woven
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	<Forestry:diggerBag>, <Forestry:diggerBagT2>);
-
-// --- Foresters Backpach
-	recipes.addShaped(<Forestry:foresterBag>, [
-	[<ore:blockWool>, <ore:logWood>, <ore:blockWool>],
-	[<ore:itemLeather>, <ore:logWood>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Foresters Backpach Woven
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	<Forestry:foresterBag>, <Forestry:foresterBagT2>);
-
-// --- Hunters Backpack
-	recipes.addShaped(<Forestry:hunterBag>, [
-	[<ore:blockWool>, <minecraft:feather>, <ore:blockWool>],
-	[<ore:itemLeather>, <minecraft:feather>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Hunters Backpack Woven
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	<Forestry:hunterBag>, <Forestry:hunterBagT2>);
-
-// --- Builders Backpach
-	recipes.addShaped(<Forestry:builderBag>, [
-	[<ore:blockWool>, <minecraft:fence>, <ore:blockWool>],
-	[<ore:itemLeather>, <minecraft:fence>, <ore:itemLeather>],
-	[<ore:itemLeather>, <Backpack:tannedLeather>, <ore:itemLeather>]]);
-
-// --- Builders Backpach Woven
-	mods.forestry.Carpenter.addRecipe(60, <liquid:seedoil> * 5000, 
-	[<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>,
-	<Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>, <Forestry:craftingMaterial:3>],
-	<Forestry:builderBag>, <Forestry:builderBagT2>);
 
 // Alveary
 recipes.remove(alvSwarmer);

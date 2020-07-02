@@ -76,8 +76,8 @@ val Leather = <minecraft:leather>;
 val HLeather = <ore:blockWool>;
 val Paintbrush = <IC2:itemToolPainter>;
 val SteelRing = <ore:ringIron>;
-val SSteelRing = <ore:ringSteel>;
-val TitaniumRing = <ore:ringAluminium>;
+val SSteelRing = <ore:ringWroughtIron>;
+val TitaniumRing = <ore:ringSteel>;
 val CraftingSlab = <TConstruct:CraftingSlab>;
 
 val All = <Backpack:backpack:*>;

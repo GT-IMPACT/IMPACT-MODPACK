@@ -342,7 +342,7 @@ for item in <ore:drawerBasic>.items {
 }
 
 // --- Concealedment Key
-Assembler.addRecipe(<StorageDrawers:shroudKey>, <StorageDrawers:upgradeLock>, <minecraft:ender_eye>, 100, 30);
+Assembler.addRecipe(<StorageDrawers:shroudKey>, <StorageDrawers:upgradeLock>, <ore:lensDiamond>, 100, 30);
 
 // --- Storage Personal Key
 Assembler.addRecipe(<StorageDrawers:personalKey>, <StorageDrawers:upgradeLock>, <minecraft:name_tag>, 100, 30);

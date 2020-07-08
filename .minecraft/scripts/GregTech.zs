@@ -258,9 +258,6 @@ recipes.addShaped(<gregtech:gt.metaitem.01:32499>*2, [
 
 #==================================================================#
 
-<gregtech:gt.blockmachines:12736>.displayName = "Mega Input Hatch";
-<gregtech:gt.blockmachines:12737>.displayName = "Mega Output Hatch";
-
 <gregtech:gt.metaitem.01:2027>.addTooltip(format.gray("Look at recipe of ") + format.blue("Pure") + format.gray(" Dust"));
 
 print("Initialized 'GregTech.zs'");

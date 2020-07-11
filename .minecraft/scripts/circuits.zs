@@ -29,8 +29,8 @@
 // master (LuV)
 <gregtech:gt.metaitem.01:32706>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("1"));
 <gregtech:gt.metaitem.03:32087>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("2"));
-<gregtech:gt.metaitem.03:32092>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("3"));
-<gregtech:gt.metaitem.03:32096>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("4"));
+<gregtech:gt.metaitem.03:32096>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("3"));
+<gregtech:gt.metaitem.03:32092>.addTooltip(format.yellow("LuV") + format.white(" Circuit level ") + format.yellow("4"));
 
 // ultimate (ZPM)
 <gregtech:gt.metaitem.03:32088>.addTooltip(format.yellow("ZPM") + format.white(" Circuit level ") + format.yellow("1"));

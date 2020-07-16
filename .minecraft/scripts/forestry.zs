@@ -423,3 +423,13 @@ recipes.addShaped(alvSieve, [
 	[impregnatedStick, chestWood, impregnatedStick],
 	[impregnatedStick, alvBlock, impregnatedStick],
 	[silkWoven, silkWoven, silkWoven]]);
+
+
+//Wooden planks
+var WoodPulp = <gregtech:gt.metaitem.01:2809>;
+
+//Fertilizer
+recipes.remove(<Forestry:fertilizerCompound>);
+recipes.addShapeless(<Forestry:fertilizerCompound>, [<IC2:itemFertilizer>]);
+recipes.addShapeless(<IC2:itemFertilizer>, [<Forestry:fertilizerCompound>]);
+

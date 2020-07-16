@@ -1,9 +1,9 @@
 {
 	ExtraUtilities:[
 		{hide:[[decorativeBlock1],[0-8,10-12,14]]};
-		{hide:[[filing,dark_portal,watering_can],[]]};
+		{hide:[[filing,watering_can],[]]};
 		{show:[[watering_can],[1]]};
-		{show:[[dark_portal],[2]]};
+		{show:[[dark_portal],[0,2]]};
 	]
 
 }

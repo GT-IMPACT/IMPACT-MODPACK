@@ -165,8 +165,6 @@ recipes.remove(<GalacticraftCore:tile.spinThruster>);
 recipes.remove(<GalacticraftCore:tile.viewScreen>);
 //Telemetry Unit
 recipes.remove(<GalacticraftCore:tile.telemetry>);
-//Arc Lamp
-recipes.remove(<GalacticraftCore:tile.arclamp>);
 //Oxygen Mask
 recipes.remove(<GalacticraftCore:item.oxygenMask>);
 //Oxygen Gear
@@ -481,12 +479,6 @@ recipes.addShaped(<GalacticraftCore:tile.telemetry>, [
 [<GalacticraftCore:item.basicItem:19>,CompressedTin,<gregtech:gt.metaitem.01:32680>],
 [BWafer, CompressedTin, BWafer],
 [CompressedTin, CompressedCopper, CompressedTin]]);
-
-//Arc Lamp
-recipes.addShaped(<GalacticraftCore:tile.arclamp>, [
-	[<ore:plateTungsten>, <ore:plateGlowstone>, <ore:plateTungsten>],
-	[<ore:plateGlowstone>, <gregtech:gt.metaitem.01:32683>, <ore:lensDiamond>],
-	[<ore:plateTungsten>, <ore:plateGlowstone>, <ore:plateTungsten>]]);
 
 // --- Oxygen Mask
 Assembler.addRecipe(<GalacticraftCore:item.oxygenMask>, <IC2:itemArmorHazmatHelmet>, <ore:plateReinforcedGlass> * 16, <liquid:glue> * 144, 400, 120);

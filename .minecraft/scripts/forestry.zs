@@ -378,15 +378,6 @@ recipes.remove(<Forestry:canEmpty>);
 Assembler.addRecipe(<Forestry:canEmpty>, <gregtech:gt.metaitem.01:17057> * 2, <minecraft:glass_pane>, 120, 8);
 Assembler.addRecipe(tubeEnder * 4, enderEye * 2, endStone * 5, moltenGlass * 72, 64, 32);
 
-// --- Bags ---
-	mods.forestry.Carpenter.removeRecipe(<Forestry:minerBagT2>);
-	mods.forestry.Carpenter.removeRecipe(<Forestry:diggerBagT2>);
-	mods.forestry.Carpenter.removeRecipe(<Forestry:foresterBagT2>);
-	mods.forestry.Carpenter.removeRecipe(<Forestry:hunterBagT2>);
-	mods.forestry.Carpenter.removeRecipe(<Forestry:adventurerBagT2>);
-	mods.forestry.Carpenter.removeRecipe(<Forestry:builderBagT2>);
-
-
 // Alveary
 recipes.remove(alvSwarmer);
 recipes.remove(alvFan);

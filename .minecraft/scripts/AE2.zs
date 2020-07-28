@@ -365,14 +365,8 @@ recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:28>);
 // --- Card Upgrade
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:54>);
 
-// --- Blank Pattern
-recipes.remove(Pattern);
-
 // --- Basic Card
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:25>);
-
-// --- Blank Pattern
-recipes.remove(<appliedenergistics2:item.ItemMultiPart:52>);
 
 // --- Capacity Card
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:27>);
@@ -718,13 +712,6 @@ recipes.addShaped(CardBasic, [
 		[<ore:plateGold>, AlPlate, <ore:screwStainlessSteel>]
 	]
 );
-// --- Blank Pattern
-recipes.addShaped(Pattern, [
-		[<appliedenergistics2:tile.BlockQuartzGlass>, <ore:plateGlowstone>, <appliedenergistics2:tile.BlockQuartzGlass>],
-		[<ore:plateGlowstone>, <ore:itemCertusQuartz>, <ore:plateGlowstone>],
-		[AlPlate, AlPlate, AlPlate]
-	]
-);  
 // --- Capacity Card
 recipes.addShapeless(<appliedenergistics2:item.ItemMultiMaterial:27>,
 	[CardBasic, ProcCalc,

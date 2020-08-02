@@ -1,4 +1,3 @@
-/* IIS by Sapient, 2016, v1.09.1 */
 import mods.nei.NEI;
 import minetweaker.item.IItemStack; 
 
@@ -15,10 +14,6 @@ var RedAlloyWire = <ore:wireGt01RedAlloy>;
 
 recipes.remove(<minecraft:ender_chest>);
 
-recipes.remove(<minecraft:repeater>);
-recipes.remove(<minecraft:comparator>);
-recipes.remove(<minecraft:tnt_minecart>);
-recipes.remove(<minecraft:hopper_minecart>);
 recipes.remove(<minecraft:iron_ingot>);
 recipes.remove(<minecraft:stone_button>);
 
@@ -29,12 +24,6 @@ recipes.removeShapeless(<ore:dustCoal>);
 
 recipes.removeShapeless(blazePowder * 2, [blazeRod]);
 //recipes.addShapeless(blazePowder, [blazeRod]);
-
-recipes.remove(<minecraft:daylight_detector>);
-recipes.addShaped(<minecraft:daylight_detector>, [
-    [glass, glass, glass],
-    [gemNetherQuartz, gemNetherQuartz, gemNetherQuartz],
-    [slabWood, slabWood, slabWood]]);
 
 // add wood button recipe from wooden planks as stone analogy
 recipes.addShapeless(<minecraft:wooden_button>, [<ore:plankWood>]);

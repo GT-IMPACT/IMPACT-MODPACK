@@ -19,7 +19,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 
 - Forge-10.13.4.1614<BR>
 - ae2stuff-rv3-0.5.1.9-mc1.7.10<BR>
-- AFSU-1.2.3a-Freeza<BR>
 - AppleCore-mc1.7.10-1.3.9<BR>
 - appliedenergistics2-rv3-beta-6<BR>
 - ArchitectureCraft-1.7.3-mc1.7.10<BR>
@@ -28,7 +27,6 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - AromaBackup-1.7.10-0.1.0.0<BR>
 - AsieLib-1.7.10-0.4.9<BR>
 - backpack-2.2.4-1.7.x<BR>
-- bartworks1.7.10-0.5.2_pre24<BR>
 - bdlib-1.9.4.109-mc1.7.10<BR>
 - BetterBuildersWands-0.8.1-1.7.10r92+aec06c3<BR>
 - BiblioCraft[v1.11.7][MC1.7.10]<BR>
@@ -75,10 +73,8 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - InGameInfoXML-1.7.10-2.8.1.82-universal<BR>
 - INpureCore-[1.7.10]1.0.0B9-62<BR>
 - InventoryTweaks-1.59-dev-156<BR>
-- ironchest-1.7.10-6.0.62.742-universal<BR>
 - Jabba-1.2.5_1.7.10<BR>
 - journeymap-1.7.10-5.1.4-unlimited<BR>
-- kekztech-0.2.2<BR>
 - legiblenei_1.7.10-1.6.7.6<BR>
 - LunatriusCore-1.7.10-1.1.2.21-universal<BR>
 - malisiscore-1.7.10-0.14.3<BR>
@@ -133,5 +129,5 @@ Discord: https://discord.gg/bMf2qvd<BR>
 - ForgeRelocationFMP-0.0.1.2-universal<BR>
 - MrTJPCore-1.7.10-1.1.0.33-universal<BR>
 - OptiFine_1.7.10_HD_U_E7<BR>
-- ChestUp 0.1a
-- IMPACT 0.0.1
+- ChestUp
+- IMPACT

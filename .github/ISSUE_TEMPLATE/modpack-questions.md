@@ -1,7 +1,7 @@
 ---
 name: Modpack questions
 about: 'Вопросы по модпаку '
-title: Заголовок для "Вопрос по модпаку"
+title:
 labels: question
 assignees: ''
 

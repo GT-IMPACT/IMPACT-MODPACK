@@ -1,7 +1,7 @@
 ---
 name: Report a bug
 about: Отчет об ошибках
-title: Заголовок для "Отчет об ошибках"
+title:
 labels: bug
 assignees: ''
 

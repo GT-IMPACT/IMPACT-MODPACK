@@ -1,7 +1,7 @@
 ---
 name: Suggestion for future modpack
 about: Предложение для развития модпака
-title: Заголовок для "Предложение для развития модпака"
+title:
 labels: Suggestion
 assignees: ''
 

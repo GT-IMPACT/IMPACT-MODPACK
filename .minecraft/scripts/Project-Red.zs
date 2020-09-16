@@ -242,35 +242,3 @@ for i, dye in liquidDye {
 	ChemicalBath.addRecipe([Illumare[i]], whiteIllumar, dye * 50, [10000], 100, 8);
 	ChemicalBath.addRecipe([whiteIllumar], Illumare[i], <liquid:chlorine> * 50, [10000], 800, 2);
 }
-
-//IC Chips
-var gtCraftingTableCover = <gregtech:gt.metaitem.01:32744>;
-var ftWorktable = <Forestry:factory2:2>;
-var prICWorkbench = <ProjRed|Fabrication:projectred.integration.icblock>;
-var prICPrinter = <ProjRed|Fabrication:projectred.integration.icblock:1>;
-var prICChip = <ProjRed|Fabrication:projectred.fabrication.icchip>;
-var prScrewdriver = <ProjRed|Core:projectred.core.screwdriver>;
-var gtEmitterLV = <gregtech:gt.metaitem.01:32680>;
-var gtComputerMonitor = <gregtech:gt.metaitem.01:32740>;
-var gtAssemblerLV = <gregtech:gt.blockmachines:211>;
-var gtScrewdriver = <gregtech:gt.metatool.01:22>;
-
-recipes.remove(prICWorkbench);
-recipes.addShaped(prICWorkbench, [[<ore:plateIron>, gtCraftingTableCover, <ore:plateIron>],
-		   		  [<ore:plateWood>, ftWorktable, <ore:plateWood>],
-		   		  [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]]);
-
-recipes.remove(prICPrinter);
-recipes.addShaped(prICPrinter, [[gtEmitterLV, gtComputerMonitor, gtEmitterLV],
-		   		  [<ore:craftingLensRed>, gtAssemblerLV, <ore:craftingLensRed>],
-		   		  [<ore:plateSteel>, ftWorktable, <ore:plateSteel>]]);
-
-recipes.remove(prICChip);
-//Assembler.addRecipe(prICChip, <ore:circuitGood>.firstItem * 4, <ore:circuitPrimitive>.firstItem * 16, <liquid:molten.solderingalloy> * 576, 400, 30);
-//Assembler.addRecipe(prICChip, <ore:circuitGood> * 4, <ore:circuitPrimitive> * 16, <liquid:molten.solderingalloy> * 576, 400, 30);
-Assembler.addRecipe(prICChip, <ore:circuitGood> * 4, <ore:circuitBasic> * 8, <liquid:molten.solderingalloy> * 576, 400, 30);
-
-recipes.remove(prScrewdriver);
-recipes.addShaped(prScrewdriver, [[null, <ore:craftingToolFile>, <ore:stickIron>],
-		   		  [<ore:dyeBlue>, <ore:stickIron>, <ore:craftingToolHardHammer>],
-		   		  [<ore:stickWood>, <ore:dyeBlue>, null]]);

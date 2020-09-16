@@ -412,7 +412,7 @@ Assembler.addRecipe(<EnderIO:itemMEConduit:1>, <appliedenergistics2:item.ItemMul
 
 // --- Filters
 Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade>, <gregtech:gt.metaitem.01:32630>, <ore:plateElectricalSteel>, 100, 16);
-Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade:1>, <gregtech:gt.metaitem.01:32632>, <ore:plateDarkSteel>, 200, 120);
+Assembler.addRecipe(<EnderIO:itemBasicFilterUpgrade:1>, <gregtech:gt.metaitem.01:32631>, <ore:plateDarkSteel>, 200, 120);
 Assembler.addRecipe(<EnderIO:itemModItemFilter>, <EnderIO:itemBasicFilterUpgrade>, <ore:plateDarkSteel>, 200, 120);
 
 #==================================================================#

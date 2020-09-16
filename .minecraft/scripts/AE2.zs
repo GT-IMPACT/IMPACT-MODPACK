@@ -49,7 +49,6 @@ var CertusScrew = <ore:screwCertusQuartz>;
 var Charger = <appliedenergistics2:tile.BlockCharger>;
 var ClearGlass = <EnderIO:blockFusedQuartz:1>;
 var ClearPane = <gregtech:gt.metaitem.01:17890>;
-var CoCraftingUnit = <appliedenergistics2:tile.BlockCraftingUnit:1>;
 var CopperCable = <ore:cableGt01Copper>;
 var craftingTable = <minecraft:crafting_table>;
 val CraftingStorage_1k = <appliedenergistics2:tile.BlockCraftingStorage>;
@@ -57,7 +56,6 @@ val CraftingStorage_4k = <appliedenergistics2:tile.BlockCraftingStorage:1>;
 val CraftingStorage_16k = <appliedenergistics2:tile.BlockCraftingStorage:2>;
 val CraftingStorage_64k = <appliedenergistics2:tile.BlockCraftingStorage:3>;
 var CraftingTerminal = <appliedenergistics2:item.ItemMultiPart:360>;
-var CraftingUnit = <appliedenergistics2:tile.BlockCraftingUnit>;
 var CrystalAccelerator = <appliedenergistics2:tile.BlockQuartzGrowthAccelerator>;
 //var DataCircuit = <gregtech:gt.metaitem.01:32704>;
 var DEnergyCell = <appliedenergistics2:tile.BlockDenseEnergyCell>;
@@ -263,20 +261,8 @@ recipes.remove(CertusQBlock);
 // --- Chiseled Certus Quartz Block
 recipes.remove(CCrtusQBlock);
 
-// --- Energy Cell
-recipes.remove(EnergyCell);
-
-// --- Dense Energy Cell
-recipes.remove(DEnergyCell);
-
 // --- Crystal Growth Accelerator
 recipes.remove(CrystalAccelerator);
-
-// --- Crafting Unit
-recipes.remove(CraftingUnit);
-
-// --- Crafting Co Processing Unit
-recipes.remove(CoCraftingUnit);
 
 // --- Charger
 recipes.remove(Charger);
@@ -316,12 +302,6 @@ recipes.remove(PureFluixCrystal);
 
 // --- Fluix Pearl
 recipes.remove(FluixPearl);
-
-// --- Annihilation Core
-recipes.remove(AnnihilationCore);
-
-// --- Formation Core
-recipes.remove(FormationCore);
 
 // --- Wireless Receiver
 recipes.remove(WirelessReceiver);
@@ -444,31 +424,9 @@ recipes.remove(<appliedenergistics2:item.ItemCrystalSeed:1200>);
 // --- Nether Quartz Block
 recipes.remove(NetherQBlock);
 
-recipes.remove(CraftingStorage_1k);
-
-recipes.remove(CraftingStorage_4k);
-
-recipes.remove(CraftingStorage_16k);
-
-recipes.remove(CraftingStorage_64k);
-
 #==================================================================#
 # Adding Recipes
 #Blocks
-// --- Energy Cell
-recipes.addShaped(EnergyCell, [
-		[<appliedenergistics2:tile.BlockFluix>, <ore:plateVanadiumSteel>, <appliedenergistics2:tile.BlockFluix>],
-		[<ore:plateVanadiumSteel>, <gregtech:gt.metaitem.01:32714>, <ore:plateVanadiumSteel>],
-		[<appliedenergistics2:tile.BlockFluix>, <ore:plateVanadiumSteel>, <appliedenergistics2:tile.BlockFluix>]
-	]
-);
-// --- Dense Energy Cell
-recipes.addShaped(DEnergyCell, [
-		[EnergyCell, <ore:plateVanadiumGallium>, EnergyCell],
-		[<ore:plateVanadiumGallium>, <ore:circuitElite>, <ore:plateVanadiumGallium>],
-		[EnergyCell, <ore:plateVanadiumGallium>, EnergyCell]
-	]
-);
 // --- Charger
 recipes.addShaped(Charger, [
 		[TitaniumPlate,<gregtech:gt.metaitem.01:32683>,TitaniumPlate],
@@ -599,28 +557,6 @@ ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableRed, moltenChlorine * 5
 ChemicalBath.addRecipe([FluixSmartCable], FluixSmartCableBlack, moltenChlorine * 50, [10000], 400, 2);
 
 #==================================================================#
-// --- Annihilation Core
-recipes.addShaped(AnnihilationCore, [
-		[<ore:screwQuartzite>, <ore:foilVanadiumSteel>, <ore:craftingToolHardHammer>],
-		[<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:7>, GoldCircuit],
-		[<ore:screwQuartzite>, <ore:foilVanadiumSteel>, <ore:craftingToolScrewdriver>]
-	]
-);
-Assembler.addRecipe(AnnihilationCore, [<ore:plateNetherQuartz>, PureFluixCrystal, <ore:foilVanadiumSteel>*2,GoldCircuit,<gregtech:gt.integrated_circuit:1>*0], null, 200, 7680);
-Assembler.addRecipe(AnnihilationCore*2, [<ore:stickNetherQuartz>, PureFluixCrystal, <ore:foilIridium>,GoldCircuit,<gregtech:gt.integrated_circuit:2>*0], null, 100, 30720);
-Assembler.addRecipe(AnnihilationCore*4, [<ore:boltNetherQuartz>, PureFluixCrystal, <ore:foilDuranium>,GoldCircuit,<gregtech:gt.integrated_circuit:3>*0], null, 50, 122880);
-Assembler.addRecipe(AnnihilationCore*16, [<ore:boltNetherQuartz>, PureFluixCrystal, <ore:wireFineNeutronium>,GoldCircuit,<gregtech:gt.integrated_circuit:4>*0], null, 20, 500000);
-// --- Formation Core
-recipes.addShaped(FormationCore, [
-		[<ore:screwQuartzite>, <ore:foilVanadiumSteel>, <ore:craftingToolHardHammer>],
-		[<ore:plateCertusQuartz>, <appliedenergistics2:item.ItemMultiMaterial:7>, GoldCircuit],
-		[<ore:screwQuartzite>, <ore:foilVanadiumSteel>, <ore:craftingToolScrewdriver>]
-	]
-);
-Assembler.addRecipe(FormationCore, [<ore:plateCertusQuartz>, PureFluixCrystal, <ore:foilVanadiumSteel>*2,GoldCircuit,<gregtech:gt.integrated_circuit:1>*0], null, 200, 7680);
-Assembler.addRecipe(FormationCore*2, [<ore:stickCertusQuartz>, PureFluixCrystal, <ore:foilIridium>,GoldCircuit,<gregtech:gt.integrated_circuit:2>*0], null, 100, 30720);
-Assembler.addRecipe(FormationCore*4, [<ore:boltCertusQuartz>, PureFluixCrystal, <ore:foilDuranium>,GoldCircuit,<gregtech:gt.integrated_circuit:3>*0], null, 50, 122880);
-Assembler.addRecipe(FormationCore*16, [<ore:boltCertusQuartz>, PureFluixCrystal, <ore:wireFineNeutronium>,GoldCircuit,<gregtech:gt.integrated_circuit:4>*0], null, 20, 500000);
 // --- Fluix Pearl
 recipes.addShaped(FluixPearl, [
 		[PureFluixCrystal, EnderEyePlate, PureFluixCrystal],
@@ -844,15 +780,6 @@ recipes.addShaped(<appliedenergistics2:item.ToolBiometricCard>, [
 );
 
 #==================================================================#
-// --- CoCraftingUnit
-Assembler.addRecipe(CoCraftingUnit, [CraftingUnit, <ore:circuitData>*2], <liquid:molten.solderingalloy> * 2304, 800, 1024);
-
-// --- CraftingStorages
-Assembler.addRecipe(CraftingStorage_1k, CraftingUnit, StorageComponent1K, <liquid:molten.solderingalloy> * 144, 1200, 64);
-Assembler.addRecipe(CraftingStorage_4k, CraftingUnit, StorageComponent4K, <liquid:molten.solderingalloy> * 576, 1200, 256);
-Assembler.addRecipe(CraftingStorage_16k, CraftingUnit, StorageComponent16K, <liquid:molten.solderingalloy> * 2304, 1200, 1024);
-Assembler.addRecipe(CraftingStorage_64k, CraftingUnit, StorageComponent64K, <liquid:molten.solderingalloy> * 9216, 1200, 4096);
-
 // --- Dark Illuminated Panel
 Assembler.addRecipe(<appliedenergistics2:item.ItemMultiPart:200>, <appliedenergistics2:item.ItemMultiPart:180>, <gregtech:gt.integrated_circuit:2> * 0, 100, 4);
 

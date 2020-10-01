@@ -4,7 +4,6 @@
 
 #==================================================================#
 #Imports
-import mods.gregtech.Assembler;
 import mods.gregtech.AssemblyLine;
 import mods.gregtech.Centrifuge;
 import mods.gregtech.Electrolyzer;
@@ -48,9 +47,6 @@ recipes.remove(<GalaxySpace:item.cobaltum_helmet>);
 // --- Cobaltum Leggings
 recipes.remove(<GalaxySpace:item.cobaltum_leg>);
 
-// --- Lead Battery
-recipes.remove(<GalaxySpace:item.LeadBattery:*>);
-
 // --- Solar Flares
 recipes.remove(<GalaxySpace:item.SolarFlares:1>);
 
@@ -92,21 +88,6 @@ recipes.remove(<GalaxySpace:item.plasmahoe:*>);
 
 // --- Plasma Shovel
 recipes.remove(<GalaxySpace:item.plasmashovel:*>);
-
-// --- Thermal Cloth Tier 2
-recipes.remove(<GalaxySpace:item.ThermalClothT2>);
-
-// --- Thermal Helmet Tier 2
-recipes.remove(<GalaxySpace:item.ThermalPaddingT2>);
-
-// --- Thermal Chestplate Tier 2
-recipes.remove(<GalaxySpace:item.ThermalPaddingT2:1>);
-
-// --- Thermal Leggings Tier 2
-recipes.remove(<GalaxySpace:item.ThermalPaddingT2:2>);
-
-// --- Thermal Boots Tier 2
-recipes.remove(<GalaxySpace:item.ThermalPaddingT2:3>);
 
 // --- Ceres Glowstone
 recipes.remove(<GalaxySpace:ceresglowstone>);
@@ -164,9 +145,6 @@ recipes.remove(<GalaxySpace:metalsblock:8>);
 
 // --- Decorate Copper
 recipes.remove(<GalaxySpace:metalsblock:9>);
-
-// --- Future Glass
-recipes.remove(<GalaxySpace:futureglass>);
 
 // --- Advanced Machine Frame
 recipes.remove(<GalaxySpace:machineframes>);
@@ -285,9 +263,6 @@ recipes.addShaped(<GalaxySpace:item.plasmashovel>.withTag({electricity: 0.0 as f
 [<ore:plateDesh>, <GalacticraftCore:item.steelPole>, <ore:plateDesh>],
 [<GalacticraftCore:tile.aluminumWire:1>, <GalaxySpace:item.LeadBattery:100>.withTag({electricity: 0.0 as float}), <GalacticraftCore:tile.aluminumWire:1>]]);
 
-// --- Thermal Cloth Tier 2
-Assembler.addRecipe(<GalaxySpace:item.ThermalClothT2>, [<ore:foilMeteoricSteel> * 4, <ore:foilTitanium> * 4, <ore:wireFineTungsten> * 4, <GalacticraftMars:item.itemBasicAsteroids:7>], <liquid:molten.polycaprolactam> * 576, 200, 7680);
-
 // --- Decorate Lead
 recipes.addShaped(<GalaxySpace:metalsblock>, [
 [<ore:craftingToolHardHammer>, <ore:CompressedLead>, null],
@@ -395,40 +370,6 @@ recipes.addShaped(<GalaxySpace:item.ModuleSmallCanister>, [
 [<GalacticraftCore:item.basicItem:9>, <ore:ringSteel>, <GalacticraftCore:item.basicItem:9>],
 [<GalacticraftCore:item.basicItem:9>, <ore:craftingToolWrench>, <GalacticraftCore:item.basicItem:9>],
 [<GalacticraftCore:item.basicItem:9>, <ore:ringSteel>, <GalacticraftCore:item.basicItem:9>]]);
-
-
-
-// --- Assembler Recipes
-
-
-
-
-// --- Lead Battery
-Assembler.addRecipe(<GalaxySpace:item.LeadBattery:100>.withTag({electricity: 0.0 as float}), <GalacticraftCore:item.battery:*>, <gregtech:gt.integrated_circuit:1>, <liquid:molten.lead> * 6000, 100, 120);
-
-// --- Thermal Helmet Tier 2
-Assembler.addRecipe(<GalaxySpace:item.ThermalPaddingT2>, <GalaxySpace:item.ThermalClothT2> * 5, <gregtech:gt.integrated_circuit:5> * 0, 1500, 7680);
-
-// --- Thermal Chestplate Tier 2
-Assembler.addRecipe(<GalaxySpace:item.ThermalPaddingT2:1>, <GalaxySpace:item.ThermalClothT2> * 8, <gregtech:gt.integrated_circuit:8> * 0, 2400, 7680);
-
-// --- Thermal Leggings Tier 2
-Assembler.addRecipe(<GalaxySpace:item.ThermalPaddingT2:2>, <GalaxySpace:item.ThermalClothT2> * 7, <gregtech:gt.integrated_circuit:7> * 0, 2100, 7680);
-
-// --- Thermal Boots Tier 2
-Assembler.addRecipe(<GalaxySpace:item.ThermalPaddingT2:3>, <GalaxySpace:item.ThermalClothT2> * 4, <gregtech:gt.integrated_circuit:4> * 0, 1200, 7680);
-
-// --- Future Glass
-Assembler.addRecipe(<GalaxySpace:futureglass>, <minecraft:glass>, <gregtech:gt.metaitem.01:23884> * 8, 200, 480);
-
-// --- Space Suit Jetpack
-Assembler.addRecipe(<GalaxySpace:item.spacesuit_jetplate>.withTag({electricity: 0.0 as float}), [<GalaxySpace:item.spacesuit_plate>, <IC2:itemArmorJetpackElectric:1>, <GalaxySpace:item.CompressedPlates:2>*4], <liquid:molten.platinum> * 1440, 600, 1920);
-
-// --- Space Suit Gravity Boots
-Assembler.addRecipe(<GalaxySpace:item.spacesuit_gravityboots>, [<GalaxySpace:item.spacesuit_boots>, <GalaxySpace:item.CompressedPlates:4> * 2, <GalaxySpace:item.CompressedPlates:2>*4], <liquid:molten.platinum> * 1440, 600, 1920);
-
-// --- Space Suit Sensor Glasses
-Assembler.addRecipe(<GalaxySpace:item.spacesuit_helmetglasses>, [<GalaxySpace:item.spacesuit_helmet>, <GalacticraftCore:item.sensorGlasses>, <GalaxySpace:item.CompressedPlates:2>*4], <liquid:molten.platinum> * 1440, 600, 1920);
 
 #==================================================================#
 

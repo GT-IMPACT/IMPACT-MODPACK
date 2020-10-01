@@ -3,7 +3,6 @@
 
 // --- Mod Import ---
 
-import mods.gregtech.Assembler;
 import mods.gregtech.BlastFurnace;
 import mods.gregtech.Canner;
 import mods.ic2.Compressor;
@@ -157,16 +156,12 @@ recipes.remove(<GalacticraftCore:tile.machineTiered:4>);
 recipes.remove(<GalacticraftCore:tile.machineTiered:8>);
 //Electric Arc Furnace
 recipes.remove(<GalacticraftCore:tile.machineTiered:12>);
-//Glowstone Torch
-recipes.remove(<GalacticraftCore:tile.glowstoneTorch>);
 //Spin Truster
 recipes.remove(<GalacticraftCore:tile.spinThruster>);
 //Display Screen
 recipes.remove(<GalacticraftCore:tile.viewScreen>);
 //Telemetry Unit
 recipes.remove(<GalacticraftCore:tile.telemetry>);
-//Oxygen Mask
-recipes.remove(<GalacticraftCore:item.oxygenMask>);
 //Oxygen Gear
 recipes.remove(<GalacticraftCore:item.oxygenGear>);
 //Light Oxygen Tak
@@ -193,8 +188,6 @@ recipes.remove(<GalacticraftCore:item.engine:1>);
 recipes.remove(<GalacticraftCore:item.noseCone>);
 //Steel Pole
 recipes.remove(SteelPole);
-//Canister
-recipes.remove(<GalacticraftCore:item.oilCanisterPartial:1001>);
 //Oil Extractor
 recipes.remove(<GalacticraftCore:item.oilExtractor>);
 //Buggy Wheel
@@ -248,8 +241,6 @@ recipes.remove(<GalacticraftMars:tile.walkway>);
 recipes.removeShaped(<GalacticraftMars:tile.walkwayWire>);
 //Walk Away Pipes
 recipes.removeShaped(<GalacticraftMars:tile.walkwayOxygenPipe>);
-//Thermal Cloth
-recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:7>);
 //Atmospheric Valve
 recipes.remove(<GalacticraftMars:item.atmosphericValve>);
 //Heavy Rocket Fines
@@ -277,18 +268,8 @@ recipes.remove(<GalacticraftMars:tile.marsMachine>);
 recipes.remove(<GalacticraftMars:tile.marsMachine:8>);
 //Grappler
 recipes.remove(<GalacticraftMars:item.grapple>);
-//Hydrogen Pipe
-recipes.remove(<GalacticraftMars:tile.hydrogenPipe>);
 //Carbon Fragments
 recipes.remove(<GalacticraftMars:item.carbonFragments>);
-//Thermal Padding Helm
-recipes.remove(<GalacticraftMars:item.thermalPadding>);
-//Thermal Padding Chestpiece
-recipes.remove(<GalacticraftMars:item.thermalPadding:1>);
-//Thermal Padding Leggings
-recipes.remove(<GalacticraftMars:item.thermalPadding:2>);
-//Thermal Padding Boots
-recipes.remove(<GalacticraftMars:item.thermalPadding:3>);
 //Desh Pickaxe
 recipes.remove(<GalacticraftMars:item.deshPick>);
 //Desh Axe
@@ -480,11 +461,6 @@ recipes.addShaped(<GalacticraftCore:tile.telemetry>, [
 [BWafer, CompressedTin, BWafer],
 [CompressedTin, CompressedCopper, CompressedTin]]);
 
-// --- Oxygen Mask
-Assembler.addRecipe(<GalacticraftCore:item.oxygenMask>, <IC2:itemArmorHazmatHelmet>, <ore:plateReinforcedGlass> * 16, <liquid:glue> * 144, 400, 120);
-// -
-Assembler.addRecipe(<GalacticraftCore:item.oxygenMask>, <IC2:itemArmorHazmatHelmet>, <ore:plateReinforcedGlass> * 16, <liquid:molten.rubber> * 72, 400, 120);
-
 // --- Canvas
 recipes.addShaped(<GalacticraftCore:item.canvas>,  [
 [null, <ore:blockWool>, <ore:stickPlastic>],
@@ -622,14 +598,6 @@ recipes.addShaped(<GalacticraftMars:tile.walkwayOxygenPipe> * 2, [
 [<GalacticraftCore:tile.oxygenPipe>, <ore:blockDesh>, <GalacticraftCore:tile.oxygenPipe>],
 [DeshPlate, DeshPlate, DeshPlate]]);
 
-//Thermal Cloth
-/*recipes.addShaped(<GalacticraftMars:item.itemBasicAsteroids:7> , [
-[AlFoil, <minecraft:string>, AlFoil],
-[<minecraft:string>, <IC2:itemPartCarbonPlate>, <minecraft:string>],
-[AlFoil, <minecraft:string>, AlFoil]]);
-*/
-Assembler.addRecipe(<GalacticraftMars:item.itemBasicAsteroids:7>, AlFoil * 4, <gregtech:gt.metaitem.01:17472>, <liquid:molten.polytetrafluoroethylene> * 576, 100, 1920);
-
 //Desh Sticks
 recipes.addShapeless(<GalacticraftMars:item.null:1>, [<gregtech:gt.metaitem.01:23884>]);
 
@@ -726,29 +694,6 @@ DeshStick.add(<GalacticraftMars:item.null:1>);
 
 //Orion Drive
 recipes.remove(orionDrive);
-
-// --- Assembler Recipes ---
-
-//Glowstone Torch
-Assembler.addRecipe(<GalacticraftCore:tile.glowstoneTorch>, <minecraft:redstone_torch>, <minecraft:glowstone_dust>, 200, 16);
-
-//Canister
-Assembler.addRecipe(<GalacticraftCore:item.oilCanisterPartial:1001>, <GalacticraftCore:item.basicItem:9> * 8, <gregtech:gt.metaitem.01:28305> * 4, 200, 64);
-
-//Hydrogen Pipe
-Assembler.addRecipe(<GalacticraftMars:tile.hydrogenPipe>, OxygenPipe, <gregtech:gt.metaitem.01:28035> * 4, 400, 16);
-
-//Thermal Padding Helm
-Assembler.addRecipe(<GalacticraftMars:item.thermalPadding>, <GalacticraftMars:item.itemBasicAsteroids:7> * 5, <gregtech:gt.integrated_circuit:5> * 0, 750, 1024);
-
-//Thermal Padding Chestpiece
-Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:1>, <GalacticraftMars:item.itemBasicAsteroids:7> * 8, <gregtech:gt.integrated_circuit:8> * 0, 1200, 1024);
-
-//Thermal Padding Leggings
-Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:2>, <GalacticraftMars:item.itemBasicAsteroids:7> * 7, <gregtech:gt.integrated_circuit:7> * 0, 1050, 1024);
-
-//Thermal Padding Boots
-Assembler.addRecipe(<GalacticraftMars:item.thermalPadding:3>, <GalacticraftMars:item.itemBasicAsteroids:7> * 4, <gregtech:gt.integrated_circuit:4> * 0, 600, 1024);
 
 //Blast Furnace Recipes
 

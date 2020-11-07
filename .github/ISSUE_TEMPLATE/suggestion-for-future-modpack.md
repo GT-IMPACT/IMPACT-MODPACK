@@ -2,7 +2,7 @@
 name: Suggestion for future modpack
 about: Предложение для развития модпака
 title:
-labels: Suggestion
+labels: suggestion
 assignees: ''
 
 ---

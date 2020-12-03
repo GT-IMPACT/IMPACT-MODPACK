@@ -10,13 +10,6 @@ Assembler.addRecipe(<OpenBlocks:builder_guide>, <OpenBlocks:guide>, <gregtech:gt
 recipes.remove(<OpenBlocks:devnull>);
 Assembler.addRecipe(<OpenBlocks:devnull>, <ore:frameGtSteel>, <ExtraUtilities:chestMini>, <liquid:glue> * 1000, 300, 16);
 
-// --- Elevator
-recipes.remove(<OpenBlocks:elevator>);
-recipes.addShaped(<OpenBlocks:elevator>, [
-[<ore:plateSteel>, <ore:plateEnderPearl>, <ore:plateSteel>],
-[<ore:gearGtSmallSteel>, <gregtech:gt.blockmachines:4115>, <ore:gearGtSmallSteel>],
-[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]]);
-
 // --- Rotating Elevator
 recipes.remove(<OpenBlocks:elevator_rotating>);
 recipes.addShaped(<OpenBlocks:elevator_rotating>, [

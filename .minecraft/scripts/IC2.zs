@@ -430,53 +430,6 @@ recipes.addShaped(<IC2:itemFoamSprayer>, [
 
 recipes.remove(<IC2:itemToolbox>);
 
-//Reactor Plating
-recipes.remove(ReactorPlate);
-FormingPress.addRecipe(ReactorPlate, <ore:plateAlloyAdvanced>, <ore:plateLead>, 200, 480);
-
-//Reactor Heat Plating
-recipes.remove(ReactorHeatPlate);
-FormingPress.addRecipe(ReactorHeatPlate, <ore:plateDenseCopper>, ReactorPlate, 220, 480);
-
-//Reactor Explosive Plating
-recipes.remove(ReactorExplosivePlate);
-FormingPress.addRecipe(ReactorExplosivePlate, specificAdvancedAlloyPlate * 8, ReactorPlate, 220, 480);
-
-//Heat Exchanger
-recipes.remove(<IC2:reactorHeatSwitch:1>);
-Assembler.addRecipe(<IC2:reactorHeatSwitch:1>, [gtIntCircuit01 * 0, <ore:circuitBasic>, <ore:plateCopper> * 5, <ore:plateTin> * 3], null, 200, 60);
-
-//Reactor Heat Exchanger
-recipes.remove(<IC2:reactorHeatSwitchCore:1>);
-Assembler.addRecipe(<IC2:reactorHeatSwitchCore:1>, [gtIntCircuit01 * 0, <IC2:reactorHeatSwitch:1>, <ore:plateCopper> * 8], null, 200, 60);
-
-//Component Heat Exchanger
-recipes.remove(<IC2:reactorHeatSwitchSpread:1>);
-Assembler.addRecipe(<IC2:reactorHeatSwitchSpread:1>, [gtIntCircuit01 * 0, <IC2:reactorHeatSwitch:1>, <ore:plateGold> * 4], null, 200, 60);
-
-//Advanced Heat Exchanger
-recipes.remove(<IC2:reactorHeatSwitchDiamond:1>);
-Assembler.addRecipe(<IC2:reactorHeatSwitchDiamond:1>, [<IC2:reactorHeatSwitch:1>, <ore:circuitBasic> * 3, <ore:plateLapis> * 4, <ore:plateCopper> * 6, <ore:plateTin> * 3], null, 200, 240);
-
-//Heat Vent
-recipes.remove(ReactorHeatVent);
-Assembler.addRecipe(ReactorHeatVent, [gtIntCircuit01 * 0, LVMotor, <minecraft:iron_bars> * 4, <ore:foilIron>*16, <ore:foilAluminium> * 16], null, 200, 60);
-
-//Reactor Heat Vent
-recipes.remove(ReactorHeatVentCore);
-Assembler.addRecipe(ReactorHeatVentCore, [gtIntCircuit01 * 0, ReactorHeatVent, <ore:plateCopper> * 8], null, 200, 60);
-
-//Overclocked Heat Vent
-recipes.remove(ReactorHeatVentGold);
-Assembler.addRecipe(ReactorHeatVentGold, [gtIntCircuit01 * 0, ReactorHeatVentCore, <ore:plateGold> * 4], null, 200, 60);
-
-//Advanced Heat Vent
-recipes.remove(<IC2:reactorVentDiamond:1>);
-Assembler.addRecipe(<IC2:reactorVentDiamond:1>, [ReactorHeatVent, <ore:gemDiamond>, <minecraft:iron_bars> * 10, LVMotor, <ore:foilAluminium> * 16], null, 200, 240);
-
-//Component Heat Vent
-recipes.remove(ReactorHeatVentSpread);
-Assembler.addRecipe(ReactorHeatVentSpread, [gtIntCircuit01 * 0, ReactorHeatVent, <minecraft:iron_bars> * 4, <ore:plateTin> * 4], null, 200, 60);
 
 //RSH Condensator
 recipes.remove(<IC2:reactorCondensator:1>);

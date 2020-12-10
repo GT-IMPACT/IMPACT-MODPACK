@@ -1,5 +1,7 @@
 # IMPACT
 
+[![GitHub issues](https://img.shields.io/github/issues/GT-IMPACT/IMPACT-MODPACK?style=flat-square)](https://github.com/GT-IMPACT/IMPACT-MODPACK/issues) [![GitHub license](https://img.shields.io/github/license/GT-IMPACT/IMPACT-MODPACK?style=flat-square)](https://github.com/GT-IMPACT/IMPACT-MODPACK/blob/Release/LICENSE)
+
 ## Что такое IMPACT?
 
 Это глобальный индустриальный модпак для Minecraft 1.7.10, основанный на GregTech и его аддонах.

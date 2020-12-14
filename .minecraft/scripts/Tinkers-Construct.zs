@@ -52,12 +52,6 @@ val RedDye = <ore:dyeRed>;
 val BlackDye = <ore:dyeBlack>;
 
 val Knapsack = <TConstruct:knapsack>;
-val TBelt = <TConstruct:travelBelt>;
-val TBoots = <TConstruct:travelBoots>;
-val TGlove = <TConstruct:travelGlove>;
-val TGoggles = <TConstruct:travelGoggles>;
-val TVest = <TConstruct:travelVest>;
-val TWings = <TConstruct:travelWings>;
 
 val HHammer = <ore:craftingToolHardHammer>;
 val File = <ore:craftingToolFile>;
@@ -610,24 +604,6 @@ recipes.remove(<TConstruct:GlassPaneClearStained:15>);
 
 
 
-
-// --- Travellers Goggles
-recipes.remove(TGoggles);
-
-// --- Travellers Vest
-recipes.remove(TVest);
-
-// --- Travellers Glove
-recipes.remove(TGlove);
-
-// --- Travellers Wings
-recipes.remove(TWings);
-
-// --- Travellers Belt
-recipes.remove(TBelt);
-
-// --- Travellers Boots
-recipes.remove(TBoots);
 
 // --- Oak Barricade
 recipes.remove(<TConstruct:trap.barricade.oak>);
@@ -2068,42 +2044,6 @@ recipes.addShapeless(<TConstruct:materials:40>, [<gregtech:gt.metaitem.01:2019>]
 // -
 recipes.addShapeless(<gregtech:gt.metaitem.01:2019>, [<TConstruct:materials:40>]);
 
-
-// --- Travellers Goggles
-recipes.addShaped(TGoggles.withTag({TinkerArmor: {BaseDurability: 1035, BaseDefense: 0.0, Built: 1 as byte, MaxDefense: 4.0, Damage: 0, BonusDurability: 0, Modifiers: 3, DamageReduction: 0.0, TotalDurability: 1035, ModDurability: 0.0 as float, Broken: 0 as byte}}), [
-[<minecraft:leather>, <ore:boltElectrum>, <minecraft:leather>],
-[<ore:ringElectrum>, <minecraft:diamond_helmet>, <ore:ringElectrum>],
-[<ore:lensDiamond>, <ore:circuitAdvanced>, <ore:lensDiamond>]]);
-
-// --- Travellers Vest
-recipes.addShaped(TVest.withTag({TinkerArmor: {BaseDurability: 1035, BaseDefense: 4.0, Built: 1 as byte, MaxDefense: 10.0, Damage: 0, BonusDurability: 0, Modifiers: 3, DamageReduction: 0.0, TotalDurability: 1035, ModDurability: 0.0 as float, Broken: 0 as byte}}), [
-[<minecraft:leather>, <ore:circuitAdvanced>, <minecraft:leather>],
-[<ore:plateObsidian>, <minecraft:diamond_chestplate>, <ore:plateObsidian>],
-[<minecraft:leather>, <ore:plateObsidian>, <minecraft:leather>]]);
-
-// --- Travellers Glove
-recipes.addShaped(TGlove.withTag({TinkerAccessory: {BaseDurability: 500, Built: 1 as byte, Damage: 0, BonusDurability: 0, TotalDurability: 500, ModDurability: 0.0 as float, Modifiers: 5, Broken: 0 as byte}}), [
-[null, <minecraft:leather>, <ore:plateDiamond>],
-[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
-[null, <minecraft:leather>, <ore:circuitAdvanced>]]);
-
-// --- Travellers Wings
-recipes.addShaped(TWings.withTag({TinkerArmor: {BaseDurability: 1035, BaseDefense: 2.0, Built: 1 as byte, MaxDefense: 8.0, Damage: 0, BonusDurability: 0, Modifiers: 3, DamageReduction: 0.0, TotalDurability: 1035, ModDurability: 0.0 as float, Broken: 0 as byte}}), [
-[<ore:plateDiamond>, <minecraft:leather>, <ore:plateDiamond>],
-[<TConstruct:fletching>, <ore:circuitAdvanced>, <TConstruct:fletching>],
-[<TConstruct:fletching>, <minecraft:diamond_leggings>, <TConstruct:fletching>]]);
-
-// --- Travellers Belt
-recipes.addShaped(TBelt.withTag({TinkerAccessory: {BaseDurability: 500, Built: 1 as byte, Damage: 0, BonusDurability: 0, TotalDurability: 500, ModDurability: 0.0 as float, Modifiers: 5, Broken: 0 as byte}}), [
-[null, <ore:circuitAdvanced>, null],
-[<minecraft:leather>, <ore:plateDiamond>, <minecraft:leather>],
-[<minecraft:leather>, null, <minecraft:leather>]]);
-
-// --- Travellers Boots
-recipes.addShaped(TBoots.withTag({TinkerArmor: {BaseDurability: 1035, BaseDefense: 2.0, Built: 1 as byte, MaxDefense: 6.0, Damage: 0, BonusDurability: 0, Modifiers: 3, DamageReduction: 0.0, TotalDurability: 1035, ModDurability: 0.0 as float, Broken: 0 as byte}}), [
-[null, <ore:plateDiamond>, <ore:plateDiamond>],
-[null, <minecraft:diamond_boots>, <ore:circuitAdvanced>],
-[<minecraft:leather>, <gregtech:gt.metaitem.01:32642>, <gregtech:gt.metaitem.01:32642>]]);
 
 // --- Cobalt Ingot
 recipes.addShapeless(<TConstruct:materials:3>, [<gregtech:gt.metaitem.01:11033>]);

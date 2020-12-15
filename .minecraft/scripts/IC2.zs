@@ -388,10 +388,6 @@ recipes.addShaped(<IC2:itemArmorRubBoots>,[
 
 //Bat Pack
 recipes.remove(<IC2:itemArmorBatpack>);
-recipes.addShaped(<IC2:itemArmorBatpack>, [
-	[<ore:batteryBasic>, <ore:circuitBasic>, <ore:batteryBasic>],
-	[<ore:batteryBasic>, <ore:plateAluminium>, <ore:batteryBasic>],
-	[<ore:batteryBasic>, <ore:craftingWireTin>, <ore:batteryBasic>]]);
 
 //OD Scanner
 recipes.remove(<IC2:itemScanner>);
@@ -581,11 +577,6 @@ Compressor.addRecipe(<IC2:blockMetal:3>, <IC2:itemUran238> * 9);
 furnace.remove(<gregtech:gt.metaitem.01:11084>, <IC2:itemOreIridium>);
 recipes.removeShapeless(<IC2:itemOreIridium> * 9, [<gregtech:gt.metaitem.01:11084>]);
 recipes.removeShapeless(<gregtech:gt.metaitem.01:2084> * 9, [<gregtech:gt.metaitem.01:11084>]);
-
-<gregtech:gt.metaitem.03:32208>.addTooltip("Reusable battery");
-<gregtech:gt.metaitem.03:32208>.addTooltip(format.aqua("Voltage: 512"));
-<gregtech:gt.metaitem.03:32209>.addTooltip("Reusable battery");
-<gregtech:gt.metaitem.03:32209>.addTooltip(format.aqua("Voltage: 2048"));
 
 // Painter
 recipes.remove(<IC2:itemToolPainter>);

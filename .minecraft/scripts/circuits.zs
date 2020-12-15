@@ -86,12 +86,12 @@
 <gregtech:gt.metaitem.01:32537>.addTooltip(format.yellow("HV-tier"));
 <gregtech:gt.metaitem.01:32538>.addTooltip(format.darkRed("HV-tier"));
 <gregtech:gt.metaitem.01:32539>.addTooltip(format.green("HV-tier"));
-<IC2:itemBatCrystal:*>.addTooltip(format.darkBlue("HV-tier"));
+<gregtech:gt.metaitem.03:32208>.addTooltip(format.darkBlue("HV-tier"));
 <gregtech:gt.metaitem.03:32202>.addTooltip(format.aqua("HV-tier"));
 
 // --- EV Tier
 <gregtech:gt.metaitem.01:32540>.addTooltip(format.green("EV-tier"));
-<IC2:itemBatLamaCrystal:*>.addTooltip(format.darkBlue("EV-tier"));
+<gregtech:gt.metaitem.03:32209>.addTooltip(format.darkBlue("EV-tier"));
 <gregtech:gt.metaitem.03:32203>.addTooltip(format.aqua("EV-tier"));
 
 // --- IV Tier

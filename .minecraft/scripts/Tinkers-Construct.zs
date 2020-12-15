@@ -1498,12 +1498,6 @@ recipes.addShapeless(<TConstruct:CraftedSoil:6>, [<minecraft:nether_wart>, <mine
 // -
 recipes.addShapeless(<TConstruct:CraftedSoil:6>, [<minecraft:nether_wart>, <minecraft:soul_sand>, Gravel, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
 
-// --- Congealed Slime
-Compressor.addRecipe(<TConstruct:slime.gel>, Gelatinous * 4);
-
-// --- Congealed Green Slime
-Compressor.addRecipe(<TConstruct:slime.gel:1>, Slimeball * 4);
-
 // --- Blank Pattern
 recipes.addShapeless(<TConstruct:blankPattern>, [<ore:platePaper>, <ore:platePaper>, <ore:platePaper>, <ore:platePaper>]);
 // -

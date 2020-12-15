@@ -183,11 +183,6 @@ recipes.addShaped(<IC2:blockMachine:1>, [
 ]);
 
 # Recipe Tweaks
-recipes.remove(<IC2:itemAdvBat>);
-recipes.addShaped(<IC2:itemAdvBat>, [
-	[cableCopperAnnealed1x, itemCasingBronze, cableCopperAnnealed1x],
-	[itemCasingBronze, <ore:dustSulfur>, itemCasingBronze],
-	[itemCasingBronze, <ore:dustLead>, itemCasingBronze]]);
 recipes.remove(<IC2:blockKineticGenerator>);
 
 recipes.remove(rotorBladeWood);
@@ -282,35 +277,35 @@ recipes.addShaped(<IC2:blockElectric:7>, [
 
 //MFE
 recipes.addShaped(<IC2:blockElectric:1>, [
-	[<ore:cableGt01Silver>, <ore:batteryElite>, <ore:cableGt01Silver>],
-	[<ore:batteryElite>, HullHV, <ore:batteryElite>],
-	[<ore:circuitAdvanced>, <ore:batteryElite>, <ore:circuitAdvanced>]]);
+	[<ore:cableGt01Silver>, <gregtech:gt.metaitem.03:32208>, <ore:cableGt01Silver>],
+	[<gregtech:gt.metaitem.03:32208>, HullHV, <gregtech:gt.metaitem.03:32208>],
+	[<ore:circuitAdvanced>, <gregtech:gt.metaitem.03:32208>, <ore:circuitAdvanced>]]);
 
 recipes.addShaped(<IC2:blockElectric:1>, [
-	[<ore:cableGt01Silver>, <ore:batteryElite>, <ore:cableGt01Silver>],
-	[<ore:batteryElite>, <IC2:blockElectric:7>, <ore:batteryElite>],
-	[<ore:circuitAdvanced>, <ore:batteryElite>, <ore:circuitAdvanced>]]);
+	[<ore:cableGt01Silver>, <gregtech:gt.metaitem.03:32208>, <ore:cableGt01Silver>],
+	[<gregtech:gt.metaitem.03:32208>, <IC2:blockElectric:7>, <gregtech:gt.metaitem.03:32208>],
+	[<ore:circuitAdvanced>, <gregtech:gt.metaitem.03:32208>, <ore:circuitAdvanced>]]);
 
 recipes.addShaped(<IC2:blockElectric:1>, [
-	[<ore:cableGt01Silver>, <ore:batteryElite>, <ore:cableGt01Silver>],
-	[<ore:batteryElite>, <IC2:blockChargepad:1>, <ore:batteryElite>],
-	[<ore:circuitAdvanced>, <ore:batteryElite>, <ore:circuitAdvanced>]]);
+	[<ore:cableGt01Silver>, <gregtech:gt.metaitem.03:32208>, <ore:cableGt01Silver>],
+	[<gregtech:gt.metaitem.03:32208>, <IC2:blockChargepad:1>, <gregtech:gt.metaitem.03:32208>],
+	[<ore:circuitAdvanced>, <gregtech:gt.metaitem.03:32208>, <ore:circuitAdvanced>]]);
 
 //MFSU
 recipes.addShaped(<IC2:blockElectric:2>, [
-	[<ore:cableGt01TungstenSteel>, <ore:batteryMaster>, <ore:cableGt01TungstenSteel>],
-	[<ore:batteryMaster>, HullEV, <ore:batteryMaster>],
-	[<ore:circuitData>, <ore:batteryMaster>, <ore:circuitData>]]);
+	[<ore:cableGt01TungstenSteel>, <gregtech:gt.metaitem.03:32209>, <ore:cableGt01TungstenSteel>],
+	[<gregtech:gt.metaitem.03:32209>, HullEV, <gregtech:gt.metaitem.03:32209>],
+	[<ore:circuitData>, <gregtech:gt.metaitem.03:32209>, <ore:circuitData>]]);
     
 recipes.addShaped(<IC2:blockElectric:2>, [
-	[<ore:cableGt01TungstenSteel>, <ore:batteryMaster>, <ore:cableGt01TungstenSteel>],
-	[<ore:batteryMaster>, <IC2:blockElectric:1>, <ore:batteryMaster>],
-	[<ore:circuitData>, <ore:batteryMaster>, <ore:circuitData>]]);
+	[<ore:cableGt01TungstenSteel>, <gregtech:gt.metaitem.03:32209>, <ore:cableGt01TungstenSteel>],
+	[<gregtech:gt.metaitem.03:32209>, <IC2:blockElectric:1>, <gregtech:gt.metaitem.03:32209>],
+	[<ore:circuitData>, <gregtech:gt.metaitem.03:32209>, <ore:circuitData>]]);
 
 recipes.addShaped(<IC2:blockElectric:2>, [
-	[<ore:cableGt01TungstenSteel>, <ore:batteryMaster>, <ore:cableGt01TungstenSteel>],
-	[<ore:batteryMaster>, <IC2:blockChargepad:2>, <ore:batteryMaster>],
-	[<ore:circuitData>, <ore:batteryMaster>, <ore:circuitData>]]);
+	[<ore:cableGt01TungstenSteel>, <gregtech:gt.metaitem.03:32209>, <ore:cableGt01TungstenSteel>],
+	[<gregtech:gt.metaitem.03:32209>, <IC2:blockChargepad:2>, <gregtech:gt.metaitem.03:32209>],
+	[<ore:circuitData>, <gregtech:gt.metaitem.03:32209>, <ore:circuitData>]]);
 
 //Mining Pipe
 recipes.remove(MiningPipe);
@@ -587,10 +582,10 @@ furnace.remove(<gregtech:gt.metaitem.01:11084>, <IC2:itemOreIridium>);
 recipes.removeShapeless(<IC2:itemOreIridium> * 9, [<gregtech:gt.metaitem.01:11084>]);
 recipes.removeShapeless(<gregtech:gt.metaitem.01:2084> * 9, [<gregtech:gt.metaitem.01:11084>]);
 
-<ore:batteryElite>.addTooltip("Reusable battery");
-<ore:batteryElite>.addTooltip(format.aqua("Voltage: 512"));
-<ore:batteryMaster>.addTooltip("Reusable battery");
-<ore:batteryMaster>.addTooltip(format.aqua("Voltage: 2048"));
+<gregtech:gt.metaitem.03:32208>.addTooltip("Reusable battery");
+<gregtech:gt.metaitem.03:32208>.addTooltip(format.aqua("Voltage: 512"));
+<gregtech:gt.metaitem.03:32209>.addTooltip("Reusable battery");
+<gregtech:gt.metaitem.03:32209>.addTooltip(format.aqua("Voltage: 2048"));
 
 // Painter
 recipes.remove(<IC2:itemToolPainter>);

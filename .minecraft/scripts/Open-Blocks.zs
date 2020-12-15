@@ -6,10 +6,6 @@ import mods.gregtech.ChemicalReactor;
 recipes.remove(<OpenBlocks:builder_guide>);
 Assembler.addRecipe(<OpenBlocks:builder_guide>, <OpenBlocks:guide>, <gregtech:gt.metaitem.01:24533>, <liquid:molten.redstone> * 288, 300, 64);
 
-// --- DevNull
-recipes.remove(<OpenBlocks:devnull>);
-Assembler.addRecipe(<OpenBlocks:devnull>, <ore:frameGtSteel>, <ExtraUtilities:chestMini>, <liquid:glue> * 1000, 300, 16);
-
 // --- Rotating Elevator
 recipes.remove(<OpenBlocks:elevator_rotating>);
 recipes.addShaped(<OpenBlocks:elevator_rotating>, [

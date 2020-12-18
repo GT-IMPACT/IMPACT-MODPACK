@@ -5,9 +5,9 @@
 		{show:[tile.,[moonBlock],[3-5]]};
 		{show:[tile.,[machine2],[8]]};
 		{hide:[item.,[oilCanisterPartial],[1]]};
-		{hide:[item.,[spaceship],[1-4]]};	
+		{hide:[item.,[spaceship],[1-2, 4-14]]};	
 		{hide:[item.,[steel*,key,*bucket*,flag,buggymat,buggy,meteoricIronIngot,infinite*,cheeseCurd,meteoricIronRaw],[]]};
-		{show:[tile.,[spaceship],[0]]};
+		{show:[tile.,[spaceship],[0,3]]};
 		{show:[item.,[buggymat,meteoricIronIngot],[1]]};
 		{hide:[item.,[basicItem],[0-5,12,15-18]]};	
 		{hide:[item.,[battery],[100]]};
@@ -24,7 +24,7 @@
 		{show:[tile.,[asteroidsBlock],[0-2]]};
 		{show:[tile.,[mars],[4-6,8]]};
 		{show:[tile.,[marsMachineT2],[0]]};
-		{hide:[item.,[itemTier3Rocket,spaceshipTier2],[1-14]]};
+		{hide:[item.,[itemTier3Rocket,spaceshipTier2],[1-2, 4-14]]};
 		{hide:[item.,[itemAstroMiner,*Canister*,atmosphericValve,orionDrive,titanium*,bucket*,carbonFragments,desh*],[]]};
 		{hide:[item.,[itemBasicAsteroids],[3-5]]};
 		{hide:[[item.null],[0-2]]};
@@ -40,7 +40,7 @@
 		{show:[[futureglass,barnardaCdandelions,haumeablocks,makemakegrunt,phobosblocks,deimosblocks,ganymedeblocks,titanblocks,mirandablocks,oberonblocks,oberonblocks,oberonblocks,proteusblocks,tcetieblocks,tcetiedandelions,tritonblocks],[0]]};
 		{hide:[item.,[Ingots,*canister*,Sulfur,UnknowCrystal,CompressedCoal,JetPack,lead*,cobaltum*,plasma*,LeadBattery,RocketParts,QuantBow,SolarFlares,*Bucket*,BarnardaCStrawberry],[]]};
 		{hide:[item.,[CompressedPlates],[0,5]]};
-		{hide:[item.,[Tier4Rocket,Tier5Rocket,Tier6Rocket,Tier7Rocket,Tier8Rocket],[1-14]]};
+		{hide:[item.,[Tier4Rocket,Tier5Rocket,Tier6Rocket,Tier7Rocket,Tier8Rocket],[1-2, 4-14]]};
 	]
 
 }

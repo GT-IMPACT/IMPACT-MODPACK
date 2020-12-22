@@ -1,0 +1,13 @@
+{
+	BuildCraft|Robotics:[
+		{hide:[[*],[*]]};
+	];
+
+	BuildCraft|Silicon:[
+		{hide:[[*],[*]]};
+	];
+
+	BuildCraft|Transport:[
+		{hide:[[pipeGate, pipeWire, pipeLens],[*, 0-33]]};
+	]
+}

@@ -83,24 +83,6 @@ recipes.remove(<ProjRed|Core:projectred.core.part:7>);
 recipes.remove(<ProjRed|Core:projectred.core.part:8>);
 recipes.remove(<ProjRed|Core:projectred.core.part:9>);
 
-// dyes
-recipes.remove(<ProjRed|Core:projectred.core.part:19>);
-recipes.remove(<ProjRed|Core:projectred.core.part:20>);
-recipes.remove(<ProjRed|Core:projectred.core.part:21>);
-recipes.remove(<ProjRed|Core:projectred.core.part:22>);
-recipes.remove(<ProjRed|Core:projectred.core.part:23>);
-recipes.remove(<ProjRed|Core:projectred.core.part:24>);
-recipes.remove(<ProjRed|Core:projectred.core.part:25>);
-recipes.remove(<ProjRed|Core:projectred.core.part:26>);
-recipes.remove(<ProjRed|Core:projectred.core.part:27>);
-recipes.remove(<ProjRed|Core:projectred.core.part:28>);
-recipes.remove(<ProjRed|Core:projectred.core.part:29>);
-recipes.remove(<ProjRed|Core:projectred.core.part:30>);
-recipes.remove(<ProjRed|Core:projectred.core.part:31>);
-recipes.remove(<ProjRed|Core:projectred.core.part:32>);
-recipes.remove(<ProjRed|Core:projectred.core.part:33>);
-recipes.remove(<ProjRed|Core:projectred.core.part:34>);
-
 recipes.remove(<ProjRed|Core:projectred.core.part:42>);
 recipes.remove(<ProjRed|Core:projectred.core.part:43>);
 recipes.remove(<ProjRed|Core:projectred.core.part:57>);
@@ -191,54 +173,3 @@ Assembler.addRecipe(<ProjRed|Core:projectred.core.datacard>, <gregtech:gt.metait
 
 // Electrotine Silicon Compound - in ball mold
 FormingPress.addRecipe(<ProjRed|Core:projectred.core.part:59>, <ProjRed|Core:projectred.core.part:58>, <gregtech:gt.metaitem.01:32307> * 0, 600, 30);
-
-
-// Example of Orange Illumar
-//ChemicalBath.addRecipe([<ProjRed|Core:projectred.core.part:20>], whiteIllumar, <liquid:dye.chemical.dyeorange> * 50, [10000], 100, 8);
-//ChemicalBath.addRecipe([whiteIllumar], <ProjRed|Core:projectred.core.part:20>, <liquid:chlorine> * 50, [10000], 800, 2);
-
-var whiteIllumar = <ProjRed|Core:projectred.core.part:19>;
-
-Mixer.addRecipe(whiteIllumar, [<minecraft:glowstone_dust> * 2, <minecraft:dye:15> * 2], 50, 8);
-Mixer.addRecipe(whiteIllumar, null, [<minecraft:glowstone_dust> * 2], <liquid:dye.chemical.dyewhite> * 50, 50, 8);
-
-var Illumare = [
-	<ProjRed|Core:projectred.core.part:20>,
-	<ProjRed|Core:projectred.core.part:21>,
-	<ProjRed|Core:projectred.core.part:22>,
-	<ProjRed|Core:projectred.core.part:23>,
-	<ProjRed|Core:projectred.core.part:24>,
-	<ProjRed|Core:projectred.core.part:25>,
-	<ProjRed|Core:projectred.core.part:26>,
-	<ProjRed|Core:projectred.core.part:27>,
-	<ProjRed|Core:projectred.core.part:28>,
-	<ProjRed|Core:projectred.core.part:29>,
-	<ProjRed|Core:projectred.core.part:30>,
-	<ProjRed|Core:projectred.core.part:31>,
-	<ProjRed|Core:projectred.core.part:32>,
-	<ProjRed|Core:projectred.core.part:33>,
-	<ProjRed|Core:projectred.core.part:34>
-] as IItemStack[];
-
-var liquidDye = [
-	<liquid:dye.chemical.dyeorange>,
-	<liquid:dye.chemical.dyemagenta>,
-	<liquid:dye.chemical.dyelightblue>,
-	<liquid:dye.chemical.dyeyellow>,
-	<liquid:dye.chemical.dyelime>,
-	<liquid:dye.chemical.dyepink>,
-	<liquid:dye.chemical.dyegray>,
-	<liquid:dye.chemical.dyelightgray>,
-	<liquid:dye.chemical.dyecyan>,
-	<liquid:dye.chemical.dyepurple>,
-	<liquid:dye.chemical.dyeblue>,
-	<liquid:dye.chemical.dyebrown>,
-	<liquid:dye.chemical.dyegreen>,
-	<liquid:dye.chemical.dyered>,
-	<liquid:dye.chemical.dyeblack>
-] as minetweaker.liquid.ILiquidStack[];
-
-for i, dye in liquidDye {
-	ChemicalBath.addRecipe([Illumare[i]], whiteIllumar, dye * 50, [10000], 100, 8);
-	ChemicalBath.addRecipe([whiteIllumar], Illumare[i], <liquid:chlorine> * 50, [10000], 800, 2);
-}

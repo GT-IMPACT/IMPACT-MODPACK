@@ -126,24 +126,6 @@ for i, item in radioativeMaterialsAsItem{
 	item.addTooltip("Danger: " + format.red("Radioactive"));
 }
 
-//add Gregtech dye recipes
-var GTDyeBlack         = <gregtech:gt.metaitem.02:32414>;
-var GTDyeRed           = <gregtech:gt.metaitem.02:32415>;
-var GTDyeGreen         = <gregtech:gt.metaitem.02:32416>;
-var GTDyeBrown         = <gregtech:gt.metaitem.02:32417>;
-var GTDyeBlue          = <gregtech:gt.metaitem.02:32418>;
-var GTDyePurple        = <gregtech:gt.metaitem.02:32419>;
-var GTDyeCyan          = <gregtech:gt.metaitem.02:32420>;
-var GTDyeLGray         = <gregtech:gt.metaitem.02:32421>;
-var GTDyeGray          = <gregtech:gt.metaitem.02:32422>;
-var GTDyePink          = <gregtech:gt.metaitem.02:32423>;
-var GTDyeLime          = <gregtech:gt.metaitem.02:32424>;
-var GTDyeYellow        = <gregtech:gt.metaitem.02:32425>;
-var GTDyeLBlue         = <gregtech:gt.metaitem.02:32426>;
-var GTDyeMagenta       = <gregtech:gt.metaitem.02:32427>;
-var GTDyeOrange        = <gregtech:gt.metaitem.02:32428>;
-var GTDyeWhite         = <gregtech:gt.metaitem.02:32429>;
-
 #==================================================================#
 
 # Recipe Fixes
@@ -173,10 +155,6 @@ AlloySmelter.addRecipe(ingotWIron, nuggetWIron * 9, MoldIngot * 0, 200, 2);
 AlloySmelter.addRecipe(<minecraft:iron_ingot>, nuggetIron * 9, MoldIngot * 0, 201, 2);
 
 #==================================================================#
-#Uranium Ingot
-AlloySmelter.addRecipe(<IC2:itemMOX>, <ore:ingotUranium>.firstItem * 6, <ore:ingotPlutonium>.firstItem * 3, 100, 48);
-AlloySmelter.addRecipe(uraniumEnriched, <ore:ingotUranium>.firstItem * 6, <ore:nuggetUranium235>.firstItem * 3, 100, 48);
-
 recipes.removeShaped(<ore:ingotLead>, [
 [<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],
 [<ore:nuggetLead>, <ore:nuggetLead>, <ore:nuggetLead>],
@@ -192,37 +170,8 @@ recipes.removeShaped(<ore:ingotGold>, [
 Autoclave.addRecipe(<minecraft:clay_ball>, <gregtech:gt.metaitem.01:2805>, <liquid:water> * 250, 10000, 20, 2);
 
 #==================================================================#
-#Dyes
-recipes.addShapeless(GTDyeBlack,     [<ore:dyeBlack>         ]);
-recipes.addShapeless(GTDyeRed,       [<ore:dyeRed>           ]);
-recipes.addShapeless(GTDyeGreen,     [<ore:dyeGreen>         ]);
-recipes.addShapeless(GTDyeBrown,     [<ore:dyeBrown>         ]);
-recipes.addShapeless(GTDyeBlue,      [<ore:dyeBlue>          ]);
-recipes.addShapeless(GTDyePurple,    [<ore:dyePurple>        ]);
-recipes.addShapeless(GTDyeCyan,      [<ore:dyeCyan>          ]);
-recipes.addShapeless(GTDyeLGray,     [<ore:dyeLightGray>     ]);
-recipes.addShapeless(GTDyeGray,      [<ore:dyeGray>          ]);
-recipes.addShapeless(GTDyePink,      [<ore:dyePink>          ]);
-recipes.addShapeless(GTDyeLime,      [<ore:dyeLime>          ]);
-recipes.addShapeless(GTDyeYellow,    [<ore:dyeYellow>        ]);
-recipes.addShapeless(GTDyeLBlue,     [<ore:dyeLightBlue>     ]);
-recipes.addShapeless(GTDyeMagenta,   [<ore:dyeMagenta>       ]);
-recipes.addShapeless(GTDyeOrange,    [<ore:dyeOrange>        ]);
-recipes.addShapeless(GTDyeWhite,     [<ore:dyeWhite>         ]);
-
-#==================================================================#
 #Brick Dust
 recipes.addShapeless(<gregtech:gt.metaitem.01:1625>, [<ore:craftingToolMortar>, <minecraft:brick>]);
-
-// --- Long Plastic Rood
-//recipes.addShaped(<gregtech:gt.metaitem.02:22874>, [[<ore:stickPlastic>, <ore:craftingToolHardHammer>, <ore:stickPlastic>]]);
-
-// --- Apatite Stick
-//ForgeHammer.addRecipe(<gregtech:gt.metaitem.02:22530>, <ore:stickApatite>*2, 55, 16);
-//recipes.addShaped(<gregtech:gt.metaitem.02:22530>, [[<ore:stickApatite>,<ore:craftingToolHardHammer>,<ore:stickApatite>]]);
-
-//ForgeHammer.addRecipe(<gregtech:gt.metaitem.02:22526>, <ore:stickLapis>*2, 55, 16);
-//recipes.addShaped(<gregtech:gt.metaitem.02:22526>, [[<ore:stickLapis>,<ore:craftingToolHardHammer>,<ore:stickLapis>]]);
 
 #==================================================================#
 #Flour

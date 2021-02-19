@@ -171,8 +171,6 @@ recipes.remove(<IC2:itemToolDDrill:*>);
 recipes.remove(<IC2:itemToolIridiumDrill:*>);
 recipes.remove(<IC2:itemToolChainsaw:*>);
 recipes.remove(<IC2:itemToolWrench>);
-recipes.remove(MOX);
-recipes.remove(uraniumEnriched);
 recipes.remove(<IC2:blockPersonal>);
 recipes.remove(OVScanner);
 
@@ -232,8 +230,6 @@ recipes.addShaped(weedingtrowel, [
 	[null, <ore:stickIron>, null],
 	[<ore:plateRubber>, <ore:stickIron>, <ore:plateRubber>]]);
 	
-Canner.addRecipe(fuelRodUranium, uraniumEnriched, fuelRodEmpty, 200, 2);
-Canner.addRecipe(fuelRodMOX, MOX, fuelRodEmpty, 200, 2);
 recipes.remove(fuelRodThorium);
 Canner.addRecipe(fuelRodThorium, dustThorium * 3, fuelRodEmpty, 200, 2);
 
@@ -443,24 +439,6 @@ recipes.addShapeless(<IC2:reactorCondensatorLap:1>, [<IC2:reactorCondensatorLap:
 recipes.remove(<IC2:itemupgradekit>);
     
 //Electric tool
-recipes.remove(SmallPowerUnit);
-recipes.addShaped(SmallPowerUnit, [
-	[<ore:craftingToolFile>, <ore:craftingWireCopper>, <ore:itemCasingSteel>],
-	[<ore:batteryBasic>, <ore:circuitBasic>, LVMotor],
-	[<ore:craftingToolHardHammer>, <ore:craftingWireCopper>, <ore:itemCasingSteel>]]);
-
-recipes.remove(ElectricTreetap);
-recipes.addShaped(ElectricTreetap, [
-	[null, <ore:gearGtSmallStainlessSteel>, null],
-	[<ore:stickStainlessSteel>, SmallPowerUnit, <ore:plateStainlessSteel>],
-	[<ore:stickStainlessSteel>, null, null]]);
-
-recipes.remove(ElectricHoe);
-recipes.addShaped(ElectricHoe, [
-	[<ore:rotorStainlessSteel>, <ore:stickStainlessSteel>, null],
-	[null, SmallPowerUnit, null],
-	[null, <ore:plateStainlessSteel>, null]]);
-
 recipes.remove(ElectricWrench);
 recipes.addShapeless(ElectricWrench, [<gregtech:gt.metatool.01:16>.noReturn(), SmallPowerUnit]);
 //recipes.addShapeless(ElectricWrench, [<BuildCraft|Core:wrenchItem>, SmallPowerUnit]);

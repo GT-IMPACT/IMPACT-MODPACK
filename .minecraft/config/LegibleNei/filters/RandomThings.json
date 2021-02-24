@@ -1,0 +1,7 @@
+{
+	RandomThings:[
+		{hide:[[*],[]]};
+		{show:[[dropFilter],[0-1]]};
+		{show:[[filter],[1]]};
+	]
+}

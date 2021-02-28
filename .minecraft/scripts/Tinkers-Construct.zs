@@ -1322,27 +1322,6 @@ recipes.addShaped(<TConstruct:SmelteryNether>, [
 [<TConstruct:materials:37>, <IC2:blockMachine:1>, <TConstruct:materials:37>],
 [<TConstruct:SmelteryNether:2>, <TConstruct:materials:37>, <TConstruct:SmelteryNether:2>]]);
 
-// --- Seared Bricks
-recipes.addShaped(<TConstruct:Smeltery:2> * 2, [
-[<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>],
-[<TConstruct:materials:2>, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), <TConstruct:materials:2>],
-[<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>]]);
-// -
-recipes.addShaped(<TConstruct:Smeltery:2> * 2, [
-[<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>],
-[<TConstruct:materials:2>, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>), <TConstruct:materials:2>],
-[<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>]]);
-// -
-recipes.addShaped(<TConstruct:SmelteryNether:2> * 2, [
-[<TConstruct:materials:37>, <TConstruct:materials:37>, <TConstruct:materials:37>],
-[<TConstruct:materials:37>, <minecraft:lava_bucket>.transformReplace(<minecraft:bucket>), <TConstruct:materials:37>],
-[<TConstruct:materials:37>, <TConstruct:materials:37>, <TConstruct:materials:37>]]);
-// -
-recipes.addShaped(<TConstruct:SmelteryNether:2> * 2, [
-[<TConstruct:materials:37>, <TConstruct:materials:37>, <TConstruct:materials:37>],
-[<TConstruct:materials:37>, <IguanaTweaksTConstruct:clayBucketLava>, <TConstruct:materials:37>],
-[<TConstruct:materials:37>, <TConstruct:materials:37>, <TConstruct:materials:37>]]);
-
 // --- Smeltery Drain
 recipes.addShaped(<TConstruct:Smeltery:1>, [
 [<TConstruct:materials:2>, <TConstruct:materials:2>, <TConstruct:materials:2>],
@@ -1451,65 +1430,8 @@ recipes.addShaped(<TConstruct:GlassPane> * 2, [
 
 // --- Items ---
 
-
-// --- Grout
-recipes.addShaped(Grout * 4, [
-[Sand, Sand, Sand],
-[Claydust, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), Claydust],
-[Gravel, Gravel, Gravel]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Gravel, Gravel, Gravel],
-[Claydust, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), Claydust],
-[Sand, Sand, Sand]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Sand, Claydust, Gravel],
-[Sand, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), Gravel],
-[Sand, Claydust, Gravel]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Gravel, Claydust, Sand],
-[Gravel, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), Sand],
-[Gravel, Claydust, Sand]]);
-
-recipes.addShaped(Grout * 4, [
-[Sand, Sand, Sand],
-[Claydust, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>), Claydust],
-[Gravel, Gravel, Gravel]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Gravel, Gravel, Gravel],
-[Claydust, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>), Claydust],
-[Sand, Sand, Sand]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Sand, Claydust, Gravel],
-[Sand, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>), Gravel],
-[Sand, Claydust, Gravel]]);
-// -
-recipes.addShaped(Grout * 4, [
-[Gravel, Claydust, Sand],
-[Gravel, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>), Sand],
-[Gravel, Claydust, Sand]]);
-
-// --- Slime Soil
-recipes.addShapeless(<TConstruct:CraftedSoil:6>, [<minecraft:nether_wart>, <minecraft:soul_sand>, Gravel, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>)]);
-// -
-recipes.addShapeless(<TConstruct:CraftedSoil:6>, [<minecraft:nether_wart>, <minecraft:soul_sand>, Gravel, <IguanaTweaksTConstruct:clayBucketWater>.transformReplace(<IguanaTweaksTConstruct:clayBucketFired>)]);
-
 // --- Blank Pattern
 recipes.addShapeless(<TConstruct:blankPattern>, [<ore:platePaper>, <ore:platePaper>, <ore:platePaper>, <ore:platePaper>]);
-// -
-recipes.addShaped(<TConstruct:blankPattern>, [
-[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
-[<ore:dustWood>, <minecraft:water_bucket>, <ore:dustWood>],
-[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]]);
-// -
-recipes.addShaped(<TConstruct:blankPattern>, [
-[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
-[<ore:dustWood>, <IguanaTweaksTConstruct:clayBucketWater>, <ore:dustWood>],
-[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]]);
 
 // --- Crafting Station
 recipes.addShapeless(<TConstruct:CraftingStation>, [<ore:craftingToolSaw>, <ore:craftingTableWood>]);
@@ -1830,18 +1752,6 @@ recipes.addShaped(<TConstruct:trap.barricade.jungle>, [
 [null, <minecraft:log:3>, null],
 [<minecraft:log:3>, String, <minecraft:log:3>],
 [null, <minecraft:log:3>, null]]);
-
-// --- Slime Channel
-recipes.addShaped(<TConstruct:slime.channel>, [
-[<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],
-[<ore:dustRedstone>, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), <ore:dustRedstone>],
-[<ore:slimeball>, <ore:slimeball>, <ore:slimeball>]]);
-
-// --- Blood Channel
-recipes.addShaped(<TConstruct:blood.channel>, [
-[<TConstruct:strangeFood:1>, <TConstruct:strangeFood:1>, <TConstruct:strangeFood:1>],
-[<ore:dustRedstone>, <minecraft:water_bucket>.transformReplace(<minecraft:bucket>), <ore:dustRedstone>],
-[<TConstruct:strangeFood:1>, <TConstruct:strangeFood:1>, <TConstruct:strangeFood:1>]]);
 
 // --- Bounce Pad
 recipes.addShaped(<TConstruct:slime.pad>, [

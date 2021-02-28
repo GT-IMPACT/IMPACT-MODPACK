@@ -23,7 +23,6 @@ val AlPlate = <ore:plateAluminium>;
 val AlRod = <ore:stickAluminium>;
 val ClearPane = <TConstruct:GlassPane>;
 val MossyStoneBricks = <minecraft:stonebrick:1>;
-val Grout = <TConstruct:CraftedSoil:1>;
 val Gravel = <minecraft:gravel>;
 val Sand = <ore:sand>;
 val Clay = <minecraft:clay_ball>;
@@ -319,8 +318,6 @@ recipes.remove(SilkyJewel);
 // --- Ball Of Moss
 recipes.remove(BallOfMoss);
 
-// --- Grout
-recipes.remove(Grout);
 // -
 mods.tconstruct.Smeltery.removeMelting(<TConstruct:CraftedSoil:1>);
 
@@ -329,9 +326,6 @@ recipes.remove(<TConstruct:CraftedSoil:6>);
 
 // --- Stone Tool Roods
 recipes.remove(<TConstruct:toolRod:1>);
-
-// --- Blank Pattern
-recipes.remove(<TConstruct:blankPattern>);
 
 // --- Stone Ladder
 recipes.remove(<TConstruct:decoration.stoneladder>);
@@ -386,11 +380,6 @@ recipes.remove(<TConstruct:SearedSlab:6>);
 
 // --- Chiseld Seared Stone Slab
 recipes.remove(<TConstruct:SearedSlab:7>);
-
-// --- Seared Bricks
-recipes.remove(<TConstruct:Smeltery:2>);
-// -
-recipes.remove(<TConstruct:SmelteryNether:2>);
 
 // --- Smeltery Drain
 recipes.remove(<TConstruct:Smeltery:1>);
@@ -619,12 +608,6 @@ recipes.remove(<TConstruct:trap.barricade.jungle>);
 
 // --- SDX TNT
 recipes.remove(<TConstruct:explosive.slime:*>);
-
-// --- Slime Channel
-recipes.remove(<TConstruct:slime.channel>);
-
-// --- Blood Channel
-recipes.remove(<TConstruct:blood.channel>);
 
 // --- Bounce Pad
 recipes.remove(<TConstruct:slime.pad>);
@@ -1429,9 +1412,6 @@ recipes.addShaped(<TConstruct:GlassPane> * 2, [
 
 
 // --- Items ---
-
-// --- Blank Pattern
-recipes.addShapeless(<TConstruct:blankPattern>, [<ore:platePaper>, <ore:platePaper>, <ore:platePaper>, <ore:platePaper>]);
 
 // --- Crafting Station
 recipes.addShapeless(<TConstruct:CraftingStation>, [<ore:craftingToolSaw>, <ore:craftingTableWood>]);

@@ -33,7 +33,7 @@
 	
 	"ceresG": {
         "template": "uniform",
-        "block": {"name": "GalaxySpace:ceresglowstone"},
+        "block": {"name": "GalaxySpace:dungeonglowstone"},
         "material": {"name": "GalaxySpace:ceresblocks", "metadata": 0},
         "clusterSize": 60,
         "numClusters": 10,
@@ -47,22 +47,6 @@
     }
 	,
 	
-	"plutoG": {
-        "template": "uniform",
-        "block": {"name": "GalaxySpace:plutoglowstone", "metadata": 4},
-        "material": {"name": "GalaxySpace:plutoblocks", "metadata": 1},
-		"material": {"name": "GalaxySpace:plutoblocks", "metadata": 2},
-        "clusterSize": 60,
-        "numClusters": 10,
-        "minHeight": 60,
-        "maxHeight": 90,
-        "retrogen": "false",
-        "biomeRestriction": "none",
-        "biomes": [],
-        "dimensionRestriction": "whitelist",
-        "dimensions": [-1008]
-    }
-	,
 	"plutoSky1": {
         "template": "uniform",
         "block": {"name": "appliedenergistics2:tile.BlockSkyStone"},
@@ -125,7 +109,7 @@
 	,
 	"ioG": {
         "template": "uniform",
-        "block": {"name": "GalaxySpace:ioglowstone", "metadata": 1},
+        "block": {"name": "GalaxySpace:dungeonglowstone", "metadata": 1},
         "material": {"name": "GalaxySpace:ioblocks", "metadata": 1},
 		"clusterSize": 60,
         "numClusters": 10,
@@ -167,35 +151,4 @@
         "dimensionRestriction": "whitelist",
         "dimensions": [-28]
     }
-	,
-	"enceladusG": {
-        "template": "uniform",
-        "block": {"name": "GalaxySpace:enceladusglowstone", "metadata": 2},
-        "material": {"name": "GalaxySpace:enceladusblocks", "metadata": 0},
-		"clusterSize": 100,
-        "numClusters": 20,
-        "minHeight": 50,
-        "maxHeight": 70,
-        "retrogen": "false",
-        "biomeRestriction": "none",
-        "biomes": [],
-        "dimensionRestriction": "whitelist",
-        "dimensions": [-1016]
-    }
-	,
-	"proteusG": {
-        "template": "uniform",
-        "block": {"name": "GalaxySpace:proteusglowstone", "metadata": 3},
-        "material": {"name": "GalaxySpace:proteusblocks", "metadata": 0},
-		"clusterSize": 60,
-        "numClusters": 10,
-        "minHeight": 60,
-        "maxHeight": 90,
-        "retrogen": "false",
-        "biomeRestriction": "none",
-        "biomes": [],
-        "dimensionRestriction": "whitelist",
-        "dimensions": [-1019]
-    }
-	
 }

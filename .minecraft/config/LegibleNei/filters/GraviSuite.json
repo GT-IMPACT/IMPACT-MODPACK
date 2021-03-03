@@ -1,7 +1,7 @@
 {
 	GraviSuite:[
-		{hide:[[BlockRelocatorPortal,graviChestPlate,kpChestPlate,advNanoChestPlate,ultimateLappack,advLappack,advJetpack,vajra,graviTool,advDDrill,advChainsaw,epicLappack,relocator,sonicLauncher],[]]};
-		{show:[[graviChestPlate,kpChestPlate,advNanoChestPlate,ultimateLappack,advLappack,advJetpack,vajra,graviTool,advDDrill,advChainsaw,epicLappack,relocator],[1]]};
+		{hide:[[BlockRelocatorPortal,ultimateLappack,advLappack,advJetpack,vajra,graviTool,advDDrill,advChainsaw,epicLappack,relocator,sonicLauncher],[]]};
+		{show:[[ultimateLappack,advLappack,advJetpack,vajra,graviTool,advDDrill,advChainsaw,epicLappack,relocator],[1]]};
 	]
 
 }

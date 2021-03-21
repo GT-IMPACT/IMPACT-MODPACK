@@ -13,8 +13,6 @@ import mods.tconstruct.Smeltery;
 
 val CastingBasin = <TConstruct:SearedBlock:2>;
 val String = <minecraft:string>;
-val SilkyCloth = <TConstruct:materials:25>;
-val SilkyJewel = <TConstruct:materials:26>;
 val BallOfMoss = <TConstruct:materials:6>;
 val EnderBlock = <TConstruct:MetalBlock:10>;
 val StoneTorch = <ore:torchStone>;
@@ -308,12 +306,6 @@ recipes.remove(EmptyCanister);
 
 // --- Stone Torch
 recipes.remove(StoneTorch);
-
-// --- Silky Cloth
-recipes.remove(SilkyCloth);
-
-// --- Silky Jewel
-recipes.remove(SilkyJewel);
 
 // --- Ball Of Moss
 recipes.remove(BallOfMoss);

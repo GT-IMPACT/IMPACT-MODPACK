@@ -65,22 +65,3 @@ for i, slab in slabs {
 	recipes.addShaped(slab * 2, [[<ore:craftingToolSaw>, blocks[i]]]);
 }
 
-// Mineral paints
-<ore:dyeBlack>.add(<gregtech:gt.metaitem.01:2535>);
-<ore:dyeBlack>.add(<gregtech:gt.metaitem.01:2536>);
-<ore:dyeBlack>.add(<gregtech:gt.metaitem.01:2816>);
-<ore:dyeBlack>.add(<gregtech:gt.metaitem.01:2870>);
-<ore:dyeGray>.add(<gregtech:gt.metaitem.01:2815>);
-<ore:dyeGreen>.add(<gregtech:gt.metaitem.01:2871>);
-<ore:dyeGreen>.add(<gregtech:gt.metaitem.01:2933>);
-<ore:dyeGreen>.add(<gregtech:gt.metaitem.01:2906>);
-<ore:dyeWhite>.add(<gregtech:gt.metaitem.01:2823>);
-<ore:dyeWhite>.add(<gregtech:gt.metaitem.01:2617>);
-<ore:dyeWhite>.add(<gregtech:gt.metaitem.01:2904>);
-<ore:dyeWhite>.add(<gregtech:gt.metaitem.01:2622>);
-<ore:dyeWhite>.add(<gregtech:gt.metaitem.01:2618>);
-<ore:dyeRed>.add(<gregtech:gt.metaitem.01:2826>);
-<ore:dyeRed>.add(<gregtech:gt.metaitem.01:2917>);
-<ore:dyeYellow>.add(<gregtech:gt.metaitem.01:2614>);
-<ore:dyeBrown>.add(<gregtech:gt.metaitem.01:2538>);
-

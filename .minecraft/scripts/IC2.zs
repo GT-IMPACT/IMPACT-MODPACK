@@ -15,6 +15,7 @@ import mods.gregtech.ChemicalBath;
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.CuttingSaw;
 import mods.gregtech.Electrolyzer;
+import mods.gregtech.Extruder;
 import mods.gregtech.ForgeHammer;
 import mods.gregtech.FormingPress;
 import mods.gregtech.Mixer;
@@ -173,6 +174,21 @@ recipes.remove(<IC2:itemToolChainsaw:*>);
 recipes.remove(<IC2:itemToolWrench>);
 recipes.remove(<IC2:blockPersonal>);
 recipes.remove(OVScanner);
+
+// --- StarGate (1.0.1.4)
+# Recipe Fixes
+recipes.remove(<SGCraft:stargateRing>);
+recipes.remove(<SGCraft:stargateRing:1>);
+recipes.remove(<SGCraft:stargateBase>);
+recipes.remove(<SGCraft:stargateController>);
+recipes.remove(<SGCraft:ic2PowerUnit>);
+recipes.remove(<SGCraft:rfPowerUnit>);
+recipes.remove(<SGCraft:ocInterface>);
+recipes.remove(<SGCraft:sgIrisBlade>);
+recipes.remove(<SGCraft:ic2Capacitor>);
+recipes.remove(<SGCraft:sgChevronUpgrade>);
+recipes.remove(<SGCraft:sgIrisUpgrade>);
+
 
 recipes.addShaped(<IC2:blockMachine:1>, [
 	[<ore:plateIron>, <ore:plateIron>,<ore:plateIron>],
@@ -609,5 +625,11 @@ NucReactor.addTooltip(format.gray("Coefficient: ") + format.red("x6"));
 <IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
 
 #==================================================================#
+// --- Shit 1.0.1.4 !!!
+// --- Extruder Recipes ---
+
+// --- Wind Rod
+Extruder.addRecipe(<IC2:itemRecipePart:11>, <ore:blockIron>, <gregtech:gt.metaitem.01:32377> * 0, 2000, 120);
+Extruder.addRecipe(<IC2:itemRecipePart:12>, <ore:blockSteel>, <gregtech:gt.metaitem.01:32377> * 0, 2000, 480);
 
 print("Initialized 'IC2.zs'");

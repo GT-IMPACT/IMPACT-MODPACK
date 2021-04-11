@@ -175,7 +175,7 @@ recipes.remove(<IC2:itemToolWrench>);
 recipes.remove(<IC2:blockPersonal>);
 recipes.remove(OVScanner);
 
-// --- StarGate (1.0.1.4)
+// --- StarGate & more (1.0.1.4)
 # Recipe Fixes
 recipes.remove(<SGCraft:stargateRing>);
 recipes.remove(<SGCraft:stargateRing:1>);
@@ -188,6 +188,9 @@ recipes.remove(<SGCraft:sgIrisBlade>);
 recipes.remove(<SGCraft:ic2Capacitor>);
 recipes.remove(<SGCraft:sgChevronUpgrade>);
 recipes.remove(<SGCraft:sgIrisUpgrade>);
+
+recipes.remove(<IC2:blockReactorChamber>);
+recipes.remove(<IC2:blockGenerator:5>);
 
 
 recipes.addShaped(<IC2:blockMachine:1>, [

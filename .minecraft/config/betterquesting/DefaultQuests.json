@@ -29,7 +29,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -109,14 +109,32 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Это что гравий?",
+          "name:8": "Это что, гравий?",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:gravel",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "3:10": {
@@ -146,10 +164,28 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": ""
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "4:10": {
@@ -182,7 +218,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:flint",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "5:10": {
@@ -215,7 +269,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:crafting_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "6:10": {
@@ -256,7 +328,51 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 20
+                  }
+                },
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "7:10": {
@@ -325,7 +441,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:planks",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": "plankWood"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "9:10": {
@@ -371,7 +505,202 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 20
+                  }
+                },
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "targetNBT:10": {
+            "ForgeData:10": {},
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 10.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "2:10": {
+                "Base:6": 0.20000000298023224,
+                "Name:8": "generic.movementSpeed"
+              },
+              "3:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              }
+            },
+            "Invulnerable:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "InLove:3": 0,
+            "DeathTime:2": 0,
+            "DropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085,
+              "4:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "Cow",
+            "HealF:5": 10.0,
+            "Age:3": 0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": 8355195176142489047,
+            "Health:2": 10,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 3.7144186,
+              "1:5": 0.0
+            },
+            "UUIDMost:4": 725172754699400,
+            "Equipment:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {},
+              "4:10": {}
+            },
+            "CustomName:8": "",
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": 0,
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "AttackTime:2": 0,
+            "CustomNameVisible:1": 0
+          },
+          "damageType:8": "",
+          "required:3": 5,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "Cow",
+          "subtypes:1": 1
+        },
+        "2:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "targetNBT:10": {
+            "ForgeData:10": {},
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 8.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "2:10": {
+                "Base:6": 0.23000000417232513,
+                "Name:8": "generic.movementSpeed"
+              },
+              "3:10": {
+                "Base:6": 16.0,
+                "Name:8": "generic.followRange"
+              }
+            },
+            "Invulnerable:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "InLove:3": 0,
+            "DeathTime:2": 0,
+            "DropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085,
+              "4:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "Sheep",
+            "HealF:5": 8.0,
+            "Age:3": 0,
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -1520982882989942311,
+            "Health:2": 8,
+            "Color:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 0,
+            "Rotation:9": {
+              "0:5": 1.8980527,
+              "1:5": 0.0
+            },
+            "UUIDMost:4": 725190155270700,
+            "Equipment:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {},
+              "4:10": {}
+            },
+            "CustomName:8": "",
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Fire:2": 0,
+            "CanPickUpLoot:1": 0,
+            "Sheared:1": 0,
+            "HurtTime:2": 0,
+            "AttackTime:2": 0,
+            "CustomNameVisible:1": 0
+          },
+          "damageType:8": "",
+          "required:3": 5,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "Sheep",
+          "subtypes:1": 1
+        }
+      },
       "rewards:9": {}
     },
     "10:10": {
@@ -404,21 +733,56 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:bed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "OpenBlocks:sleepingBag",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "11:10": {
       "questID:3": 11,
       "preRequisites:11": [
         24,
-        28
+        18
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:iron_ingot",
@@ -438,7 +802,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "ingotIron"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "12:10": {
@@ -468,10 +850,34 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "No Descripti§6§f§r§o"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:blockRubSapling",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "IC2:itemHarz",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "13:10": {
@@ -538,7 +944,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:torch",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "15:10": {
@@ -602,10 +1026,45 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "No Description"
+          "desc:8": "На данной планете большое разнообразие пород, что немного осложняет геологоразведку. Однако они содержат много полезных минералов, которые можно использовать в будущем.\n\nТак же обращаю внимание на то, что в некоторых целях \"разноцветную\" можно пересобрать в самый обычный серый булыжник, если будет такая необходимость."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "UndergroundBiomes:igneousCobblestone",
+              "Count:3": 4,
+              "Damage:2": 3,
+              "OreDict:8": "stoneCobble"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cobblestone",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "17:10": {
@@ -645,7 +1104,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "18:10": {
@@ -711,7 +1188,367 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 32,
+              "OreDict:8": "oreIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 19,
+              "OreDict:8": "oreAluminium"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 34,
+              "OreDict:8": "oreNickel"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 35,
+              "OreDict:8": "oreCopper"
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 54,
+              "OreDict:8": "oreSilver"
+            },
+            "5:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 57,
+              "OreDict:8": "oreTin"
+            },
+            "6:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 86,
+              "OreDict:8": "oreGold"
+            },
+            "7:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 89,
+              "OreDict:8": "oreLead"
+            },
+            "8:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 500,
+              "OreDict:8": "oreDiamond"
+            },
+            "9:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 502,
+              "OreDict:8": "oreRuby"
+            },
+            "10:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 516,
+              "OreDict:8": "oreCertusQuartz"
+            },
+            "11:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 523,
+              "OreDict:8": "oreQuartzite"
+            },
+            "12:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 524,
+              "OreDict:8": "oreLazurite"
+            },
+            "13:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 525,
+              "OreDict:8": "oreSodalite"
+            },
+            "14:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 526,
+              "OreDict:8": "oreLapis"
+            },
+            "15:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 530,
+              "OreDict:8": "oreApatite"
+            },
+            "16:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 534,
+              "OreDict:8": "orePhosphorus"
+            },
+            "17:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 535,
+              "OreDict:8": "oreCoal"
+            },
+            "18:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 538,
+              "OreDict:8": "oreLignite"
+            },
+            "19:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 810,
+              "OreDict:8": "oreRedstone"
+            },
+            "20:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 817,
+              "OreDict:8": "oreSalt"
+            },
+            "21:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 823,
+              "OreDict:8": "oreCalcite"
+            },
+            "22:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 824,
+              "OreDict:8": "oreCassiterite"
+            },
+            "23:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 826,
+              "OreDict:8": "oreCinnabar"
+            },
+            "24:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 827,
+              "OreDict:8": "oreCobaltite"
+            },
+            "25:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 830,
+              "OreDict:8": "oreGalena"
+            },
+            "26:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 831,
+              "OreDict:8": "oreGrossular"
+            },
+            "27:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 834,
+              "OreDict:8": "orePyrite"
+            },
+            "28:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 855,
+              "OreDict:8": "oreChalcopyrite"
+            },
+            "29:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 865,
+              "OreDict:8": "oreGraphite"
+            },
+            "30:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 870,
+              "OreDict:8": "oreMagnetite"
+            },
+            "31:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 871,
+              "OreDict:8": "oreMalachite"
+            },
+            "32:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 877,
+              "OreDict:8": "oreSoapstone"
+            },
+            "33:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 878,
+              "OreDict:8": "oreOilsands"
+            },
+            "34:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 901,
+              "OreDict:8": "oreMica"
+            },
+            "35:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 903,
+              "OreDict:8": "oreTrona"
+            },
+            "36:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 904,
+              "OreDict:8": "oreBarite"
+            },
+            "37:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 906,
+              "OreDict:8": "oreGarnierite"
+            },
+            "38:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 907,
+              "OreDict:8": "oreLepidolite"
+            },
+            "39:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 909,
+              "OreDict:8": "orePentlandite"
+            },
+            "40:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 911,
+              "OreDict:8": "oreAlunite"
+            },
+            "41:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 914,
+              "OreDict:8": "oreDolomite"
+            },
+            "42:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 915,
+              "OreDict:8": "oreWollastonite"
+            },
+            "43:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 916,
+              "OreDict:8": "oreZeolite"
+            },
+            "44:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 917,
+              "OreDict:8": "oreBandedIron"
+            },
+            "45:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 919,
+              "OreDict:8": "orePollucite"
+            },
+            "46:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 920,
+              "OreDict:8": "oreSpodumene"
+            },
+            "47:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 921,
+              "OreDict:8": "oreTantalite"
+            },
+            "48:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 923,
+              "OreDict:8": "oreVanadiumMagnetite"
+            },
+            "49:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 924,
+              "OreDict:8": "oreKyanite"
+            },
+            "50:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 930,
+              "OreDict:8": "oreBrownLimonite"
+            },
+            "51:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 931,
+              "OreDict:8": "oreYellowLimonite"
+            },
+            "52:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 933,
+              "OreDict:8": "oreGlauconite"
+            },
+            "53:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 934,
+              "OreDict:8": "oreGypsum"
+            },
+            "54:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 943,
+              "OreDict:8": "orePyrolusite"
+            },
+            "55:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 944,
+              "OreDict:8": "oreRockSalt"
+            },
+            "56:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 946,
+              "OreDict:8": "oreAsbestos"
+            },
+            "57:10": {
+              "id:8": "gregtech:gt.blockores",
+              "Count:3": 1,
+              "Damage:2": 948,
+              "OreDict:8": "oreDiatomite"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "20:10": {
@@ -777,7 +1614,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:reeds",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "22:10": {
@@ -811,7 +1666,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 2879,
+              "OreDict:8": "dustPaper"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "23:10": {
@@ -851,7 +1724,32 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Stone"
+                }
+              },
+              "Damage:2": 24,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "24:10": {
@@ -884,7 +1782,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:furnace",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "25:10": {
@@ -917,7 +1833,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "TConstruct:blankPattern",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "26:10": {
@@ -951,7 +1885,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:paper",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "27:10": {
@@ -964,7 +1916,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.metatool.01",
@@ -991,7 +1943,84 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 12,
+              "OreDict:8": "craftingToolHardHammer"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 22,
+              "OreDict:8": "craftingToolScrewdriver"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 18,
+              "OreDict:8": "craftingToolFile"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 16,
+              "OreDict:8": "craftingToolWrench"
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 524288000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 14,
+              "OreDict:8": "craftingToolSoftHammer"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "28:10": {
@@ -1030,14 +2059,15 @@
     "29:10": {
       "questID:3": 29,
       "preRequisites:11": [
-        8
+        8,
+        62
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "IC2:blockCrop",
@@ -1057,7 +2087,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IC2:blockCrop",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "30:10": {
@@ -1070,7 +2118,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:sapling",
@@ -1090,7 +2138,31 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:sapling",
+              "Count:3": 16,
+              "Damage:2": 1,
+              "OreDict:8": "treeSapling"
+            },
+            "1:10": {
+              "id:8": "minecraft:log",
+              "Count:3": 64,
+              "Damage:2": 3,
+              "OreDict:8": "logWood"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "31:10": {
@@ -1124,7 +2196,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "StorageDrawers:fullDrawers1",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "drawerBasic"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "32:10": {
@@ -1157,7 +2247,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "33:10": {
@@ -1190,14 +2298,31 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "JABBA:barrel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "34:10": {
       "questID:3": 34,
       "preRequisites:11": [
-        9,
-        35
+        9
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1224,7 +2349,42 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:leather",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "Backpack:boundLeather",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "35:10": {
@@ -1263,7 +2423,8 @@
     "36:10": {
       "questID:3": 36,
       "preRequisites:11": [
-        34
+        34,
+        35
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1290,7 +2451,25 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "Backpack:backpack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "37:10": {
@@ -1633,7 +2812,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 1,
+          "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "IguanaTweaksTConstruct:clayBucketFired",
@@ -1653,7 +2832,48 @@
           "desc:8": "No Description"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 5,
+              "Damage:2": 2805,
+              "OreDict:8": "dustClay"
+            },
+            "1:10": {
+              "id:8": "IguanaTweaksTConstruct:clayBucketUnfired",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "IguanaTweaksTConstruct:clayBucketFired",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
       "rewards:9": {}
     },
     "48:10": {
@@ -2179,6 +3399,173 @@
       },
       "tasks:9": {},
       "rewards:9": {}
+    },
+    "62:10": {
+      "questID:3": 62,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metatool.01",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "PrimaryMaterial:8": "Flint",
+                "MaxDamage:4": 6400,
+                "SecondaryMaterial:8": "Wood"
+              }
+            },
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "63:10": {
+      "questID:3": 63,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "chisel:chisel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "В душе я дизайнер!",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "chisel:chisel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "64:10": {
+      "questID:3": 64,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:bucket",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Водичка, вода!",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -2368,7 +3755,7 @@
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 60,
+          "x:3": 132,
           "y:3": 204,
           "id:3": 23,
           "sizeY:3": 24
@@ -2376,7 +3763,7 @@
         "23:10": {
           "sizeX:3": 24,
           "x:3": 60,
-          "y:3": 276,
+          "y:3": 204,
           "id:3": 24,
           "sizeY:3": 24
         },
@@ -2403,72 +3790,79 @@
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 60,
-          "id:3": 28,
+          "x:3": -84,
+          "y:3": 348,
+          "id:3": 29,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
           "x:3": -84,
-          "y:3": 276,
-          "id:3": 29,
+          "y:3": 420,
+          "id:3": 30,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 348,
-          "id:3": 30,
-          "sizeY:3": 24
-        },
-        "30:10": {
-          "sizeX:3": 24,
           "x:3": 60,
-          "y:3": 348,
+          "y:3": 420,
           "id:3": 31,
           "sizeY:3": 24
         },
-        "31:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 348,
           "id:3": 32,
           "sizeY:3": 24
         },
-        "32:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 420,
           "id:3": 33,
           "sizeY:3": 24
         },
-        "33:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": 276,
           "id:3": 34,
           "sizeY:3": 24
         },
-        "34:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 132,
           "y:3": 324,
           "id:3": 35,
           "sizeY:3": 24
         },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 348,
+          "id:3": 36,
+          "sizeY:3": 24
+        },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": -228,
+          "x:3": -84,
           "y:3": 276,
-          "id:3": 36,
+          "id:3": 62,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 204,
-          "id:3": 47,
+          "x:3": 60,
+          "y:3": 348,
+          "id:3": 63,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 60,
+          "y:3": 276,
+          "id:3": 64,
           "sizeY:3": 24
         }
       },

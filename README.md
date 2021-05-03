@@ -4,18 +4,13 @@
 
 ![IMPACT](https://github.com/GT-IMPACT/IMPACT-MODPACK/blob/Release/impactTwitch.png)
 
-## Что такое IMPACT?
+## What is this modpack?
 
-Это глобальный индустриальный модпак для Minecraft 1.7.10, основанный на GregTech и его аддонах.
+Global industrial modpack for Minecraft 1.7.10, based on GregTech 5 and various mods deeply integrated with each other. There has never been such integration in Minecraft with mods.
 
-Главное преимущество этой сборки - модификация каждого мода под реалии грега (без GT++). Именно тут данный GregTech интегрируется в каждую эпоху, начиная с базовых машин, заканчивая межпространственными путешествиями.
+The main advantage of this build is the modification of each mod for the realities of GregTech. It is here that this mod is integrated into every era, from basic machines to interdimensional travel.
 
-Для достижения этой цели IMPACT предоставляет обширный спектр различных модов, которые облегчают, а иногда и усложняют процесс развития. Наверное самым необычным будет появление ULV тира в постпаровой эпохе и UHV-... этапов после покорения ближайших галактик.
-
-Самой интересной частью данной сборки можно выделить покорение космоса. Благодаря GalaxySpace Вам предоставлен огромный список планет и их спутников, которые доступны для покорения. Также довольно необычной составляющей космических путешествий можно отметить само создание ракет. Как вы знаете, стандартные схематики можно было находить в данжах, однако теперь Вам придется изучать породы планет каждого тира для создания нужных микросхем.
-
-## Официальные ссылки
+## Links
 
 Discord: https://discord.gg/bMf2qvd<BR>
-Релизы и изменения: https://github.com/PERSON-IMPACT/PATCHES-IMPACT/releases<BR>
-Официальный сайт: https://gt-impact.github.io/<BR>
+Website: https://gtimpact.space/<BR>

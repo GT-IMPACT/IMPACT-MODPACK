@@ -209,6 +209,21 @@ mods.tconstruct.Smeltery.removeMelting(<ore:blockEnder>);
 // --- Alumium Ingot
 recipes.remove(<TConstruct:materials:11>);
 
+// --- Iron Gear
+mods.tconstruct.Casting.removeTableRecipe(<BuildCraft|Core:ironGearItem>);
+
+// --- Gold Gear
+mods.tconstruct.Casting.removeTableRecipe(<BuildCraft|Core:goldGearItem>);
+
+// --- Bronze Gear
+mods.tconstruct.Casting.removeTableRecipe(<Forestry:gearBronze>);
+
+// --- Copper Gear
+mods.tconstruct.Casting.removeTableRecipe(<Forestry:gearCopper>);
+
+// --- Tin Gear
+mods.tconstruct.Casting.removeTableRecipe(<Forestry:gearTin>);
+
 // --- Platinum Gear
 mods.tconstruct.Casting.removeTableRecipe(<gregtech:gt.metaitem.02:31085>);
 
@@ -1939,14 +1954,6 @@ Smeltery.addFuel(<liquid:creosote>, 1700, 256);
 Smeltery.addFuel(<liquid:oil>, 1100, 512);
 Smeltery.addFuel(<liquid:liquid_light_oil>, 1200, 512);
 Smeltery.addFuel(<liquid:liquid_heavy_oil>, 1300, 1024);
-
-
-// --- Drying Reck Recipes ---
-// --- Coagulated Blood Drop
-mods.tconstruct.Drying.addRecipe(<TConstruct:strangeFood:1>, <TConstruct:jerky:7>, 6000);
-
-// --- Gelatinous Slime Ball
-mods.tconstruct.Drying.addRecipe(<TConstruct:strangeFood>, <TConstruct:jerky:6>, 6000);
 
 
 mods.tconstruct.Casting.addTableRecipe(<gregtech:gt.metaitem.01:32300>, <liquid:steel.molten> * 576, null, false, 80);

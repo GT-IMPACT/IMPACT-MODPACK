@@ -358,7 +358,7 @@ Carpenter.removeRecipe(hardenedCasing);
 Carpenter.removeRecipe(impregnatedCasing);
 recipes.remove(pulsatingMesh);
 Carpenter.removeRecipe(silkWoven);
-Carpenter.removeRecipe(<Forestry:chipsets>);
+Carpenter.removeRecipe(<Forestry:chipsets:*>);
 ThermionicFabricator.removeCast(tubeCopper);
 ThermionicFabricator.removeCast(tubeTin);
 ThermionicFabricator.removeCast(tubeBronze);

@@ -250,7 +250,6 @@ recipes.addShaped(weedingtrowel, [
 	[<ore:plateRubber>, <ore:stickIron>, <ore:plateRubber>]]);
 	
 recipes.remove(fuelRodThorium);
-Canner.addRecipe(fuelRodThorium, dustThorium * 3, fuelRodEmpty, 200, 2);
 
 // ic2 lapis
 <ore:dustTinyLapis>.remove(<IC2:itemDustSmall:9>);

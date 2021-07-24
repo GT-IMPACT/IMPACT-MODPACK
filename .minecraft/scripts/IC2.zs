@@ -256,19 +256,8 @@ game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 // Construction Foam
 Mixer.addRecipe(null, <liquid:ic2constructionfoam> * 8000, [<gregtech:gt.metaitem.01:2896>], <liquid:molten.concrete> * 576, 20, 16);
 
-// IC2 Motor
-recipes.remove(<IC2:itemRecipePart:1>);
-recipes.addShapeless(<IC2:itemRecipePart:1>, [<gregtech:gt.metaitem.01:32600>]);
-
 // return only from full empty hydrant cell
 recipes.addShapeless(<IC2:itemCellEmpty>, [<IC2:itemCellHydrant:10000>]);
-
-// --- Night Vision
-recipes.remove(<IC2:itemNightvisionGoggles:*>);
-recipes.addShaped(<IC2:itemNightvisionGoggles:26>, [
-[<IC2:reactorHeatSwitchDiamond:1>, <ore:screwStainlessSteel>, <IC2:reactorHeatSwitchDiamond:1>],
-[<ore:ringStainlessSteel>, <ore:boltStainlessSteel>, <ore:ringStainlessSteel>],
-[<GalacticraftCore:item.sensorLens>, <ore:craftingToolScrewdriver>, <GalacticraftCore:item.sensorLens>]]);
 
 #==================================================================#
 #Nuclear Reactor

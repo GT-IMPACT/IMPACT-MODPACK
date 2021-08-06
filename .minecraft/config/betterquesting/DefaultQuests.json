@@ -3473,7 +3473,8 @@
     "53:10": {
       "questID:3": 53,
       "preRequisites:11": [
-        52
+        52,
+        80
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3491,7 +3492,7 @@
           "snd_update:8": "random.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "repeat_relative:1": 1,
           "name:8": "New Quest",
           "lockedProgress:1": 0,
@@ -4272,7 +4273,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
@@ -4692,6 +4693,58 @@
       "rewards:9": {}
     },
     "80:10": {
+      "questID:3": 80,
+      "preRequisites:11": [
+        51,
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 1155,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1155,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "81:10": {
       "questID:3": 81,
       "preRequisites:11": [
         77
@@ -4706,7 +4759,7 @@
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 106,
+            "Damage:2": 109,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -4724,11 +4777,10 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "81:10": {
+    "82:10": {
       "questID:3": 82,
       "preRequisites:11": [
-        77,
-        78
+        77
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4741,6 +4793,875 @@
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
             "Damage:2": 112,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "83:10": {
+      "questID:3": 83,
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 107,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "84:10": {
+      "questID:3": 84,
+      "preRequisites:11": [
+        81
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 110,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "85:10": {
+      "questID:3": 85,
+      "preRequisites:11": [
+        78
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 116,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "86:10": {
+      "questID:3": 86,
+      "preRequisites:11": [
+        82
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 113,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "87:10": {
+      "questID:3": 87,
+      "preRequisites:11": [
+        78
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockgem3",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "88:10": {
+      "questID:3": 88,
+      "preRequisites:11": [
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 11305,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "89:10": {
+      "questID:3": 89,
+      "preRequisites:11": [
+        66
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 130,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "90:10": {
+      "questID:3": 90,
+      "preRequisites:11": [
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 108,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "91:10": {
+      "questID:3": 91,
+      "preRequisites:11": [
+        89,
+        92
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 11304,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "92:10": {
+      "questID:3": 92,
+      "preRequisites:11": [
+        78
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "EnderIO:blockEnder_distillation",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "93:10": {
+      "questID:3": 93,
+      "preRequisites:11": [
+        81
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 2896,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "94:10": {
+      "questID:3": 94,
+      "preRequisites:11": [
+        93,
+        95
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 11880,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "95:10": {
+      "questID:3": 95,
+      "preRequisites:11": [
+        68
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "EnderIO:blockEnder_distillation",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "96:10": {
+      "questID:3": 96,
+      "preRequisites:11": [
+        94
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 17880,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "97:10": {
+      "questID:3": 97,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 1246,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "98:10": {
+      "questID:3": 98,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metatool.01",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "PrimaryMaterial:8": "Neutronium",
+                "MaxDamage:4": 524288000,
+                "SecondaryMaterial:8": "Neutronium"
+              }
+            },
+            "Damage:2": 14,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "99:10": {
+      "questID:3": 99,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metatool.01",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "PrimaryMaterial:8": "Neutronium",
+                "MaxDamage:4": 16384000,
+                "SecondaryMaterial:8": "Neutronium"
+              }
+            },
+            "Damage:2": 44,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "100:10": {
+      "questID:3": 100,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "IC2:itemArmorHazmatHelmet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "101:10": {
+      "questID:3": 101,
+      "preRequisites:11": [
+        94
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 1360,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "102:10": {
+      "questID:3": 102,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "103:10": {
+      "questID:3": 103,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:nether_star",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "104:10": {
+      "questID:3": 105,
+      "preRequisites:11": [
+        101,
+        109
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 32700,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "105:10": {
+      "questID:3": 106,
+      "preRequisites:11": [
+        101
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 32716,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "106:10": {
+      "questID:3": 107,
+      "preRequisites:11": [
+        101
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.03",
+            "Count:3": 1,
+            "Damage:2": 32100,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "107:10": {
+      "questID:3": 108,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "EnderIO:blockEnder_distillation",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "New Quest",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "No Description"
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "108:10": {
+      "questID:3": 109,
+      "preRequisites:11": [
+        88
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "EnderIO:blockEnder_distillation",
+            "Count:3": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -5142,7 +6063,7 @@
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -108,
           "y:3": 276,
           "id:3": 46,
           "sizeY:3": 24
@@ -5163,15 +6084,15 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 204,
+          "x:3": -60,
+          "y:3": 276,
           "id:3": 50,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 48,
-          "x:3": -168,
-          "y:3": 264,
+          "x:3": -96,
+          "y:3": 336,
           "id:3": 51,
           "sizeY:3": 48
         },
@@ -5184,14 +6105,14 @@
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 204,
+          "x:3": 132,
           "y:3": 204,
           "id:3": 53,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 276,
+          "x:3": 204,
           "y:3": 204,
           "id:3": 54,
           "sizeY:3": 24
@@ -5199,7 +6120,7 @@
         "17:10": {
           "sizeX:3": 24,
           "x:3": 276,
-          "y:3": 132,
+          "y:3": 204,
           "id:3": 55,
           "sizeY:3": 24
         },
@@ -5239,10 +6160,17 @@
           "sizeY:3": 24
         },
         "23:10": {
-          "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 276,
+          "sizeX:3": 48,
+          "x:3": 192,
+          "y:3": 336,
           "id:3": 65,
+          "sizeY:3": 48
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 276,
+          "id:3": 80,
           "sizeY:3": 24
         }
       },
@@ -5276,13 +6204,13 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": -12,
-          "y:3": -84,
+          "y:3": -60,
           "id:3": 67,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 60,
+          "x:3": 36,
           "y:3": -12,
           "id:3": 68,
           "sizeY:3": 24
@@ -5290,48 +6218,48 @@
         "3:10": {
           "sizeX:3": 24,
           "x:3": -12,
-          "y:3": -156,
+          "y:3": -96,
           "id:3": 69,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -84,
+          "x:3": 36,
+          "y:3": 24,
           "id:3": 70,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 132,
+          "x:3": 72,
           "y:3": -12,
           "id:3": 71,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -60,
           "y:3": -12,
           "id:3": 72,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 60,
+          "x:3": -60,
+          "y:3": -60,
           "id:3": 73,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 60,
+          "x:3": -60,
+          "y:3": 36,
           "id:3": 74,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -156,
+          "x:3": -96,
           "y:3": -12,
           "id:3": 75,
           "sizeY:3": 24
@@ -5352,31 +6280,213 @@
         },
         "12:10": {
           "sizeX:3": 32,
-          "x:3": 128,
-          "y:3": 128,
+          "x:3": 144,
+          "y:3": 112,
           "id:3": 78,
           "sizeY:3": 32
         },
         "13:10": {
           "sizeX:3": 32,
-          "x:3": 272,
+          "x:3": 256,
           "y:3": 56,
           "id:3": 79,
           "sizeY:3": 32
         },
         "14:10": {
           "sizeX:3": 32,
-          "x:3": 272,
-          "y:3": 128,
+          "x:3": 256,
+          "y:3": 112,
           "id:3": 81,
           "sizeY:3": 32
         },
         "15:10": {
           "sizeX:3": 32,
-          "x:3": 128,
+          "x:3": 144,
           "y:3": 56,
           "id:3": 82,
           "sizeY:3": 32
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 300,
+          "y:3": 60,
+          "id:3": 83,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 300,
+          "y:3": 116,
+          "id:3": 84,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": 148,
+          "y:3": 156,
+          "id:3": 85,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 60,
+          "id:3": 86,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 116,
+          "id:3": 87,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 48,
+          "x:3": -24,
+          "y:3": 236,
+          "id:3": 88,
+          "sizeY:3": 48
+        },
+        "22:10": {
+          "sizeX:3": 48,
+          "x:3": -24,
+          "y:3": 120,
+          "id:3": 89,
+          "sizeY:3": 48
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": 132,
+          "id:3": 90,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 132,
+          "id:3": 91,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 116,
+          "id:3": 92,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 260,
+          "y:3": 156,
+          "id:3": 93,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 32,
+          "x:3": 256,
+          "y:3": 244,
+          "id:3": 94,
+          "sizeY:3": 32
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -52,
+          "id:3": 95,
+          "sizeY:3": 24
+        },
+        "29:10": {
+          "sizeX:3": 24,
+          "x:3": 304,
+          "y:3": 248,
+          "id:3": 96,
+          "sizeY:3": 24
+        },
+        "30:10": {
+          "sizeX:3": 24,
+          "x:3": 304,
+          "y:3": 288,
+          "id:3": 97,
+          "sizeY:3": 24
+        },
+        "31:10": {
+          "sizeX:3": 24,
+          "x:3": 344,
+          "y:3": 248,
+          "id:3": 98,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
+          "x:3": 344,
+          "y:3": 288,
+          "id:3": 99,
+          "sizeY:3": 24
+        },
+        "33:10": {
+          "sizeX:3": 24,
+          "x:3": 344,
+          "y:3": 208,
+          "id:3": 100,
+          "sizeY:3": 24
+        },
+        "34:10": {
+          "sizeX:3": 24,
+          "x:3": 216,
+          "y:3": 248,
+          "id:3": 101,
+          "sizeY:3": 24
+        },
+        "35:10": {
+          "sizeX:3": 24,
+          "x:3": 92,
+          "y:3": 192,
+          "id:3": 102,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 56,
+          "y:3": 192,
+          "id:3": 103,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 248,
+          "id:3": 105,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 216,
+          "y:3": 284,
+          "id:3": 106,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 284,
+          "id:3": 107,
+          "sizeY:3": 24
+        },
+        "40:10": {
+          "sizeX:3": 24,
+          "x:3": 16,
+          "y:3": 192,
+          "id:3": 108,
+          "sizeY:3": 24
+        },
+        "41:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 248,
+          "id:3": 109,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 3,

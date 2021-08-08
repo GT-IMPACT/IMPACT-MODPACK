@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-08T15:04:35.419Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="4hnDNMosJqp8ZBJIcst0" version="14.9.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-08T15:25:59.974Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="s8mBZh1khgMFJ6x8ZuYI" version="14.9.5" type="github">
   <diagram id="w5-J0piGMqYhjDj3E7p-" name="Страница 1">
     <mxGraphModel dx="813" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,27 +87,24 @@
           <mxGeometry x="333.97" y="260" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-35" value="10 s" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="333.97" y="340" width="160" height="20" as="geometry" />
+          <mxGeometry x="334" y="320" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-36" value="480 eu/t" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="333.97" y="320" width="160" height="20" as="geometry" />
+          <mxGeometry x="334" y="300" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="8X1PiYoF59AKzcX1zDKP-37" target="8X1PiYoF59AKzcX1zDKP-21">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="313.97" y="370" />
-              <mxPoint x="313.97" y="110" />
+              <mxPoint x="314" y="350" />
+              <mxPoint x="314" y="110" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-37" value="&lt;span style=&quot;font-size: 9px ; font-family: sans-serif ; text-align: left&quot;&gt;Ammonium Persulfate&lt;/span&gt;&lt;span style=&quot;font-size: 9px&quot;&gt;&amp;nbsp;1000L&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="333.97" y="360" width="160" height="20" as="geometry" />
+          <mxGeometry x="334" y="340" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-38" value="Sulfuric Acid 1000L" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="333.97" y="280" width="160" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="8X1PiYoF59AKzcX1zDKP-39" value="Copper Plate x1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="333.97" y="300" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-43" value="Chemical Reactor" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="114" y="240" width="160" height="20" as="geometry" />
@@ -116,30 +113,27 @@
           <mxGeometry x="114" y="260" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-45" value="10 s" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="114" y="340" width="160" height="20" as="geometry" />
+          <mxGeometry x="114" y="320" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-46" value="480 eu/t" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="114" y="320" width="160" height="20" as="geometry" />
+          <mxGeometry x="114" y="300" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8X1PiYoF59AKzcX1zDKP-47" target="8X1PiYoF59AKzcX1zDKP-34">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="294" y="370" />
+              <mxPoint x="294" y="350" />
               <mxPoint x="294" y="270" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-47" value="&lt;span style=&quot;font-size: 9px ; font-family: sans-serif ; text-align: left&quot;&gt;Ammonium Sulfate&lt;/span&gt;&lt;span style=&quot;font-size: 9px&quot;&gt;&amp;nbsp;3000L&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="114" y="360" width="160" height="20" as="geometry" />
+          <mxGeometry x="114" y="340" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-48" value="Ammonia 2000L" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="114" y="280" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8X1PiYoF59AKzcX1zDKP-49" value="Copper Plate x1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="114" y="300" width="160" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="8X1PiYoF59AKzcX1zDKP-52" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 9px&quot;&gt;&lt;font face=&quot;sans-serif&quot;&gt;Hydrogen&lt;/font&gt; 1000L&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeWidth=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="333.97" y="380" width="160" height="20" as="geometry" />
+          <mxGeometry x="334" y="360" width="160" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

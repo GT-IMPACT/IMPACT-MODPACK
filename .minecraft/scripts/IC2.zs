@@ -260,12 +260,9 @@ Mixer.addRecipe(null, <liquid:ic2constructionfoam> * 8000, [<gregtech:gt.metaite
 recipes.addShapeless(<IC2:itemCellEmpty>, [<IC2:itemCellHydrant:10000>]);
 
 #==================================================================#
-#Nuclear Reactor
-NucReactor.addTooltip(format.gray("Coefficient: ") + format.red("x6"));
+<IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: ") + format.red("x2.5"));
 
-<IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
-
-<IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: ") + format.red("x10"));
+<IC2:blockGenerator:4>.addTooltip(format.gray("Coefficient: ") + format.red("x5"));
 
 #==================================================================#
 // --- Shit 1.0.1.4 !!!

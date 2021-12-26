@@ -235,12 +235,6 @@ ArcFurnace.addRecipe([steelIngot * 8, annealedCopperIngot * 6, bronzeIngot * 9, 
 //Raintank
 ArcFurnace.addRecipe([wroughtIronIngot * 13], <Forestry:factory2:1>, <liquid:oxygen> * 1872, [10000], 520, 96);
 
-//Lead
-recipes.addShaped(<minecraft:lead>, [
-    [<minecraft:string>, <minecraft:string>, null], 
-    [<minecraft:string>, <IC2:itemHarz>, null],
-    [null, null, <minecraft:string>]]);
-
 //IC Uran block
 recipes.remove(<IC2:blockMetal:3>);
 Compressor.addRecipe(<IC2:blockMetal:3>, <IC2:itemUran238> * 9);

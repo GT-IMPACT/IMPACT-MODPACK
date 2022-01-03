@@ -1,0 +1,155 @@
+[
+	// --- Worktable
+	// --- Matrix Particles Reflector
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 1
+      },
+      {
+        "oredict": "foilAluminium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 1
+      },
+      {
+        "oredict": "foilAluminium",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtHSLA",
+        "amount": 1
+      },
+      {
+        "oredict": "foilAluminium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 1
+      },
+      {
+        "oredict": "foilAluminium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_matrix_system",
+      "damage": 0,
+      "nbt": {},
+      "amount": 2
+    }
+  },
+  // --- The Mill Wood Plank
+  {
+    "inputItem": [
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "boltWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "boltWood",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolSoftHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "boltWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "boltWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "gt.blockCase3",
+      "damage": 2,
+      "amount": 4
+    }
+  },
+	// --- The Mill
+  {
+    "inputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 1
+      },
+      {
+        "mod": "Backpack",
+        "name": "tannedLeather",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 1
+      },
+      {
+        "oredict": "cobblestone",
+        "amount": 1
+      },
+      {
+        "oredict": "gearWood",
+        "amount": 1
+      },
+      {
+        "oredict": "cobblestone",
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolSoftHammer",
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14074,
+      "amount": 1
+    }
+  }
+]

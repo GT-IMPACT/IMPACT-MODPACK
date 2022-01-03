@@ -1,0 +1,338 @@
+[
+ 	// --- Assembler
+	// --- Matrix Particles Reflector
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 4
+      },
+	  {
+        "oredict": "foilAluminium",
+        "amount": 4
+      },
+      {
+        "oredict": "frameGtHSLA",
+        "amount": 1
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "impact_matrix_system",
+        "damage": 0,
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 600,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Lab-Safe Low Gravity Casing
+  {
+    "inputItem": [
+      {
+        "oredict": "frameGtZirconium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateBlueSteel",
+        "amount": 6
+      },
+      {
+        "oredict": "boltRedSteel",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase2",
+        "damage": 15,
+        "nbt": {},
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 200,
+    "voltage": 256,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Empty Portable Cell with Matrix Particles
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleTitanium",
+        "amount": 4
+      },
+      {
+        "oredict": "ringNeodymiumMagnetic",
+        "amount": 4
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 256,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ME Construction Casing
+  {
+    "inputItem": [
+      {
+        "oredict": "frameGtVanadiumSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateBT6",
+        "amount": 6
+      },
+      {
+        "oredict": "boltTitanium",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 0,
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 200,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Matrix Particles Chamber
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14594,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polybenzimidazole",
+        "amount": 72
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14594,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polytetrafluoroethylene",
+        "amount": 576
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ME Connector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "appliedenergistics2",
+        "name": "item.ItemMultiPart",
+        "damage": 76,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14593,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polybenzimidazole",
+        "amount": 72
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "appliedenergistics2",
+        "name": "item.ItemMultiPart",
+        "damage": 76,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14593,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polytetrafluoroethylene",
+        "amount": 576
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  // --- The Mill Wood Planks
+  {
+    "inputItem": [
+      {
+        "oredict": "plankWood",
+        "amount": 4
+      },
+      {
+        "oredict": "boltIron",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 2,
+        "nbt": {
+          "GT.IntegratedAmount": 2
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 4
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 300,
+    "voltage": 6,
+    "special": 0,
+    "optimize": false
+  }
+]

@@ -1,0 +1,245 @@
+[
+  // --- 3D Printer
+  // --- Parametric Diffuser
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 13,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitAdvanced",
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 182,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32642,
+        "amount": 2
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32682,
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 47,
+        "amount": 4
+      },
+      {
+        "oredict": "plateDoubleHSLA",
+        "amount": 6
+      },
+      {
+        "oredict": "screwStainlessSteel",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14066,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 400,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Matrix Particles Stabilizer
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 13,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitAdvanced",
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 182,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32642,
+        "amount": 2
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32672,
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 47,
+        "amount": 4
+      },
+      {
+        "oredict": "plateDoubleHSLA",
+        "amount": 6
+      },
+      {
+        "oredict": "screwStainlessSteel",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14067,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 400,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Matrix Particles Containment
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 13,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitAdvanced",
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 182,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32642,
+        "amount": 2
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32692,
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 47,
+        "amount": 4
+      },
+      {
+        "oredict": "plateDoubleHSLA",
+        "amount": 6
+      },
+      {
+        "oredict": "screwStainlessSteel",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14068,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 400,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ME System Provider
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "appliedenergistics2",
+        "name": "tile.BlockCraftingUnit",
+        "damage": 1,
+        "amount": 4
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item2",
+        "damage": 182,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32653,
+        "amount": 4
+      },
+      {
+        "oredict": "circuitData",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtBT6",
+        "amount": 6
+      },
+      {
+        "oredict": "gearGtSmallTitanium",
+        "amount": 8
+      },
+      {
+        "oredict": "boltDarkSteel",
+        "amount": 16
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14069,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 800,
+    "voltage": 1024,
+    "special": 0,
+    "optimize": false
+  }
+]

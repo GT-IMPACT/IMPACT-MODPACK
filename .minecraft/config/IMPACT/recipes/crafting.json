@@ -974,7 +974,7 @@
       },
       {
         "mod": "impact",
-        "name": "gt.impact_item2",
+        "name": "impact_item2",
         "damage": 51,
         "amount": 1
       },

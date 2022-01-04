@@ -239,11 +239,6 @@ ArcFurnace.addRecipe([wroughtIronIngot * 13], <Forestry:factory2:1>, <liquid:oxy
 recipes.remove(<IC2:blockMetal:3>);
 Compressor.addRecipe(<IC2:blockMetal:3>, <IC2:itemUran238> * 9);
 
-//IC Iridium Fix
-furnace.remove(<gregtech:gt.metaitem.01:11084>, <IC2:itemOreIridium>);
-recipes.removeShapeless(<IC2:itemOreIridium> * 9, [<gregtech:gt.metaitem.01:11084>]);
-recipes.removeShapeless(<gregtech:gt.metaitem.01:2084> * 9, [<gregtech:gt.metaitem.01:11084>]);
-
 game.setLocalization("ic2.itemCellBiomass", "Industrial Biomass Cell");
 game.setLocalization("ic2.fluidBiomass", "Industrial Biomass");
 

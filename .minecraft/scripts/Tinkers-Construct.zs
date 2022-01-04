@@ -1897,15 +1897,6 @@ recipes.addShapeless(<TConstruct:GlassPaneClearStained:14>,
 recipes.addShapeless(<TConstruct:GlassPaneClearStained:15>,
 [GlassPane, BlackDye]);
 
-// --- Drying Rack
-recipes.addShaped(<TConstruct:Armor.DryingRack>, [
-[<ore:slabWood>, <ore:slabWood>, <ore:slabWood>],
-[<ore:screwWood>, <ore:craftingToolScrewdriver>, <ore:screwWood>]]);
-// -
-recipes.addShapeless(<TConstruct:Armor.DryingRack>, [<TConstruct:Armor.DryingRack:5>]);
-// -
-recipes.addShapeless(<TConstruct:Armor.DryingRack:5>, [<TConstruct:Armor.DryingRack>]);
-
 // --- Landmine Any
 recipes.addShaped(<TConstruct:Redstone.Landmine>, [
 [<minecraft:repeater>, <minecraft:light_weighted_pressure_plate>, <minecraft:repeater>],

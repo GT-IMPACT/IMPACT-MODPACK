@@ -241,5 +241,62 @@
     "voltage": 1024,
     "special": 0,
     "optimize": false
+  },
+  // --- Advanced Electric Miner
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtHSLA",
+        "amount": 4
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32603,
+        "amount": 6
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32633,
+        "amount": 6
+      },
+      {
+        "oredict": "circuitData",
+        "amount": 8
+      },
+      {
+        "oredict": "gearGtHSLA",
+        "amount": 8
+      },
+      {
+        "oredict": "stickLongTitanium",
+        "amount": 8
+      },
+      {
+        "oredict": "plateDoubleHSLA",
+        "amount": 12
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14073,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 800,
+    "voltage": 1024,
+    "special": 0,
+    "optimize": false
   }
 ]

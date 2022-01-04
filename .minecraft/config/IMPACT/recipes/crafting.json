@@ -151,5 +151,810 @@
       "damage": 14074,
       "amount": 1
     }
+  },
+  // --- Volumetric Configurator
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "craftingChest",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 11,
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolWrench",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "gearGtSmallSteel",
+        "amount": 1
+      },
+      {
+        null
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14604,
+      "amount": 1
+    }
+  },
+  // --- Coal Miner
+  {
+    "inputItem": [
+      {
+        "oredict": "screwIron",
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemRecipePart",
+        "damage": 6,
+        "amount": 1
+      },
+      {
+        "oredict": "screwIron",
+        "amount": 1
+      },
+      {
+        "oredict": "gearGtSmallIron",
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "blockMachine",
+        "damage": 1,
+        "amount": 1
+      },
+      {
+        "oredict": "gearGtSmallIron",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "stickLongIron",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolScrewdriver",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14071,
+      "nbt": {},
+      "amount": 1
+    }
+  },
+  // --- Minig Hatch
+  {
+    "inputItem": [
+      {
+        "oredict": "screwIron",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingChest",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolScrewdriver",
+        "amount": 1
+      },
+      {
+        "oredict": "gearIron",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 4128,
+        "amount": 1
+      },
+      {
+        "oredict": "gearIron",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "ringIron",
+        "amount": 1
+      },
+      {
+        "oredict": "screwIron",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14747,
+      "amount": 1
+    }
+  },
+  // --- Iron Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateDoubleIron",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateDoubleIron",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtIron",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleIron",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleIron",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleIron",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 0,
+      "nbt": {
+        "drillDamage": 10000
+      },
+      "amount": 1
+    }
+  },
+  // --- Steel Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 1,
+      "nbt": {
+        "drillDamage": 40000
+      },
+      "amount": 1
+    }
+  },
+  // --- Stainless Steel Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 2,
+      "nbt": {
+        "drillDamage": 120000
+      },
+      "amount": 1
+    }
+  },
+  // --- Titanium Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateQuadrupleTitanium",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateQuadrupleTitanium",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtTitanium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTitanium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTitanium",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTitanium",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 3,
+      "nbt": {
+        "drillDamage": 320000
+      },
+      "amount": 1
+    }
+  },
+  // --- Tungsten Steel Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateQuadrupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateQuadrupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleTungstenSteel",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 4,
+      "nbt": {
+        "drillDamage": 800000
+      },
+      "amount": 1
+    }
+  },
+  // --- Inconel-690 Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateQuintupleInconel-690",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateQuintupleInconel-690",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtInconel-690",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuintupleInconel-690",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuintupleInconel-690",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuintupleInconel-690",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 5,
+      "nbt": {
+        "drillDamage": 1920000
+      },
+      "amount": 1
+    }
+  },
+  // --- Iridium Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateDenseIridium",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateDenseIridium",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtIridium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseIridium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseIridium",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseIridium",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 6,
+      "nbt": {
+        "drillDamage": 4480000
+      },
+      "amount": 1
+    }
+  },
+  // --- Neutronium Drill Head
+  {
+    "inputItem": [
+      {
+        null
+      },
+      {
+        "oredict": "plateDenseNeutronium",
+        "amount": 1
+      },
+      {
+        null
+      },
+      {
+        "oredict": "plateDenseNeutronium",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtNeutronium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseNeutronium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseNeutronium",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolHardHammer",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDenseNeutronium",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "impact_drillHeads",
+      "damage": 7,
+      "nbt": {
+        "drillDamage": 10240000
+      },
+      "amount": 1
+    }
+  },
+  // --- Ore and Oil Prospector LV
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "circuitBasic",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 11,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitBasic",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32690,
+        "nbt": {},
+        "amount": 1
+      },
+      {
+        "oredict": "cableGt02Tin",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32690,
+        "nbt": {},
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14751,
+      "amount": 1
+    }
+  },
+  // --- Ore and Oil Prospector MV
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleBlackSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleBlackSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateDoubleBlackSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "circuitGood",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 12,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitGood",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32691,
+        "nbt": {},
+        "amount": 1
+      },
+      {
+        "oredict": "cableGt02Copper",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32691,
+        "nbt": {},
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14752,
+      "amount": 1
+    }
+  },
+  // --- Ore and Oil Prospector HV
+  {
+    "inputItem": [
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateTripleStainlessSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "circuitAdvanced",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 13,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitAdvanced",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32692,
+        "nbt": {},
+        "amount": 1
+      },
+      {
+        "oredict": "cableGt04Gold",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32692,
+        "nbt": {},
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14753,
+      "amount": 1
+    }
+  },
+  // --- Ore and Oil Prospector EV
+  {
+    "inputItem": [
+      {
+        "oredict": "plateQuadrupleVanadiumSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleVanadiumSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuadrupleVanadiumSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "circuitData",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitData",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32693,
+        "nbt": {},
+        "amount": 1
+      },
+      {
+        "oredict": "cableGt04Aluminium",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32693,
+        "nbt": {},
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14754,
+      "amount": 1
+    }
+  },
+  // --- Ore and Oil Prospector IV
+  {
+    "inputItem": [
+      {
+        "oredict": "plateQuintupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuintupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateQuintupleTungstenSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "circuitElite",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 15,
+        "amount": 1
+      },
+      {
+        "oredict": "circuitElite",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32694,
+        "nbt": {},
+        "amount": 1
+      },
+      {
+        "oredict": "cableGt08Platinum",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32694,
+        "nbt": {},
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14755,
+      "amount": 1
+    }
   }
 ]

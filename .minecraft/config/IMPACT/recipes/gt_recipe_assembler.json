@@ -1,0 +1,692 @@
+[
+ 	// --- Assembler
+	// --- Matrix Particles Reflector
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 4
+      },
+	  {
+        "oredict": "foilAluminium",
+        "amount": 4
+      },
+      {
+        "oredict": "frameGtHSLA",
+        "amount": 1
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "impact_matrix_system",
+        "damage": 0,
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 600,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Lab-Safe Low Gravity Casing
+  {
+    "inputItem": [
+      {
+        "oredict": "frameGtZirconium",
+        "amount": 1
+      },
+      {
+        "oredict": "plateBlueSteel",
+        "amount": 6
+      },
+      {
+        "oredict": "boltRedSteel",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase2",
+        "damage": 15,
+        "nbt": {},
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 200,
+    "voltage": 256,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Empty Portable Cell with Matrix Particles
+  {
+    "inputItem": [
+      {
+        "oredict": "plateDoubleTitanium",
+        "amount": 4
+      },
+      {
+        "oredict": "ringNeodymiumMagnetic",
+        "amount": 4
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 256,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ME Construction Casing
+  {
+    "inputItem": [
+      {
+        "oredict": "frameGtVanadiumSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateBT6",
+        "amount": 6
+      },
+      {
+        "oredict": "boltTitanium",
+        "amount": 8
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 0,
+        "amount": 2
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 200,
+    "voltage": 480,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Matrix Particles Chamber
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14594,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polybenzimidazole",
+        "amount": 72
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "impact_item3",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14594,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polytetrafluoroethylene",
+        "amount": 576
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ME Connector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "appliedenergistics2",
+        "name": "item.ItemMultiPart",
+        "damage": 76,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14593,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polybenzimidazole",
+        "amount": 72
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14,
+        "amount": 1
+      },
+      {
+        "mod": "appliedenergistics2",
+        "name": "item.ItemMultiPart",
+        "damage": 76,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14593,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [
+      {
+        "fluid": "molten.polytetrafluoroethylene",
+        "amount": 576
+      }
+    ],
+    "outputFluid": [],
+    "time": 480,
+    "voltage": 1920,
+    "special": 0,
+    "optimize": false
+  },
+  // --- The Mill Wood Planks
+  {
+    "inputItem": [
+      {
+        "oredict": "plankWood",
+        "amount": 4
+      },
+      {
+        "oredict": "boltIron",
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 2,
+        "nbt": {
+          "GT.IntegratedAmount": 2
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "impact",
+        "name": "gt.blockCase3",
+        "damage": 2,
+        "amount": 4
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 300,
+    "voltage": 6,
+    "special": 0,
+    "optimize": false
+  },
+  // --- IV Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 15,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringTungstenSteel",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallTungstenSteel",
+        "amount": 4
+      },
+      {
+        "oredict": "plateSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14610,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 7680,
+    "special": 0,
+    "optimize": false
+  },
+  // --- LuV Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 16,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringHastelloyN",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallHastelloyN",
+        "amount": 4
+      },
+      {
+        "oredict": "plateDoubleSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14611,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 30720,
+    "special": 0,
+    "optimize": false
+  },
+  // --- ZPM Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 17,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringIridium",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallIridium",
+        "amount": 4
+      },
+      {
+        "oredict": "plateTripleSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14612,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 122880,
+    "special": 0,
+    "optimize": false
+  },
+  // --- UV Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 18,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringOsmium",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallOsmium",
+        "amount": 4
+      },
+      {
+        "oredict": "plateQuadrupleSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14613,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 500000,
+    "special": 0,
+    "optimize": false
+  },
+  // --- UHV Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 19,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringNeutronium",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallNeutronium",
+        "amount": 4
+      },
+      {
+        "oredict": "plateQuintupleSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14614,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 2000000,
+    "special": 0,
+    "optimize": false
+  },
+  // --- UEV Laser Reflector
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 11230,
+        "amount": 1
+      },
+      {
+        "oredict": "lensDiamond",
+        "amount": 4
+      },
+      {
+        "oredict": "ringPhoenixite",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSmallPhoenixite",
+        "amount": 4
+      },
+      {
+        "oredict": "plateDenseSilver",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14615,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 500,
+    "voltage": 8000000,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Basic Electric Miner
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 11,
+        "amount": 1
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32600,
+        "amount": 4
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.metaitem.01",
+        "damage": 32630,
+        "amount": 4
+      },
+      {
+        "oredict": "circuitBasic",
+        "amount": 4
+      },
+      {
+        "oredict": "gearGtSteel",
+        "amount": 8
+      },
+      {
+        "mod": "gregtech",
+        "name": "gt.integrated_circuit",
+        "damage": 1,
+        "nbt": {
+          "GT.IntegratedAmount": 1
+        },
+        "amount": 0
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14072,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 400,
+    "voltage": 16,
+    "special": 0,
+    "optimize": false
+  }
+]

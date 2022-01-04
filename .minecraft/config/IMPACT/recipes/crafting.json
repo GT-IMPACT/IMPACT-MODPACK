@@ -1,6 +1,6 @@
 [
-	// --- Worktable
-	// --- Matrix Particles Reflector
+  // --- Worktable
+  // --- Matrix Particles Reflector
   {
     "inputItem": [
       {
@@ -95,7 +95,7 @@
       "amount": 4
     }
   },
-	// --- The Mill
+  // --- The Mill
   {
     "inputItem": [
       {
@@ -155,16 +155,12 @@
   // --- Volumetric Configurator
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "craftingChest",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "craftingToolHardHammer",
         "amount": 1
@@ -179,16 +175,12 @@
         "oredict": "craftingToolWrench",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "gearGtSmallSteel",
         "amount": 1
       },
-      {
-        null
-      }
+       null,
     ],
     "outputItem": {
       "mod": "gregtech",
@@ -301,16 +293,12 @@
   // --- Iron Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDoubleIron",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDoubleIron",
         "amount": 1
@@ -349,16 +337,12 @@
   // --- Steel Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDoubleSteel",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDoubleSteel",
         "amount": 1
@@ -397,16 +381,12 @@
   // --- Stainless Steel Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateTripleStainlessSteel",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateTripleStainlessSteel",
         "amount": 1
@@ -445,16 +425,12 @@
   // --- Titanium Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuadrupleTitanium",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuadrupleTitanium",
         "amount": 1
@@ -493,16 +469,12 @@
   // --- Tungsten Steel Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuadrupleTungstenSteel",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuadrupleTungstenSteel",
         "amount": 1
@@ -541,16 +513,12 @@
   // --- Inconel-690 Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuintupleInconel-690",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateQuintupleInconel-690",
         "amount": 1
@@ -589,16 +557,12 @@
   // --- Iridium Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDenseIridium",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDenseIridium",
         "amount": 1
@@ -637,16 +601,12 @@
   // --- Neutronium Drill Head
   {
     "inputItem": [
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDenseNeutronium",
         "amount": 1
       },
-      {
-        null
-      },
+       null,
       {
         "oredict": "plateDenseNeutronium",
         "amount": 1
@@ -954,6 +914,34 @@
       "mod": "gregtech",
       "name": "gt.blockmachines",
       "damage": 14755,
+      "amount": 1
+    }
+  },
+    {
+    "inputItem": [
+      null,
+      null,
+      {
+        "oredict": "stickLongWood",
+        "amount": 1
+      },
+      null,
+      {
+        "oredict": "boltIron",
+        "amount": 1
+      },
+      null,
+      {
+        "oredict": "itemFlint",
+        "amount": 1
+      },
+      null,
+      null
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.metaitem.04",
+      "damage": 32008,
       "amount": 1
     }
   }

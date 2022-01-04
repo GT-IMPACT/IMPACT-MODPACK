@@ -1142,5 +1142,119 @@
       "damage": 14064,
       "amount": 1
     }
+  },
+  // --- Coal Ball
+  {
+    "inputItem": [
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "mod": "minecraft",
+        "name": "flint",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      },
+      {
+        "oredict": "coalDust",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "IC2",
+      "name": "itemPartCoalBall",
+      "damage": 0,
+      "amount": 1
+    }
+  },
+  // --- Coal Chunk
+  {
+    "inputItem": [
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "minecraft",
+        "name": "obsidian",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "itemPartCoalBlock",
+        "damage": 0,
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "IC2",
+      "name": "itemPartCoalChunk",
+      "damage": 0,
+      "amount": 1
+    }
   }
 ]

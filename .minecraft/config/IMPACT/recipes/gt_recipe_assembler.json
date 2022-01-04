@@ -299,42 +299,6 @@
     "special": 0,
     "optimize": false
   },
-  // --- The Mill Wood Planks
-  {
-    "inputItem": [
-      {
-        "oredict": "plankWood",
-        "amount": 4
-      },
-      {
-        "oredict": "boltIron",
-        "amount": 1
-      },
-      {
-        "mod": "gregtech",
-        "name": "gt.integrated_circuit",
-        "damage": 2,
-        "nbt": {
-          "GT.IntegratedAmount": 2
-        },
-        "amount": 0
-      }
-    ],
-    "outputItem": [
-      {
-        "mod": "impact",
-        "name": "gt.blockCase3",
-        "damage": 2,
-        "amount": 4
-      }
-    ],
-    "inputFluid": [],
-    "outputFluid": [],
-    "time": 300,
-    "voltage": 6,
-    "special": 0,
-    "optimize": false
-  },
   // --- IV Laser Reflector
   {
     "inputItem": [

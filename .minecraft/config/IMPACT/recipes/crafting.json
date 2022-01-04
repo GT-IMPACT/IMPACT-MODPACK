@@ -944,5 +944,203 @@
       "damage": 32008,
       "amount": 1
     }
+  },
+  // --- Mask L
+  {
+    "inputItem": [
+      null,
+      {
+        "oredict": "dyeLightBlue",
+        "amount": 1
+      },
+      null,
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      },
+      {
+        "mod": "IC2",
+        "name": "blockAlloyGlass",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      },
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      },
+      {
+        "mod": "impact",
+        "name": "gt.impact_item2",
+        "damage": 51,
+        "amount": 1
+      },
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "mask_of_vision",
+      "damage": 0,
+      "amount": 1
+    }
+  },
+  // --- Aerostat
+  {
+    "inputItem": [
+      {
+        "mod": "GalacticraftCore",
+        "name": "item.canvas",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "GalacticraftCore",
+        "name": "item.canvas",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "GalacticraftCore",
+        "name": "item.canvas",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "mod": "GalacticraftCore",
+        "name": "item.canvas",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolWireCutter",
+        "amount": 1
+      },
+      {
+        "mod": "GalacticraftCore",
+        "name": "item.canvas",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "oredict": "wireFineSteel",
+        "amount": 1
+      },
+      {
+        "mod": "minecraft",
+        "name": "boat",
+        "damage": 0,
+        "amount": 1
+      },
+      {
+        "oredict": "wireFineSteel",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.metaitem.04",
+      "damage": 32006,
+      "amount": 1
+    }
+  },
+  // --- Aerostate Platform Casing
+  {
+    "inputItem": [
+      {
+        "oredict": "slabWood",
+        "amount": 1
+      },
+      {
+        "oredict": "slabWood",
+        "amount": 1
+      },
+      {
+        "oredict": "slabWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "craftingToolSaw",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "impact",
+      "name": "gt.blockCase3",
+      "damage": 1,
+      "amount": 4
+    }
+  },
+  // --- Aerostate
+  {
+    "inputItem": [
+      {
+        "oredict": "craftingToolSaw",
+        "amount": 1
+      },
+      {
+        "oredict": "slabWood",
+        "amount": 1
+      },
+      {
+        "oredict": "pipeSmallSteel",
+        "amount": 1
+      },
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      },
+      {
+        "oredict": "frameGtWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plateRubber",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+        "oredict": "plankWood",
+        "amount": 1
+      },
+      {
+       "oredict": "plankWood",
+        "amount": 1
+      }
+    ],
+    "outputItem": {
+      "mod": "gregtech",
+      "name": "gt.blockmachines",
+      "damage": 14064,
+      "amount": 1
+    }
   }
 ]

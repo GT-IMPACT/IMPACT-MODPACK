@@ -1,5 +1,5 @@
 {
-  "build:8": "3.0.343-impact",
+  "build:8": "3.0.351-GTNH",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -25,11 +25,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Первые шаги",
+          "name:8": "Дерево - одно из главных ресурсов",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Я не стал отступаться от общепринятых традиций. \nПервое дерево пало от моих рук. И вот он - универсальный материал для крафта и строительства."
+          "desc:8": "Человек использовал древесину на протяжении тысячелетий для многих целей, в первую очередь в качестве топлива, а также в качестве строительного материала, для изготовления орудий труда и тд.\n\nВ настоящей жизни человек не сможет срубить дерево руками.. Но! Мы в игре, поэтому попробуйте сделать это.\n\n§lВажно!§r\nВы можете найти большое разнообразие типов деревьев, по цвету или по размеру. Каждое дерево уникально по своему, обратите на это внимание."
         }
       },
       "tasks:9": {
@@ -112,11 +112,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Этот блок на меня наехал!",
+          "name:8": "Посыпь дорогу гравием",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Хоть он и сыпучий, но несёт в себе огромный смысл для дальнейшего развития. \nСначала я думал что он сойдет в качестве полотна для моей тропинки до базы, но потом выснил что кремний имеет очень интересные свойства."
+          "desc:8": "Гравий имеет свойства сыпучего блока, то есть он может падать под воздействием гравитации. Гравитация в майнкрафте? ДА!\nГравий можно использовать в качестве строительного материала, но вам он потребуется для добычи кремния. \n\n§lСовет§r:\nДобывайте как можно больше гравия!"
         }
       },
       "tasks:9": {
@@ -163,11 +163,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Палки в колеса (или нет)",
+          "name:8": "Палки с неба",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "У меня начинают возникать мысли, что мои руки растут не из того места:\nИначе как объяснить тот факт, что я не могу сделать из бревен доски, а из досок палки?!\nОкей, поступлю иначе и наломаю веток"
+          "desc:8": "Одно из деревянных изделий - палка, вы можете сделать ее как из дерева, так и из опавших ростков.\n\nЧаще всего палки применяются как компонент инструментов."
         }
       },
       "tasks:9": {
@@ -235,7 +235,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Как не странно, он способен добывать полезные ископаемые, приносить в жертву животных и срубать целые деревья! \nОднозначно он заменит мне каменные инструменты"
+          "desc:8": "Один из первых минералов, который активно используется для создания инструментов и не только..\n\n§lСовет:§r\nВ начале игры это очень важный ресурс, экономьте его!"
         }
       },
       "tasks:9": {
@@ -282,11 +282,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Думаю, это точно пригодится",
+          "name:8": "Первый верстак",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Постоянно что то крафтить в руках начинает надоедать. Пора сделать верстак и обосновать первую базу."
+          "desc:8": "Как вы заметили у вас есть сетка для крафта различных предметов, но она маленькая (2x2).\n\nДля более больших крафтов используется верстак. Его сетка крафта намного больше (3x3)."
         }
       },
       "tasks:9": {
@@ -313,8 +313,8 @@
     "6:10": {
       "questID:3": 6,
       "preRequisites:11": [
-        4,
         3,
+        4,
         5
       ],
       "properties:10": {
@@ -340,7 +340,7 @@
                 "SecondaryMaterial:8": "Wood"
               }
             },
-            "Damage:2": 6,
+            "Damage:2": 34,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -348,11 +348,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Порубим?",
+          "name:8": "Инструменты!",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Первый шаг в индустриализации - модернизация!"
+          "desc:8": "Как вы уже поняли вам нужно очень много кремния, чтобы скрафтить множество инстурментов.\n\nКаждый инструмент используется для своего ремесла.\n\n1. §lКирка§r - добыча твердых пород.\n2. §lТопор§r - добыча дерева. Имеет свойство рубить полностью одиночный ствол дерева.\n3. §lЛопата§r - добыча мягких пород.\n4. §lПила§r - используется для крафта. Например получение первых досок.\n5. §lНож§r - используется для крафта. Имеет свойство снять с овцы одну шерсть.\n6. §lМотыга§r - используется для аграрного ремесла.\n7. §lМеч§r - используется для убийства животных.\n\n8. §lБольшой топор§r - добыча дерева. Имеет свойство срубить сразу все дерево.\n9. §lКузнечный Молот§r - добыча любых пород. Имеет свойство добычи первых минералов.\n\n10. §lКиянка§r - используется для крафта, а также позволяет включать и выключать механизмы.\n\n§lВажно!§r\nОбратите внимание на описание каждого инструмента, так вы узнаете больше информации о них."
         }
       },
       "tasks:9": {
@@ -365,6 +365,19 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
               "tag:10": {
@@ -381,6 +394,144 @@
                 }
               },
               "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 10,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 20
+                  }
+                },
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 34,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 8,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 20
+                  }
+                },
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:gt.impact.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 28800,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "impact:gt.impact.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 28800,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Wood",
+                  "MaxDamage:4": 12800,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 14,
               "OreDict:8": ""
             }
           },
@@ -412,11 +563,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Титульный лист",
+          "name:8": "Самые первые шаги",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Мой первый день, дорогой дневник"
+          "desc:8": "Вы появились в мире и не знаете что делать? Тогда данная ветка квестов поможет вам. Удачи!"
         }
       },
       "tasks:9": {
@@ -450,11 +601,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Руки-ножницы",
+          "name:8": "Доски и дощечки",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Я не мог поверить своим рукам! Они не могли даже распилить древесину на доски...\nПришлось делать ножовку"
+          "desc:8": "У вас есть пила, поэтому настало время получить первые доски, упростить или увеличить крафт палок, и других материалов из дерева!"
         }
       },
       "tasks:9": {
@@ -505,7 +656,7 @@
     "9:10": {
       "questID:3": 9,
       "preRequisites:11": [
-        4
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -515,21 +666,8 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metatool.01",
+            "id:8": "minecraft:compass",
             "Count:3": 1,
-            "tag:10": {
-              "ench:9": {
-                "0:10": {
-                  "lvl:2": 1,
-                  "id:2": 20
-                }
-              },
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "Flint",
-                "MaxDamage:4": 6400,
-                "SecondaryMaterial:8": "Wood"
-              }
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -538,17 +676,47 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Что если..?",
+          "name:8": "Время приключений",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Во имя индустриализации, я должен принести в жертву пару невинных существ. Пока... \nНадеюсь в будущем я смогу добывать кожу и шерсть более гуманными способами."
+          "desc:8": "§lЧасть 1§r. У вас есть меч, значит пришло время пойти на охоту.\nТак как в мире отсутсвуют враждебные мобы, вам предстоит охотится на мирную живность.\nНачните с коров, вам понадобится их кожа.\n\n§lЧасть 2§r. У вас есть ножик, с ним вы можете срезать шерсть с овец. \nПросто подойдите к овце, держа в руке нож нажмите §lПКМ§r, вы получите 1 шерсть.\nС помощью ножа вы можете получить первые нитки, просто скрафтите их используя нож и шерсть."
         }
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "ench:9": {
+                  "0:10": {
+                    "lvl:2": 1,
+                    "id:2": 20
+                  }
+                },
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "ignoreNBT:1": 1,
+          "index:3": 1,
           "targetNBT:10": {
             "ForgeData:10": {},
             "Attributes:9": {
@@ -592,16 +760,16 @@
               "2:6": 0.0
             },
             "Leashed:1": 0,
-            "UUIDLeast:4": 1793621531659787023,
+            "UUIDLeast:4": -9117171435113632619,
             "Health:2": 10,
             "Air:2": 300,
             "OnGround:1": 0,
             "Dimension:3": 0,
             "Rotation:9": {
-              "0:5": 3.404064,
+              "0:5": 4.8532906,
               "1:5": 0.0
             },
-            "UUIDMost:4": 354198411517000,
+            "UUIDMost:4": 1030313712070900,
             "Equipment:9": {
               "0:10": {},
               "1:10": {},
@@ -625,89 +793,6 @@
           "required:3": 1,
           "taskID:8": "bq_standard:hunt",
           "target:8": "Cow",
-          "subtypes:1": 1
-        },
-        "1:10": {
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "targetNBT:10": {
-            "ForgeData:10": {},
-            "Attributes:9": {
-              "0:10": {
-                "Base:6": 8.0,
-                "Name:8": "generic.maxHealth"
-              },
-              "1:10": {
-                "Base:6": 0.0,
-                "Name:8": "generic.knockbackResistance"
-              },
-              "2:10": {
-                "Base:6": 0.23000000417232513,
-                "Name:8": "generic.movementSpeed"
-              },
-              "3:10": {
-                "Base:6": 16.0,
-                "Name:8": "generic.followRange"
-              }
-            },
-            "Invulnerable:1": 0,
-            "PortalCooldown:3": 0,
-            "AbsorptionAmount:5": 0.0,
-            "FallDistance:5": 0.0,
-            "InLove:3": 0,
-            "DeathTime:2": 0,
-            "DropChances:9": {
-              "0:5": 0.085,
-              "1:5": 0.085,
-              "2:5": 0.085,
-              "3:5": 0.085,
-              "4:5": 0.085
-            },
-            "PersistenceRequired:1": 0,
-            "id:8": "Sheep",
-            "HealF:5": 8.0,
-            "Age:3": 0,
-            "Motion:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "Leashed:1": 0,
-            "UUIDLeast:4": 4471989179544748050,
-            "Health:2": 8,
-            "Color:1": 0,
-            "Air:2": 300,
-            "OnGround:1": 0,
-            "Dimension:3": 0,
-            "Rotation:9": {
-              "0:5": 2.5076451,
-              "1:5": 0.0
-            },
-            "UUIDMost:4": 354210468847900,
-            "Equipment:9": {
-              "0:10": {},
-              "1:10": {},
-              "2:10": {},
-              "3:10": {},
-              "4:10": {}
-            },
-            "CustomName:8": "",
-            "Pos:9": {
-              "0:6": 0.0,
-              "1:6": 0.0,
-              "2:6": 0.0
-            },
-            "Fire:2": 0,
-            "CanPickUpLoot:1": 0,
-            "Sheared:1": 0,
-            "HurtTime:2": 0,
-            "AttackTime:2": 0,
-            "CustomNameVisible:1": 0
-          },
-          "damageType:8": "",
-          "required:3": 1,
-          "taskID:8": "bq_standard:hunt",
-          "target:8": "Sheep",
           "subtypes:1": 1
         },
         "2:10": {
@@ -734,6 +819,18 @@
                   "SecondaryMaterial:8": "Wood"
                 }
               },
+              "Damage:2": 34,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:wool",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": "blockWool"
+            },
+            "2:10": {
+              "id:8": "minecraft:string",
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -770,7 +867,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Я пролил кровь невинных овец, но эта шерсть мне годится лишь для кровати... Буду считать это неотъмлемой частью индустриализации"
+          "desc:8": "Вы собрали шерсть, пришло время сделать себе ночлежку. Кровать подойдет для этого!"
         }
       },
       "tasks:9": {
@@ -848,7 +945,7 @@
     "12:10": {
       "questID:3": 12,
       "preRequisites:11": [
-        7
+        3
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -872,7 +969,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Это дерево выделялось на фоне остальных. Сама древесина непригодна для обработки в доски, но ее кора достаточно липкая, а из дыр течет еще более мерзкая жижа. Эта жижа в будущем сыграет большую роль в моем пути индустриализации.\nСаженцы гевеи достаточно скромно падают, поэтому я не стал тратить их на палки, а решил высадить возле своей базы, чтобы в будущем лишний рез не бегать в лес."
+          "desc:8": "Это дерево выделялось на фоне остальных. Сама древесина непригодна для обработки в доски, но ее кора достаточно липкая, которая испускает каучук. Этот каучук в будущем сыграет большую роль в вашем пути индустриализации.\n\n§lСовет:§r\nСтарайтесь не использовать эти саженцы для крафта палок. Посадите парочку ростков около базы. В будущем вам понадобиться много каучука."
         }
       },
       "tasks:9": {
@@ -905,8 +1002,7 @@
     "13:10": {
       "questID:3": 13,
       "preRequisites:11": [
-        12,
-        4
+        12
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -926,11 +1022,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Латекс",
+          "name:8": "Каучук",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 1,
-          "desc:8": "Чтобы нормально достать ту мерзкую жижу, мне пришлось сделать кранник из дерева.\nЭто был латекс! Такой тягучий и такой трескучий."
+          "desc:8": "Чтобы добывать каучук вам потребуется специальный инструмент - §lкрaник§r.\n\nДля того чтобы добыть каучук правым кликом используйте краник на стороне дерева, где есть потёк."
         }
       },
       "tasks:9": {
@@ -980,7 +1076,6 @@
     "14:10": {
       "questID:3": 14,
       "preRequisites:11": [
-        3,
         13
       ],
       "properties:10": {
@@ -1005,7 +1100,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "О-да, я сделал факел, избегая посещение темных и глубоких шахт!"
+          "desc:8": "В темное время суток света почти нет, но вы можете создать его искусственно.\n\nДля этого просто сделайте свой первый факел."
         }
       },
       "tasks:9": {
@@ -1032,19 +1127,18 @@
     "15:10": {
       "questID:3": 15,
       "preRequisites:11": [
-        10
+        24
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
+          "visibility:8": "HIDDEN",
           "isMain:1": 0,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "OpenBlocks:sleepingBag",
+            "id:8": "gregtech:debug_item",
             "Count:3": 1,
-            "tag:10": {},
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -1053,33 +1147,14 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Спальник",
+          "name:8": "Связующий квест",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Мне начинает надоедать во время путешествий таскать с собой тяжелую деревянную кровать! Пора бы сделать что то более практичное."
+          "desc:8": "No Description"
         }
       },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "OpenBlocks:sleepingBag",
-              "Count:3": 1,
-              "tag:10": {},
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
+      "tasks:9": {},
       "rewards:9": {}
     },
     "16:10": {
@@ -1092,7 +1167,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "Backpack:tannedLeather",
@@ -1105,11 +1180,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Обработка кожи",
+          "name:8": "Дубленая кожа",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Я прокачал изготовление брони и теперь могу заниматься выделкой кожи!"
+          "desc:8": "Пришло время обработать кожу на полную!\n\nВам понадобиться сушильная стойка, просто повешайте на нее вашу кожу в переплете.\nОстается только подождать.."
         }
       },
       "tasks:9": {
@@ -1159,7 +1234,7 @@
     "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        4
+        70
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1169,16 +1244,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metatool.01",
+            "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "tag:10": {
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "Flint",
-                "MaxDamage:4": 6400,
-                "SecondaryMaterial:8": "Wood"
-              }
-            },
-            "Damage:2": 2,
+            "Damage:2": 130,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -1186,11 +1254,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Инструменты",
+          "name:8": "Примитивная Доменная Печь",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "С первого взгляда немного странное решение делать сразу молот. Зато, когда я бью молотом об камень, происходят кратковременные вспышки. Жаль что этой вспышки недостаточно для выплавки руды в слитки...\n\n\n§lКак мы все знаем, в грегтеч руды содержаться в жилах. Но Мир GT Impact может показаться совершенно пустым. Это в корне неверно: Теперь полезные ископаемые содержатся непосредственно в каменных породах и имеют прямую зависимость от типа камня. Для добычи полезных для начала сойдет специальный молот, который имеет доп. функцию добычи ресурсов из камня."
+          "desc:8": "§lДоменная Печь§r нужна для выплавки Закаленного Железа, Стали и начальной пилометаллургии.\n\nКрафт Доменной Печи проходит в 4 этапа.\n\n1. Крафт §lЦемента§r\n\n2. Крафт §lОгнеупорной Глины§r.\n\n3. Обжиг §lОгнеупорной Глины§r.\n\n4. Крафт доменной печи и ее компонентов.\n\nДля постройки Доменной Печи вам нужно:\n- §lBricked Blast Furnace§r x1.\n- §lFirebricks§r x32.\n\n§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!"
         }
       },
       "tasks:9": {
@@ -1203,16 +1271,107 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "impact:gt.impact.metatool.01",
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 2299,
+              "OreDict:8": "dustStone"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
               "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 28800,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
+              "Damage:2": 2934,
+              "OreDict:8": "dustGypsum"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 2823,
+              "OreDict:8": "dustCalcite"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_WoodBrickFormTool",
+              "Count:3": 1,
               "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 3,
+              "Damage:2": 2805,
+              "OreDict:8": "dustClay"
+            },
+            "2:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 2,
+              "Damage:2": 37,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 8,
+              "Damage:2": 32110,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 3,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 8,
+              "Damage:2": 32111,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "4:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 4,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 130,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockcasings4",
+              "Count:3": 1,
+              "Damage:2": 15,
               "OreDict:8": ""
             }
           },
@@ -1350,79 +1509,6 @@
       "rewards:9": {}
     },
     "21:10": {
-      "questID:3": 21,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "ALWAYS",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "impact:the_mill",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Первый мультиблок",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "В мире GT Impact данная мельница выполняет функцию рудообработки, как можно было заметить в NEI. Процесс обработки требует ТОЛЬКО каменную пыль, которую дропает молот в специальном режиме. И ничего больше (никакого угля, а тем более жидкого топлива).\n\nP.S Контроллер должен быть лицом снаружи.\n\nP.S.S Если струтура complete, в контроллере имеются ресурсы для обработки, но ничего так и не происходит, стоит воспользоваться киянкой. Это работает и в обратном порядке.\n\n"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 14074,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metatool.01",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Wood",
-                  "MaxDamage:4": 12800,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
-              "Damage:2": 14,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "22:10": {
       "questID:3": 22,
       "preRequisites:11": [
         23
@@ -1435,9 +1521,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 1,
-            "Damage:2": 2879,
+            "id:8": "minecraft:paper",
+            "Count:3": 2,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -1449,7 +1535,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Пришло время сделать первую большую печь! Но как всегда, придется начинать с неочевидного - добычи тростника"
+          "desc:8": "Пришло время заняться производством бумаги. Бумага делается в несколько этапов.\n\nНа первом этапе вам потребуется собрать тросник, затем вы должны его перемолоть в ступке.\n\nНа втором этапе вам понадобиться новый инструмент - §lСкалка§r, с помощью нее вы должны раскатать получившуюся массу. Бумага готова!"
         }
       },
       "tasks:9": {
@@ -1463,9 +1549,22 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "minecraft:reeds",
-              "Count:3": 9,
+              "Count:3": 3,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 6400,
+                  "SecondaryMaterial:8": "Stone"
+                }
+              },
+              "Damage:2": 24,
+              "OreDict:8": "craftingToolMortar"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -1480,8 +1579,55 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 6,
+              "Count:3": 2,
               "Damage:2": 2879,
+              "OreDict:8": "dustPaper"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Wood",
+                  "MaxDamage:4": 1600,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 46,
+              "OreDict:8": "craftingToolRollingPin"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 3,
+              "Damage:2": 2879,
+              "OreDict:8": "dustPaper"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 3,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:paper",
+              "Count:3": 2,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -1490,7 +1636,7 @@
       },
       "rewards:9": {}
     },
-    "23:10": {
+    "22:10": {
       "questID:3": 23,
       "preRequisites:11": [
         24
@@ -1524,7 +1670,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Почему я просто не могу совместить пару слитков в руках, чтобы получить бронзовые слитки?\nВпрочем, не привыкать - пойду делать ступку."
+          "desc:8": "У вас есть слиток и §lСтупка§r, подумайте, что можно с этим сделать? Правильно, расрошить слиток в пыль. Действуйте!"
         }
       },
       "tasks:9": {
@@ -1555,10 +1701,10 @@
       },
       "rewards:9": {}
     },
-    "24:10": {
+    "23:10": {
       "questID:3": 24,
       "preRequisites:11": [
-        80
+        54
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1578,11 +1724,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Печкин",
+          "name:8": "Печка и тепло",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Моя база достаточно прохладная, стоит позаботиться об обогревателях, а заодно пожарю железа."
+          "desc:8": "У вас есть грязные пыли металлов, возможно вам следует их переплавить в слитки.\n\nВ качестве топлива вы можете использовать дерево, уголь и тд."
         }
       },
       "tasks:9": {
@@ -1591,7 +1737,7 @@
           "autoConsume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
-          "index:3": 1,
+          "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
@@ -1602,11 +1748,46 @@
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "ingotIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 11035,
+              "OreDict:8": "ingotCopper"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 11057,
+              "OreDict:8": "ingotTin"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 11089,
+              "OreDict:8": "ingotLead"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
     },
-    "25:10": {
+    "24:10": {
       "questID:3": 25,
       "preRequisites:11": [
         81
@@ -1657,10 +1838,10 @@
       },
       "rewards:9": {}
     },
-    "26:10": {
-      "questID:3": 26,
+    "25:10": {
+      "questID:3": 27,
       "preRequisites:11": [
-        22
+        15
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1670,7 +1851,7 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:paper",
+            "id:8": "IC2:itemToolbox",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -1680,11 +1861,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Сладкая бумага",
+          "name:8": "Новые инструменты",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Вот и первая моя бумага. Странно что она несъедобная, ведь я ее делал из тростника, а не древесины! "
+          "desc:8": "Теперь, когда вам доступны металлы, вы можете сделать новые инструменты.\n\n1. §lСтамеска§r - используется для крафта.\n\n2. §lМолот§r - используется для крафта, а также вы можете запретить автоматизацию электрических машин (вкл/выкл автовыхода).\n\n3. §lОтвертка§r - используется для крафта, а также используется для различной настройки механизмов.\n\n4. §lКлюч§r - используется для крафта, а также используется для того, чтобы снимать или поворачивать механизмы и трубы.\n\n5. §lКусачки§r - используется для крафта, а также позволяют работать с проводами."
         }
       },
       "tasks:9": {
@@ -1701,165 +1882,65 @@
               "Count:3": 1,
               "tag:10": {
                 "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Wood",
-                  "MaxDamage:4": 1600,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
-              "Damage:2": 46,
-              "OreDict:8": "craftingToolRollingPin"
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 6,
-              "Damage:2": 2879,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:paper",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "27:10": {
-      "questID:3": 27,
-      "preRequisites:11": [
-        85
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.metatool.01",
-            "Count:3": 1,
-            "tag:10": {
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "Neutronium",
-                "MaxDamage:4": 65536000,
-                "SecondaryMaterial:8": "Neutronium"
-              }
-            },
-            "Damage:2": 12,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Начинающий кузнец",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Теперь я могу обрабатывать металлы. Отныне моя голова будет забита крафтом винтов, роторов и шестерней."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metatool.01",
-              "Count:3": 1,
-              "tag:10": {
-                "ench:9": {
-                  "0:10": {
-                    "lvl:2": 4,
-                    "id:2": 16
-                  }
-                },
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "RedSteel",
-                  "MaxDamage:4": 89600,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
-              "Damage:2": 12,
-              "OreDict:8": "craftingToolHardHammer"
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.metatool.01",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Adamantium",
-                  "MaxDamage:4": 819200,
-                  "SecondaryMaterial:8": "Wood"
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
                 }
               },
               "Damage:2": 18,
               "OreDict:8": "craftingToolFile"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
+                }
+              },
+              "Damage:2": 12,
+              "OreDict:8": "craftingToolHardHammer"
             },
             "2:10": {
               "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
               "tag:10": {
                 "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "RedSteel",
-                  "MaxDamage:4": 89600,
-                  "SecondaryMaterial:8": "RedSteel"
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
                 }
               },
-              "Damage:2": 16,
-              "OreDict:8": "craftingToolWrench"
+              "Damage:2": 22,
+              "OreDict:8": "craftingToolScrewdriver"
             },
             "3:10": {
               "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
               "tag:10": {
                 "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "RedSteel",
-                  "MaxDamage:4": 89600,
-                  "SecondaryMaterial:8": "Wood"
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
                 }
               },
-              "Damage:2": 22,
-              "OreDict:8": "craftingToolScrewdriver"
+              "Damage:2": 16,
+              "OreDict:8": "craftingToolWrench"
             },
             "4:10": {
               "id:8": "gregtech:gt.metatool.01",
               "Count:3": 1,
               "tag:10": {
-                "ench:9": {
-                  "0:10": {
-                    "lvl:2": 2,
-                    "id:2": 21
-                  }
-                },
                 "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Steeleaf",
-                  "MaxDamage:4": 614400,
-                  "SecondaryMaterial:8": "Wood"
+                  "PrimaryMaterial:8": "Neutronium",
+                  "MaxDamage:4": 65536000,
+                  "SecondaryMaterial:8": "Neutronium"
                 }
               },
-              "Damage:2": 14,
-              "OreDict:8": "craftingToolSoftHammer"
+              "Damage:2": 26,
+              "OreDict:8": "craftingToolWireCutter"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -1867,7 +1948,7 @@
       },
       "rewards:9": {}
     },
-    "28:10": {
+    "26:10": {
       "questID:3": 28,
       "preRequisites:11": [],
       "properties:10": {
@@ -1898,115 +1979,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "29:10": {
-      "questID:3": 29,
-      "preRequisites:11": [
-        62
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "IC2:blockCrop",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Кропсы",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Я постиг новый уровень садоводства! Простые пашни прошлый век."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "IC2:blockCrop",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "30:10": {
-      "questID:3": 30,
-      "preRequisites:11": [
-        29
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:sapling",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Бонсаааи",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Зачем выращивать огромное дерево и срубать его, если его саженец отлично конвертируется в растение на жердочках?"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:sapling",
-              "Count:3": 16,
-              "Damage:2": 1,
-              "OreDict:8": "treeSapling"
-            },
-            "1:10": {
-              "id:8": "minecraft:log",
-              "Count:3": 64,
-              "Damage:2": 32767,
-              "OreDict:8": "logWood"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "31:10": {
+    "27:10": {
       "questID:3": 31,
       "preRequisites:11": [
         32
@@ -2029,11 +2002,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Ящики для хранения",
+          "name:8": "Драверы",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Эти ящики кажутся не такими красивыми, как их альтернатива, но меня больше привлекает универсальность, ведь в будущем я смогу объединить эту систему в одно целое!"
+          "desc:8": "Еще один вид хранилища - Дравер.\n\nДравер позволяет хранить в себе различное количество предметов.\n\nКоличество типов зависит от формы дравера (1, 2, 4 типа).\n\nТакже в будущем вы можете создавать апгрейды для бочек, а значит хранить еще больше предметов."
         }
       },
       "tasks:9": {
@@ -2057,7 +2030,7 @@
       },
       "rewards:9": {}
     },
-    "32:10": {
+    "28:10": {
       "questID:3": 32,
       "preRequisites:11": [
         8
@@ -2084,7 +2057,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Однозначно мои карманы похожи на сумку кенгуру.\nПора организовать свой первый склад."
+          "desc:8": "Пора организовать ваш первый склад.\n\nДля этого существуют хранилище предметов - сундук."
         }
       },
       "tasks:9": {
@@ -2108,7 +2081,7 @@
       },
       "rewards:9": {}
     },
-    "33:10": {
+    "29:10": {
       "questID:3": 33,
       "preRequisites:11": [
         32
@@ -2135,7 +2108,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Этот булыжник уже в конец оккупировал мой сундук с строй-материалом. \nПора ему выделить более подходящее место."
+          "desc:8": "Еще один вид хранилища - Бочка.\n\nБочка позволяет хранить в себе очень много, но один тип предмета.\n\nТакже в будущем вы можете создавать апгрейды для бочек, а значит хранить еще больше предметов."
         }
       },
       "tasks:9": {
@@ -2159,17 +2132,17 @@
       },
       "rewards:9": {}
     },
-    "34:10": {
+    "30:10": {
       "questID:3": 34,
       "preRequisites:11": [
-        35
+        9
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "Backpack:boundLeather",
@@ -2182,11 +2155,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Кожевенное дело",
+          "name:8": "Кожа в переплете",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Кажется простой кожи мало"
+          "desc:8": "Обычная кожа зачастую слишком сыра, давайте сделаем первичную обработку кожи. "
         }
       },
       "tasks:9": {
@@ -2233,47 +2206,10 @@
       },
       "rewards:9": {}
     },
-    "35:10": {
-      "questID:3": 35,
-      "preRequisites:11": [
-        9
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:string",
-            "Count:3": 64,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Пацифист на минималках",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 1,
-          "desc:8": "Как не странно, но я не замечаю на своем пути каких - либо враждебных монстров... Возникает вопрос: откуда тогда я возьму нитки, костную муку, глаза эндерменов и прочий лут?\nЭврика! кажется шерсть является отличым источником ниток, а костная мука встречается в затвердевших останках наших предков под землей.\n\n\n§lP.S \nРекомендованный уровень сложности: Мирная"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
-    "36:10": {
+    "31:10": {
       "questID:3": 36,
       "preRequisites:11": [
+        15,
         34
       ],
       "properties:10": {
@@ -2294,11 +2230,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Пылесос",
+          "name:8": "Дорожная сумка",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Теперь я смогу собрать абсолютно весь мусор на своем пути!"
+          "desc:8": "И так у вас есть ресурсы на сумку, просто сделайте ее.\n\n§lВажно!§r\nВ будущем вы сможете улучшать сумки. Но будьте осторожны, при улучшении сумок, всегда выкладывайте вещи, которые находятся внутри, иначе они удалятся."
         }
       },
       "tasks:9": {
@@ -2322,7 +2258,7 @@
       },
       "rewards:9": {}
     },
-    "37:10": {
+    "32:10": {
       "questID:3": 37,
       "preRequisites:11": [
         66
@@ -2373,7 +2309,7 @@
       },
       "rewards:9": {}
     },
-    "38:10": {
+    "33:10": {
       "questID:3": 38,
       "preRequisites:11": [
         37
@@ -2411,7 +2347,7 @@
       },
       "rewards:9": {}
     },
-    "39:10": {
+    "34:10": {
       "questID:3": 39,
       "preRequisites:11": [],
       "properties:10": {
@@ -2460,7 +2396,7 @@
       },
       "rewards:9": {}
     },
-    "40:10": {
+    "35:10": {
       "questID:3": 40,
       "preRequisites:11": [
         38
@@ -2531,7 +2467,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "36:10": {
       "questID:3": 41,
       "preRequisites:11": [
         93
@@ -2582,17 +2518,18 @@
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "37:10": {
       "questID:3": 42,
       "preRequisites:11": [
-        54
+        23,
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.metaitem.01",
@@ -2603,13 +2540,13 @@
           "snd_update:8": "random.levelup",
           "repeatTime:3": -1,
           "globalShare:1": 0,
-          "questLogic:8": "AND",
+          "questLogic:8": "OR",
           "repeat_relative:1": 1,
           "name:8": "Бронза",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "После обработки руды в мельнице необязательно ее тут же отправлять в печь на переплавку. К примеру ее можно промыть в котле с водой (просто бросить в него неочищенную пыль) и использовать в своих корыстных целях. Та же бронза делается из олова и меди 1:3."
+          "desc:8": "Хм.. Если у вас есть чистая пыль §lОлова§r и §lМеди§r, давайте сделаем §lБронзу§r.\n\nБронза это более лучший материал, а также это проводник в паровой век!"
         }
       },
       "tasks:9": {
@@ -2667,59 +2604,7 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
-      "questID:3": 43,
-      "preRequisites:11": [
-        42,
-        70
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 100,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Билет в бронзовый век",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "А вот и долгожданный момент! Начало эпохи индустриализации. Пар, взрывы, нехватка энергии и многое другое ожидают меня далее, в путь!"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 100,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "44:10": {
+    "38:10": {
       "questID:3": 44,
       "preRequisites:11": [
         37
@@ -2757,7 +2642,7 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "39:10": {
       "questID:3": 45,
       "preRequisites:11": [
         38
@@ -2808,7 +2693,94 @@
       },
       "rewards:9": {}
     },
-    "46:10": {
+    "40:10": {
+      "questID:3": 46,
+      "preRequisites:11": [
+        48
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "impact:impact_item",
+            "Count:3": 1,
+            "Damage:2": 101,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Первые полезные ископаемые",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "У вас есть молот, а это значит настало время для добычи первых полезных ископаемых!\n\nЧтобы добыть первые ресурсы вам нужно включить специальный режим на молоте нажмите §lПКМ§r смотря на любой блок.\nЭтот режим позволяет добывать из каменной породы каменную пыль:\n\n1. §lМеталлосодержащая каменная пыль§r - содержит в себе 4 вида ресурсов: железо, медь, олово, свинец.\n2. §lСероугольная каменная пыль§r - содержит в себе 3 вида ресурсов: сера, уголь, лигнит.\n3. §lМинералосодержащая каменная пыль§r - содержит в себе 2 вида ресурсов: гипс, кальцит.\n\nЧтобы узнать из какой породы можно добыть каменную пыль нажмите §lSHIFT + ПКМ§r."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:gt.impact.metatool.01",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "PrimaryMaterial:8": "Flint",
+                  "MaxDamage:4": 28800,
+                  "SecondaryMaterial:8": "Wood"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 16,
+              "Damage:2": 101,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 16,
+              "Damage:2": 102,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 16,
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
       "questID:3": 47,
       "preRequisites:11": [
         23
@@ -2894,121 +2866,56 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
-      "questID:3": 52,
+    "42:10": {
+      "questID:3": 48,
       "preRequisites:11": [
-        21,
-        54
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "HIDDEN",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "impact:gt.blockCase3",
-            "Count:3": 1,
-            "Damage:2": 2,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Корпус",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Структура мельницы очень массивная. В габаритах с ней могут посоревноваться лишь энд-гейм структуры. Поэтому стоит организовать грандиозные лесозаготовки.\n\nЗачем выполноваться о габаритах первого дома, если можно жить прямо в мельнице? Настоятельно рекомендуется не нарушать целостность конструкции."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "impact:gt.blockCase3",
-              "Count:3": 1,
-              "Damage:2": 2,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "48:10": {
-      "questID:3": 53,
-      "preRequisites:11": [
-        21,
-        54
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "HIDDEN",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 14074,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Ротор",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Пожалуй самое сложное что мне удавалось скрафтить за все время. Хорошо что эти лопасти достаточно высоко и на достают до земли.\n\nP.S На пути ротора ничего, кроме воздуха разумеется, не должно быть\n\nP.S.S Ротор является полноценным блоков, который следует установить на контроллер, ни в коем случае не пихать его в слот контроллера."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "impact:the_mill",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "49:10": {
-      "questID:3": 54,
-      "preRequisites:11": [
-        17
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 32489,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Как добывать полезные ископаемые",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "В мире IMPACT представлена совершенно уникальная система генерации ископаемых ресурсов - не существует руды в виде блоков. Спросите почему? А ответ прост, автоматизация - залог прогресса! Поэтому авторы решили отказаться от руд в мире.\n\nНесмотря на отсутствие возможности обнаружения жил невооруженным глазом, данная генерация предоставляет более комфортную добычу руды.\n\n§lПриемущества отказа от породы ввиде блоков:§r\n\n- Рудогенерацию можно изменять (разработчикам) в любой момент времени. Это позволит не ломать существующие миры и обновлять модпак будет легко.\n\n- Руда GregTech является TileEntity - это плохо. Что такое TileEntity это блок, который имеет какой-либо функционал. Чем меньше таких блоков в мире, тем мир стабильнее.\n\n- Быстрая генерация мира при создании, прогрузке новых чанков.\n\n§lПринцип генерации руды:§r\n\nРуда генерируется регионами 512x512 блоков, в регионе находится 64 различных жил, которые генерируется по 16 чанков (4х4).\n\nВ игре существует 2 слоя:\n- слой #0: §lSmall руды§r, могут содержать только 1 вид руды\n- слой #1: §lNormal руды§r, могут содержать до 4 видов руды\n\nБолее подробно можно почитать на нашем сайте: §n§lhttps://gtimpact.space/wiki§r\nРаздел MECHANICS в моде IMPACT-CORE."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
+      "questID:3": 54,
+      "preRequisites:11": [
+        16,
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
@@ -3025,18 +2932,54 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Первоначальным элементом рудообработки служит мельница, не Молот!\n\nP.S Дополнительная информация о большинстве мультиблочных структур находится в одноименном разделе Квестов.\n\nP.S.S Закрытие квестов в разделе Мультиблоки обязательно!"
+          "desc:8": "Это §lМельница§r - ваш первый мульти-блок.\n\nМельница служит для того, чтобы размолоть некоторые материалы.\n\nВам она понадобиться, чтобы размолоть каменную пыль, добытую ранее и получить материалы для дальнейшей игры.\n\nЧтобы построить мельницу вам понадобиться:\n- §lThe Mill§r x1.\n- §lThe Mill Wood Planks§r x260.\n- §lThe Mill Rotor§r x1.\n\n§l§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!."
         }
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14074,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "impact:gt.blockCase3",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:the_mill",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
     },
-    "50:10": {
+    "44:10": {
       "questID:3": 55,
       "preRequisites:11": [
         64
@@ -3046,7 +2989,7 @@
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:cauldron",
@@ -3059,22 +3002,35 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Недоразумение",
+          "name:8": "Помыть, помиловать!",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Мой водоем возле дома постепенно осушается. Увы, но вода, как лава, не имеет бесокнечного источника :\\\nНадо что то придумать."
+          "desc:8": "У вас на руках есть грязная пыль, это плохая пыль..\n\nДавайте сделаем механизм который отмоет эту грязь.\n\nОтличным вариантом будет - §lКотел§r. С помощью ведра нужно наливать в него воду, после этого кинуть сверху грязную пыль, можно сразу всю."
         }
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:cauldron",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
     },
-    "51:10": {
+    "45:10": {
       "questID:3": 58,
       "preRequisites:11": [],
       "properties:10": {
@@ -3105,7 +3061,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "52:10": {
+    "46:10": {
       "questID:3": 61,
       "preRequisites:11": [
         20,
@@ -3158,123 +3114,7 @@
       },
       "rewards:9": {}
     },
-    "53:10": {
-      "questID:3": 62,
-      "preRequisites:11": [
-        4
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.metatool.01",
-            "Count:3": 1,
-            "tag:10": {
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "Flint",
-                "MaxDamage:4": 6400,
-                "SecondaryMaterial:8": "Wood"
-              }
-            },
-            "Damage:2": 8,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Колхозник",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Моя первая мотыга. И вторая... Да почему она так быстро ломается?!"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metatool.01",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Flint",
-                  "MaxDamage:4": 6400,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
-              "Damage:2": 8,
-              "OreDict:8": "craftingToolHoe"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "54:10": {
-      "questID:3": 63,
-      "preRequisites:11": [
-        27
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "chisel:chisel",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "В душе я дизайнер!",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Неотъемлемая часть строительства и не только."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "chisel:chisel",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "55:10": {
+    "47:10": {
       "questID:3": 64,
       "preRequisites:11": [
         27
@@ -3301,7 +3141,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Пришло время сделать понстаящему прогрессивную вещь."
+          "desc:8": "Вода один из важных ресурсов, чтобы переносить воду из рек и океана нужно ведро, сделайте его."
         }
       },
       "tasks:9": {
@@ -3325,11 +3165,9 @@
       },
       "rewards:9": {}
     },
-    "56:10": {
+    "48:10": {
       "questID:3": 66,
-      "preRequisites:11": [
-        43
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
@@ -3393,17 +3231,19 @@
       },
       "rewards:9": {}
     },
-    "57:10": {
+    "49:10": {
       "questID:3": 67,
       "preRequisites:11": [
-        55
+        8,
+        27,
+        80
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
@@ -3416,22 +3256,86 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Примитивная водокачка",
+          "name:8": "Автоматическая добыча воды",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Наконец мои руки добрались до чего-то совершенного для текущего этапа развития - это будет моя первая автоматизация процесса!\n\nP.S Раздел Мультиблоки\n"
+          "desc:8": "Настал тот этап, когда вам потребуется много воды, а значит нужно придумать способ автоматической добычи.\n\nДля этого существует Водокачка (мульти-блок).\n\nЭта машина предназначена для добычи воды на начальных стадиях и в труднодоступных местах без электропитания.\n\nМашина добывает воду в зависимости от биома, в котором находится контроллер.\n\n§lБиомный коэффициент (§5biome§r§l):§r\nOcean, River: 1000\nTaiga: 175\nJungle: 350\nSwampland: 800\nSnow, Iceland: 300\nBeach: 170\nPlans, Forest: 250\nHills, Mountains, Savana, Desert, Mesa: 100\n\n§lСтруктурный коэффициент (§cstructure§r§l):§r\nКоэффициент изменяется с помощью Output Hatch:\n— Pump Output Hatch: 1\n— ULV Output Hatch: 2\n— LV Output Hatch: 3\n\n§lОбщая формула добычи воды:§r\n§1water§r (L/s) = §5biome§r * (§cstructure§r + 1)\n\n§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!"
         }
       },
       "tasks:9": {
         "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14039,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14014,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:gt.blockCase2",
+              "Count:3": 10,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 3,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 10,
+              "Damage:2": 4905,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {}
     },
-    "58:10": {
+    "50:10": {
       "questID:3": 68,
       "preRequisites:11": [
         66
@@ -3482,11 +3386,11 @@
       },
       "rewards:9": {}
     },
-    "59:10": {
+    "51:10": {
       "questID:3": 69,
       "preRequisites:11": [
-        67,
-        120
+        8,
+        67
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3506,11 +3410,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Деревянная логистика",
+          "name:8": "Деревянный трубопровод",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Моя первая логистическая система. Она хорошо мне послужит, когда я сделаю паровые механизмы.\nНа данный момент где то копить воду у меня не получится, но это и не страшно, так как переполнение не страшно.\n\n§lP.S\nЧтобы вывести с помпы воду, следует подвести трубопровод сверху или снизу выходного люка мультиблочной структуры, направить выход люка в сторону трубы и не забыть подключить все трубы.\n\nP.S.S\nДля уменьшения лагов и нормализации потока жидкости рекомендуется указывать направление в трубах. Делается это при помощи ключа (Shift + ПКМ) по соединению трубы: С этой стороны будет перекрыт вход жидкости."
+          "desc:8": "Трубы нужны для передачи жидкостей. Деревянные трубы могуть проводить только воду. Если вы попробуете провести через трубу, например, пар - труба расплавится.\n\n§lСовет!§r\nДля нормализации потока жидкости рекомендуется указывать направление в трубах. Делается это при помощи ключа §lShift + ПКМ§r по соединению трубы: С этой стороны будет перекрыт вход жидкости.\n"
         }
       },
       "tasks:9": {
@@ -3568,17 +3472,17 @@
       },
       "rewards:9": {}
     },
-    "60:10": {
+    "52:10": {
       "questID:3": 70,
       "preRequisites:11": [
-        26
+        22
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "impact:impact_WoodBrickFormTool",
@@ -3591,11 +3495,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Я у бати плотник",
+          "name:8": "Форма для кирпичей",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Моя первая и самая необходимая форма."
+          "desc:8": "Чтобы создавать кирпичи, нужна какая-то формочка. Сделайте ее."
         }
       },
       "tasks:9": {
@@ -3605,6 +3509,40 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
           "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:paper",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item2",
+              "Count:3": 1,
+              "Damage:2": 197,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
@@ -3619,7 +3557,7 @@
       },
       "rewards:9": {}
     },
-    "61:10": {
+    "53:10": {
       "questID:3": 71,
       "preRequisites:11": [
         68
@@ -3693,72 +3631,7 @@
       },
       "rewards:9": {}
     },
-    "62:10": {
-      "questID:3": 72,
-      "preRequisites:11": [
-        27
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "impact:gt.impact.metatool.01",
-            "Count:3": 1,
-            "tag:10": {
-              "GT.ToolStats:10": {
-                "PrimaryMaterial:8": "Iron",
-                "MaxDamage:4": 115200,
-                "SecondaryMaterial:8": "Wood"
-              }
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Апгрейд инструментов",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Теперь мне доступно железо в полной мере. Стоит позаботиться о своих инструментах, особенного внимания требует молот для раскопок."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "impact:gt.impact.metatool.01",
-              "Count:3": 1,
-              "tag:10": {
-                "GT.ToolStats:10": {
-                  "PrimaryMaterial:8": "Iron",
-                  "MaxDamage:4": 115200,
-                  "SecondaryMaterial:8": "Wood"
-                }
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "63:10": {
+    "54:10": {
       "questID:3": 76,
       "preRequisites:11": [
         18
@@ -3809,7 +3682,7 @@
       },
       "rewards:9": {}
     },
-    "64:10": {
+    "55:10": {
       "questID:3": 77,
       "preRequisites:11": [
         71
@@ -3860,7 +3733,7 @@
       },
       "rewards:9": {}
     },
-    "65:10": {
+    "56:10": {
       "questID:3": 78,
       "preRequisites:11": [
         77
@@ -3911,7 +3784,7 @@
       },
       "rewards:9": {}
     },
-    "66:10": {
+    "57:10": {
       "questID:3": 79,
       "preRequisites:11": [
         77
@@ -3962,10 +3835,10 @@
       },
       "rewards:9": {}
     },
-    "67:10": {
+    "58:10": {
       "questID:3": 80,
       "preRequisites:11": [
-        17
+        6
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3989,7 +3862,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "На данной планете большое разнообразие пород. Однако каждый камень содержит в себе разные сочетания полезных ресурсов. \n\nP.S Любой булыжник, как и камень, можно сделать ванильными, чтобы занимало меньше места."
+          "desc:8": "В игре большое разнообразие пород. Однако каждая порода содержит в себе разные сочетания полезных ресурсов. \n\n§lСовет!§r\nЛюбую породу можно перекрафтить в ванильную."
         }
       },
       "tasks:9": {
@@ -4030,7 +3903,7 @@
       },
       "rewards:9": {}
     },
-    "68:10": {
+    "59:10": {
       "questID:3": 81,
       "preRequisites:11": [
         77
@@ -4081,7 +3954,7 @@
       },
       "rewards:9": {}
     },
-    "69:10": {
+    "60:10": {
       "questID:3": 82,
       "preRequisites:11": [
         78
@@ -4149,58 +4022,7 @@
       },
       "rewards:9": {}
     },
-    "70:10": {
-      "questID:3": 83,
-      "preRequisites:11": [
-        16
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:saddle",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Fast Travel",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Увидев лошадь, я понял что не смогу обойтись без нее, а она без меня."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:saddle",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "71:10": {
+    "61:10": {
       "questID:3": 84,
       "preRequisites:11": [
         18
@@ -4251,64 +4073,11 @@
       },
       "rewards:9": {}
     },
-    "72:10": {
-      "questID:3": 85,
-      "preRequisites:11": [
-        54,
-        24
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:iron_ingot",
-            "Count:3": 64,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Куй железо, пока не кончилось",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Железо содержится в металлических отложениях. Это достаточно легко узнать самому в разделе NEI §lDrops Hammer"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:iron_ingot",
-              "Count:3": 16,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "73:10": {
+    "62:10": {
       "questID:3": 86,
       "preRequisites:11": [
-        82,
         18,
-        146
+        82
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4373,7 +4142,7 @@
       },
       "rewards:9": {}
     },
-    "74:10": {
+    "63:10": {
       "questID:3": 87,
       "preRequisites:11": [],
       "properties:10": {
@@ -4422,7 +4191,7 @@
       },
       "rewards:9": {}
     },
-    "75:10": {
+    "64:10": {
       "questID:3": 88,
       "preRequisites:11": [
         61
@@ -4490,13 +4259,13 @@
       },
       "rewards:9": {}
     },
-    "76:10": {
+    "65:10": {
       "questID:3": 91,
       "preRequisites:11": [
-        84,
         76,
-        88,
-        86
+        84,
+        86,
+        88
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4561,7 +4330,7 @@
       },
       "rewards:9": {}
     },
-    "77:10": {
+    "66:10": {
       "questID:3": 92,
       "preRequisites:11": [
         66
@@ -4612,7 +4381,7 @@
       },
       "rewards:9": {}
     },
-    "78:10": {
+    "67:10": {
       "questID:3": 93,
       "preRequisites:11": [],
       "properties:10": {
@@ -4682,7 +4451,7 @@
       },
       "rewards:9": {}
     },
-    "79:10": {
+    "68:10": {
       "questID:3": 94,
       "preRequisites:11": [
         91
@@ -4733,7 +4502,7 @@
       },
       "rewards:9": {}
     },
-    "80:10": {
+    "69:10": {
       "questID:3": 95,
       "preRequisites:11": [
         97
@@ -4784,7 +4553,7 @@
       },
       "rewards:9": {}
     },
-    "81:10": {
+    "70:10": {
       "questID:3": 96,
       "preRequisites:11": [
         94
@@ -4858,7 +4627,7 @@
       },
       "rewards:9": {}
     },
-    "82:10": {
+    "71:10": {
       "questID:3": 97,
       "preRequisites:11": [
         96
@@ -4926,7 +4695,7 @@
       },
       "rewards:9": {}
     },
-    "83:10": {
+    "72:10": {
       "questID:3": 98,
       "preRequisites:11": [
         150,
@@ -4979,7 +4748,7 @@
       },
       "rewards:9": {}
     },
-    "84:10": {
+    "73:10": {
       "questID:3": 99,
       "preRequisites:11": [
         98
@@ -5030,7 +4799,7 @@
       },
       "rewards:9": {}
     },
-    "85:10": {
+    "74:10": {
       "questID:3": 100,
       "preRequisites:11": [
         104
@@ -5098,7 +4867,7 @@
       },
       "rewards:9": {}
     },
-    "86:10": {
+    "75:10": {
       "questID:3": 101,
       "preRequisites:11": [
         115,
@@ -5150,7 +4919,7 @@
       },
       "rewards:9": {}
     },
-    "87:10": {
+    "76:10": {
       "questID:3": 102,
       "preRequisites:11": [
         99
@@ -5201,7 +4970,7 @@
       },
       "rewards:9": {}
     },
-    "88:10": {
+    "77:10": {
       "questID:3": 103,
       "preRequisites:11": [
         99
@@ -5252,7 +5021,7 @@
       },
       "rewards:9": {}
     },
-    "89:10": {
+    "78:10": {
       "questID:3": 104,
       "preRequisites:11": [
         99
@@ -5303,7 +5072,7 @@
       },
       "rewards:9": {}
     },
-    "90:10": {
+    "79:10": {
       "questID:3": 105,
       "preRequisites:11": [
         99
@@ -5354,7 +5123,7 @@
       },
       "rewards:9": {}
     },
-    "91:10": {
+    "80:10": {
       "questID:3": 106,
       "preRequisites:11": [
         99
@@ -5405,7 +5174,7 @@
       },
       "rewards:9": {}
     },
-    "92:10": {
+    "81:10": {
       "questID:3": 107,
       "preRequisites:11": [
         99
@@ -5456,14 +5225,14 @@
       },
       "rewards:9": {}
     },
-    "93:10": {
+    "82:10": {
       "questID:3": 108,
       "preRequisites:11": [
         112,
-        119,
-        118,
+        116,
         117,
-        116
+        118,
+        119
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5528,7 +5297,7 @@
       },
       "rewards:9": {}
     },
-    "94:10": {
+    "83:10": {
       "questID:3": 109,
       "preRequisites:11": [
         108
@@ -5596,7 +5365,7 @@
       },
       "rewards:9": {}
     },
-    "95:10": {
+    "84:10": {
       "questID:3": 110,
       "preRequisites:11": [
         98
@@ -5647,7 +5416,7 @@
       },
       "rewards:9": {}
     },
-    "96:10": {
+    "85:10": {
       "questID:3": 111,
       "preRequisites:11": [
         115,
@@ -5699,7 +5468,7 @@
       },
       "rewards:9": {}
     },
-    "97:10": {
+    "86:10": {
       "questID:3": 112,
       "preRequisites:11": [
         110
@@ -5737,7 +5506,7 @@
       },
       "rewards:9": {}
     },
-    "98:10": {
+    "87:10": {
       "questID:3": 113,
       "preRequisites:11": [
         105
@@ -5788,7 +5557,7 @@
       },
       "rewards:9": {}
     },
-    "99:10": {
+    "88:10": {
       "questID:3": 114,
       "preRequisites:11": [],
       "properties:10": {
@@ -5866,7 +5635,7 @@
       },
       "rewards:9": {}
     },
-    "100:10": {
+    "89:10": {
       "questID:3": 115,
       "preRequisites:11": [],
       "properties:10": {
@@ -5915,11 +5684,11 @@
       },
       "rewards:9": {}
     },
-    "101:10": {
+    "90:10": {
       "questID:3": 116,
       "preRequisites:11": [
-        114,
-        112
+        112,
+        114
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5943,7 +5712,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Я не являюсь поклонником этих челленджей, типа 100 слоев изоленты, поэтому предпочитаю проверенный способ, который мне дает эстетическое наслаждение от вида этого люка. Если же вы тоже разделяете мои вкусы, то вот мануал по обслуживанию люка:\n\nPipe is loose - Wrench\nScrew are loose - Screwdriver\nSomething is stuck - Soft mallet\nPlatings are dented - Hammer\nCircuitry burned out -Soldering iron\nThat doesn\u0027t belong there - Crowbar\n\nP.S Для паяльника так же необходим материал. Им может быть слиток олова или проволока из припоя.\n\n"
+          "desc:8": "Я не являюсь поклонником этих челленджей, типа 100 слоев изоленты, поэтому предпочитаю проверенный способ, который мне дает эстетическое наслаждение от вида этого люка. Если же вы тоже разделяете мои вкусы, то вот мануал по обслуживанию люка:\n\nPipe is loose - Wrench\nScrew are loose - Screwdriver\nSomething is stuck - Soft mallet\nPlatings are dented - Hammer\nCircuitry burned out -Soldering iron\nThat doesn't belong there - Crowbar\n\nP.S Для паяльника так же необходим материал. Им может быть слиток олова или проволока из припоя.\n\n"
         }
       },
       "tasks:9": {
@@ -6061,11 +5830,11 @@
       },
       "rewards:9": {}
     },
-    "102:10": {
+    "91:10": {
       "questID:3": 117,
       "preRequisites:11": [
-        114,
-        112
+        112,
+        114
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6113,11 +5882,11 @@
       },
       "rewards:9": {}
     },
-    "103:10": {
+    "92:10": {
       "questID:3": 118,
       "preRequisites:11": [
-        114,
-        112
+        112,
+        114
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6194,11 +5963,11 @@
       },
       "rewards:9": {}
     },
-    "104:10": {
+    "93:10": {
       "questID:3": 119,
       "preRequisites:11": [
-        114,
-        112
+        112,
+        114
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6246,56 +6015,7 @@
       },
       "rewards:9": {}
     },
-    "105:10": {
-      "questID:3": 120,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "ALWAYS",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 14039,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "ДревоВечная помпа",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Данная помпа имеет зависимость от биома, как водонапорная башня из RailCraft. Поэтому самым идеальным местом для помпы будет озеро, река или море. Для обеспечения работы помпы не трубется энергия и любые другие ресурсы.\n\nПомпа не требует выхлопного люка, а тем более люка обслуживания."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 14039,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "106:10": {
+    "94:10": {
       "questID:3": 121,
       "preRequisites:11": [
         122
@@ -6363,7 +6083,7 @@
       },
       "rewards:9": {}
     },
-    "107:10": {
+    "95:10": {
       "questID:3": 122,
       "preRequisites:11": [
         109
@@ -6414,7 +6134,7 @@
       },
       "rewards:9": {}
     },
-    "108:10": {
+    "96:10": {
       "questID:3": 123,
       "preRequisites:11": [
         121
@@ -6494,7 +6214,7 @@
       },
       "rewards:9": {}
     },
-    "109:10": {
+    "97:10": {
       "questID:3": 124,
       "preRequisites:11": [
         123
@@ -6545,7 +6265,7 @@
       },
       "rewards:9": {}
     },
-    "110:10": {
+    "98:10": {
       "questID:3": 125,
       "preRequisites:11": [
         131
@@ -6596,7 +6316,7 @@
       },
       "rewards:9": {}
     },
-    "111:10": {
+    "99:10": {
       "questID:3": 126,
       "preRequisites:11": [
         138
@@ -6647,7 +6367,7 @@
       },
       "rewards:9": {}
     },
-    "112:10": {
+    "100:10": {
       "questID:3": 127,
       "preRequisites:11": [
         128,
@@ -6687,7 +6407,7 @@
       },
       "rewards:9": {}
     },
-    "113:10": {
+    "101:10": {
       "questID:3": 128,
       "preRequisites:11": [
         124
@@ -6772,11 +6492,11 @@
       },
       "rewards:9": {}
     },
-    "114:10": {
+    "102:10": {
       "questID:3": 129,
       "preRequisites:11": [
-        127,
-        115
+        115,
+        127
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6830,7 +6550,7 @@
       },
       "rewards:9": {}
     },
-    "115:10": {
+    "103:10": {
       "questID:3": 130,
       "preRequisites:11": [
         134
@@ -6881,7 +6601,7 @@
       },
       "rewards:9": {}
     },
-    "116:10": {
+    "104:10": {
       "questID:3": 131,
       "preRequisites:11": [
         125
@@ -6932,7 +6652,7 @@
       },
       "rewards:9": {}
     },
-    "117:10": {
+    "105:10": {
       "questID:3": 132,
       "preRequisites:11": [
         127
@@ -6983,7 +6703,7 @@
       },
       "rewards:9": {}
     },
-    "118:10": {
+    "106:10": {
       "questID:3": 133,
       "preRequisites:11": [
         127
@@ -7034,7 +6754,7 @@
       },
       "rewards:9": {}
     },
-    "119:10": {
+    "107:10": {
       "questID:3": 134,
       "preRequisites:11": [
         131
@@ -7085,7 +6805,7 @@
       },
       "rewards:9": {}
     },
-    "120:10": {
+    "108:10": {
       "questID:3": 135,
       "preRequisites:11": [
         115,
@@ -7137,7 +6857,7 @@
       },
       "rewards:9": {}
     },
-    "121:10": {
+    "109:10": {
       "questID:3": 136,
       "preRequisites:11": [
         115,
@@ -7189,76 +6909,7 @@
       },
       "rewards:9": {}
     },
-    "122:10": {
-      "questID:3": 137,
-      "preRequisites:11": [
-        120,
-        67
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "UNLOCKED",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 4905,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Каркас помпы",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Деревянная помпа воспринимает выходной люк только в одном месте, поэтому ее структура не должна отклоняться от заданной голограммой."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 10,
-              "Damage:2": 4905,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "impact:gt.blockCase2",
-              "Count:3": 10,
-              "Damage:2": 7,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "123:10": {
+    "110:10": {
       "questID:3": 138,
       "preRequisites:11": [
         123
@@ -7309,7 +6960,7 @@
       },
       "rewards:9": {}
     },
-    "124:10": {
+    "111:10": {
       "questID:3": 139,
       "preRequisites:11": [
         127
@@ -7360,7 +7011,7 @@
       },
       "rewards:9": {}
     },
-    "125:10": {
+    "112:10": {
       "questID:3": 140,
       "preRequisites:11": [
         126,
@@ -7412,7 +7063,7 @@
       },
       "rewards:9": {}
     },
-    "126:10": {
+    "113:10": {
       "questID:3": 141,
       "preRequisites:11": [
         127,
@@ -7483,7 +7134,7 @@
       },
       "rewards:9": {}
     },
-    "127:10": {
+    "114:10": {
       "questID:3": 142,
       "preRequisites:11": [
         141
@@ -7551,7 +7202,7 @@
       },
       "rewards:9": {}
     },
-    "128:10": {
+    "115:10": {
       "questID:3": 143,
       "preRequisites:11": [
         142
@@ -7620,7 +7271,7 @@
       },
       "rewards:9": {}
     },
-    "129:10": {
+    "116:10": {
       "questID:3": 144,
       "preRequisites:11": [
         143
@@ -7705,160 +7356,7 @@
       },
       "rewards:9": {}
     },
-    "130:10": {
-      "questID:3": 145,
-      "preRequisites:11": [
-        120,
-        67
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "UNLOCKED",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 14014,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Выход для воды",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "К этому люку необходимо подвести жидкостную трубу, если есть рассчет на автоматизацию сего процесса. Так же помпа поддерживает более продвинутые жидкостные шлюзы."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 14014,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "131:10": {
-      "questID:3": 146,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "ALWAYS",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 130,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Primitive Blast Furnace",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Эта печь не требует пар, но взамен ей нужно горючее. Поэтому она очень любит работать в связке с коксовой печью.\nПотребности в люках нет, поэтому все взаимодействие заканчивается на центральном блоке."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 130,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "132:10": {
-      "questID:3": 147,
-      "preRequisites:11": [
-        146,
-        18
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "UNLOCKED",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockcasings4",
-            "Count:3": 32,
-            "Damage:2": 15,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Каркас доменки",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Ничем непримечательный каркас. Главное оставить пустой блок по центру для выхода пара."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockcasings4",
-              "Count:3": 32,
-              "Damage:2": 15,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "133:10": {
+    "117:10": {
       "questID:3": 148,
       "preRequisites:11": [],
       "properties:10": {
@@ -7907,7 +7405,7 @@
       },
       "rewards:9": {}
     },
-    "134:10": {
+    "118:10": {
       "questID:3": 149,
       "preRequisites:11": [
         148
@@ -7958,7 +7456,7 @@
       },
       "rewards:9": {}
     },
-    "135:10": {
+    "119:10": {
       "questID:3": 150,
       "preRequisites:11": [
         95
@@ -7996,7 +7494,7 @@
       },
       "rewards:9": {}
     },
-    "136:10": {
+    "120:10": {
       "questID:3": 151,
       "preRequisites:11": [],
       "properties:10": {
@@ -8045,11 +7543,11 @@
       },
       "rewards:9": {}
     },
-    "137:10": {
+    "121:10": {
       "questID:3": 152,
       "preRequisites:11": [
-        151,
-        150
+        150,
+        151
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8103,11 +7601,11 @@
       },
       "rewards:9": {}
     },
-    "138:10": {
+    "122:10": {
       "questID:3": 153,
       "preRequisites:11": [
-        151,
-        150
+        150,
+        151
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8167,11 +7665,11 @@
       },
       "rewards:9": {}
     },
-    "139:10": {
+    "123:10": {
       "questID:3": 154,
       "preRequisites:11": [
-        151,
-        150
+        150,
+        151
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8225,7 +7723,7 @@
       },
       "rewards:9": {}
     },
-    "140:10": {
+    "124:10": {
       "questID:3": 155,
       "preRequisites:11": [
         144
@@ -8263,12 +7761,12 @@
       },
       "rewards:9": {}
     },
-    "141:10": {
+    "125:10": {
       "questID:3": 156,
       "preRequisites:11": [
-        155,
+        148,
         149,
-        148
+        155
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8303,7 +7801,7 @@
       },
       "rewards:9": {}
     },
-    "142:10": {
+    "126:10": {
       "questID:3": 157,
       "preRequisites:11": [
         156,
@@ -8355,7 +7853,7 @@
       },
       "rewards:9": {}
     },
-    "143:10": {
+    "127:10": {
       "questID:3": 158,
       "preRequisites:11": [
         144
@@ -8406,7 +7904,7 @@
       },
       "rewards:9": {}
     },
-    "144:10": {
+    "128:10": {
       "questID:3": 159,
       "preRequisites:11": [],
       "properties:10": {
@@ -8455,12 +7953,12 @@
       },
       "rewards:9": {}
     },
-    "145:10": {
+    "129:10": {
       "questID:3": 160,
       "preRequisites:11": [
+        156,
         163,
-        164,
-        156
+        164
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8495,7 +7993,7 @@
       },
       "rewards:9": {}
     },
-    "146:10": {
+    "130:10": {
       "questID:3": 161,
       "preRequisites:11": [
         158
@@ -8563,11 +8061,11 @@
       },
       "rewards:9": {}
     },
-    "147:10": {
+    "131:10": {
       "questID:3": 162,
       "preRequisites:11": [
-        165,
-        161
+        161,
+        165
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8615,7 +8113,7 @@
       },
       "rewards:9": {}
     },
-    "148:10": {
+    "132:10": {
       "questID:3": 163,
       "preRequisites:11": [],
       "properties:10": {
@@ -8664,11 +8162,11 @@
       },
       "rewards:9": {}
     },
-    "149:10": {
+    "133:10": {
       "questID:3": 164,
       "preRequisites:11": [
-        163,
-        160
+        160,
+        163
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8716,7 +8214,7 @@
       },
       "rewards:9": {}
     },
-    "150:10": {
+    "134:10": {
       "questID:3": 165,
       "preRequisites:11": [
         160
@@ -8767,7 +8265,7 @@
       },
       "rewards:9": {}
     },
-    "151:10": {
+    "135:10": {
       "questID:3": 166,
       "preRequisites:11": [
         162,
@@ -8819,7 +8317,7 @@
       },
       "rewards:9": {}
     },
-    "152:10": {
+    "136:10": {
       "questID:3": 167,
       "preRequisites:11": [
         131
@@ -8870,7 +8368,7 @@
       },
       "rewards:9": {}
     },
-    "153:10": {
+    "137:10": {
       "questID:3": 168,
       "preRequisites:11": [
         167
@@ -8921,7 +8419,7 @@
       },
       "rewards:9": {}
     },
-    "154:10": {
+    "138:10": {
       "questID:3": 169,
       "preRequisites:11": [
         144
@@ -8972,7 +8470,7 @@
       },
       "rewards:9": {}
     },
-    "155:10": {
+    "139:10": {
       "questID:3": 170,
       "preRequisites:11": [
         169
@@ -9023,7 +8521,7 @@
       },
       "rewards:9": {}
     },
-    "156:10": {
+    "140:10": {
       "questID:3": 171,
       "preRequisites:11": [
         165
@@ -9120,7 +8618,7 @@
       },
       "rewards:9": {}
     },
-    "157:10": {
+    "141:10": {
       "questID:3": 172,
       "preRequisites:11": [
         19
@@ -9171,7 +8669,7 @@
       },
       "rewards:9": {}
     },
-    "158:10": {
+    "142:10": {
       "questID:3": 173,
       "preRequisites:11": [
         172
@@ -9209,7 +8707,7 @@
       },
       "rewards:9": {}
     },
-    "159:10": {
+    "143:10": {
       "questID:3": 174,
       "preRequisites:11": [
         173
@@ -9278,7 +8776,7 @@
       },
       "rewards:9": {}
     },
-    "160:10": {
+    "144:10": {
       "questID:3": 175,
       "preRequisites:11": [],
       "properties:10": {
@@ -9327,7 +8825,7 @@
       },
       "rewards:9": {}
     },
-    "161:10": {
+    "145:10": {
       "questID:3": 176,
       "preRequisites:11": [
         174
@@ -9384,7 +8882,7 @@
       },
       "rewards:9": {}
     },
-    "162:10": {
+    "146:10": {
       "questID:3": 177,
       "preRequisites:11": [
         186
@@ -9435,7 +8933,7 @@
       },
       "rewards:9": {}
     },
-    "163:10": {
+    "147:10": {
       "questID:3": 178,
       "preRequisites:11": [
         197
@@ -9486,11 +8984,11 @@
       },
       "rewards:9": {}
     },
-    "164:10": {
+    "148:10": {
       "questID:3": 179,
       "preRequisites:11": [
-        175,
-        173
+        173,
+        175
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9538,11 +9036,11 @@
       },
       "rewards:9": {}
     },
-    "165:10": {
+    "149:10": {
       "questID:3": 180,
       "preRequisites:11": [
-        175,
-        173
+        173,
+        175
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9596,7 +9094,7 @@
       },
       "rewards:9": {}
     },
-    "166:10": {
+    "150:10": {
       "questID:3": 181,
       "preRequisites:11": [
         177
@@ -9670,7 +9168,7 @@
       },
       "rewards:9": {}
     },
-    "167:10": {
+    "151:10": {
       "questID:3": 182,
       "preRequisites:11": [
         181
@@ -9738,7 +9236,7 @@
       },
       "rewards:9": {}
     },
-    "168:10": {
+    "152:10": {
       "questID:3": 183,
       "preRequisites:11": [
         178
@@ -9840,7 +9338,7 @@
       },
       "rewards:9": {}
     },
-    "169:10": {
+    "153:10": {
       "questID:3": 184,
       "preRequisites:11": [
         185
@@ -9878,7 +9376,7 @@
       },
       "rewards:9": {}
     },
-    "170:10": {
+    "154:10": {
       "questID:3": 185,
       "preRequisites:11": [
         176,
@@ -9917,7 +9415,7 @@
       },
       "rewards:9": {}
     },
-    "171:10": {
+    "155:10": {
       "questID:3": 186,
       "preRequisites:11": [
         184
@@ -9968,7 +9466,7 @@
       },
       "rewards:9": {}
     },
-    "172:10": {
+    "156:10": {
       "questID:3": 187,
       "preRequisites:11": [
         182
@@ -10036,7 +9534,7 @@
       },
       "rewards:9": {}
     },
-    "173:10": {
+    "157:10": {
       "questID:3": 188,
       "preRequisites:11": [],
       "properties:10": {
@@ -10085,7 +9583,7 @@
       },
       "rewards:9": {}
     },
-    "174:10": {
+    "158:10": {
       "questID:3": 189,
       "preRequisites:11": [],
       "properties:10": {
@@ -10134,7 +9632,7 @@
       },
       "rewards:9": {}
     },
-    "175:10": {
+    "159:10": {
       "questID:3": 190,
       "preRequisites:11": [
         177,
@@ -10203,7 +9701,7 @@
       },
       "rewards:9": {}
     },
-    "176:10": {
+    "160:10": {
       "questID:3": 191,
       "preRequisites:11": [
         190
@@ -10254,7 +9752,7 @@
       },
       "rewards:9": {}
     },
-    "177:10": {
+    "161:10": {
       "questID:3": 192,
       "preRequisites:11": [
         191,
@@ -10306,7 +9804,7 @@
       },
       "rewards:9": {}
     },
-    "178:10": {
+    "162:10": {
       "questID:3": 193,
       "preRequisites:11": [
         192
@@ -10374,7 +9872,7 @@
       },
       "rewards:9": {}
     },
-    "179:10": {
+    "163:10": {
       "questID:3": 194,
       "preRequisites:11": [
         193
@@ -10431,7 +9929,7 @@
       },
       "rewards:9": {}
     },
-    "180:10": {
+    "164:10": {
       "questID:3": 195,
       "preRequisites:11": [
         194
@@ -10482,7 +9980,7 @@
       },
       "rewards:9": {}
     },
-    "181:10": {
+    "165:10": {
       "questID:3": 196,
       "preRequisites:11": [
         195
@@ -10533,7 +10031,7 @@
       },
       "rewards:9": {}
     },
-    "182:10": {
+    "166:10": {
       "questID:3": 197,
       "preRequisites:11": [
         196
@@ -10635,7 +10133,7 @@
       },
       "rewards:9": {}
     },
-    "183:10": {
+    "167:10": {
       "questID:3": 198,
       "preRequisites:11": [
         205
@@ -10686,7 +10184,7 @@
       },
       "rewards:9": {}
     },
-    "184:10": {
+    "168:10": {
       "questID:3": 199,
       "preRequisites:11": [
         198
@@ -10737,7 +10235,7 @@
       },
       "rewards:9": {}
     },
-    "185:10": {
+    "169:10": {
       "questID:3": 200,
       "preRequisites:11": [
         199
@@ -10788,7 +10286,7 @@
       },
       "rewards:9": {}
     },
-    "186:10": {
+    "170:10": {
       "questID:3": 201,
       "preRequisites:11": [
         202
@@ -10892,7 +10390,7 @@
       },
       "rewards:9": {}
     },
-    "187:10": {
+    "171:10": {
       "questID:3": 202,
       "preRequisites:11": [
         203,
@@ -10931,7 +10429,7 @@
       },
       "rewards:9": {}
     },
-    "188:10": {
+    "172:10": {
       "questID:3": 203,
       "preRequisites:11": [
         204
@@ -10982,7 +10480,7 @@
       },
       "rewards:9": {}
     },
-    "189:10": {
+    "173:10": {
       "questID:3": 204,
       "preRequisites:11": [
         200
@@ -11051,7 +10549,7 @@
       },
       "rewards:9": {}
     },
-    "190:10": {
+    "174:10": {
       "questID:3": 205,
       "preRequisites:11": [
         183
@@ -11089,7 +10587,7 @@
       },
       "rewards:9": {}
     },
-    "191:10": {
+    "175:10": {
       "questID:3": 206,
       "preRequisites:11": [],
       "properties:10": {
@@ -11138,7 +10636,7 @@
       },
       "rewards:9": {}
     },
-    "192:10": {
+    "176:10": {
       "questID:3": 207,
       "preRequisites:11": [
         187
@@ -11207,7 +10705,7 @@
       },
       "rewards:9": {}
     },
-    "193:10": {
+    "177:10": {
       "questID:3": 208,
       "preRequisites:11": [],
       "properties:10": {
@@ -11256,7 +10754,7 @@
       },
       "rewards:9": {}
     },
-    "194:10": {
+    "178:10": {
       "questID:3": 209,
       "preRequisites:11": [
         201
@@ -11307,7 +10805,7 @@
       },
       "rewards:9": {}
     },
-    "195:10": {
+    "179:10": {
       "questID:3": 210,
       "preRequisites:11": [
         209
@@ -11345,7 +10843,7 @@
       },
       "rewards:9": {}
     },
-    "196:10": {
+    "180:10": {
       "questID:3": 211,
       "preRequisites:11": [
         210
@@ -11396,7 +10894,7 @@
       },
       "rewards:9": {}
     },
-    "197:10": {
+    "181:10": {
       "questID:3": 212,
       "preRequisites:11": [],
       "properties:10": {
@@ -11445,7 +10943,7 @@
       },
       "rewards:9": {}
     },
-    "198:10": {
+    "182:10": {
       "questID:3": 213,
       "preRequisites:11": [
         202
@@ -11483,7 +10981,7 @@
       },
       "rewards:9": {}
     },
-    "199:10": {
+    "183:10": {
       "questID:3": 214,
       "preRequisites:11": [
         215
@@ -11574,7 +11072,7 @@
       },
       "rewards:9": {}
     },
-    "200:10": {
+    "184:10": {
       "questID:3": 215,
       "preRequisites:11": [
         216
@@ -11642,7 +11140,7 @@
       },
       "rewards:9": {}
     },
-    "201:10": {
+    "185:10": {
       "questID:3": 216,
       "preRequisites:11": [
         215,
@@ -11711,7 +11209,7 @@
       },
       "rewards:9": {}
     },
-    "202:10": {
+    "186:10": {
       "questID:3": 217,
       "preRequisites:11": [
         211
@@ -11762,7 +11260,7 @@
       },
       "rewards:9": {}
     },
-    "203:10": {
+    "187:10": {
       "questID:3": 218,
       "preRequisites:11": [
         217
@@ -11813,7 +11311,7 @@
       },
       "rewards:9": {}
     },
-    "204:10": {
+    "188:10": {
       "questID:3": 219,
       "preRequisites:11": [
         201
@@ -11864,7 +11362,7 @@
       },
       "rewards:9": {}
     },
-    "205:10": {
+    "189:10": {
       "questID:3": 220,
       "preRequisites:11": [
         99
@@ -11938,7 +11436,7 @@
       },
       "rewards:9": {}
     },
-    "206:10": {
+    "190:10": {
       "questID:3": 221,
       "preRequisites:11": [
         199
@@ -12040,7 +11538,7 @@
       },
       "rewards:9": {}
     },
-    "207:10": {
+    "191:10": {
       "questID:3": 222,
       "preRequisites:11": [],
       "properties:10": {
@@ -12071,7 +11569,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "208:10": {
+    "192:10": {
       "questID:3": 223,
       "preRequisites:11": [],
       "properties:10": {
@@ -12102,7 +11600,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "209:10": {
+    "193:10": {
       "questID:3": 224,
       "preRequisites:11": [],
       "properties:10": {
@@ -12133,7 +11631,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "210:10": {
+    "194:10": {
       "questID:3": 225,
       "preRequisites:11": [],
       "properties:10": {
@@ -12164,7 +11662,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "211:10": {
+    "195:10": {
       "questID:3": 226,
       "preRequisites:11": [],
       "properties:10": {
@@ -12195,7 +11693,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "212:10": {
+    "196:10": {
       "questID:3": 227,
       "preRequisites:11": [],
       "properties:10": {
@@ -12226,7 +11724,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "213:10": {
+    "197:10": {
       "questID:3": 228,
       "preRequisites:11": [],
       "properties:10": {
@@ -12257,7 +11755,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "214:10": {
+    "198:10": {
       "questID:3": 229,
       "preRequisites:11": [],
       "properties:10": {
@@ -12288,7 +11786,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "215:10": {
+    "199:10": {
       "questID:3": 230,
       "preRequisites:11": [],
       "properties:10": {
@@ -12319,7 +11817,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "216:10": {
+    "200:10": {
       "questID:3": 231,
       "preRequisites:11": [],
       "properties:10": {
@@ -12350,7 +11848,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "217:10": {
+    "201:10": {
       "questID:3": 232,
       "preRequisites:11": [],
       "properties:10": {
@@ -12381,7 +11879,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "218:10": {
+    "202:10": {
       "questID:3": 233,
       "preRequisites:11": [],
       "properties:10": {
@@ -12412,7 +11910,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "219:10": {
+    "203:10": {
       "questID:3": 234,
       "preRequisites:11": [],
       "properties:10": {
@@ -12443,7 +11941,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "220:10": {
+    "204:10": {
       "questID:3": 235,
       "preRequisites:11": [],
       "properties:10": {
@@ -12474,7 +11972,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "221:10": {
+    "205:10": {
       "questID:3": 236,
       "preRequisites:11": [],
       "properties:10": {
@@ -12505,7 +12003,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "222:10": {
+    "206:10": {
       "questID:3": 237,
       "preRequisites:11": [
         123
@@ -12556,7 +12054,7 @@
       },
       "rewards:9": {}
     },
-    "223:10": {
+    "207:10": {
       "questID:3": 238,
       "preRequisites:11": [
         213
@@ -12576,7 +12074,7 @@
               "dataLines4:8": "Maintenance: §aGood §e100.0 %§r",
               "dataLines1:8": "Storage PP: §a256§r / §e248PP",
               "dataLines2:8": "Usage Energy: §c8448§r EU/t",
-              "dataLines0:8": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+              "dataLines0:8": "=========================",
               "dataLines7:8": "Parallel not found",
               "dataLinesCount:3": 0,
               "GT.ItemCharge:4": 400000,
@@ -12615,7 +12113,7 @@
                 "dataLines4:8": "Maintenance: §aGood §e100.0 %§r",
                 "dataLines1:8": "Storage PP: §a256§r / §e248PP",
                 "dataLines2:8": "Usage Energy: §c8448§r EU/t",
-                "dataLines0:8": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+                "dataLines0:8": "=========================",
                 "dataLines7:8": "Parallel not found",
                 "dataLinesCount:3": 0,
                 "GT.ItemCharge:4": 400000,
@@ -12631,7 +12129,7 @@
       },
       "rewards:9": {}
     },
-    "224:10": {
+    "208:10": {
       "questID:3": 239,
       "preRequisites:11": [
         218
@@ -12699,7 +12197,7 @@
       },
       "rewards:9": {}
     },
-    "225:10": {
+    "209:10": {
       "questID:3": 240,
       "preRequisites:11": [
         239
@@ -12750,7 +12248,7 @@
       },
       "rewards:9": {}
     },
-    "226:10": {
+    "210:10": {
       "questID:3": 241,
       "preRequisites:11": [
         240
@@ -12801,7 +12299,7 @@
       },
       "rewards:9": {}
     },
-    "227:10": {
+    "211:10": {
       "questID:3": 242,
       "preRequisites:11": [
         218
@@ -12839,7 +12337,7 @@
       },
       "rewards:9": {}
     },
-    "228:10": {
+    "212:10": {
       "questID:3": 243,
       "preRequisites:11": [
         242
@@ -12890,7 +12388,7 @@
       },
       "rewards:9": {}
     },
-    "229:10": {
+    "213:10": {
       "questID:3": 244,
       "preRequisites:11": [
         243
@@ -12941,11 +12439,11 @@
       },
       "rewards:9": {}
     },
-    "230:10": {
+    "214:10": {
       "questID:3": 245,
       "preRequisites:11": [
-        212,
-        210
+        210,
+        212
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12993,7 +12491,7 @@
       },
       "rewards:9": {}
     },
-    "231:10": {
+    "215:10": {
       "questID:3": 246,
       "preRequisites:11": [
         212,
@@ -13062,7 +12560,7 @@
       },
       "rewards:9": {}
     },
-    "232:10": {
+    "216:10": {
       "questID:3": 247,
       "preRequisites:11": [],
       "properties:10": {
@@ -13111,7 +12609,7 @@
       },
       "rewards:9": {}
     },
-    "233:10": {
+    "217:10": {
       "questID:3": 248,
       "preRequisites:11": [],
       "properties:10": {
@@ -13160,7 +12658,7 @@
       },
       "rewards:9": {}
     },
-    "234:10": {
+    "218:10": {
       "questID:3": 249,
       "preRequisites:11": [
         241
@@ -13211,7 +12709,7 @@
       },
       "rewards:9": {}
     },
-    "235:10": {
+    "219:10": {
       "questID:3": 250,
       "preRequisites:11": [
         249
@@ -13262,7 +12760,7 @@
       },
       "rewards:9": {}
     },
-    "236:10": {
+    "220:10": {
       "questID:3": 251,
       "preRequisites:11": [
         250
@@ -13313,7 +12811,7 @@
       },
       "rewards:9": {}
     },
-    "237:10": {
+    "221:10": {
       "questID:3": 252,
       "preRequisites:11": [
         251
@@ -13364,7 +12862,7 @@
       },
       "rewards:9": {}
     },
-    "238:10": {
+    "222:10": {
       "questID:3": 253,
       "preRequisites:11": [
         252
@@ -13402,7 +12900,7 @@
       },
       "rewards:9": {}
     },
-    "239:10": {
+    "223:10": {
       "questID:3": 254,
       "preRequisites:11": [
         253
@@ -13453,7 +12951,7 @@
       },
       "rewards:9": {}
     },
-    "240:10": {
+    "224:10": {
       "questID:3": 255,
       "preRequisites:11": [
         254
@@ -13504,7 +13002,7 @@
       },
       "rewards:9": {}
     },
-    "241:10": {
+    "225:10": {
       "questID:3": 256,
       "preRequisites:11": [
         255
@@ -13555,7 +13053,7 @@
       },
       "rewards:9": {}
     },
-    "242:10": {
+    "226:10": {
       "questID:3": 257,
       "preRequisites:11": [
         256
@@ -13606,7 +13104,7 @@
       },
       "rewards:9": {}
     },
-    "243:10": {
+    "227:10": {
       "questID:3": 258,
       "preRequisites:11": [
         257
@@ -13657,7 +13155,7 @@
       },
       "rewards:9": {}
     },
-    "244:10": {
+    "228:10": {
       "questID:3": 259,
       "preRequisites:11": [
         258
@@ -13725,7 +13223,7 @@
       },
       "rewards:9": {}
     },
-    "245:10": {
+    "229:10": {
       "questID:3": 260,
       "preRequisites:11": [
         261,
@@ -13764,7 +13262,7 @@
       },
       "rewards:9": {}
     },
-    "246:10": {
+    "230:10": {
       "questID:3": 261,
       "preRequisites:11": [
         259
@@ -13802,7 +13300,7 @@
       },
       "rewards:9": {}
     },
-    "247:10": {
+    "231:10": {
       "questID:3": 262,
       "preRequisites:11": [
         260,
@@ -13854,7 +13352,7 @@
       },
       "rewards:9": {}
     },
-    "248:10": {
+    "232:10": {
       "questID:3": 263,
       "preRequisites:11": [],
       "properties:10": {
@@ -13903,7 +13401,7 @@
       },
       "rewards:9": {}
     },
-    "249:10": {
+    "233:10": {
       "questID:3": 264,
       "preRequisites:11": [
         259
@@ -13954,7 +13452,7 @@
       },
       "rewards:9": {}
     },
-    "250:10": {
+    "234:10": {
       "questID:3": 265,
       "preRequisites:11": [
         262
@@ -14005,7 +13503,7 @@
       },
       "rewards:9": {}
     },
-    "251:10": {
+    "235:10": {
       "questID:3": 266,
       "preRequisites:11": [
         265
@@ -14056,7 +13554,7 @@
       },
       "rewards:9": {}
     },
-    "252:10": {
+    "236:10": {
       "questID:3": 267,
       "preRequisites:11": [
         266
@@ -14107,7 +13605,7 @@
       },
       "rewards:9": {}
     },
-    "253:10": {
+    "237:10": {
       "questID:3": 268,
       "preRequisites:11": [
         267
@@ -14158,7 +13656,7 @@
       },
       "rewards:9": {}
     },
-    "254:10": {
+    "238:10": {
       "questID:3": 269,
       "preRequisites:11": [
         268
@@ -14243,7 +13741,7 @@
       },
       "rewards:9": {}
     },
-    "255:10": {
+    "239:10": {
       "questID:3": 270,
       "preRequisites:11": [
         269
@@ -14294,7 +13792,7 @@
       },
       "rewards:9": {}
     },
-    "256:10": {
+    "240:10": {
       "questID:3": 271,
       "preRequisites:11": [
         273
@@ -14345,7 +13843,7 @@
       },
       "rewards:9": {}
     },
-    "257:10": {
+    "241:10": {
       "questID:3": 272,
       "preRequisites:11": [
         270
@@ -14413,7 +13911,7 @@
       },
       "rewards:9": {}
     },
-    "258:10": {
+    "242:10": {
       "questID:3": 273,
       "preRequisites:11": [
         274
@@ -14464,7 +13962,7 @@
       },
       "rewards:9": {}
     },
-    "259:10": {
+    "243:10": {
       "questID:3": 274,
       "preRequisites:11": [
         276
@@ -14549,7 +14047,7 @@
       },
       "rewards:9": {}
     },
-    "260:10": {
+    "244:10": {
       "questID:3": 275,
       "preRequisites:11": [
         272
@@ -14617,7 +14115,7 @@
       },
       "rewards:9": {}
     },
-    "261:10": {
+    "245:10": {
       "questID:3": 276,
       "preRequisites:11": [
         275
@@ -14668,7 +14166,7 @@
       },
       "rewards:9": {}
     },
-    "262:10": {
+    "246:10": {
       "questID:3": 277,
       "preRequisites:11": [
         271
@@ -14735,7 +14233,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Impact",
+          "name:8": "IMPACT Прогресс",
           "icon:10": {
             "id:8": "gregtech:debug_item",
             "Count:3": 1,
@@ -14753,28 +14251,28 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -108,
           "y:3": 60,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -12,
+          "x:3": -60,
           "y:3": 60,
           "id:3": 2,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -156,
+          "x:3": -120,
           "y:3": 132,
           "id:3": 3,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -12,
+          "x:3": -48,
           "y:3": 132,
           "id:3": 4,
           "sizeY:3": 24
@@ -14787,11 +14285,11 @@
           "sizeY:3": 24
         },
         "5:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 204,
+          "sizeX:3": 48,
+          "x:3": -96,
+          "y:3": 240,
           "id:3": 6,
-          "sizeY:3": 24
+          "sizeY:3": 48
         },
         "6:10": {
           "sizeX:3": 48,
@@ -14802,254 +14300,198 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 204,
+          "x:3": -108,
+          "y:3": 360,
           "id:3": 8,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 204,
+          "x:3": 0,
+          "y:3": 180,
           "id:3": 9,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 204,
+          "x:3": 0,
+          "y:3": 132,
           "id:3": 10,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
           "x:3": -156,
-          "y:3": 60,
+          "y:3": 132,
           "id:3": 12,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": 132,
+          "x:3": -156,
+          "y:3": 180,
           "id:3": 13,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 132,
+          "x:3": -156,
+          "y:3": 216,
           "id:3": 14,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": 204,
+          "x:3": 144,
+          "y:3": 324,
           "id:3": 15,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 348,
+          "x:3": 168,
+          "y:3": 180,
           "id:3": 16,
           "sizeY:3": 24
         },
         "15:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 132,
+          "sizeX:3": 48,
+          "x:3": 72,
+          "y:3": 456,
           "id:3": 17,
-          "sizeY:3": 24
+          "sizeY:3": 48
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 276,
+          "x:3": 216,
+          "y:3": 372,
           "id:3": 22,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 276,
+          "x:3": 168,
+          "y:3": 372,
           "id:3": 23,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 204,
+          "x:3": 168,
+          "y:3": 324,
           "id:3": 24,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 348,
-          "id:3": 26,
+          "x:3": 0,
+          "y:3": 468,
+          "id:3": 27,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 132,
-          "id:3": 27,
+          "x:3": -204,
+          "y:3": 396,
+          "id:3": 31,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -12,
-          "id:3": 29,
+          "x:3": -156,
+          "y:3": 360,
+          "id:3": 32,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": -12,
-          "id:3": 30,
+          "x:3": -204,
+          "y:3": 336,
+          "id:3": 33,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 324,
-          "id:3": 31,
+          "x:3": 84,
+          "y:3": 180,
+          "id:3": 34,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 276,
-          "id:3": 32,
+          "x:3": 84,
+          "y:3": 132,
+          "id:3": 36,
           "sizeY:3": 24
         },
         "25:10": {
-          "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 324,
-          "id:3": 33,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 72,
+          "y:3": 360,
+          "id:3": 42,
+          "sizeY:3": 48
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": 276,
-          "id:3": 34,
+          "x:3": 84,
+          "y:3": 252,
+          "id:3": 46,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 276,
-          "id:3": 35,
+          "x:3": 0,
+          "y:3": 252,
+          "id:3": 48,
           "sizeY:3": 24
         },
         "28:10": {
-          "sizeX:3": 24,
-          "x:3": -312,
-          "y:3": 276,
-          "id:3": 36,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 156,
+          "y:3": 240,
+          "id:3": 54,
+          "sizeY:3": 48
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 204,
-          "id:3": 42,
+          "x:3": 0,
+          "y:3": 372,
+          "id:3": 55,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 276,
-          "id:3": 43,
+          "x:3": 0,
+          "y:3": 420,
+          "id:3": 64,
           "sizeY:3": 24
         },
         "31:10": {
-          "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 132,
-          "id:3": 54,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": -96,
+          "y:3": 456,
+          "id:3": 67,
+          "sizeY:3": 48
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 420,
-          "y:3": 132,
-          "id:3": 55,
+          "x:3": -132,
+          "y:3": 468,
+          "id:3": 69,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 60,
-          "id:3": 62,
+          "x:3": 216,
+          "y:3": 468,
+          "id:3": 70,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 60,
-          "id:3": 63,
-          "sizeY:3": 24
-        },
-        "35:10": {
-          "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 132,
-          "id:3": 64,
-          "sizeY:3": 24
-        },
-        "36:10": {
-          "sizeX:3": 24,
-          "x:3": 420,
-          "y:3": 204,
-          "id:3": 67,
-          "sizeY:3": 24
-        },
-        "37:10": {
-          "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 204,
-          "id:3": 69,
-          "sizeY:3": 24
-        },
-        "38:10": {
-          "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 348,
-          "id:3": 70,
-          "sizeY:3": 24
-        },
-        "39:10": {
-          "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 204,
-          "id:3": 72,
-          "sizeY:3": 24
-        },
-        "40:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 204,
+          "x:3": -60,
+          "y:3": 360,
           "id:3": 80,
-          "sizeY:3": 24
-        },
-        "41:10": {
-          "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 348,
-          "id:3": 83,
-          "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 132,
-          "id:3": 85,
           "sizeY:3": 24
         }
       },
@@ -15057,7 +14499,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "Первые шаги",
+          "name:8": "Начало",
           "icon:10": {
             "id:8": "minecraft:log",
             "Count:3": 1,
@@ -15066,7 +14508,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": ""
+          "desc:8": "Первые шаги самые важные в игре. Данная ветка ознакомит вас с ними."
         }
       },
       "order:3": 1
@@ -15248,7 +14690,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description"
+          "desc:8": "Первые паровые машины, больше возможностей и новая эпоха!"
         }
       },
       "order:3": 2
@@ -15386,7 +14828,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "NORMAL",
-          "name:8": "ULV-LV век",
+          "name:8": "LV век",
           "icon:10": {
             "id:8": "gregtech:gt.metaitem.01",
             "Count:3": 1,
@@ -15395,7 +14837,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description"
+          "desc:8": "Первое электричество и новые механизмы."
         }
       },
       "order:3": 3
@@ -15404,306 +14846,250 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 72,
-          "x:3": -540,
-          "y:3": -36,
-          "id:3": 21,
-          "sizeY:3": 72
-        },
-        "1:10": {
-          "sizeX:3": 72,
           "x:3": -372,
           "y:3": -36,
           "id:3": 39,
           "sizeY:3": 72
         },
-        "2:10": {
+        "1:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": 36,
           "id:3": 40,
           "sizeY:3": 24
         },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -528,
-          "y:3": 36,
-          "id:3": 52,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -504,
-          "y:3": 36,
-          "id:3": 53,
-          "sizeY:3": 24
-        },
-        "5:10": {
+        "2:10": {
           "sizeX:3": 48,
           "x:3": -600,
           "y:3": -24,
           "id:3": 87,
           "sizeY:3": 48
         },
-        "6:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": 36,
           "id:3": 101,
           "sizeY:3": 24
         },
-        "7:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 36,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "8:10": {
+        "5:10": {
           "sizeX:3": 72,
           "x:3": -120,
           "y:3": -36,
           "id:3": 114,
           "sizeY:3": 72
         },
-        "9:10": {
+        "6:10": {
           "sizeX:3": 72,
           "x:3": -36,
           "y:3": -36,
           "id:3": 115,
           "sizeY:3": 72
         },
-        "10:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 36,
           "id:3": 116,
           "sizeY:3": 24
         },
-        "11:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 60,
           "id:3": 117,
           "sizeY:3": 24
         },
-        "12:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": 36,
           "id:3": 118,
           "sizeY:3": 24
         },
-        "13:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 36,
           "id:3": 119,
           "sizeY:3": 24
         },
-        "14:10": {
-          "sizeX:3": 72,
-          "x:3": -456,
-          "y:3": -36,
-          "id:3": 120,
-          "sizeY:3": 72
-        },
-        "15:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 60,
           "id:3": 129,
           "sizeY:3": 24
         },
-        "16:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 36,
           "id:3": 135,
           "sizeY:3": 24
         },
-        "17:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 60,
           "id:3": 136,
           "sizeY:3": 24
         },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": -444,
-          "y:3": 36,
-          "id:3": 137,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": -420,
-          "y:3": 36,
-          "id:3": 145,
-          "sizeY:3": 24
-        },
-        "20:10": {
-          "sizeX:3": 72,
-          "x:3": -288,
-          "y:3": -36,
-          "id:3": 146,
-          "sizeY:3": 72
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": 36,
-          "id:3": 147,
-          "sizeY:3": 24
-        },
-        "22:10": {
+        "14:10": {
           "sizeX:3": 72,
           "x:3": 48,
           "y:3": -36,
           "id:3": 148,
           "sizeY:3": 72
         },
-        "23:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 36,
           "id:3": 149,
           "sizeY:3": 24
         },
-        "24:10": {
+        "16:10": {
           "sizeX:3": 72,
           "x:3": -204,
           "y:3": -36,
           "id:3": 151,
           "sizeY:3": 72
         },
-        "25:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": 36,
           "id:3": 152,
           "sizeY:3": 24
         },
-        "26:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 36,
           "id:3": 153,
           "sizeY:3": 24
         },
-        "27:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 60,
           "id:3": 154,
           "sizeY:3": 24
         },
-        "28:10": {
+        "20:10": {
           "sizeX:3": 72,
           "x:3": 132,
           "y:3": -36,
           "id:3": 159,
           "sizeY:3": 72
         },
-        "29:10": {
+        "21:10": {
           "sizeX:3": 72,
           "x:3": 216,
           "y:3": -36,
           "id:3": 163,
           "sizeY:3": 72
         },
-        "30:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 36,
           "id:3": 164,
           "sizeY:3": 24
         },
-        "31:10": {
+        "23:10": {
           "sizeX:3": 72,
           "x:3": 300,
           "y:3": -36,
           "id:3": 175,
           "sizeY:3": 72
         },
-        "32:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 36,
           "id:3": 179,
           "sizeY:3": 24
         },
-        "33:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 36,
           "id:3": 180,
           "sizeY:3": 24
         },
-        "34:10": {
+        "26:10": {
           "sizeX:3": 72,
           "x:3": -456,
           "y:3": 108,
           "id:3": 188,
           "sizeY:3": 72
         },
-        "35:10": {
+        "27:10": {
           "sizeX:3": 72,
           "x:3": -372,
           "y:3": 108,
           "id:3": 189,
           "sizeY:3": 72
         },
-        "36:10": {
+        "28:10": {
           "sizeX:3": 72,
           "x:3": -288,
           "y:3": 108,
           "id:3": 206,
           "sizeY:3": 72
         },
-        "37:10": {
+        "29:10": {
           "sizeX:3": 72,
           "x:3": -204,
           "y:3": 108,
           "id:3": 208,
           "sizeY:3": 72
         },
-        "38:10": {
+        "30:10": {
           "sizeX:3": 72,
           "x:3": -120,
           "y:3": 108,
           "id:3": 212,
           "sizeY:3": 72
         },
-        "39:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 180,
           "id:3": 245,
           "sizeY:3": 24
         },
-        "40:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": 180,
           "id:3": 246,
           "sizeY:3": 24
         },
-        "41:10": {
+        "33:10": {
           "sizeX:3": 72,
           "x:3": -36,
           "y:3": 108,
           "id:3": 247,
           "sizeY:3": 72
         },
-        "42:10": {
+        "34:10": {
           "sizeX:3": 72,
           "x:3": 48,
           "y:3": 108,
           "id:3": 248,
           "sizeY:3": 72
         },
-        "43:10": {
+        "35:10": {
           "sizeX:3": 72,
           "x:3": 132,
           "y:3": 108,

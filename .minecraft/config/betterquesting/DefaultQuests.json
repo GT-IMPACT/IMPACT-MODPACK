@@ -894,19 +894,19 @@
     "11:10": {
       "questID:3": 11,
       "preRequisites:11": [
-        77
+        26
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.blockores",
+            "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 934,
+            "Damage:2": 1155,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -914,11 +914,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Гипс",
+          "name:8": "Угольная яма",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Чтобы начать клепать сталь, мне необходимо сделать доменную печь, но для начала стоит позаботиться о компонентах для крафта. Дело в том, что она требует гипс и мрамор. Начну с последнего, Мрамор встречается гораздо чаще, чем жила лазурита с кальцитом, поэтому мой выбор падает на него. Ну а гипс я смогу добыть лишь в мельнице."
+          "desc:8": "§lДревесный расжигатель§r (Угольная яма) - это метод производства древесного угля быстрее, чем в коксовой печи, но без простоты автоматизации и креозота, который обеспечивает коксовая печь.\n\n§lПринцип работы:§r\nМульти-блок угольной ямы состоит из нижнего слоя кирпичей, размером от 3х3 до 11х11. Над кирпичами поместите до 5 слоев бревен, которые вы хотите превратить в древесный уголь, затем поместите расжигатель сверху в центре. Покройте любые поверхности бревен землей или травой, а затем активируйте расжигатель. Если верхняя часть расжигателя начинает светиться, процесс запущен.\n\nКак только процесс завершится, вы можете убрать блоки земли. Вместо бревен будут обугленные блоки, из которых выпадает древесный уголь."
         }
       },
       "tasks:9": {
@@ -931,9 +931,38 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "impact:impact_item",
-              "Count:3": 34,
-              "Damage:2": 37,
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 9304,
+              "OreDict:8": "nuggetWroughtIron"
+            },
+            "1:10": {
+              "id:8": "minecraft:flint",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1155,
               "OreDict:8": ""
             }
           },
@@ -1234,7 +1263,7 @@
     "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        70
+        35
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1267,98 +1296,6 @@
           "autoConsume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 2,
-              "Damage:2": 2299,
-              "OreDict:8": "dustStone"
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 1,
-              "Damage:2": 2934,
-              "OreDict:8": "dustGypsum"
-            },
-            "2:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 1,
-              "Damage:2": 2823,
-              "OreDict:8": "dustCalcite"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "impact:impact_WoodBrickFormTool",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 3,
-              "Damage:2": 2805,
-              "OreDict:8": "dustClay"
-            },
-            "2:10": {
-              "id:8": "impact:impact_item",
-              "Count:3": 2,
-              "Damage:2": 37,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "2:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 2,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 8,
-              "Damage:2": 32110,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "3:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 3,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 8,
-              "Damage:2": 32111,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "4:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
           "index:3": 4,
           "consume:1": 0,
           "requiredItems:9": {
@@ -1381,44 +1318,6 @@
       "rewards:9": {}
     },
     "18:10": {
-      "questID:3": 18,
-      "preRequisites:11": [
-        11
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 130,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Настоящая доменная печь",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Моя первая сталь уже на носу! Осталось собрать эту красавицу."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
-    "19:10": {
       "questID:3": 19,
       "preRequisites:11": [
         157,
@@ -1457,22 +1356,22 @@
       },
       "rewards:9": {}
     },
-    "20:10": {
-      "questID:3": 20,
+    "19:10": {
+      "questID:3": 21,
       "preRequisites:11": [
-        79
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 32,
-            "Damage:2": 2022,
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 14071,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -1480,11 +1379,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Сера",
+          "name:8": "Примитивный майнер",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Пора отправляться в самое пекло, там мне придется найти жилу Серы. Стоит ориентироваться по мелким вкраплениям."
+          "desc:8": "Пришло время добывать руду по настоящему!\n\n§lПримитивный майнер§r - отлично решение для этого.\n\n§lКак работает майнер:§r\nМайнер использует любое горючее топливо и добывает руду в чанке в котором находится.\n\nС помощью §lMiner Drill Hatch§r майнер производит добычу полезных ископаемых.\nВ Drill Hatch помещается §lDrill Head§r - оголовье, которое имеет прочность, за каждый цикл работы майнера прочность оголовья уменьшается.\nМайнер не имеет никаких бонусов для добычи. Может копать только §lСлой #0§r.\n\n§lВажно!§r\nВ одном чанке может находится только один майнер!\n\nЧтобы построить Примитивный майнер, вам нужно:\n- Iron Frame Box x16.\n- Miner Drill Hatch x1.\n- Primitive Miner x1.\n\n§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!"
         }
       },
       "tasks:9": {
@@ -1497,9 +1396,41 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 32,
-              "Damage:2": 2022,
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 4128,
+              "OreDict:8": "frameGtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14747,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14071,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_drillHeads",
+              "Count:3": 1,
+              "tag:10": {
+                "drillDamage:3": 10000
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -1508,7 +1439,7 @@
       },
       "rewards:9": {}
     },
-    "21:10": {
+    "20:10": {
       "questID:3": 22,
       "preRequisites:11": [
         23
@@ -1531,7 +1462,7 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Белый порошок",
+          "name:8": "Бумага",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
@@ -1636,7 +1567,7 @@
       },
       "rewards:9": {}
     },
-    "22:10": {
+    "21:10": {
       "questID:3": 23,
       "preRequisites:11": [
         24
@@ -1701,7 +1632,7 @@
       },
       "rewards:9": {}
     },
-    "23:10": {
+    "22:10": {
       "questID:3": 24,
       "preRequisites:11": [
         54
@@ -1787,22 +1718,23 @@
       },
       "rewards:9": {}
     },
-    "24:10": {
-      "questID:3": 25,
+    "23:10": {
+      "questID:3": 26,
       "preRequisites:11": [
-        81
+        42,
+        57
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 3,
-            "Damage:2": 2896,
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 2,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -1810,11 +1742,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Сырая резина",
+          "name:8": "Кирпично-бронзовый корпус",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "А вот и пригодились мои высаженные гевеи перед базой. Отныне латекс потечет ручьем."
+          "desc:8": "Любая машина состоит из корпуса. Это один из разновидностей корпуса."
         }
       },
       "tasks:9": {
@@ -1827,9 +1759,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 3,
-              "Damage:2": 2896,
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           },
@@ -1838,7 +1770,7 @@
       },
       "rewards:9": {}
     },
-    "25:10": {
+    "24:10": {
       "questID:3": 27,
       "preRequisites:11": [
         15
@@ -1948,7 +1880,7 @@
       },
       "rewards:9": {}
     },
-    "26:10": {
+    "25:10": {
       "questID:3": 28,
       "preRequisites:11": [],
       "properties:10": {
@@ -1979,7 +1911,167 @@
       "tasks:9": {},
       "rewards:9": {}
     },
+    "26:10": {
+      "questID:3": 29,
+      "preRequisites:11": [
+        70
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:brick",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Кирпичи, просто кирпичи, красненькие!",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это всего лишь один из видов кирпичей. Как вы думаете для чего они?"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:clay_ball",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item2",
+              "Count:3": 8,
+              "Damage:2": 68,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:brick",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
     "27:10": {
+      "questID:3": 30,
+      "preRequisites:11": [
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 13002,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Коксовая печь",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Автоматическая добыча топлива это важный шаг на пути индустриализации.\n\nВ данном случае добыча §lДревесного угля§r весьма актуальна.\n§lКоксовая печь§r, еще один мульти-блок, с помощью которого из дерева вы сможете сделать древесный уголь и получить небольшое количество §lКреозота§r (горит в жидкосном бойлере).\n\nЧтобы построить Коксовую печь, вам нужно:\n- Cock Oven Brick x22.\n- Primitive Output Hatch x1.\n- Primitive Output Bus x1.\n- Primitive Input Bus x1.\n- Cocke Oven 1x.\n\n\n§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 3,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockcasings8",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14013,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14012,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 14011,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 13002,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "28:10": {
       "questID:3": 31,
       "preRequisites:11": [
         32
@@ -2030,7 +2122,7 @@
       },
       "rewards:9": {}
     },
-    "28:10": {
+    "29:10": {
       "questID:3": 32,
       "preRequisites:11": [
         8
@@ -2081,7 +2173,7 @@
       },
       "rewards:9": {}
     },
-    "29:10": {
+    "30:10": {
       "questID:3": 33,
       "preRequisites:11": [
         32
@@ -2132,7 +2224,7 @@
       },
       "rewards:9": {}
     },
-    "30:10": {
+    "31:10": {
       "questID:3": 34,
       "preRequisites:11": [
         9
@@ -2206,7 +2298,144 @@
       },
       "rewards:9": {}
     },
-    "31:10": {
+    "32:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        70
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.metaitem.01",
+            "Count:3": 1,
+            "Damage:2": 32111,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Кирпичи для Доменной печи",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это всего лишь один из видов кирпичей. Как вы думаете для чего они?"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 2299,
+              "OreDict:8": "dustStone"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 2823,
+              "OreDict:8": "dustCalcite"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 2934,
+              "OreDict:8": "dustGypsum"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 4,
+              "Damage:2": 37,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 6,
+              "Damage:2": 2805,
+              "OreDict:8": "dustClay"
+            },
+            "1:10": {
+              "id:8": "impact:impact_item",
+              "Count:3": 2,
+              "Damage:2": 37,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "3:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 3,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 8,
+              "Damage:2": 32110,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "4:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 4,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 4,
+              "Damage:2": 32111,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "33:10": {
       "questID:3": 36,
       "preRequisites:11": [
         15,
@@ -2258,17 +2487,17 @@
       },
       "rewards:9": {}
     },
-    "32:10": {
+    "34:10": {
       "questID:3": 37,
       "preRequisites:11": [
-        66
+        21
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.metaitem.04",
@@ -2285,7 +2514,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Как можно было заметить, далеко не все ископаемые ресурсы можно достать из породы молотом. В мире существует 2 слоя:\nСлой 0 - содержит небольшие вкрапления руд и имеет лишь 1 тип ресурса\nСлой 1 - содержит полноценные руды и имеет 4 типов ресурсов\n\nТеперь я могу сделать первый инструмент георазведки, он мне покажет тип руды в 0 слое текущего чанка.\n\nP.S эти слои нельзя потрогать руками, их видят только майнеры.\n\nP.S.S Руда генерируется регионами 4х4 чанка"
+          "desc:8": "§l§rТеперь когда у вас есть первый автоматический майнер вы можете добывать руду. Но вы задаетесь вопросом, как узнать где какая руда?\n\n1. §lNEI§r - вы можете определить какая руда находится в нашем измерении, для этого найдите в NEI нужную вам руду, например железо (§lCrushed Iron Dust§r). Так как у нас всего лишь первый майнер, значит нам нужны §lSmall руды§r (Слой #0).\n\n2. Инструмент §lOre Sampling Tool§r - с помощью него вы можете узнать какая руда находится в текущем чанке (только для слоя #0)."
         }
       },
       "tasks:9": {
@@ -2309,22 +2538,23 @@
       },
       "rewards:9": {}
     },
-    "33:10": {
-      "questID:3": 38,
+    "35:10": {
+      "questID:3": 39,
       "preRequisites:11": [
-        37
+        42,
+        57
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 14071,
+            "Damage:2": 1,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -2332,47 +2562,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Угольный майнер",
+          "name:8": "Бронзовый корпус",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Не стоит судить по названию, этот майнер не копает ТОЛЬКО уголь :)"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
-    "34:10": {
-      "questID:3": 39,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 14071,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Примитивный майнер",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Добывает руду только из своего чанка, не трогает соседние и не имеет каких-либо бонусов к добыче. Для работы необходимо сунуть уголь в контроллер\n\nP.S может работать в холостую, поэтому следует над контроллером устанавливать сундук, а лучше ящик. Так как майнер может выкопать лишь 1 тип ресурса."
+          "desc:8": "Любая машина состоит из корпуса. Это один из разновидностей корпуса."
         }
       },
       "tasks:9": {
@@ -2387,7 +2581,7 @@
             "0:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 14071,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           },
@@ -2396,22 +2590,22 @@
       },
       "rewards:9": {}
     },
-    "35:10": {
+    "36:10": {
       "questID:3": 40,
       "preRequisites:11": [
-        38
+        26
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
-          "visibility:8": "HIDDEN",
-          "isMain:1": 0,
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 14747,
+            "Damage:2": 103,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -2419,11 +2613,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Бур",
+          "name:8": "Бронзовая печь",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Данный люк следует установить под контроллером. Для работы использует буровую головку."
+          "desc:8": "Это обычная печь на паровой тяге.\n\n§lПринцип работы:§r\n\nОна потребляет 8 единиц пара/тик, чтобы переплавить один ресурс за 12,8 секунд, в общей сложности 2048 единиц пара на предмет."
         }
       },
       "tasks:9": {
@@ -2438,8 +2632,20 @@
             "0:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 14747,
+              "Damage:2": 2,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:furnace",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 7,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -2453,12 +2659,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "impact:impact_drillHeads",
+              "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "tag:10": {
-                "drillDamage:3": 10000
-              },
-              "Damage:2": 0,
+              "Damage:2": 103,
               "OreDict:8": ""
             }
           },
@@ -2467,7 +2670,7 @@
       },
       "rewards:9": {}
     },
-    "36:10": {
+    "37:10": {
       "questID:3": 41,
       "preRequisites:11": [
         93
@@ -2518,7 +2721,7 @@
       },
       "rewards:9": {}
     },
-    "37:10": {
+    "38:10": {
       "questID:3": 42,
       "preRequisites:11": [
         23,
@@ -2604,60 +2807,22 @@
       },
       "rewards:9": {}
     },
-    "38:10": {
-      "questID:3": 44,
-      "preRequisites:11": [
-        37
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 1,
-            "Damage:2": 5810,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Поиск жил",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Чтобы определить существование интересующего ресурса в мире, достаточно посмотреть крафт крашед руды (просто дробленая руда без какой либо обработки после)\n\nСписок руд имеет 2 основных раздела. Small руды (Нулевой слой) и Normal руды (Первый слой)\n\nВ каждом разделе есть 2 подраздела. Вся информация о текущей жиле и подраздел жил по мирам."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "index:3": 0,
-          "taskID:8": "bq_standard:checkbox"
-        }
-      },
-      "rewards:9": {}
-    },
     "39:10": {
-      "questID:3": 45,
+      "questID:3": 43,
       "preRequisites:11": [
-        38
+        70
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 16,
-            "Damage:2": 11033,
+            "id:8": "impact:impact_item2",
+            "Count:3": 4,
+            "Damage:2": 65,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -2665,11 +2830,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Кобальт",
+          "name:8": "Кирпичи для Коксовой печи",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Стратегически-важный ресурс. Получив его сейчас, я смогу добыть практически любой блок в обозримом будущем."
+          "desc:8": "Это всего лишь один из видов кирпичей. Как вы думаете для чего они?"
         }
       },
       "tasks:9": {
@@ -2682,9 +2847,49 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 16,
-              "Damage:2": 11033,
+              "id:8": "minecraft:sand",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:clay_ball",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item2",
+              "Count:3": 3,
+              "Damage:2": 67,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 2,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "impact:impact_item2",
+              "Count:3": 4,
+              "Damage:2": 65,
               "OreDict:8": ""
             }
           },
@@ -2694,6 +2899,92 @@
       "rewards:9": {}
     },
     "40:10": {
+      "questID:3": 44,
+      "preRequisites:11": [
+        26
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 105,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Малый солнечный бойлер",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это примитивный бойлер, который производит пар с помощью солнечного света. При нагреве солнечный бойлер имеет ту же производительность пара, что и Small Coal Boiler, в количестве 150 л пара на 25 тиков в целом.\n\n§lПринцип работы:§r\n\nВ Солнечном Бойлере используется та же математика нагрева и охлаждения, что и в малом угольном бойлере, однако его «топливо» более сложное.\n\nКаждые 256 тиков бойлер проверяет, может ли он видеть солнце. Если это возможно, он дает себе 8 ед. топлива. В течение (примерно) 5 секунд (8x12 = 96 тиков) он активен из этих 8 ед. топлива, его тепло увеличивается на 6 (+ 8-2). В течение следующих 8 секунд он теряет 3,25 тепла (-1 на 45 тиков), что приводит к чистому изменению ~ 2,75 тепла на 13 секунд дневного света или примерно 0,21 градуса в секунду. Поэтому холодному солнечному бойлеру требуется 6,3 минуты, чтобы начать производить пар (температура от 20 до 100>). Так как день Minecraft длится всего 10 минут, если вы не спите, Solar Boiler будет вырабатывать Steam только в течение примерно 5,5 минут из каждого 20-минутного полного дня (3,7 минуты в течение дня, 1,8 минуты охлаждения после наступления темноты). Таким образом, для того, чтобы сделать солнечные котлы практичными, необходима постоянная эксплуатация кровати.\n\nСолнечному бойлеру требуется 38 минут непрерывного солнечного света, чтобы достичь максимальной температуры (500). В отличие от других котлов, максимальная температура не имеет никакого значения для солнечного бойлера.\n\nБойлер может вместить 16 000 L пара и 16 000 L воды. Пока его температура выше 100, каждые 25 тиков он будет потреблять 1 L воды и производить 150 L пара.  Температуры выше 100 не влияют на выработку пара. Бойлер будет пытаться выводить пар со всех сторон, кроме нижней. Тем не менее, он будет принимать воду по трубопроводу снизу, что позволяет безопасно размещать водопроводные трубы под линией котлов. Если паровой резервуар заполнится, 1/4 его емкости будет отброшено, и в качестве предупреждения будет выпушена частица дыма и звуковой эффект.\n\nВоду можно добавить в бойлер, щелкнув правой кнопкой мыши по машине с ведрами для воды, или поместив любой вид ячейки с водой в слот для подачи воды в графическом интерфейсе. Как и все машины GregTech, он вернет пустую ячейку. Если температура выше 100, а в бойлере заканчивается вода, добавление воды приведет к взрыву, поэтому подождите, пока он остынет.\n\n§lКальцификация:§r\n\nПоскольку котел остается активным, он будет медленно кальцинироваться, уменьшая производительность Steam. Кальцификация начинает действовать после 10 000 циклов производства Steam (250 000 тиков, 208 минут 20 секунд, чуть менее 3,5 часов), после чего выход Steam уменьшается на 1 л каждые 100 производственных циклов, до минимума 50 л на 25 тиков (1 / 3 нормальный выход) еще через 208 минут и 20 секунд. Этот таймер и его эффекты сбрасываются, если котел поднят и переставлен (он не хранится в предмете). Целью этого изменения было принудительное ручное взаимодействие с низкотехнологичными одноблочными бойлерами, а не просто обеспечение их непрерывной работы через автоматизацию.\n\nОбратите внимание, что время, которое котел проводит при температуре ниже 100 (не вырабатывая пар), не учитывается при кальцификации. На практике это означает, что поскольку (как отмечалось выше) Солнечный Бойлер работает в течение 5,5 минут из каждых 20-минутных дней, то при отсутствии спящего режима Солнечный Бойлер будет работать на сервере в течение примерно 12 часов, прежде чем он начнет терять выходные данные для кальцификации."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 2,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 3,
+              "Damage:2": 18054,
+              "OreDict:8": "plateDoubleSilver"
+            },
+            "3:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": "glass"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 105,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
       "questID:3": 46,
       "preRequisites:11": [
         48
@@ -2780,7 +3071,7 @@
       },
       "rewards:9": {}
     },
-    "41:10": {
+    "42:10": {
       "questID:3": 47,
       "preRequisites:11": [
         23
@@ -2866,7 +3157,7 @@
       },
       "rewards:9": {}
     },
-    "42:10": {
+    "43:10": {
       "questID:3": 48,
       "preRequisites:11": [
         6
@@ -2904,7 +3195,413 @@
       },
       "rewards:9": {}
     },
-    "43:10": {
+    "44:10": {
+      "questID:3": 49,
+      "preRequisites:11": [
+        26
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 118,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Плавильная печь",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это плавильная печь на паровой тяге.\n\n§lПринцип работы: §r\nПлавильная печь — самая энергоемкая паровая машина; при потреблении пара до 32 пара/тик для непрерывной работы требуется 6 малых угольных или солнечных бойлеров.\n\n§lСовет!§r\nЗдесь можно облегчить крафт бронзы."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 6,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            },
+            "2:10": {
+              "id:8": "minecraft:furnace",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 118,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "45:10": {
+      "questID:3": 50,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 109,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Бронзовый экстрактор",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это экстрактор на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 4 единицы пара/тик для дробления одного предмета на протяжении 40 секунд, в общей сложности 3200 единиц пара на предмет."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "glass"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 6,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 109,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "46:10": {
+      "questID:3": 51,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 106,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Бронзовый дробитель",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это дробитель на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 4 единицы пара/тик для дробления одного предмета на протяжении 40 секунд, в общей сложности 3200 единиц пара на предмет."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:piston",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "craftingPiston"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 4,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            },
+            "3:10": {
+              "id:8": "minecraft:diamond",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "gemDiamond"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 106,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "47:10": {
+      "questID:3": 52,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 115,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Бронзовый компрессор",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это компрессор на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 4 единицы пара/тик для дробления одного предмета на протяжении 40 секунд, в общей сложности 3200 единиц пара на предмет."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 6,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            },
+            "2:10": {
+              "id:8": "minecraft:piston",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": "craftingPiston"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 115,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "48:10": {
+      "questID:3": 53,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 100,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Малый угольный бойлер",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Вы перешли на следущий этап своего развития - §lБронзовый век§r.\n\nНа этом этапе предстоит добывать Пар, создавать паровые механизмы и много работы с крафтами.\n\nПар добывается благодаря бойлерам. Первый доступный бойлер - §lSmall Coal Boiler§r.\n\n§lПринцип работы:§r\nПодается вода и топливо, выходит пар.\n\nБойлер имеет минимальную температуру 20 и максимальную 500. Каждые 45 тиков температура бойлера уменьшается на 1. Каждые 12 тиков 1 энергия потребляется из текущего топлива и увеличивает температуру на 1. Но когда температура бойлера максимальна, он перестанет потреблять топливо для дальнейшего нагрева. Это значит, что во время нагрева уголь будет гореть всего 96 секунд, но когда бойлер нагреется на максимум, уголь будет гореть 360 сек, равноценном 43200 Литрам пара.\n\nВ бойлере может быть до 16,000 литров пара или 16,000 литров воды. Пока температура бойлера выше 100, каждые 25 тиков бойлер будет потреблять 1 литр воды и производить 150 литров пара. Температуры выше 100 не увеличивают скорость производства пара. Бойлер будет пытаться выводить пар через все стороны блока, кроме нижней. §lЧерез нижнюю сторону бойлер принимает воду§r, позволяя разместить передающие воду трубы под линией бойлеров. Если накопитель пара заполнится, четверть его ёмкости будет выпущена, и в качестве предупреждения будет создана частица дыма и звук шипения.\n\nВода может быть добавлена в бойлер ПКМ на нем с ведром воды или путем помещения любой капсулы с водой в специальный слот в бойлере. Также как и любая GregTech машина, он выдаст обратно пустую капсулу. Если в бойлере нагретом выше 100 кончится вода, то добавляя воду получится взрыв, так что подождите пока он охладится.\n\n§lТопливо (Энергия):§r\nCoal - 160 ед.\nCharcoal - 160 ед.\nLignite - 120 ед.\nCoal Coke - 320 ед."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:brick_block",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 5,
+              "Damage:2": 17300,
+              "OreDict:8": "plateBronze"
+            },
+            "2:10": {
+              "id:8": "IC2:blockMachine",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 100,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "49:10": {
       "questID:3": 54,
       "preRequisites:11": [
         16,
@@ -2979,7 +3676,7 @@
       },
       "rewards:9": {}
     },
-    "44:10": {
+    "50:10": {
       "questID:3": 55,
       "preRequisites:11": [
         64
@@ -3030,7 +3727,126 @@
       },
       "rewards:9": {}
     },
-    "45:10": {
+    "51:10": {
+      "questID:3": 56,
+      "preRequisites:11": [
+        52
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 112,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Бронзовый кузнечный молот",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это кузнечный молот на паровой тяге.\n\n§lПринцип работы:§r\n\nПаровой кузнечный молот — быстрая, но довольно энергоемкая машина. Большинство его рецептов потребляют 20 пара/тик, но большинство из них не требуют более одной или двух секунд для выполнения."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:anvil",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "minecraft:sticky_piston",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "craftingPiston"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 6,
+              "Damage:2": 5121,
+              "OreDict:8": "pipeSmallBronze"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 112,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "52:10": {
+      "questID:3": 57,
+      "preRequisites:11": [
+        53
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:debug_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Переходной квест бронзовый век",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": ""
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "53:10": {
       "questID:3": 58,
       "preRequisites:11": [],
       "properties:10": {
@@ -3061,12 +3877,69 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "46:10": {
-      "questID:3": 61,
+    "54:10": {
+      "questID:3": 59,
       "preRequisites:11": [
-        20,
-        25,
-        68
+        17,
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 108,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Бронзовая Доменная Печь",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "§lБронзовая Доменная Печь§r нужна для выплавки Закаленного Железа, Стали и начальной пилометаллургии.\n\nБронзовая Доменная Печь работает в 4 раза быстрее, чем Кирпичная Доменная печь\n\nДля постройки Бронзовой Доменной Печи вам нужно:\n- §lBronze Plated Blast Furnace§r x1.\n- §lBronze Plated Bricks§r x32.\n\n§lСовет!§r\nЧтобы узнать как выглядит многоблок вы можете использовать §lHologram Projector§r из мода §c§lImpactAPI§r.\n\nНе забудьте, любой мульти-блок включается с помощью Киянки!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 4,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 108,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.blockcasings",
+              "Count:3": 1,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "55:10": {
+      "questID:3": 60,
+      "preRequisites:11": [
+        51,
+        85
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3076,9 +3949,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 3,
-            "Damage:2": 11880,
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 107,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -3086,11 +3959,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Резина",
+          "name:8": "Дробитель высокого давления",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Такой просто материал, но столько моего времени он потратил..."
+          "desc:8": "Это улучшенный дробитель на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 12 единицы пара/тик для дробления одного предмета на протяжении 20 секунд, в общей сложности 4800 единиц пара на предмет."
         }
       },
       "tasks:9": {
@@ -3104,8 +3977,43 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 3,
-              "Damage:2": 11880,
+              "Count:3": 9,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 2,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 106,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 107,
               "OreDict:8": ""
             }
           },
@@ -3114,7 +4022,181 @@
       },
       "rewards:9": {}
     },
-    "47:10": {
+    "56:10": {
+      "questID:3": 62,
+      "preRequisites:11": [
+        52,
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 116,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Компрессор высокого давления",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это улучшенный компрессор на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 12 единицы пара/тик для дробления одного предмета на протяжении 20 секунд, в общей сложности 4800 единиц пара на предмет."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 5,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 115,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 116,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "57:10": {
+      "questID:3": 63,
+      "preRequisites:11": [
+        56,
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 113,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Кузнечный молот высокого давления",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это улучшенный кузнечный молот на паровой тяге.\n\n§lПринцип работы:§r\n\nПаровой кузнечный молот — быстрая, но довольно энергоемкая машина. Большинство его рецептов потребляют 60 пара/тик, но большинство из них не требуют более одной или двух секунд для выполнения."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 5,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 2,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 112,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 113,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "58:10": {
       "questID:3": 64,
       "preRequisites:11": [
         27
@@ -3165,9 +4247,12 @@
       },
       "rewards:9": {}
     },
-    "48:10": {
-      "questID:3": 66,
-      "preRequisites:11": [],
+    "59:10": {
+      "questID:3": 65,
+      "preRequisites:11": [
+        50,
+        85
+      ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
@@ -3178,7 +4263,7 @@
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 2,
+            "Damage:2": 110,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -3186,11 +4271,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Начало эпохи Индустриализации",
+          "name:8": "Экстрактор высокого давления",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Теперь все по-серьезному. Начну с основы любого механизма - Корпус. Отличительным свойством паровых механизмов заключается в наличии или отсутствии очага. Поэтому в одних присутствует кирпичная кладка, а в других ее нет."
+          "desc:8": "Это улучшенный экстрактор на паровой тяге.\n\n§lПринцип работы:§r\n\nОн потребляет 12 единицы пара/тик для дробления одного предмета на протяжении 20 секунд, в общей сложности 4800 единиц пара на предмет."
         }
       },
       "tasks:9": {
@@ -3203,9 +4288,27 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 5,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 109,
               "OreDict:8": ""
             }
           },
@@ -3222,7 +4325,7 @@
             "0:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 110,
               "OreDict:8": ""
             }
           },
@@ -3231,7 +4334,7 @@
       },
       "rewards:9": {}
     },
-    "49:10": {
+    "60:10": {
       "questID:3": 67,
       "preRequisites:11": [
         8,
@@ -3335,58 +4438,7 @@
       },
       "rewards:9": {}
     },
-    "50:10": {
-      "questID:3": 68,
-      "preRequisites:11": [
-        66
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 118,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Сплав-завод",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Так как все остальные необходимые механизмы трубют в крафте поршни, мне придется в первую очередь делать сплав-завод, так как только в нем производится красный сплав. Этот механизм очень прожорлив, придется увеличить подачу пара путем создания новых генераторов..."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 118,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "51:10": {
+    "61:10": {
       "questID:3": 69,
       "preRequisites:11": [
         8,
@@ -3472,7 +4524,7 @@
       },
       "rewards:9": {}
     },
-    "52:10": {
+    "62:10": {
       "questID:3": 70,
       "preRequisites:11": [
         22
@@ -3557,10 +4609,11 @@
       },
       "rewards:9": {}
     },
-    "53:10": {
-      "questID:3": 71,
+    "63:10": {
+      "questID:3": 72,
       "preRequisites:11": [
-        68
+        44,
+        85
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3570,9 +4623,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
+            "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 11308,
+            "Damage:2": 114,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -3580,11 +4633,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Красный сплав",
+          "name:8": "Солнечный бойлер высокого давления",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Совсем не первый сплав, который мне попадается, но и далеко не последний.\n\n§lP.S Red Alloy и Redstone alloy совершенно разные сплавы"
+          "desc:8": "При нагреве солнечный бойлер имеет производительность пара в количестве 450 л пара на 25 тиков.\n\n§lПринцип работы:§r\n\nКаждые 256 тиков бойлер проверяет, может ли он видеть солнце. Если это возможно, он дает себе 8 ед. топлива. В течение (примерно) 5 секунд (8x12 = 96 тиков) он активен из этих 8 ед. топлива, его тепло увеличивается на 6 (+ 8-2). В течение следующих 8 секунд он теряет 5,4 тепла (-1 на 75 тиков), что приводит к чистому изменению ~ 4,6 тепла на 13 секунд дневного света или примерно 0,35 градуса в секунду. Поэтому холодному солнечному бойлеру требуется 3,8 минут, чтобы начать производить пар (температура от 20 до 100>).\n\nБойлер может вместить 32,000 L пара и 16 000 L воды. Пока его температура выше 100, каждые 25 тиков он будет потреблять 3 L воды и производить 450 L пара.  Температуры выше 100 не влияют на выработку пара. Бойлер будет пытаться выводить пар со всех сторон, кроме нижней. Тем не менее, он будет принимать воду по трубопроводу снизу, что позволяет безопасно размещать водопроводные трубы под линией котлов. Если паровой резервуар заполнится, 1/4 его емкости будет отброшено, и в качестве предупреждения будет выпушена частица дыма и звуковой эффект.\n\nВоду можно добавить в бойлер, щелкнув правой кнопкой мыши по машине с ведрами для воды, или поместив любой вид ячейки с водой в слот для подачи воды в графическом интерфейсе. Как и все машины GregTech, он вернет пустую ячейку. Если температура выше 100, а в бойлере заканчивается вода, добавление воды приведет к взрыву, поэтому подождите, пока он остынет.\n\n§lКальцификация:§r\n\nТакой же принцип как и у бронзового солечного бойлера."
         }
       },
       "tasks:9": {
@@ -3597,15 +4650,27 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:redstone",
-              "Count:3": 4,
+              "id:8": "IC2:blockAlloyGlass",
+              "Count:3": 3,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
               "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 3,
+              "Damage:2": 19054,
+              "OreDict:8": "plateTripleSilver"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 2,
+              "Damage:2": 5131,
+              "OreDict:8": "pipeSmallSteel"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 11035,
+              "Damage:2": 105,
               "OreDict:8": ""
             }
           },
@@ -3620,9 +4685,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
+              "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 11308,
+              "Damage:2": 114,
               "OreDict:8": ""
             }
           },
@@ -3631,61 +4696,11 @@
       },
       "rewards:9": {}
     },
-    "54:10": {
-      "questID:3": 76,
+    "64:10": {
+      "questID:3": 73,
       "preRequisites:11": [
-        18
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.metaitem.01",
-            "Count:3": 32,
-            "Damage:2": 11089,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "ПлюмБум",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Располгается в серебряной жиле."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.metaitem.01",
-              "Count:3": 32,
-              "Damage:2": 11089,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "55:10": {
-      "questID:3": 77,
-      "preRequisites:11": [
-        71
+        40,
+        85
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3695,9 +4710,9 @@
           "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:piston",
+            "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 104,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -3705,11 +4720,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Костяк механизмов",
+          "name:8": "Печь высокого давления",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "А вот я добрался до виновника сего торжества. Пожалуй я сделаю из него пол для своей глав-комнаты."
+          "desc:8": "Это улучшенная печь на паровой тяге.\n\n§lПринцип работы:§r\n\nОна потребляет 24 единицы пара/тик для дробления одного предмета на протяжении 6,4 секунд, в общей сложности 3072 единиц пара на предмет."
         }
       },
       "tasks:9": {
@@ -3722,60 +4737,212 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "minecraft:piston",
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 2,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
               "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 5,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 103,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 104,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "65:10": {
+      "questID:3": 74,
+      "preRequisites:11": [
+        49,
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 119,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Пплавильная печь высокого давления",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это улучшенная плавильная печь на паровой тяге.\n\n§lПринцип работы:§r\n\nПлавильная печь — самая энергоемкая паровая машина; при потреблении пара до 96 пара/тик для непрерывной работы требуется 7 бойлеров высокого давления."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 6,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 5341,
+              "OreDict:8": "pipeSmallWroughtIron"
+            },
+            "3:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 118,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 119,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "66:10": {
+      "questID:3": 75,
+      "preRequisites:11": [
+        53,
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "NORMAL",
+          "isMain:1": 1,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:gt.blockmachines",
+            "Count:3": 1,
+            "Damage:2": 101,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Жидкостный бойлер",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": "Это жидкостный бойлер. Вместо твердого потребляет жидкое топлива.\n\n§lПринцип работы:§r\nПодается вода и топливо, выходит пар.\n\nЖидкость можно либо подавать по трубам, либо вводить с помощью ведер. При использовании труб, бойлер может вместить только 99 л за раз, а принимает ее 50 л за раз.\n\nБойлер имеет минимальную температуру 20 и максимальную 1000. Каждые 20 тиков температура бойлера уменьшается на 1. Каждые 8 тиков 2л потребляется из текущего топлива и увеличивает температуру на 1. Но когда температура бойлера максимальна, он перестанет потреблять топливо для дальнейшего нагрева. Это значит, что во время нагрева 1000л жидкости будет гореть всего 200 секунд, но когда бойлер нагреется на максимум, 1000л жидкости будет гореть 500 сек, равноценном 300,000л пара.\n\nВ бойлере может быть до 32,000 литров пара или 16,000 литров воды. Пока температура бойлера выше 100, каждые 10 тиков бойлер будет потреблять 1 литр воды и производить 300 литров пара. Температуры выше 100 не увеличивают скорость производства пара. Бойлер будет пытаться выводить пар через все стороны блока, кроме нижней. §lЧерез нижнюю сторону бойлер принимает воду§r, позволяя разместить передающие воду трубы под линией бойлеров. Если накопитель пара заполнится, четверть его ёмкости будет выпущена, и в качестве предупреждения будет создана частица дыма и звук шипения.\n\nВода может быть добавлена в бойлер ПКМ на нем с ведром воды или путем помещения любой капсулы с водой в специальный слот в бойлере. Также как и любая GregTech машина, он выдаст обратно пустую капсулу. Если в бойлере нагретом выше 100 кончится вода, то добавляя воду получится взрыв, так что подождите пока он охладится.\n\n§lТопливо (Энергия):§r\nLava, Creosote"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 3,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 5,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.blockmachines",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "56:10": {
-      "questID:3": 78,
-      "preRequisites:11": [
-        77
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 115,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Сжать его!",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Достаточно полезный мехнизм, будет более восстребованным, по сравнению с экстрактором. "
-        }
-      },
-      "tasks:9": {
-        "0:10": {
+        },
+        "1:10": {
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 1,
-          "index:3": 0,
+          "index:3": 1,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 115,
+              "Damage:2": 102,
               "OreDict:8": ""
             }
           },
@@ -3784,58 +4951,7 @@
       },
       "rewards:9": {}
     },
-    "57:10": {
-      "questID:3": 79,
-      "preRequisites:11": [
-        77
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 106,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Хомячок",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Этот удалый-малый очень хорошо поможет мне разделаться в с залежами руды в сундуках.\nДа, он очень медленный.\nДа, молот имба для не хомячков. \nНо я выбираю дробитель! Он потребляет лишь 1\\4 ампера своего тира напряжения и выдает в 2 раза больше ресурсов."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 106,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "58:10": {
+    "67:10": {
       "questID:3": 80,
       "preRequisites:11": [
         6
@@ -3903,10 +5019,11 @@
       },
       "rewards:9": {}
     },
-    "59:10": {
-      "questID:3": 81,
+    "68:10": {
+      "questID:3": 83,
       "preRequisites:11": [
-        77
+        53,
+        85
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3918,7 +5035,7 @@
           "icon:10": {
             "id:8": "gregtech:gt.blockmachines",
             "Count:3": 1,
-            "Damage:2": 109,
+            "Damage:2": 102,
             "OreDict:8": ""
           },
           "snd_update:8": "random.levelup",
@@ -3926,11 +5043,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "Экстрактор",
+          "name:8": "Угольный бойлер высокого давления",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Один из необходимых механизмов, но как не странно, в основном он будет лишь элементом декора, а не механизмом из за его узкой специализации. "
+          "desc:8": "Более лучшая версия §lSmall Coal Boiler§r.\n\n§lПринцип работы:§r\nПодается вода и топливо, выходит пар.\n\nБойлер имеет минимальную температуру 20 и максимальную 1000. Каждые 40 тиков температура бойлера уменьшается на 1. Каждые 12 тиков 2 энергия потребляется из текущего топлива и увеличивает температуру на 1. Но когда температура бойлера максимальна, он перестанет потреблять топливо для дальнейшего нагрева. Это значит, что во время нагрева уголь будет гореть всего 48 секунд, но когда бойлер нагреется на максимум, уголь будет гореть 160 сек, равноценном 48,000 Литрам пара.\n\nВ бойлере может быть до 32,000 литров пара или 16,000 литров воды. Пока температура бойлера выше 100, каждые 10 тиков бойлер будет потреблять 1 литр воды и производить 150 литров пара. Температуры выше 100 не увеличивают скорость производства пара. Бойлер будет пытаться выводить пар через все стороны блока, кроме нижней. §lЧерез нижнюю сторону бойлер принимает воду§r, позволяя разместить передающие воду трубы под линией бойлеров. Если накопитель пара заполнится, четверть его ёмкости будет выпущена, и в качестве предупреждения будет создана частица дыма и звук шипения.\n\nВода может быть добавлена в бойлер ПКМ на нем с ведром воды или путем помещения любой капсулы с водой в специальный слот в бойлере. Также как и любая GregTech машина, он выдаст обратно пустую капсулу. Если в бойлере нагретом выше 100 кончится вода, то добавляя воду получится взрыв, так что подождите пока он охладится.\n\n§lТопливо (Энергия):§r\nCoal - 160 ед.\nCharcoal - 160 ед.\nLignite - 120 ед.\nCoal Coke - 320 ед."
         }
       },
       "tasks:9": {
@@ -3943,60 +5060,27 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "id:8": "minecraft:brick_block",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 4,
+              "Damage:2": 17304,
+              "OreDict:8": "plateWroughtIron"
+            },
+            "2:10": {
+              "id:8": "gregtech:gt.metaitem.01",
+              "Count:3": 1,
+              "Damage:2": 17305,
+              "OreDict:8": "plateSteel"
+            },
+            "3:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 109,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "60:10": {
-      "questID:3": 82,
-      "preRequisites:11": [
-        78
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 112,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Отбойный молот",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Самый полезный механизм на данный момент, так как он способен не только заменить молот в крафте, но и сэкономить ресурсы во время гибки."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "minecraft:anvil",
-              "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 100,
               "OreDict:8": ""
             }
           },
@@ -4013,7 +5097,7 @@
             "0:10": {
               "id:8": "gregtech:gt.blockmachines",
               "Count:3": 1,
-              "Damage:2": 112,
+              "Damage:2": 101,
               "OreDict:8": ""
             }
           },
@@ -4022,17 +5106,17 @@
       },
       "rewards:9": {}
     },
-    "61:10": {
+    "69:10": {
       "questID:3": 84,
       "preRequisites:11": [
-        18
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.metaitem.01",
@@ -4049,7 +5133,7 @@
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Не свовсем обычное железо, с несовсем обычным тех-процессом изготовления. К сожалению просто выплавить железо в печке не выйдет. Придется пихать его в доменную печь."
+          "desc:8": "§lОбожженное железо§r, один из стратегически важных материалов.\n\nС помощью него вы можеет улучшить ваши бронзовые машины или сделать новые!"
         }
       },
       "tasks:9": {
@@ -4073,18 +5157,51 @@
       },
       "rewards:9": {}
     },
-    "62:10": {
+    "70:10": {
+      "questID:3": 85,
+      "preRequisites:11": [
+        84,
+        86
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "snd_complete:8": "random.levelup",
+          "taskLogic:8": "AND",
+          "visibility:8": "HIDDEN",
+          "isMain:1": 0,
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:debug_item",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "snd_update:8": "random.levelup",
+          "repeatTime:3": -1,
+          "globalShare:1": 0,
+          "questLogic:8": "AND",
+          "repeat_relative:1": 1,
+          "name:8": "Переходной квест 2 бронзовый век",
+          "lockedProgress:1": 0,
+          "autoClaim:1": 0,
+          "isSilent:1": 0,
+          "desc:8": ""
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {}
+    },
+    "71:10": {
       "questID:3": 86,
       "preRequisites:11": [
-        18,
-        82
+        17
       ],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
           "taskLogic:8": "AND",
           "visibility:8": "NORMAL",
-          "isMain:1": 0,
+          "isMain:1": 1,
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "gregtech:gt.metaitem.01",
@@ -4097,11 +5214,11 @@
           "globalShare:1": 0,
           "questLogic:8": "AND",
           "repeat_relative:1": 1,
-          "name:8": "LV Железо",
+          "name:8": "Первая сталь",
           "lockedProgress:1": 0,
           "autoClaim:1": 0,
           "isSilent:1": 0,
-          "desc:8": "Очередной материал, очередной билет"
+          "desc:8": "§lСталь§r - самый используемый материал в ближайшее время. \n\nБлагодаря стали вам открывается эра электрических технологий - §lLV тир§r.\n\nЧаще всего сталь используется для крафта механизмов и инструментов.\n\n§lСовет!§r\nДелайте как можно больше стали."
         }
       },
       "tasks:9": {
@@ -4142,7 +5259,7 @@
       },
       "rewards:9": {}
     },
-    "63:10": {
+    "72:10": {
       "questID:3": 87,
       "preRequisites:11": [],
       "properties:10": {
@@ -4191,197 +5308,7 @@
       },
       "rewards:9": {}
     },
-    "64:10": {
-      "questID:3": 88,
-      "preRequisites:11": [
-        61
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 4,
-            "Damage:2": 1246,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Оберни его полностью",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "Кабеля очень мерзлявые и им не нравится когда их трогают голыми."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 4,
-              "Damage:2": 1246,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 8,
-              "Damage:2": 2006,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "65:10": {
-      "questID:3": 91,
-      "preRequisites:11": [
-        76,
-        84,
-        86,
-        88
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 0,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 10,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "ULV Tier",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "К сожалению перепрыгнуть с пара сразу на LV не получится, придется начать с ULV.\n§l\nP.S Для общего понимания будет использоваться сокращенная формулировка каждого тира:\n8 ULV - Ultra Low Voltage\n32 LV - Low Voltage\n128 MV - Medium Voltage\nи т.д"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockcasings",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        },
-        "1:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 1,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 10,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "66:10": {
-      "questID:3": 92,
-      "preRequisites:11": [
-        66
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "snd_complete:8": "random.levelup",
-          "taskLogic:8": "AND",
-          "visibility:8": "NORMAL",
-          "isMain:1": 1,
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "gregtech:gt.blockmachines",
-            "Count:3": 1,
-            "Damage:2": 100,
-            "OreDict:8": ""
-          },
-          "snd_update:8": "random.levelup",
-          "repeatTime:3": -1,
-          "globalShare:1": 0,
-          "questLogic:8": "AND",
-          "repeat_relative:1": 1,
-          "name:8": "Первый генератор",
-          "lockedProgress:1": 0,
-          "autoClaim:1": 0,
-          "isSilent:1": 0,
-          "desc:8": "В самом начале я могу себе возволить простой бойлер, поэтому начну с него. Несмотря на то, что в паровых механизмах нет риска взрыва от перенапряжения, есть другие проблемы. К примеру каждому механизму требуется свободное пространство для выброса излишков пара. Но самой главной пробелмой являются генераторы: Они требуют своевременной подачи воды, поэтому мне стоит подключить помпу к генератору через жидкостную трубу.\n\n§lP.S если вода в генераторе кончилась, а он все это время продолжал работать - не спешить заливать в него воду. Сначала подождать его понижения температуры до нуля и лишь затем заливать воду."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "gregtech:gt.blockmachines",
-              "Count:3": 1,
-              "Damage:2": 100,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "67:10": {
+    "73:10": {
       "questID:3": 93,
       "preRequisites:11": [],
       "properties:10": {
@@ -4451,11 +5378,9 @@
       },
       "rewards:9": {}
     },
-    "68:10": {
+    "74:10": {
       "questID:3": 94,
-      "preRequisites:11": [
-        91
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "snd_complete:8": "random.levelup",
@@ -4502,7 +5427,7 @@
       },
       "rewards:9": {}
     },
-    "69:10": {
+    "75:10": {
       "questID:3": 95,
       "preRequisites:11": [
         97
@@ -4553,7 +5478,7 @@
       },
       "rewards:9": {}
     },
-    "70:10": {
+    "76:10": {
       "questID:3": 96,
       "preRequisites:11": [
         94
@@ -4627,7 +5552,7 @@
       },
       "rewards:9": {}
     },
-    "71:10": {
+    "77:10": {
       "questID:3": 97,
       "preRequisites:11": [
         96
@@ -4695,7 +5620,7 @@
       },
       "rewards:9": {}
     },
-    "72:10": {
+    "78:10": {
       "questID:3": 98,
       "preRequisites:11": [
         150,
@@ -4748,7 +5673,7 @@
       },
       "rewards:9": {}
     },
-    "73:10": {
+    "79:10": {
       "questID:3": 99,
       "preRequisites:11": [
         98
@@ -4799,7 +5724,7 @@
       },
       "rewards:9": {}
     },
-    "74:10": {
+    "80:10": {
       "questID:3": 100,
       "preRequisites:11": [
         104
@@ -4867,7 +5792,7 @@
       },
       "rewards:9": {}
     },
-    "75:10": {
+    "81:10": {
       "questID:3": 101,
       "preRequisites:11": [
         115,
@@ -4919,7 +5844,7 @@
       },
       "rewards:9": {}
     },
-    "76:10": {
+    "82:10": {
       "questID:3": 102,
       "preRequisites:11": [
         99
@@ -4970,7 +5895,7 @@
       },
       "rewards:9": {}
     },
-    "77:10": {
+    "83:10": {
       "questID:3": 103,
       "preRequisites:11": [
         99
@@ -5021,7 +5946,7 @@
       },
       "rewards:9": {}
     },
-    "78:10": {
+    "84:10": {
       "questID:3": 104,
       "preRequisites:11": [
         99
@@ -5072,7 +5997,7 @@
       },
       "rewards:9": {}
     },
-    "79:10": {
+    "85:10": {
       "questID:3": 105,
       "preRequisites:11": [
         99
@@ -5123,7 +6048,7 @@
       },
       "rewards:9": {}
     },
-    "80:10": {
+    "86:10": {
       "questID:3": 106,
       "preRequisites:11": [
         99
@@ -5174,7 +6099,7 @@
       },
       "rewards:9": {}
     },
-    "81:10": {
+    "87:10": {
       "questID:3": 107,
       "preRequisites:11": [
         99
@@ -5225,7 +6150,7 @@
       },
       "rewards:9": {}
     },
-    "82:10": {
+    "88:10": {
       "questID:3": 108,
       "preRequisites:11": [
         112,
@@ -5297,7 +6222,7 @@
       },
       "rewards:9": {}
     },
-    "83:10": {
+    "89:10": {
       "questID:3": 109,
       "preRequisites:11": [
         108
@@ -5365,7 +6290,7 @@
       },
       "rewards:9": {}
     },
-    "84:10": {
+    "90:10": {
       "questID:3": 110,
       "preRequisites:11": [
         98
@@ -5416,7 +6341,7 @@
       },
       "rewards:9": {}
     },
-    "85:10": {
+    "91:10": {
       "questID:3": 111,
       "preRequisites:11": [
         115,
@@ -5468,7 +6393,7 @@
       },
       "rewards:9": {}
     },
-    "86:10": {
+    "92:10": {
       "questID:3": 112,
       "preRequisites:11": [
         110
@@ -5506,7 +6431,7 @@
       },
       "rewards:9": {}
     },
-    "87:10": {
+    "93:10": {
       "questID:3": 113,
       "preRequisites:11": [
         105
@@ -5557,7 +6482,7 @@
       },
       "rewards:9": {}
     },
-    "88:10": {
+    "94:10": {
       "questID:3": 114,
       "preRequisites:11": [],
       "properties:10": {
@@ -5635,7 +6560,7 @@
       },
       "rewards:9": {}
     },
-    "89:10": {
+    "95:10": {
       "questID:3": 115,
       "preRequisites:11": [],
       "properties:10": {
@@ -5684,7 +6609,7 @@
       },
       "rewards:9": {}
     },
-    "90:10": {
+    "96:10": {
       "questID:3": 116,
       "preRequisites:11": [
         112,
@@ -5830,7 +6755,7 @@
       },
       "rewards:9": {}
     },
-    "91:10": {
+    "97:10": {
       "questID:3": 117,
       "preRequisites:11": [
         112,
@@ -5882,7 +6807,7 @@
       },
       "rewards:9": {}
     },
-    "92:10": {
+    "98:10": {
       "questID:3": 118,
       "preRequisites:11": [
         112,
@@ -5963,7 +6888,7 @@
       },
       "rewards:9": {}
     },
-    "93:10": {
+    "99:10": {
       "questID:3": 119,
       "preRequisites:11": [
         112,
@@ -6015,7 +6940,7 @@
       },
       "rewards:9": {}
     },
-    "94:10": {
+    "100:10": {
       "questID:3": 121,
       "preRequisites:11": [
         122
@@ -6083,7 +7008,7 @@
       },
       "rewards:9": {}
     },
-    "95:10": {
+    "101:10": {
       "questID:3": 122,
       "preRequisites:11": [
         109
@@ -6134,7 +7059,7 @@
       },
       "rewards:9": {}
     },
-    "96:10": {
+    "102:10": {
       "questID:3": 123,
       "preRequisites:11": [
         121
@@ -6214,7 +7139,7 @@
       },
       "rewards:9": {}
     },
-    "97:10": {
+    "103:10": {
       "questID:3": 124,
       "preRequisites:11": [
         123
@@ -6265,7 +7190,7 @@
       },
       "rewards:9": {}
     },
-    "98:10": {
+    "104:10": {
       "questID:3": 125,
       "preRequisites:11": [
         131
@@ -6316,7 +7241,7 @@
       },
       "rewards:9": {}
     },
-    "99:10": {
+    "105:10": {
       "questID:3": 126,
       "preRequisites:11": [
         138
@@ -6367,7 +7292,7 @@
       },
       "rewards:9": {}
     },
-    "100:10": {
+    "106:10": {
       "questID:3": 127,
       "preRequisites:11": [
         128,
@@ -6407,7 +7332,7 @@
       },
       "rewards:9": {}
     },
-    "101:10": {
+    "107:10": {
       "questID:3": 128,
       "preRequisites:11": [
         124
@@ -6492,7 +7417,7 @@
       },
       "rewards:9": {}
     },
-    "102:10": {
+    "108:10": {
       "questID:3": 129,
       "preRequisites:11": [
         115,
@@ -6550,7 +7475,7 @@
       },
       "rewards:9": {}
     },
-    "103:10": {
+    "109:10": {
       "questID:3": 130,
       "preRequisites:11": [
         134
@@ -6601,7 +7526,7 @@
       },
       "rewards:9": {}
     },
-    "104:10": {
+    "110:10": {
       "questID:3": 131,
       "preRequisites:11": [
         125
@@ -6652,7 +7577,7 @@
       },
       "rewards:9": {}
     },
-    "105:10": {
+    "111:10": {
       "questID:3": 132,
       "preRequisites:11": [
         127
@@ -6703,7 +7628,7 @@
       },
       "rewards:9": {}
     },
-    "106:10": {
+    "112:10": {
       "questID:3": 133,
       "preRequisites:11": [
         127
@@ -6754,7 +7679,7 @@
       },
       "rewards:9": {}
     },
-    "107:10": {
+    "113:10": {
       "questID:3": 134,
       "preRequisites:11": [
         131
@@ -6805,7 +7730,7 @@
       },
       "rewards:9": {}
     },
-    "108:10": {
+    "114:10": {
       "questID:3": 135,
       "preRequisites:11": [
         115,
@@ -6857,7 +7782,7 @@
       },
       "rewards:9": {}
     },
-    "109:10": {
+    "115:10": {
       "questID:3": 136,
       "preRequisites:11": [
         115,
@@ -6909,7 +7834,7 @@
       },
       "rewards:9": {}
     },
-    "110:10": {
+    "116:10": {
       "questID:3": 138,
       "preRequisites:11": [
         123
@@ -6960,7 +7885,7 @@
       },
       "rewards:9": {}
     },
-    "111:10": {
+    "117:10": {
       "questID:3": 139,
       "preRequisites:11": [
         127
@@ -7011,7 +7936,7 @@
       },
       "rewards:9": {}
     },
-    "112:10": {
+    "118:10": {
       "questID:3": 140,
       "preRequisites:11": [
         126,
@@ -7063,7 +7988,7 @@
       },
       "rewards:9": {}
     },
-    "113:10": {
+    "119:10": {
       "questID:3": 141,
       "preRequisites:11": [
         127,
@@ -7134,7 +8059,7 @@
       },
       "rewards:9": {}
     },
-    "114:10": {
+    "120:10": {
       "questID:3": 142,
       "preRequisites:11": [
         141
@@ -7202,7 +8127,7 @@
       },
       "rewards:9": {}
     },
-    "115:10": {
+    "121:10": {
       "questID:3": 143,
       "preRequisites:11": [
         142
@@ -7271,7 +8196,7 @@
       },
       "rewards:9": {}
     },
-    "116:10": {
+    "122:10": {
       "questID:3": 144,
       "preRequisites:11": [
         143
@@ -7356,7 +8281,7 @@
       },
       "rewards:9": {}
     },
-    "117:10": {
+    "123:10": {
       "questID:3": 148,
       "preRequisites:11": [],
       "properties:10": {
@@ -7405,7 +8330,7 @@
       },
       "rewards:9": {}
     },
-    "118:10": {
+    "124:10": {
       "questID:3": 149,
       "preRequisites:11": [
         148
@@ -7456,7 +8381,7 @@
       },
       "rewards:9": {}
     },
-    "119:10": {
+    "125:10": {
       "questID:3": 150,
       "preRequisites:11": [
         95
@@ -7494,7 +8419,7 @@
       },
       "rewards:9": {}
     },
-    "120:10": {
+    "126:10": {
       "questID:3": 151,
       "preRequisites:11": [],
       "properties:10": {
@@ -7543,7 +8468,7 @@
       },
       "rewards:9": {}
     },
-    "121:10": {
+    "127:10": {
       "questID:3": 152,
       "preRequisites:11": [
         150,
@@ -7601,7 +8526,7 @@
       },
       "rewards:9": {}
     },
-    "122:10": {
+    "128:10": {
       "questID:3": 153,
       "preRequisites:11": [
         150,
@@ -7665,7 +8590,7 @@
       },
       "rewards:9": {}
     },
-    "123:10": {
+    "129:10": {
       "questID:3": 154,
       "preRequisites:11": [
         150,
@@ -7723,7 +8648,7 @@
       },
       "rewards:9": {}
     },
-    "124:10": {
+    "130:10": {
       "questID:3": 155,
       "preRequisites:11": [
         144
@@ -7761,7 +8686,7 @@
       },
       "rewards:9": {}
     },
-    "125:10": {
+    "131:10": {
       "questID:3": 156,
       "preRequisites:11": [
         148,
@@ -7801,7 +8726,7 @@
       },
       "rewards:9": {}
     },
-    "126:10": {
+    "132:10": {
       "questID:3": 157,
       "preRequisites:11": [
         156,
@@ -7853,7 +8778,7 @@
       },
       "rewards:9": {}
     },
-    "127:10": {
+    "133:10": {
       "questID:3": 158,
       "preRequisites:11": [
         144
@@ -7904,7 +8829,7 @@
       },
       "rewards:9": {}
     },
-    "128:10": {
+    "134:10": {
       "questID:3": 159,
       "preRequisites:11": [],
       "properties:10": {
@@ -7953,7 +8878,7 @@
       },
       "rewards:9": {}
     },
-    "129:10": {
+    "135:10": {
       "questID:3": 160,
       "preRequisites:11": [
         156,
@@ -7993,7 +8918,7 @@
       },
       "rewards:9": {}
     },
-    "130:10": {
+    "136:10": {
       "questID:3": 161,
       "preRequisites:11": [
         158
@@ -8061,7 +8986,7 @@
       },
       "rewards:9": {}
     },
-    "131:10": {
+    "137:10": {
       "questID:3": 162,
       "preRequisites:11": [
         161,
@@ -8113,7 +9038,7 @@
       },
       "rewards:9": {}
     },
-    "132:10": {
+    "138:10": {
       "questID:3": 163,
       "preRequisites:11": [],
       "properties:10": {
@@ -8162,7 +9087,7 @@
       },
       "rewards:9": {}
     },
-    "133:10": {
+    "139:10": {
       "questID:3": 164,
       "preRequisites:11": [
         160,
@@ -8214,7 +9139,7 @@
       },
       "rewards:9": {}
     },
-    "134:10": {
+    "140:10": {
       "questID:3": 165,
       "preRequisites:11": [
         160
@@ -8265,7 +9190,7 @@
       },
       "rewards:9": {}
     },
-    "135:10": {
+    "141:10": {
       "questID:3": 166,
       "preRequisites:11": [
         162,
@@ -8317,7 +9242,7 @@
       },
       "rewards:9": {}
     },
-    "136:10": {
+    "142:10": {
       "questID:3": 167,
       "preRequisites:11": [
         131
@@ -8368,7 +9293,7 @@
       },
       "rewards:9": {}
     },
-    "137:10": {
+    "143:10": {
       "questID:3": 168,
       "preRequisites:11": [
         167
@@ -8419,7 +9344,7 @@
       },
       "rewards:9": {}
     },
-    "138:10": {
+    "144:10": {
       "questID:3": 169,
       "preRequisites:11": [
         144
@@ -8470,7 +9395,7 @@
       },
       "rewards:9": {}
     },
-    "139:10": {
+    "145:10": {
       "questID:3": 170,
       "preRequisites:11": [
         169
@@ -8521,7 +9446,7 @@
       },
       "rewards:9": {}
     },
-    "140:10": {
+    "146:10": {
       "questID:3": 171,
       "preRequisites:11": [
         165
@@ -8618,7 +9543,7 @@
       },
       "rewards:9": {}
     },
-    "141:10": {
+    "147:10": {
       "questID:3": 172,
       "preRequisites:11": [
         19
@@ -8669,7 +9594,7 @@
       },
       "rewards:9": {}
     },
-    "142:10": {
+    "148:10": {
       "questID:3": 173,
       "preRequisites:11": [
         172
@@ -8707,7 +9632,7 @@
       },
       "rewards:9": {}
     },
-    "143:10": {
+    "149:10": {
       "questID:3": 174,
       "preRequisites:11": [
         173
@@ -8776,7 +9701,7 @@
       },
       "rewards:9": {}
     },
-    "144:10": {
+    "150:10": {
       "questID:3": 175,
       "preRequisites:11": [],
       "properties:10": {
@@ -8825,7 +9750,7 @@
       },
       "rewards:9": {}
     },
-    "145:10": {
+    "151:10": {
       "questID:3": 176,
       "preRequisites:11": [
         174
@@ -8882,7 +9807,7 @@
       },
       "rewards:9": {}
     },
-    "146:10": {
+    "152:10": {
       "questID:3": 177,
       "preRequisites:11": [
         186
@@ -8933,7 +9858,7 @@
       },
       "rewards:9": {}
     },
-    "147:10": {
+    "153:10": {
       "questID:3": 178,
       "preRequisites:11": [
         197
@@ -8984,7 +9909,7 @@
       },
       "rewards:9": {}
     },
-    "148:10": {
+    "154:10": {
       "questID:3": 179,
       "preRequisites:11": [
         173,
@@ -9036,7 +9961,7 @@
       },
       "rewards:9": {}
     },
-    "149:10": {
+    "155:10": {
       "questID:3": 180,
       "preRequisites:11": [
         173,
@@ -9094,7 +10019,7 @@
       },
       "rewards:9": {}
     },
-    "150:10": {
+    "156:10": {
       "questID:3": 181,
       "preRequisites:11": [
         177
@@ -9168,7 +10093,7 @@
       },
       "rewards:9": {}
     },
-    "151:10": {
+    "157:10": {
       "questID:3": 182,
       "preRequisites:11": [
         181
@@ -9236,7 +10161,7 @@
       },
       "rewards:9": {}
     },
-    "152:10": {
+    "158:10": {
       "questID:3": 183,
       "preRequisites:11": [
         178
@@ -9338,7 +10263,7 @@
       },
       "rewards:9": {}
     },
-    "153:10": {
+    "159:10": {
       "questID:3": 184,
       "preRequisites:11": [
         185
@@ -9376,7 +10301,7 @@
       },
       "rewards:9": {}
     },
-    "154:10": {
+    "160:10": {
       "questID:3": 185,
       "preRequisites:11": [
         176,
@@ -9415,7 +10340,7 @@
       },
       "rewards:9": {}
     },
-    "155:10": {
+    "161:10": {
       "questID:3": 186,
       "preRequisites:11": [
         184
@@ -9466,7 +10391,7 @@
       },
       "rewards:9": {}
     },
-    "156:10": {
+    "162:10": {
       "questID:3": 187,
       "preRequisites:11": [
         182
@@ -9534,7 +10459,7 @@
       },
       "rewards:9": {}
     },
-    "157:10": {
+    "163:10": {
       "questID:3": 188,
       "preRequisites:11": [],
       "properties:10": {
@@ -9583,7 +10508,7 @@
       },
       "rewards:9": {}
     },
-    "158:10": {
+    "164:10": {
       "questID:3": 189,
       "preRequisites:11": [],
       "properties:10": {
@@ -9632,7 +10557,7 @@
       },
       "rewards:9": {}
     },
-    "159:10": {
+    "165:10": {
       "questID:3": 190,
       "preRequisites:11": [
         177,
@@ -9701,7 +10626,7 @@
       },
       "rewards:9": {}
     },
-    "160:10": {
+    "166:10": {
       "questID:3": 191,
       "preRequisites:11": [
         190
@@ -9752,7 +10677,7 @@
       },
       "rewards:9": {}
     },
-    "161:10": {
+    "167:10": {
       "questID:3": 192,
       "preRequisites:11": [
         191,
@@ -9804,7 +10729,7 @@
       },
       "rewards:9": {}
     },
-    "162:10": {
+    "168:10": {
       "questID:3": 193,
       "preRequisites:11": [
         192
@@ -9872,7 +10797,7 @@
       },
       "rewards:9": {}
     },
-    "163:10": {
+    "169:10": {
       "questID:3": 194,
       "preRequisites:11": [
         193
@@ -9929,7 +10854,7 @@
       },
       "rewards:9": {}
     },
-    "164:10": {
+    "170:10": {
       "questID:3": 195,
       "preRequisites:11": [
         194
@@ -9980,7 +10905,7 @@
       },
       "rewards:9": {}
     },
-    "165:10": {
+    "171:10": {
       "questID:3": 196,
       "preRequisites:11": [
         195
@@ -10031,7 +10956,7 @@
       },
       "rewards:9": {}
     },
-    "166:10": {
+    "172:10": {
       "questID:3": 197,
       "preRequisites:11": [
         196
@@ -10133,7 +11058,7 @@
       },
       "rewards:9": {}
     },
-    "167:10": {
+    "173:10": {
       "questID:3": 198,
       "preRequisites:11": [
         205
@@ -10184,7 +11109,7 @@
       },
       "rewards:9": {}
     },
-    "168:10": {
+    "174:10": {
       "questID:3": 199,
       "preRequisites:11": [
         198
@@ -10235,7 +11160,7 @@
       },
       "rewards:9": {}
     },
-    "169:10": {
+    "175:10": {
       "questID:3": 200,
       "preRequisites:11": [
         199
@@ -10286,7 +11211,7 @@
       },
       "rewards:9": {}
     },
-    "170:10": {
+    "176:10": {
       "questID:3": 201,
       "preRequisites:11": [
         202
@@ -10390,7 +11315,7 @@
       },
       "rewards:9": {}
     },
-    "171:10": {
+    "177:10": {
       "questID:3": 202,
       "preRequisites:11": [
         203,
@@ -10429,7 +11354,7 @@
       },
       "rewards:9": {}
     },
-    "172:10": {
+    "178:10": {
       "questID:3": 203,
       "preRequisites:11": [
         204
@@ -10480,7 +11405,7 @@
       },
       "rewards:9": {}
     },
-    "173:10": {
+    "179:10": {
       "questID:3": 204,
       "preRequisites:11": [
         200
@@ -10549,7 +11474,7 @@
       },
       "rewards:9": {}
     },
-    "174:10": {
+    "180:10": {
       "questID:3": 205,
       "preRequisites:11": [
         183
@@ -10587,7 +11512,7 @@
       },
       "rewards:9": {}
     },
-    "175:10": {
+    "181:10": {
       "questID:3": 206,
       "preRequisites:11": [],
       "properties:10": {
@@ -10636,7 +11561,7 @@
       },
       "rewards:9": {}
     },
-    "176:10": {
+    "182:10": {
       "questID:3": 207,
       "preRequisites:11": [
         187
@@ -10705,7 +11630,7 @@
       },
       "rewards:9": {}
     },
-    "177:10": {
+    "183:10": {
       "questID:3": 208,
       "preRequisites:11": [],
       "properties:10": {
@@ -10754,7 +11679,7 @@
       },
       "rewards:9": {}
     },
-    "178:10": {
+    "184:10": {
       "questID:3": 209,
       "preRequisites:11": [
         201
@@ -10805,7 +11730,7 @@
       },
       "rewards:9": {}
     },
-    "179:10": {
+    "185:10": {
       "questID:3": 210,
       "preRequisites:11": [
         209
@@ -10843,7 +11768,7 @@
       },
       "rewards:9": {}
     },
-    "180:10": {
+    "186:10": {
       "questID:3": 211,
       "preRequisites:11": [
         210
@@ -10894,7 +11819,7 @@
       },
       "rewards:9": {}
     },
-    "181:10": {
+    "187:10": {
       "questID:3": 212,
       "preRequisites:11": [],
       "properties:10": {
@@ -10943,7 +11868,7 @@
       },
       "rewards:9": {}
     },
-    "182:10": {
+    "188:10": {
       "questID:3": 213,
       "preRequisites:11": [
         202
@@ -10981,7 +11906,7 @@
       },
       "rewards:9": {}
     },
-    "183:10": {
+    "189:10": {
       "questID:3": 214,
       "preRequisites:11": [
         215
@@ -11072,7 +11997,7 @@
       },
       "rewards:9": {}
     },
-    "184:10": {
+    "190:10": {
       "questID:3": 215,
       "preRequisites:11": [
         216
@@ -11140,7 +12065,7 @@
       },
       "rewards:9": {}
     },
-    "185:10": {
+    "191:10": {
       "questID:3": 216,
       "preRequisites:11": [
         215,
@@ -11209,7 +12134,7 @@
       },
       "rewards:9": {}
     },
-    "186:10": {
+    "192:10": {
       "questID:3": 217,
       "preRequisites:11": [
         211
@@ -11260,7 +12185,7 @@
       },
       "rewards:9": {}
     },
-    "187:10": {
+    "193:10": {
       "questID:3": 218,
       "preRequisites:11": [
         217
@@ -11311,7 +12236,7 @@
       },
       "rewards:9": {}
     },
-    "188:10": {
+    "194:10": {
       "questID:3": 219,
       "preRequisites:11": [
         201
@@ -11362,7 +12287,7 @@
       },
       "rewards:9": {}
     },
-    "189:10": {
+    "195:10": {
       "questID:3": 220,
       "preRequisites:11": [
         99
@@ -11436,7 +12361,7 @@
       },
       "rewards:9": {}
     },
-    "190:10": {
+    "196:10": {
       "questID:3": 221,
       "preRequisites:11": [
         199
@@ -11538,7 +12463,7 @@
       },
       "rewards:9": {}
     },
-    "191:10": {
+    "197:10": {
       "questID:3": 222,
       "preRequisites:11": [],
       "properties:10": {
@@ -11569,7 +12494,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "192:10": {
+    "198:10": {
       "questID:3": 223,
       "preRequisites:11": [],
       "properties:10": {
@@ -11600,7 +12525,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "193:10": {
+    "199:10": {
       "questID:3": 224,
       "preRequisites:11": [],
       "properties:10": {
@@ -11631,7 +12556,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "194:10": {
+    "200:10": {
       "questID:3": 225,
       "preRequisites:11": [],
       "properties:10": {
@@ -11662,7 +12587,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "195:10": {
+    "201:10": {
       "questID:3": 226,
       "preRequisites:11": [],
       "properties:10": {
@@ -11693,7 +12618,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "196:10": {
+    "202:10": {
       "questID:3": 227,
       "preRequisites:11": [],
       "properties:10": {
@@ -11724,7 +12649,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "197:10": {
+    "203:10": {
       "questID:3": 228,
       "preRequisites:11": [],
       "properties:10": {
@@ -11755,7 +12680,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "198:10": {
+    "204:10": {
       "questID:3": 229,
       "preRequisites:11": [],
       "properties:10": {
@@ -11786,7 +12711,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "199:10": {
+    "205:10": {
       "questID:3": 230,
       "preRequisites:11": [],
       "properties:10": {
@@ -11817,7 +12742,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "200:10": {
+    "206:10": {
       "questID:3": 231,
       "preRequisites:11": [],
       "properties:10": {
@@ -11848,7 +12773,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "201:10": {
+    "207:10": {
       "questID:3": 232,
       "preRequisites:11": [],
       "properties:10": {
@@ -11879,7 +12804,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "202:10": {
+    "208:10": {
       "questID:3": 233,
       "preRequisites:11": [],
       "properties:10": {
@@ -11910,7 +12835,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "203:10": {
+    "209:10": {
       "questID:3": 234,
       "preRequisites:11": [],
       "properties:10": {
@@ -11941,7 +12866,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "204:10": {
+    "210:10": {
       "questID:3": 235,
       "preRequisites:11": [],
       "properties:10": {
@@ -11972,7 +12897,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "205:10": {
+    "211:10": {
       "questID:3": 236,
       "preRequisites:11": [],
       "properties:10": {
@@ -12003,7 +12928,7 @@
       "tasks:9": {},
       "rewards:9": {}
     },
-    "206:10": {
+    "212:10": {
       "questID:3": 237,
       "preRequisites:11": [
         123
@@ -12054,7 +12979,7 @@
       },
       "rewards:9": {}
     },
-    "207:10": {
+    "213:10": {
       "questID:3": 238,
       "preRequisites:11": [
         213
@@ -12129,7 +13054,7 @@
       },
       "rewards:9": {}
     },
-    "208:10": {
+    "214:10": {
       "questID:3": 239,
       "preRequisites:11": [
         218
@@ -12197,7 +13122,7 @@
       },
       "rewards:9": {}
     },
-    "209:10": {
+    "215:10": {
       "questID:3": 240,
       "preRequisites:11": [
         239
@@ -12248,7 +13173,7 @@
       },
       "rewards:9": {}
     },
-    "210:10": {
+    "216:10": {
       "questID:3": 241,
       "preRequisites:11": [
         240
@@ -12299,7 +13224,7 @@
       },
       "rewards:9": {}
     },
-    "211:10": {
+    "217:10": {
       "questID:3": 242,
       "preRequisites:11": [
         218
@@ -12337,7 +13262,7 @@
       },
       "rewards:9": {}
     },
-    "212:10": {
+    "218:10": {
       "questID:3": 243,
       "preRequisites:11": [
         242
@@ -12388,7 +13313,7 @@
       },
       "rewards:9": {}
     },
-    "213:10": {
+    "219:10": {
       "questID:3": 244,
       "preRequisites:11": [
         243
@@ -12439,7 +13364,7 @@
       },
       "rewards:9": {}
     },
-    "214:10": {
+    "220:10": {
       "questID:3": 245,
       "preRequisites:11": [
         210,
@@ -12491,7 +13416,7 @@
       },
       "rewards:9": {}
     },
-    "215:10": {
+    "221:10": {
       "questID:3": 246,
       "preRequisites:11": [
         212,
@@ -12560,7 +13485,7 @@
       },
       "rewards:9": {}
     },
-    "216:10": {
+    "222:10": {
       "questID:3": 247,
       "preRequisites:11": [],
       "properties:10": {
@@ -12609,7 +13534,7 @@
       },
       "rewards:9": {}
     },
-    "217:10": {
+    "223:10": {
       "questID:3": 248,
       "preRequisites:11": [],
       "properties:10": {
@@ -12658,7 +13583,7 @@
       },
       "rewards:9": {}
     },
-    "218:10": {
+    "224:10": {
       "questID:3": 249,
       "preRequisites:11": [
         241
@@ -12709,7 +13634,7 @@
       },
       "rewards:9": {}
     },
-    "219:10": {
+    "225:10": {
       "questID:3": 250,
       "preRequisites:11": [
         249
@@ -12760,7 +13685,7 @@
       },
       "rewards:9": {}
     },
-    "220:10": {
+    "226:10": {
       "questID:3": 251,
       "preRequisites:11": [
         250
@@ -12811,7 +13736,7 @@
       },
       "rewards:9": {}
     },
-    "221:10": {
+    "227:10": {
       "questID:3": 252,
       "preRequisites:11": [
         251
@@ -12862,7 +13787,7 @@
       },
       "rewards:9": {}
     },
-    "222:10": {
+    "228:10": {
       "questID:3": 253,
       "preRequisites:11": [
         252
@@ -12900,7 +13825,7 @@
       },
       "rewards:9": {}
     },
-    "223:10": {
+    "229:10": {
       "questID:3": 254,
       "preRequisites:11": [
         253
@@ -12951,7 +13876,7 @@
       },
       "rewards:9": {}
     },
-    "224:10": {
+    "230:10": {
       "questID:3": 255,
       "preRequisites:11": [
         254
@@ -13002,7 +13927,7 @@
       },
       "rewards:9": {}
     },
-    "225:10": {
+    "231:10": {
       "questID:3": 256,
       "preRequisites:11": [
         255
@@ -13053,7 +13978,7 @@
       },
       "rewards:9": {}
     },
-    "226:10": {
+    "232:10": {
       "questID:3": 257,
       "preRequisites:11": [
         256
@@ -13104,7 +14029,7 @@
       },
       "rewards:9": {}
     },
-    "227:10": {
+    "233:10": {
       "questID:3": 258,
       "preRequisites:11": [
         257
@@ -13155,7 +14080,7 @@
       },
       "rewards:9": {}
     },
-    "228:10": {
+    "234:10": {
       "questID:3": 259,
       "preRequisites:11": [
         258
@@ -13223,7 +14148,7 @@
       },
       "rewards:9": {}
     },
-    "229:10": {
+    "235:10": {
       "questID:3": 260,
       "preRequisites:11": [
         261,
@@ -13262,7 +14187,7 @@
       },
       "rewards:9": {}
     },
-    "230:10": {
+    "236:10": {
       "questID:3": 261,
       "preRequisites:11": [
         259
@@ -13300,7 +14225,7 @@
       },
       "rewards:9": {}
     },
-    "231:10": {
+    "237:10": {
       "questID:3": 262,
       "preRequisites:11": [
         260,
@@ -13352,7 +14277,7 @@
       },
       "rewards:9": {}
     },
-    "232:10": {
+    "238:10": {
       "questID:3": 263,
       "preRequisites:11": [],
       "properties:10": {
@@ -13401,7 +14326,7 @@
       },
       "rewards:9": {}
     },
-    "233:10": {
+    "239:10": {
       "questID:3": 264,
       "preRequisites:11": [
         259
@@ -13452,7 +14377,7 @@
       },
       "rewards:9": {}
     },
-    "234:10": {
+    "240:10": {
       "questID:3": 265,
       "preRequisites:11": [
         262
@@ -13503,7 +14428,7 @@
       },
       "rewards:9": {}
     },
-    "235:10": {
+    "241:10": {
       "questID:3": 266,
       "preRequisites:11": [
         265
@@ -13554,7 +14479,7 @@
       },
       "rewards:9": {}
     },
-    "236:10": {
+    "242:10": {
       "questID:3": 267,
       "preRequisites:11": [
         266
@@ -13605,7 +14530,7 @@
       },
       "rewards:9": {}
     },
-    "237:10": {
+    "243:10": {
       "questID:3": 268,
       "preRequisites:11": [
         267
@@ -13656,7 +14581,7 @@
       },
       "rewards:9": {}
     },
-    "238:10": {
+    "244:10": {
       "questID:3": 269,
       "preRequisites:11": [
         268
@@ -13741,7 +14666,7 @@
       },
       "rewards:9": {}
     },
-    "239:10": {
+    "245:10": {
       "questID:3": 270,
       "preRequisites:11": [
         269
@@ -13792,7 +14717,7 @@
       },
       "rewards:9": {}
     },
-    "240:10": {
+    "246:10": {
       "questID:3": 271,
       "preRequisites:11": [
         273
@@ -13843,7 +14768,7 @@
       },
       "rewards:9": {}
     },
-    "241:10": {
+    "247:10": {
       "questID:3": 272,
       "preRequisites:11": [
         270
@@ -13911,7 +14836,7 @@
       },
       "rewards:9": {}
     },
-    "242:10": {
+    "248:10": {
       "questID:3": 273,
       "preRequisites:11": [
         274
@@ -13962,7 +14887,7 @@
       },
       "rewards:9": {}
     },
-    "243:10": {
+    "249:10": {
       "questID:3": 274,
       "preRequisites:11": [
         276
@@ -14047,7 +14972,7 @@
       },
       "rewards:9": {}
     },
-    "244:10": {
+    "250:10": {
       "questID:3": 275,
       "preRequisites:11": [
         272
@@ -14115,7 +15040,7 @@
       },
       "rewards:9": {}
     },
-    "245:10": {
+    "251:10": {
       "questID:3": 276,
       "preRequisites:11": [
         275
@@ -14166,7 +15091,7 @@
       },
       "rewards:9": {}
     },
-    "246:10": {
+    "252:10": {
       "questID:3": 277,
       "preRequisites:11": [
         271
@@ -14251,246 +15176,267 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 60,
+          "x:3": -120,
+          "y:3": -204,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 60,
+          "x:3": -72,
+          "y:3": -204,
           "id:3": 2,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": 132,
+          "x:3": -132,
+          "y:3": -132,
           "id:3": 3,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": 132,
+          "x:3": -60,
+          "y:3": -132,
           "id:3": 4,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 132,
+          "x:3": -96,
+          "y:3": -132,
           "id:3": 5,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 48,
-          "x:3": -96,
-          "y:3": 240,
+          "x:3": -108,
+          "y:3": -24,
           "id:3": 6,
           "sizeY:3": 48
         },
         "6:10": {
           "sizeX:3": 48,
-          "x:3": -96,
-          "y:3": -24,
+          "x:3": -108,
+          "y:3": -288,
           "id:3": 7,
           "sizeY:3": 48
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": 360,
+          "x:3": -120,
+          "y:3": 96,
           "id:3": 8,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 180,
+          "x:3": -12,
+          "y:3": -84,
           "id:3": 9,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 132,
+          "x:3": -12,
+          "y:3": -132,
           "id:3": 10,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 132,
+          "x:3": -168,
+          "y:3": -132,
           "id:3": 12,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 180,
+          "x:3": -168,
+          "y:3": -84,
           "id:3": 13,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 216,
+          "x:3": -168,
+          "y:3": -48,
           "id:3": 14,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 324,
+          "x:3": 132,
+          "y:3": 60,
           "id:3": 15,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 180,
+          "x:3": 156,
+          "y:3": -84,
           "id:3": 16,
           "sizeY:3": 24
         },
         "15:10": {
-          "sizeX:3": 48,
-          "x:3": 72,
-          "y:3": 456,
-          "id:3": 17,
-          "sizeY:3": 48
+          "sizeX:3": 24,
+          "x:3": 204,
+          "y:3": 108,
+          "id:3": 22,
+          "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 372,
-          "id:3": 22,
+          "x:3": 156,
+          "y:3": 108,
+          "id:3": 23,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 372,
-          "id:3": 23,
+          "x:3": 156,
+          "y:3": 60,
+          "id:3": 24,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 168,
-          "y:3": 324,
-          "id:3": 24,
+          "x:3": -12,
+          "y:3": 204,
+          "id:3": 27,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 468,
-          "id:3": 27,
+          "x:3": 156,
+          "y:3": 252,
+          "id:3": 29,
           "sizeY:3": 24
         },
         "20:10": {
-          "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": 396,
-          "id:3": 31,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 60,
+          "y:3": 192,
+          "id:3": 30,
+          "sizeY:3": 48
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": 360,
-          "id:3": 32,
+          "x:3": -216,
+          "y:3": 132,
+          "id:3": 31,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": 336,
-          "id:3": 33,
+          "x:3": -168,
+          "y:3": 96,
+          "id:3": 32,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": 180,
-          "id:3": 34,
+          "x:3": -216,
+          "y:3": 72,
+          "id:3": 33,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": 132,
-          "id:3": 36,
+          "x:3": 72,
+          "y:3": -84,
+          "id:3": 34,
           "sizeY:3": 24
         },
         "25:10": {
-          "sizeX:3": 48,
-          "x:3": 72,
-          "y:3": 360,
-          "id:3": 42,
-          "sizeY:3": 48
+          "sizeX:3": 24,
+          "x:3": 204,
+          "y:3": 252,
+          "id:3": 35,
+          "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 84,
-          "y:3": 252,
-          "id:3": 46,
+          "x:3": 72,
+          "y:3": -132,
+          "id:3": 36,
           "sizeY:3": 24
         },
         "27:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 252,
-          "id:3": 48,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 60,
+          "y:3": 96,
+          "id:3": 42,
+          "sizeY:3": 48
         },
         "28:10": {
-          "sizeX:3": 48,
+          "sizeX:3": 24,
           "x:3": 156,
-          "y:3": 240,
-          "id:3": 54,
-          "sizeY:3": 48
+          "y:3": 204,
+          "id:3": 43,
+          "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 372,
-          "id:3": 55,
+          "x:3": 72,
+          "y:3": -12,
+          "id:3": 46,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 420,
-          "id:3": 64,
+          "x:3": -12,
+          "y:3": -12,
+          "id:3": 48,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 48,
-          "x:3": -96,
-          "y:3": 456,
-          "id:3": 67,
+          "x:3": 144,
+          "y:3": -24,
+          "id:3": 54,
           "sizeY:3": 48
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": -132,
-          "y:3": 468,
-          "id:3": 69,
+          "x:3": -12,
+          "y:3": 108,
+          "id:3": 55,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 216,
-          "y:3": 468,
-          "id:3": 70,
+          "x:3": -12,
+          "y:3": 156,
+          "id:3": 64,
           "sizeY:3": 24
         },
         "34:10": {
+          "sizeX:3": 48,
+          "x:3": -108,
+          "y:3": 192,
+          "id:3": 67,
+          "sizeY:3": 48
+        },
+        "35:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": 360,
+          "x:3": -144,
+          "y:3": 204,
+          "id:3": 69,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
+          "x:3": 204,
+          "y:3": 204,
+          "id:3": 70,
+          "sizeY:3": 24
+        },
+        "37:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 96,
           "id:3": 80,
           "sizeY:3": 24
         }
@@ -14517,163 +15463,198 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 60,
+          "x:3": 624,
+          "y:3": 96,
           "id:3": 11,
           "sizeY:3": 24
         },
         "1:10": {
-          "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 132,
-          "id:3": 18,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 468,
+          "y:3": 144,
+          "id:3": 17,
+          "sizeY:3": 48
         },
         "2:10": {
-          "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 60,
-          "id:3": 20,
-          "sizeY:3": 24
+          "sizeX:3": 48,
+          "x:3": 468,
+          "y:3": 36,
+          "id:3": 21,
+          "sizeY:3": 48
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": 132,
-          "id:3": 25,
+          "x:3": 552,
+          "y:3": -24,
+          "id:3": 26,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": -12,
+          "x:3": 480,
+          "y:3": 96,
           "id:3": 37,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 60,
-          "id:3": 38,
+          "x:3": 408,
+          "y:3": -24,
+          "id:3": 39,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": -84,
-          "id:3": 44,
+          "x:3": 624,
+          "y:3": 48,
+          "id:3": 40,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": 132,
-          "id:3": 45,
+          "x:3": 624,
+          "y:3": -24,
+          "id:3": 44,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 60,
-          "id:3": 61,
+          "x:3": 552,
+          "y:3": 48,
+          "id:3": 49,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -12,
-          "id:3": 66,
+          "x:3": 408,
+          "y:3": 48,
+          "id:3": 50,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 60,
-          "y:3": -12,
-          "id:3": 68,
+          "x:3": 336,
+          "y:3": -24,
+          "id:3": 51,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": -12,
-          "id:3": 71,
+          "x:3": 336,
+          "y:3": 48,
+          "id:3": 52,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 420,
-          "y:3": 204,
-          "id:3": 76,
+          "x:3": 480,
+          "y:3": -24,
+          "id:3": 53,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 60,
-          "id:3": 77,
+          "x:3": 336,
+          "y:3": 96,
+          "id:3": 56,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 132,
-          "id:3": 78,
+          "x:3": 480,
+          "y:3": 0,
+          "id:3": 57,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 60,
-          "id:3": 79,
+          "x:3": 552,
+          "y:3": 156,
+          "id:3": 59,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 132,
-          "id:3": 81,
+          "x:3": 288,
+          "y:3": -24,
+          "id:3": 60,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 204,
-          "y:3": 204,
-          "id:3": 82,
+          "x:3": 288,
+          "y:3": 48,
+          "id:3": 62,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 204,
-          "id:3": 84,
+          "x:3": 288,
+          "y:3": 96,
+          "id:3": 63,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 276,
-          "y:3": 204,
-          "id:3": 86,
+          "x:3": 408,
+          "y:3": 96,
+          "id:3": 65,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": 276,
-          "id:3": 88,
+          "x:3": 672,
+          "y:3": -24,
+          "id:3": 72,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 348,
-          "y:3": 276,
-          "id:3": 91,
+          "x:3": 672,
+          "y:3": 48,
+          "id:3": 73,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -84,
-          "id:3": 92,
+          "x:3": 552,
+          "y:3": 96,
+          "id:3": 74,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 456,
+          "y:3": -72,
+          "id:3": 75,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": 504,
+          "y:3": -72,
+          "id:3": 83,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": 408,
+          "y:3": 156,
+          "id:3": 84,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": 480,
+          "y:3": 216,
+          "id:3": 85,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 480,
+          "y:3": 240,
+          "id:3": 86,
           "sizeY:3": 24
         }
       },
@@ -14845,251 +15826,237 @@
     "4:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 72,
-          "x:3": -372,
-          "y:3": -36,
-          "id:3": 39,
-          "sizeY:3": 72
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -348,
-          "y:3": 36,
-          "id:3": 40,
-          "sizeY:3": 24
-        },
-        "2:10": {
           "sizeX:3": 48,
           "x:3": -600,
           "y:3": -24,
           "id:3": 87,
           "sizeY:3": 48
         },
-        "3:10": {
+        "1:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": 36,
           "id:3": 101,
           "sizeY:3": 24
         },
-        "4:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 36,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "5:10": {
+        "3:10": {
           "sizeX:3": 72,
           "x:3": -120,
           "y:3": -36,
           "id:3": 114,
           "sizeY:3": 72
         },
-        "6:10": {
+        "4:10": {
           "sizeX:3": 72,
           "x:3": -36,
           "y:3": -36,
           "id:3": 115,
           "sizeY:3": 72
         },
-        "7:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 36,
           "id:3": 116,
           "sizeY:3": 24
         },
-        "8:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": 60,
           "id:3": 117,
           "sizeY:3": 24
         },
-        "9:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -120,
           "y:3": 36,
           "id:3": 118,
           "sizeY:3": 24
         },
-        "10:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 36,
           "id:3": 119,
           "sizeY:3": 24
         },
-        "11:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -24,
           "y:3": 60,
           "id:3": 129,
           "sizeY:3": 24
         },
-        "12:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 12,
           "y:3": 36,
           "id:3": 135,
           "sizeY:3": 24
         },
-        "13:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 60,
           "id:3": 136,
           "sizeY:3": 24
         },
-        "14:10": {
+        "12:10": {
           "sizeX:3": 72,
           "x:3": 48,
           "y:3": -36,
           "id:3": 148,
           "sizeY:3": 72
         },
-        "15:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 36,
           "id:3": 149,
           "sizeY:3": 24
         },
-        "16:10": {
+        "14:10": {
           "sizeX:3": 72,
           "x:3": -204,
           "y:3": -36,
           "id:3": 151,
           "sizeY:3": 72
         },
-        "17:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": 36,
           "id:3": 152,
           "sizeY:3": 24
         },
-        "18:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 36,
           "id:3": 153,
           "sizeY:3": 24
         },
-        "19:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 60,
           "id:3": 154,
           "sizeY:3": 24
         },
-        "20:10": {
+        "18:10": {
           "sizeX:3": 72,
           "x:3": 132,
           "y:3": -36,
           "id:3": 159,
           "sizeY:3": 72
         },
-        "21:10": {
+        "19:10": {
           "sizeX:3": 72,
           "x:3": 216,
           "y:3": -36,
           "id:3": 163,
           "sizeY:3": 72
         },
-        "22:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 36,
           "id:3": 164,
           "sizeY:3": 24
         },
-        "23:10": {
+        "21:10": {
           "sizeX:3": 72,
           "x:3": 300,
           "y:3": -36,
           "id:3": 175,
           "sizeY:3": 72
         },
-        "24:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 312,
           "y:3": 36,
           "id:3": 179,
           "sizeY:3": 24
         },
-        "25:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": 36,
           "id:3": 180,
           "sizeY:3": 24
         },
-        "26:10": {
+        "24:10": {
           "sizeX:3": 72,
           "x:3": -456,
           "y:3": 108,
           "id:3": 188,
           "sizeY:3": 72
         },
-        "27:10": {
+        "25:10": {
           "sizeX:3": 72,
           "x:3": -372,
           "y:3": 108,
           "id:3": 189,
           "sizeY:3": 72
         },
-        "28:10": {
+        "26:10": {
           "sizeX:3": 72,
           "x:3": -288,
           "y:3": 108,
           "id:3": 206,
           "sizeY:3": 72
         },
-        "29:10": {
+        "27:10": {
           "sizeX:3": 72,
           "x:3": -204,
           "y:3": 108,
           "id:3": 208,
           "sizeY:3": 72
         },
-        "30:10": {
+        "28:10": {
           "sizeX:3": 72,
           "x:3": -120,
           "y:3": 108,
           "id:3": 212,
           "sizeY:3": 72
         },
-        "31:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 180,
           "id:3": 245,
           "sizeY:3": 24
         },
-        "32:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": 180,
           "id:3": 246,
           "sizeY:3": 24
         },
-        "33:10": {
+        "31:10": {
           "sizeX:3": 72,
           "x:3": -36,
           "y:3": 108,
           "id:3": 247,
           "sizeY:3": 72
         },
-        "34:10": {
+        "32:10": {
           "sizeX:3": 72,
           "x:3": 48,
           "y:3": 108,
           "id:3": 248,
           "sizeY:3": 72
         },
-        "35:10": {
+        "33:10": {
           "sizeX:3": 72,
           "x:3": 132,
           "y:3": 108,
@@ -16114,7 +17081,7 @@
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,
       "pack_version:3": 1014,
-      "editMode:1": 1,
+      "editMode:1": 0,
       "home_offset_x:3": -128,
       "home_offset_y:3": 0
     }

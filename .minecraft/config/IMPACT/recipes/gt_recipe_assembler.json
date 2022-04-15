@@ -652,5 +652,75 @@
     "voltage": 16,
     "special": 0,
     "optimize": false
+  },
+  // --- Steam Output Hatch
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 66,
+        "amount": 1
+      },
+	  {
+        "mod": "impact",
+        "name": "impact_fluidtankblock_block",
+        "damage": 3,
+        "amount": 2
+      },
+      {
+        "oredict": "boltHastelloyN",
+        "amount": 4
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14761,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 600,
+    "voltage": 30720,
+    "special": 0,
+    "optimize": false
+  },
+  // --- Steam Input Hatch
+  {
+    "inputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 56,
+        "amount": 1
+      },
+	  {
+        "mod": "impact",
+        "name": "impact_fluidtankblock_block",
+        "damage": 3,
+        "amount": 2
+      },
+      {
+        "oredict": "boltHastelloyN",
+        "amount": 4
+      }
+    ],
+    "outputItem": [
+      {
+        "mod": "gregtech",
+        "name": "gt.blockmachines",
+        "damage": 14762,
+        "amount": 1
+      }
+    ],
+    "inputFluid": [],
+    "outputFluid": [],
+    "time": 600,
+    "voltage": 30720,
+    "special": 0,
+    "optimize": false
   }
 ]

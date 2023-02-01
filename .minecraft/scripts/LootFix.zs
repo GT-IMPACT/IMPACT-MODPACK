@@ -36,6 +36,3 @@ vanilla.loot.removeChestLoot("pyramidJungleChest", <IC2:itemArmorBronzeHelmet>);
 vanilla.loot.removeChestLoot("pyramidJungleChest", <IC2:itemArmorBronzeChestplate>);
 vanilla.loot.removeChestLoot("pyramidJungleChest", <IC2:itemArmorBronzeLegs>);
 vanilla.loot.removeChestLoot("pyramidJungleChest", <IC2:itemArmorBronzeBoots>);
-
-// --- FIXES
-recipes.remove(<ExtraUtilities:dark_portal>);

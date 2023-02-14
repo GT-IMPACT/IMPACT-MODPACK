@@ -1,0 +1,71 @@
+#QUEST #0 - Wood is a major resource
+impact.0.name=Wood is a major resource
+impact.0.desc=Human has used wood for thousands of years for many purposes, primarily as fuel, but also as a building material, to make tools, etc.%n%nIn real life, a man can't cut down a tree with his hands. But! We are in the game, so try to do it.%n%n§lImportant!§r%nYou can find a wide variety of tree types, in color or in size. Each tree is unique, pay attention to that.
+
+#QUEST #1 - My way
+impact.1.name=My way
+impact.1.desc=I was left all alone on this planet...%n%nI'm writing a my diary in case anyone else survived.
+
+#QUEST #2 - Road with gravel
+impact.2.name=Road with gravel
+impact.2.desc=Gravel has the properties of a loose block, that is, it can fall under the influence of gravity. Gravity? YES!%nGravel can be used as a building material, but you will need it for flint extraction. %n%n§lAdvice§r:%nGet as much gravel as you can!
+
+#QUEST #3 - Sticks from the sky
+impact.3.name=Sticks from the sky
+impact.3.desc=One of the wooden products is a stick, you can make it either from wood or from fallen sapplings.%n%nSticks are most often used as a tool component.
+
+#QUEST #4 - Is it stone? No, it's flint
+impact.4.name=Is it stone? No, it's flint
+impact.4.desc=One of the first minerals, which is actively used to create tools and not only.%n%n§lAdvice:§r%nAt the beginning of the game is a very important resource, save it!
+
+#QUEST #5 - First workbench
+impact.5.name=First workbench
+impact.5.desc=As you noticed you have a grid for crafting different items, but it is small (2x2).%n%nFor large recipes a workbench is used. Its crafting grid is much larger (3x3).
+
+#QUEST #6 - Tools!
+impact.6.name=Tools!
+impact.6.desc=As you have already realized you need a lot of flint to craft a lot of tools.%n%nEach tool is used for its own application.%n%n1. §lPickaxe§r - hard rock mining.%n2. §lAxe§r - wood extraction. Has the property of chopping a single tree trunk completely.%n3. §lShovel§r - soft rock mining..%n4. §lSaw§r - for crafting. For example getting the first planks.%n5. §lKnife§r - for crafting. It has the property to remove one wool from a sheep.%n6. §lHoe§r - for agricultural.%n7. §lSword§r - for kill animals.%n%n8. §lLarge Axe§r - wood extraction. Has the ability to cut down the entire tree at once.%n9. §lForge Hammer§r - extraction of any rocks. Has the property of mining the first minerals.%n%n10. §lSoft Mallet§r - for crafting, and also allows you to turn mechanisms on and off.%n%n§lImportant!§r%nPay attention to the description of each tool, so you will learn more information about them.
+
+#QUEST #7 - The very first steps
+impact.7.name=The very first steps
+impact.7.desc=You appeared in the world and do not know what to do? Then this branch of quests will help you. Good luck!
+
+#QUEST #8 - Planks and plunks
+impact.8.name=Planks and plunks
+impact.8.desc=You have a saw, so it's time to get the first planks, simplify or increase the crafting of sticks, and other materials from wood!
+
+#QUEST #9 - Adventure Time
+impact.9.name=Adventure Time
+impact.9.desc=§lPart 1§r. You have a sword, so it's time to go hunting.%nSince there are no hostile mobs in the world, you have to hunt peaceful animals.%nStart with the cows, you will need leather.%n%n§lPart 2§r. You have a knife, with which you can cut the wool off the sheep. %nJust walk up to the sheep with the knife in your hand and press §lRMB§r, you will get 1 wool.%nWith the knife you can get the first strings, just craft them using the knife and wool.
+
+#QUEST #10 - Sleep!
+impact.10.name=Sleep!
+impact.10.desc=You've collected the wool, it's time to make yourself a bed for the night. The bed is good for that!
+
+#QUEST #11 - Coal Pit
+impact.11.name=Coal Pit
+impact.11.desc=§Charcoal Pile Igniter§r - is a method of producing charcoal faster than a coke oven, but without the ease of automation and creosote that a coke oven provides.%n%n§lPrinciple of operation:§r%nThe multiblock of the coal pit consists of a lower layer of bricks, ranging in size from 3x3 to 11x11. Above the bricks, place up to 5 layers of logs that you want to turn into charcoal, then place the Igniter on top in the center. Cover any log surfaces with earth or grass, and then activate the Igniter. If the upper part of the Igniter starts to glow, the process is started.%n%nOnce the process is completed, you can remove the blocks of land. Instead of logs, there will be charred blocks from which charcoal falls out.
+
+#QUEST #12 - Rubber tree
+impact.12.name=Rubber tree
+impact.12.desc=This tree stood out from the rest. The wood itself is unsuitable for processing into boards, but its bark is quite sticky, which emits rubber. This rubber will play a big role in your industrialization path in the future.%n%n§lAdvice!§r%nTry not to use these seedlings for crafting sticks. Plant a couple of sprouts near the base. You will need a lot of rubber in the future.
+
+#QUEST #13 - Sticky Resin
+impact.13.name=Sticky Resin
+impact.13.desc=To extract Sticky Resin you will need a special tool - §lTreetap§r.%n%nIn order to extract Sticky Resin with a right click, use the tap on the side of the tree where there is a drip.
+
+#QUEST #14 - Let there be light!
+impact.14.name=Let there be light!
+impact.14.desc=There is almost no light at night, but you can create it artificially.%n%nTo do this, just make your first torch.
+
+#QUEST #15 - FAKE
+impact.15.name=FAKE
+impact.15.desc=No Description
+
+#QUEST #16 - Bound Leather
+impact.16.name=Bound Leather
+impact.16.desc=It's time to craft the leather to the fullest!%n%nYou will need a drying rack, just hang your bound leather on it.%nIt remains only to wait..
+
+#QUEST #17 - Primitive Blast Furnace
+impact.17.name=Primitive Blast Furnace
+impact.17.desc=§lBlast Furnace§r it is needed for the smelting of Wrought Iron, Steel and initial pyro-metallurgy.%n%nThe Blast Furnace crafting takes place in 4 stages.%n%n1. Craft §lConcrete§r%n%n2. Craft §lFire Clay§r.%n%n3. Firing §lFirebricks§r.%n%n4. Crafting a blast furnace and its components.%n%nTo build a Blast Furnace, you need:%n- §lBricked Blast Furnace§r x1.%n- §lFirebricks§r x32.%n%n§lAdvice!§r%nTo find out what a multi-block looks like, you can use §lHologram Projector§r from the mod §c§lImpactAPI§r.%n%nDon't forget, any multi-block is enabled using Soft Mallet!

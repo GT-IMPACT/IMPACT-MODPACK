@@ -2,7 +2,7 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/GT-IMPACT/IMPACT-MODPACK?style=flat-square)](https://github.com/GT-IMPACT/IMPACT-MODPACK/issues) [![GitHub license](https://img.shields.io/github/license/GT-IMPACT/IMPACT-MODPACK?style=flat-square)](https://github.com/GT-IMPACT/IMPACT-MODPACK/blob/Release/LICENSE)
 
-![IMPACT](https://github.com/GT-IMPACT/IMPACT-MODPACK/blob/Release/impactTwitch.png)
+![IMPACT](https://github.com/GT-IMPACT/IMPACT-MODPACK/blob/Release/IMPACT_GIT.png)
 
 ## What is this modpack?
 
@@ -13,4 +13,4 @@ The main advantage of this build is the modification of each mod for the realiti
 ## Links
 
 Discord: https://discord.gg/bMf2qvd<BR>
-Website: https://gtimpact.space/<BR>
+Website: https://gt-impact.github.io/#/<BR>

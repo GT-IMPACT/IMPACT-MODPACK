@@ -238,7 +238,7 @@
     "inputFluid": [],
     "outputFluid": [],
     "time": 800,
-    "voltage": 1024,
+    "voltage": 1020,
     "special": 0,
     "optimize": false
   },
@@ -295,7 +295,7 @@
     "inputFluid": [],
     "outputFluid": [],
     "time": 800,
-    "voltage": 1024,
+    "voltage": 1020,
     "special": 0,
     "optimize": false
   }

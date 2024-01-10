@@ -247,6 +247,9 @@ Mixer.addRecipe(null, <liquid:ic2constructionfoam> * 8000, [<gregtech:gt.metaite
 
 // return only from full empty hydrant cell
 recipes.addShapeless(<IC2:itemCellEmpty>, [<IC2:itemCellHydrant:10000>]);
+//UniCell <-> Cell
+recipes.addShapeless(<IC2:itemCellEmpty>, [<IC2:itemFluidCell>]);
+recipes.addShapeless(<IC2:itemFluidCell>, [<IC2:itemCellEmpty:*>]);
 
 #==================================================================#
 <IC2:blockGenerator:9>.addTooltip(format.gray("Coefficient: ") + format.red("x2.5"));
